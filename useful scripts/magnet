@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// https://sharpcoderblog.com/blog/unity-3d-rigidbody-magnet
+
 public class SC_RigidbodyMagnet : MonoBehaviour
 {
     public float magnetForce = 100;
