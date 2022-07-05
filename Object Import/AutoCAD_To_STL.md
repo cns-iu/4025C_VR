@@ -8,7 +8,7 @@
 <img src="images/acrylic-parts.png" hright="300"><img src="images/acrylic-parts_autocad.png" height="300">
 </p>
 <p align = "center">
-Fig.1 Laser-cut acrylic parts (left), same set of parts in AutoCAD (right)
+  <small>Fig.1 Laser-cut acrylic parts (left), same set of parts in AutoCAD (right)</small>
 </p>
 
 AutoCAD can help to produce complex and precise 3D drawings for architecture and engineering. For many of my projects I need to create 3D assets to be used in more artistic rendering environments. One particular purpose are 3D visualizations of IoT projects, before any laser cut is made. 
