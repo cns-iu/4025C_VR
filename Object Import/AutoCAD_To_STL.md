@@ -6,6 +6,6 @@
 
 <img src="images/acrylic-parts.png">
 
-<img src="images/acrylic-parts_autocad.png">
+<img src="images/acrylic-parts_autocad.png" width="800">
 
 
