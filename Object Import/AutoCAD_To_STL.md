@@ -13,6 +13,11 @@
 
 AutoCAD can help to produce complex and precise 3D drawings for architecture and engineering. For many of my projects I need to create 3D assets to be used in more artistic rendering environments. One particular purpose are 3D visualizations of IoT projects, before any laser cut is made. 
 
+<p align="center">
 <img src="images/Amaria-rough.png" height="400"><img src="images/Amaria-V1-basic-structure.jpg" height="400">
+</p>
+<p align = "center">
+  <sub>Fig.2 Partial assembly visualization (left), physical assembly (right)</sub>
+</p>
 
 
