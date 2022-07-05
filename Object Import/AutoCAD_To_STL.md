@@ -20,9 +20,9 @@ AutoCAD can also be utilized to produce complex and precise 3D drawings for arch
   <sub>Fig.2 Partial assembly visualization (left), physical assembly (right)</sub>
 </p>
 
-In this case the 2D line drawing of a specific object in AutoCAD has to be transformed into a 3D object. This sounds like a relatively straight forward procedure; in a dedicated 3D application, such as Blender, one would use an *extrude* function to add "thickness" to a surface. Of course AutoCAD also has an *extrude* command and applied to a \properly\ constructed 2D object it will yield useable results.
+In this case the 2D line drawing of a specific object in AutoCAD has to be transformed into a 3D object. This sounds like a relatively straight forward procedure; in a dedicated 3D application, such as Blender, one would use an *extrude* function to add "thickness" to a surface. Of course AutoCAD also has an *extrude* command and applied to a <strong>properly</strong> constructed 2D object it will yield useable results.
 
 <p align="center">
-  <img src="images/Amaria-extrusion1.png">
+  <img src="images/Amaria-extrusion1.png" width="600">
 </p>
 
