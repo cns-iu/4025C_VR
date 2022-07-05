@@ -6,18 +6,3 @@ Many kinds of software can be used for the creation of 3D models. As long as the
 
 A project might start out as a hand drawing, scanned into the computer and then used as a template to make a 2D line drawing in AutoCAD. From here it can be used to laser cut or engrave. If the user decides it would be better to fabricate the object on a 3D printer rather than a laser cutter, a 3D model is needed. Or a realistic 3D rendering of the object is required for an instructional video or game engine, such as Unity. The object may travel through three or more applications before reaching its final state. Every time it has to be exported in a file format which can be imported by the next application. Luckily there are a few standard file formats most programs can access, although often a specific file type may be better suited for a certain task. 
 
-
-## File Types
-
-
-## About the Applications
-
-### AutoCAD
-
-AutoCAD is used to create precise 2D drawings for many uses. Although it can be used for 3D constructing it is not a first choice to create those assets. 
-
-### Blender
-
-### Maya
-
-### Cinema 4D
