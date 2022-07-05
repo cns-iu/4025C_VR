@@ -25,4 +25,7 @@ In this case the 2D line drawing of a specific object in AutoCAD has to be trans
 <p align="center">
   <img src="images/Amaria-extrusion1.png" width="600">
 </p>
+<p align = "center">
+  <sub>Fig.3 2D object (left), successfully extruded into 3D (right)</sub>
+</p>
 
