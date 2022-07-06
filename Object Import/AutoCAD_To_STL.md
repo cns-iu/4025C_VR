@@ -32,6 +32,7 @@ In this case the 2D line drawing of a specific object in AutoCAD has to be trans
 Closed polylines are the only 2D primitives which can be extruded properly with top and bottom surfaces.
 Primitives such as arcs, lines will extrude to connected walls, but even if closed will not produce top and bottom surface
 splines are not extruded in AutoCAD. 2D objects that are composed of different types of 2D primitives will not extrude correctly.
+It may help to scale up objects by a factor of 10
 Such mixed 2D objects are best "redrawn" using polylines.
 
 The trick is that the 2D source object must be composed of <strong>polylines</strong> (also called <strong>plines</strong>). 
