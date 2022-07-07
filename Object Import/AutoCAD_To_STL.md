@@ -33,7 +33,7 @@ The process sounds logical and straight-forward, but I found shapes often do not
 
 ## Rebuilding a shape using *polyline* (*pline*)
 
-### 1. Isolate individual connected parts
+### Isolate individual connected parts and check for extrusion
 
 <p align="center">
   <img src="images/AC-STL2.png" width="400">
@@ -42,23 +42,23 @@ The process sounds logical and straight-forward, but I found shapes often do not
   <sub>The example shape is a 3-pronged star with a round hole at the center. If the star shape and the circle in the center are grouped/joined use *ungroup* or *explode* to dissolve.</sub>
 </p>
 
-### 2. Verify extrusion on each part
-
 Now we can verify that the center circle extrudes correctly. Not so the star shape.
 
-### 3. Use layers to set up template
+### Use layers to set up template
 
+Make a copy of your complete shape before continuing, and paste it somewhere in your workspace. I often find it easier to use a copy of my object rather than depending on AutoCAD's undo function.
 
+Assign the shape you intend to use as a template (here, the star shape) to another layer - my template layer uses white to draw the shape. Assign the circle shape to another layer, which you can make invisible.
 
-### 4. Use *polyline (pline)* over template
+### Use *polyline (pline)* over template
 
-### 5. Verify that closed *pline* can extrude
+### Verify that closed *pline* can extrude
 
-### 6. Convert straight segments to arcs
+### Convert straight segments to arcs
 
-### 7. Verify that we can extrude
+### Verify that we can extrude
 
-### 8. Use (boolean) *subtract* command
+### Use (boolean) *subtract* command
 
 ## Troubleshooting
 
