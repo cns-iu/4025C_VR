@@ -67,12 +67,13 @@ Use the *polyline/pline* command to draw a contiuous polyline following the temp
   <img src="images/AC-STL4.png" width="400">
 </p>
 <p align="center">
-  <sub>Verify that the newly created polyline shape can extrude..</sub>
+  <sub>Verify that the newly created polyline shape can extrude.</sub>
 </p>
 
-
+Do not apply the extrude. Make a copy of the rough polyline shape and paste it somewhere in your workspace.
 
 ### Convert straight segments to arcs
+
 
 ### Verify that we can extrude
 
