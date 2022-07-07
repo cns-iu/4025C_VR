@@ -50,7 +50,7 @@ In our case we can verify that the center circle extrudes correctly. Not so the 
 
 Make a copy of your complete shape before continuing, and paste it somewhere in your workspace. I often find it easier to use a copy of my object rather than depending on AutoCAD's undo function, in case something goes wrong.
 
-Assign the shape you intend to use as a template (here, the star shape) to another layer - my template layer uses white to draw the shape. Assign the circle shape to another layer, which you can make invisible.
+Assign the shape you intend to use as a template (here, the star shape) to another layer - my template layer uses the color white to draw the shape. Assign the circle shape to another layer, which you can make invisible.
 
 
 ### Use *polyline (pline)* over template
