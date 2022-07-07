@@ -129,7 +129,7 @@ In the physical world these star shapes are cut from 3mm thick acrylic. In our c
   <sub>Fig.12 Adjust vertical position of extruded center so that it extends a little on top and bottom. This will "cut" the hole from the star shape.</sub>
 </p>
 
-Use *subtract* command to make a boolean cut. This command expects selection of the object which is cut from first, confirm by pressing <return>. Next select all shapes intended to cut material away and confirm with <return>.
+Use *subtract* command to make a boolean cut. This command expects selection of the object which is cut from first, confirm by pressing "return". Next select all shapes intended to cut material away and confirm with "return".
 
 <p align="center">
   <img src="images/AC-STL10.png" width="400">
@@ -137,23 +137,22 @@ Use *subtract* command to make a boolean cut. This command expects selection of 
 <p align="center">
   <sub>Fig.13 Center has been punched out by the extruded circle.</sub>
 </p>
+  
+If necessary scale the object back down by 0.1. 
 
 ## Troubleshooting
 
-Sometimes even rebuild shapes still refuse to extrude. If this happens, scale the shape x10 and try again. After successful extrusion scale back down by x0.1.
+Sometimes even rebuilt shapes still refuse to extrude. If this happens, scale the shape x10 and try again. After successful extrusion scale back down by x0.1. Another cause for extrusion failure could be a not-closed polyline. 
 
 ## Export STL of extruded object
 
+To export the newly created 3d version of the 3-pronged star, select it. Use the "export" command. It will default to STL format and present a standard save dialog.
+
+<p align="center">
+  <img src="images/AC-STL11.png" width="400">
+</p>
+<p align="center">
+  <sub>Fig.14 The exported STL file.</sub>
+</p>
 
 
-
-
-
-
-Closed polylines are the only 2D primitives which can be extruded properly with top and bottom surfaces.
-Primitives such as arcs, lines will extrude to connected walls, but even if closed will not produce top and bottom surface
-splines are not extruded in AutoCAD. 2D objects that are composed of different types of 2D primitives will not extrude correctly.
-It may help to scale up objects by a factor of 10 before extrusion in AutoCAD. They can be scaled back down in the target application.
-Such mixed 2D objects are best "redrawn" using polylines.
-
-The trick is that the 2D source object must be composed of <strong>polylines</strong> (also called <strong>plines</strong>). 
