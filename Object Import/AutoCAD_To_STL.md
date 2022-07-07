@@ -129,7 +129,14 @@ In the physical world these star shapes are cut from 3mm thick acrylic. In our c
   <sub>Fig.12 Adjust vertical position of extruded center so that it extends a little on top and bottom. This will "cut" the hole from the star shape.</sub>
 </p>
 
+Use *subtract* command to make a boolean cut. This command expects selection of the object which is cut from first, confirm by pressing <return>. Next select all shapes intended to cut material away and confirm with <return>.
 
+<p align="center">
+  <img src="images/AC-STL10.png" width="400">
+</p>
+<p align="center">
+  <sub>Fig.13 Center has been punched out by the extruded circle.</sub>
+</p>
 
 ## Troubleshooting
 
