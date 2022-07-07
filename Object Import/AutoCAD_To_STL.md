@@ -55,7 +55,7 @@ Assign the shape you intend to use as a template (here, the star shape) to anoth
 
 ### Use *polyline (pline)* over template
 
-Use the *polyline/pline* command to draw a contiuous polyline following the template. Click to place control points - AutoCAD's snap settings will guide. Keep in mind that some of the larger arc segments will at first be represented by a shorter straight line.
+Use the *polyline/pline* command to draw a contiuous polyline following the template. Click to place control points - AutoCAD's snap settings will guide. Keep in mind that some of the larger arc segments will at first be represented by much shorter straight lines.
 
 
 ### Verify that closed *pline* can extrude
