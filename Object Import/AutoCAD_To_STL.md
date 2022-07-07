@@ -33,6 +33,7 @@ The process sounds logical and straight-forward, but I found shapes often do not
 
 ## Rebuilding a shape using *polyline* (*pline*)
 
+
 ### Isolate individual connected parts and check for extrusion
 
 <p align="center">
@@ -44,15 +45,18 @@ The process sounds logical and straight-forward, but I found shapes often do not
 
 Now we can verify that the center circle extrudes correctly. Not so the star shape.
 
+
 ### Use layers to set up template
 
 Make a copy of your complete shape before continuing, and paste it somewhere in your workspace. I often find it easier to use a copy of my object rather than depending on AutoCAD's undo function, in case something goes wrong.
 
 Assign the shape you intend to use as a template (here, the star shape) to another layer - my template layer uses white to draw the shape. Assign the circle shape to another layer, which you can make invisible.
 
+
 ### Use *polyline (pline)* over template
 
 Use the *polyline/pline* command to draw a contiuous polyline following the template. Click to place control points - AutoCAD's snap settings will guide. Keep in mind that some of the larger arc segments will at first be represented by a shorter straight line.
+
 
 ### Verify that closed *pline* can extrude
 
@@ -72,6 +76,7 @@ Use the *polyline/pline* command to draw a contiuous polyline following the temp
 
 Do not apply the extrude. Make a copy of the rough polyline shape and paste it somewhere in your workspace.
 
+
 ### Convert straight segments to arcs
 
 <p align="center">
@@ -80,6 +85,14 @@ Do not apply the extrude. Make a copy of the rough polyline shape and paste it s
 <p align="center">
   <sub>Using the appropriate handles transform straight segments into arcs then match shape of arc to template as needed.</sub>
 </p>
+
+<p align="center">
+  <img src="images/AC-STL6.png" width="400">
+</p>
+<p align="center">
+  <sub>Matching the template, with all required arcs.</sub>
+</p>
+
 
 ### Verify that we can extrude
 
