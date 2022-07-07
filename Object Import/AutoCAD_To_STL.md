@@ -23,7 +23,7 @@ AutoCAD can also be utilized to produce complex and precise 3D drawings for arch
 In this case the 2D line drawing of a specific object in AutoCAD has to be transformed into a 3D object. This sounds like a relatively straight forward procedure; in a dedicated 3D application, such as Blender, one would use an *extrude* function to add "thickness" to a surface. Of course AutoCAD also has an *extrude* command and applied to a <strong>properly</strong> constructed 2D object it will yield useable results.
 
 <p align="center">
-  <img src="images/Amaria-extrusion1.png" width="600">
+  <img src="images/star_star_extruded.png" width="600">
 </p>
 <p align = "center">
   <sub>Fig.3 2D object (left), successfully extruded into 3D (right)</sub>
