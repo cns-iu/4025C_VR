@@ -90,11 +90,15 @@ Do not apply the extrude. Make a copy of the rough polyline shape and paste it s
   <img src="images/AC-STL6.png" width="400">
 </p>
 <p align="center">
-  <sub>Fig.8 Matching the template, with all required arcs.</sub>
+  <sub>Fig.8 Fully matching the template, with all required arcs.</sub>
 </p>
 
-
-### Verify that we can extrude
+<p align="center">
+  <img src="images/AC-STL6b.png" width="400">
+</p>
+<p align="center">
+  <sub>Fig.9 Verify that the polyline shape can extrude.</sub>
+</p>
 
 ### Use (boolean) *subtract* command
 
