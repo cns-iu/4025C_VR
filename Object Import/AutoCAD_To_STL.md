@@ -74,6 +74,12 @@ Do not apply the extrude. Make a copy of the rough polyline shape and paste it s
 
 ### Convert straight segments to arcs
 
+<p align="center">
+  <img src="images/AC-STL5.png" width="400">
+</p>
+<p align="center">
+  <sub>Using the appropriate handles transform straight segments into arcs then match shape of arc to template as needed.</sub>
+</p>
 
 ### Verify that we can extrude
 
