@@ -33,6 +33,33 @@ The process sounds logical and straight-forward, but I found shapes often do not
 
 ## Rebuilding a shape using *polyline* (*pline*)
 
+### 1. Isolate individual connected parts
+
+### 2. Verify extrusion on each part
+
+### 3. Use layers to set up template
+
+### 4. Use *polyline (pline)* over template
+
+### 5. Verify that closed *pline* can extrude
+
+### 6. Convert straight segments to arcs
+
+### 7. Verify that we can extrude
+
+### 8. Use (boolean) *subtract* command
+
+## Troubleshooting
+
+Sometimes even rebuild shapes still refuse to extrude. If this happens, scale the shape x10 and try again. After successful extrusion scale back down by x0.1.
+
+## Export STL of extruded object
+
+
+
+
+
+
 
 Closed polylines are the only 2D primitives which can be extruded properly with top and bottom surfaces.
 Primitives such as arcs, lines will extrude to connected walls, but even if closed will not produce top and bottom surface
