@@ -40,7 +40,7 @@ The process sounds logical and straight-forward, but I found shapes often do not
   <img src="images/AC-STL2.png" width="400">
 </p>
 <p align="center">
-  <sub>The example shape is a 3-pronged star with a round hole at the center. If the star shape and the circle in the center are grouped/joined use *ungroup* or *explode* to dissolve.</sub>
+  <sub>Fig.4 The example shape is a 3-pronged star with a round hole at the center. If the star shape and the circle in the center are grouped/joined use *ungroup* or *explode* to dissolve.</sub>
 </p>
 
 Now we can verify that the center circle extrudes correctly. Not so the star shape.
@@ -64,14 +64,14 @@ Use the *polyline/pline* command to draw a contiuous polyline following the temp
   <img src="images/AC-STL3.png" width="400">
 </p>
 <p align="center">
-  <sub>Here a continuous polyline connecting all points.</sub>
+  <sub>Fig.5 Here a continuous polyline connecting all points.</sub>
 </p>
 
 <p align="center">
   <img src="images/AC-STL4.png" width="400">
 </p>
 <p align="center">
-  <sub>Verify that the newly created polyline shape can extrude.</sub>
+  <sub>Fig.6 Verify that the newly created polyline shape can extrude.</sub>
 </p>
 
 Do not apply the extrude. Make a copy of the rough polyline shape and paste it somewhere in your workspace.
@@ -83,14 +83,14 @@ Do not apply the extrude. Make a copy of the rough polyline shape and paste it s
   <img src="images/AC-STL5.png" width="400">
 </p>
 <p align="center">
-  <sub>Using the appropriate handles transform straight segments into arcs then match shape of arc to template as needed.</sub>
+  <sub>Fig.7 Using the appropriate handles transform straight segments into arcs then match shape of arc to template as needed.</sub>
 </p>
 
 <p align="center">
   <img src="images/AC-STL6.png" width="400">
 </p>
 <p align="center">
-  <sub>Matching the template, with all required arcs.</sub>
+  <sub>Fig.8 Matching the template, with all required arcs.</sub>
 </p>
 
 
