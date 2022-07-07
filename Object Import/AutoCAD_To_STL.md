@@ -1,6 +1,6 @@
 # Exporting STL files from AutoCad
 
-## AutoCAD
+## Introduction
 
 [AutoCAD](https://www.autodesk.com/products/autocad/overview?term=1-YEAR&tab=subscription) is used to create precise 2D drawings. It is my go-to application to create 2D geometry for laser cutting. 
 
@@ -28,6 +28,11 @@ In this case the 2D line drawing of a specific object in AutoCAD has to be trans
 <p align = "center">
   <sub>Fig.3 2D object (left), successfully extruded into 3D (right)</sub>
 </p>
+
+The process sounds logical and straight-forward, but I found shapes often do not extrude properly or at all. This has been a problem with AutoCAD files I received from another source. Upon "exploding" (unjoining) shapes they are often composed of subsections of many different types (*polylines*, *splines*, *arcs*, etc). Sometimes I have been able to find the single offending primitive and replace it with a polyline; enabling successful extrusion. Often it was quicker to draw a new *polyline* over the existing shape - this is a relatively quick process with a AutoCAD's snap settings.
+
+## Rebuilding a shape using polyline
+
 
 Closed polylines are the only 2D primitives which can be extruded properly with top and bottom surfaces.
 Primitives such as arcs, lines will extrude to connected walls, but even if closed will not produce top and bottom surface
