@@ -102,6 +102,35 @@ Do not apply the extrude. Make a copy of the rough polyline shape and paste it s
 
 ### Use (boolean) *subtract* command
 
+Make a safety copy of the new shape.
+
+Assign the circle at the center back to the active layer. Both polyline shapes, star shape & center circle, are now on the active layer.
+
+<p align="center">
+  <img src="images/AC-STL7.png" width="400">
+</p>
+<p align="center">
+  <sub>Fig.10 Extrude the center circle first; set it to about 150% of the desired thickness of the star object, 50 in our case.</sub>
+</p>
+
+<p align="center">
+  <img src="images/AC-STL8.png" width="400">
+</p>
+<p align="center">
+  <sub>Fig.11 Then extrude the star shape. We used 30.</sub>
+</p>
+
+In the physical world these star shapes are cut from 3mm thick acrylic. In our case the shape had to be scaled up by x10 to extrude successfully. To keep the right proportions thickness is multiplied x10.
+
+<p align="center">
+  <img src="images/AC-STL9.png" width="400">
+</p>
+<p align="center">
+  <sub>Fig.12 Adjust vertical position of extruded center so that it extends a little on top and bottom. This will "cut" the hole from the star shape.</sub>
+</p>
+
+
+
 ## Troubleshooting
 
 Sometimes even rebuild shapes still refuse to extrude. If this happens, scale the shape x10 and try again. After successful extrusion scale back down by x0.1.
