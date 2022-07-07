@@ -43,7 +43,7 @@ The process sounds logical and straight-forward, but I found shapes often do not
   <sub>Fig.4 The example shape is a 3-pronged star with a round hole at the center. If the star shape and the circle in the center are grouped/joined use *ungroup* or *explode* to dissolve.</sub>
 </p>
 
-Now we can verify that the center circle extrudes correctly. Not so the star shape.
+In our case we can verify that the center circle extrudes correctly. Not so the star shape.
 
 
 ### Use layers to set up template
