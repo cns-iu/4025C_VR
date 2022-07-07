@@ -35,9 +35,20 @@ The process sounds logical and straight-forward, but I found shapes often do not
 
 ### 1. Isolate individual connected parts
 
+<p align="center">
+  <img src="images/AC-STL2.png" width="400">
+</p>
+<p align="center">
+  <sub>The example shape is a 3-pronged star with a round hole at the center. If the star shape and the circle in the center are grouped/joined use *ungroup* or *explode* to dissolve.</sub>
+</p>
+
 ### 2. Verify extrusion on each part
 
+Now we can verify that the center circle extrudes correctly. Not so the star shape.
+
 ### 3. Use layers to set up template
+
+
 
 ### 4. Use *polyline (pline)* over template
 
