@@ -142,7 +142,7 @@ If necessary scale the object back down by 0.1.
 
 ## Troubleshooting
 
-Sometimes even rebuilt shapes still refuse to extrude. If this happens, scale the shape x10 and try again. After successful extrusion scale back down by x0.1. Another cause for extrusion failure could be a not-closed polyline. 
+Sometimes even rebuilt shapes still refuse to extrude. If this happens, scale the shape x10 and try again. After successful extrusion, scale back down by x0.1. Another cause for extrusion failure could be a not-closed polyline. 
 
 ## Export STL of extruded object
 
