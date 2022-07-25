@@ -104,7 +104,7 @@ Do not apply the extrude. Make a copy of the rough polyline shape and paste it s
 
 Make a safety copy of the new shape.
 
-Assign the circle at the center back to the active layer. Both polyline shapes, star shape & center circle, are now on the active layer.
+Assign the circle at the center back to the active layer. Both polyline shapes (star shape & center circle) are now on the active layer.
 
 <p align="center">
   <img src="images/AC-STL7.png" width="400">
