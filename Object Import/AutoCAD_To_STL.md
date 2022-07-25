@@ -120,7 +120,7 @@ Assign the circle at the center back to the active layer. Both polyline shapes (
   <sub>Fig.11 Then extrude the star shape. We used a thickness of 30.</sub>
 </p>
 
-In the physical world these star shapes are cut from 3mm thick acrylic. In our case the shape had to be scaled up by x10 to extrude successfully. To keep the right proportions thickness is multiplied x10.
+In the physical world these star shapes are cut from 3mm thick acrylic. In our case the shape had to be scaled up by x10 to extrude successfully. To keep the right proportions thickness is also multiplied x10.
 
 <p align="center">
   <img src="images/AC-STL9.png" width="400">
