@@ -29,7 +29,7 @@ In this case the 2D line drawing of a specific object in AutoCAD has to be trans
   <sub>Fig.3 2D object (left), successfully extruded into 3D (right)</sub>
 </p>
 
-The process sounds logical and straight-forward, but I found shapes often do not extrude properly or not at all. This has been a problem with AutoCAD files I received from another source. Upon "exploding" (unjoining) shapes they are often composed of subsections of many different types (*polylines*, *splines*, *arcs*, etc). Sometimes I have been able to find the single offending primitive and replace it with a *polyline*, enabling successful extrusion. Often it was quicker to draw a new *polyline* the existing shape as a template - this is a relatively quick process with a AutoCAD's snap settings.
+The process sounds logical and straight-forward, but I found shapes often do not extrude properly or not at all. This has been a problem with AutoCAD files I received from another source. Upon "exploding" (unjoining) shapes they are often composed of subsections of many different types (*polylines*, *splines*, *arcs*, etc). Sometimes I have been able to find the single offending primitive and replace it with a *polyline*, enabling successful extrusion. Often it is quicker to draw a new *polyline* using the existing shape as a template - this is a relatively quick process with a AutoCAD's snap settings.
 
 ## Rebuilding a shape using *polyline* (*pline*)
 
