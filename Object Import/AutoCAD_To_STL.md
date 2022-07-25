@@ -74,7 +74,7 @@ Use the *polyline/pline* command to draw a contiuous polyline following the temp
   <sub>Fig.6 Verify that the newly created polyline shape can extrude.</sub>
 </p>
 
-Do not apply the extrude. Make a copy of the rough polyline shape and paste it somewhere in your workspace.
+Do not apply the extrude. Make a copy of the rough polyline shape and paste it somewhere in your workspace as a backup.
 
 
 ### Convert straight segments to arcs
