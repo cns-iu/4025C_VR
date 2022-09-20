@@ -8,6 +8,7 @@ public class PrimaryButtonEvent : UnityEvent<bool> { }
 
 public class PrimaryButtonWatcher : MonoBehaviour
 {
+
     public PrimaryButtonEvent primaryButtonPress;
 
     private bool lastButtonState = false;
