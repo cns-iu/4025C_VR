@@ -1,4 +1,6 @@
 # 4025C_VR
+
+## History
  
 4025C is the "address" of my workspace in the CNS suite on the 4th floor of IU's Luddy Hall. Most of the physical (hands-on) tasks I do at or around this desk. Some projects require 3D-printing or laser cutting, which are done at FabLab, the makerspace on the same floor.
 
@@ -30,4 +32,8 @@ In early 2020 I started to learn how to use Unity and soon got the idea that the
 <p align = "center">
   <sub>Fig.3 Virtual IoT Stars - an experiment</sub>
 </p>
+
+In the Fall of 2021 I was invited to join the Red Pill/Blue Pill Unity programmers team at CNS. While the team has two large projects ongoing I was encouraged to keep working on my "idea". I received a Oculus VR head set and started building "something", based on my IoT Stars
+
+
 
