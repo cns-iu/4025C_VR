@@ -26,7 +26,7 @@ Left controller actions interact with the console window, as does the left ray.
 
 ### Right controller functions
 
-Right controller actions interact with the VR room and the objects inside it. The thick blue ray from the right controller is used to teleport - instantly jump to the position the ray is pointed at - or interact with the small colored control nodes on the objects. If the blue ray is pointed at a "solid" object it will change its color to red.
+Right controller actions interact with the VR room and the objects inside it. The thick blue ray from the right controller is used to teleport - instantly jump to the position the ray is pointed at - or interact with the small colored control nodes on the objects. If the blue ray is pointed at a "solid" object, it will change its color to red.
 
 **Grab Button** (teleport)  - if ray is pointed at the floor, a teleport is initiated, the ray stays blue
 
