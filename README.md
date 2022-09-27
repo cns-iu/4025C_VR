@@ -10,7 +10,8 @@
 After the app has launched, the Console window will be visible as an overlay. This is used for diagnostics. To hide it press the Menu button on the left controller.
 
 Any left controller actions interact with the console window as does the left ray.
-Left controller functions:
+
+### Left controller functions:
 Trigger Button - "press" the virtual button the ray is pointed at (Clear, Sysyem/Nodes)
 Menu Button - show/hide console
 Thumbstick - forward/backward; adjust console window distance from viewer
