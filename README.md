@@ -52,7 +52,7 @@ Right controller actions interact with the VR room and the objects inside it. Th
 
 ### Specifics about the sphere node connectors
 
-This version of the app has a larger assortment of "connectable" pieces (stars, components from various IoT projects - all blown up to 10x their regular size).
+This version of the app has a larger assortment of "connectable" pieces (components from various IoT projects - all blown up to 10x their regular size).
 These components have varying numbers of connector nodes on them. When the app launches, the user sees green nodes on some of the objects. Any of these nodes can be clicked. 
 
 <p align="center">
