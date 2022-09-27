@@ -29,10 +29,15 @@ Any left controller actions interact with the console window as does the left ra
 Right controller actions interact with the VR room and the objects inside it. The thick blue ray from the right controller is used to teleport - instantly jump to the position the ray is pointed towards - or interact with the small colored control nodes on the objects. If the blue ray is pointed at a "solid" object it will change its color to red.
 
 **Grab Button** (teleport)  - if ray is pointed at the floor, a teleport is initiated, the ray stays blue
+
 **Grab Button** (select) - select the spherical node object the ray is pointed at; results depend on previous actions (see below)
+
 **Grab Button** (grab) - the three tables in the scene show various objects that can be picked up, dropped, thrown, etc. 
+
 **Menu Button** - application control menu; quit, start video recording or take pictures
+
 **Thumbstick** - left/right rotates the viewer in 45 degree increments to the left/right
+
 
 ### Specifics about the sphere node connectors
 
