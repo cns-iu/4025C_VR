@@ -13,7 +13,9 @@ Any left controller actions interact with the console window as does the left ra
 
 ### Left controller functions:
 Trigger Button - "press" the virtual button the ray is pointed at (Clear, Sysyem/Nodes)
+
 Menu Button - show/hide console
+
 Thumbstick - forward/backward; adjust console window distance from viewer
 
 Right controller actions interact with the VR room and the objects inside it. The thick blue ray from the right controller is used to teleport - instantly jump to the position the ray is pointed towards - or interact with the small colored control nodes on the objects. If the blue ray is pointed at a "solid" object it will change its color to red.
