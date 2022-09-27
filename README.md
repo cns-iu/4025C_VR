@@ -53,6 +53,35 @@ Right controller actions interact with the VR room and the objects inside it. Th
 ### Specifics about the sphere node connectors
 
 This version of the app has a larger assortment of "connectable" pieces (stars, components from various IoT projects - all blown up to 10x their regular size).
-These components have varying numbers of connector nodes on them. When the app launches, the user sees green nodes on some of the objects. Any of these nodes can be clicked. The clicked node will turn yellow to show that it is now waiting for the user to select a second node to connect it to. At that stage only eligible destination nodes are shown. Click any of them. The object is now moved so that both nodes are at the same position. This concludes a successful connection, the connected node turns red. You will notice that rather than moving the original object to its destination, the app made a clone. Every successful connection clones the originator object. Infinite supply.
+These components have varying numbers of connector nodes on them. When the app launches, the user sees green nodes on some of the objects. Any of these nodes can be clicked. 
 
-Connections between two objects have a red connector. Technically, clicking on a red connector will dissolve the connection and delete the connected object. This works fine for two connected objects or for an object at the end of a chain. Connected objects in the middle of a chain can be removed but will leave fragments from larger structures orphaned, unconnected and hanging in mid air. To be addressed in the next version.
+<p align="center">
+  <img src="images/v019-8.jpg" width="400">
+</p>
+
+The clicked node will turn yellow to show that it is now waiting for the user to select a second node to connect it to. At that stage only eligible destination nodes are shown. Click any of them. 
+
+<p align="center">
+  <img src="images/v019-9.jpg" width="400">
+</p>
+
+The object is now moved so that both nodes are at the same location in the scene. This concludes a successful connection, the connected node turns red.
+
+<p align="center">
+  <img src="images/v019-10.jpg" width="400">
+</p>
+
+You will notice that rather than moving the original object to its destination, the app made a clone. Every successful connection clones the originator object. Infinite supply.
+
+Connections between two objects have a red connector. Technically, clicking on a red connector will dissolve the connection and delete the connected object. This works fine for two connected objects or for an object at the end of a chain. 
+
+<p align="center">
+  <img src="images/v019-11.jpg" width="400">
+</p>
+
+
+Connected objects in the middle of a chain can be removed, but will leave fragments from larger structures orphaned, unconnected and hanging in mid air. To be addressed in the next version.
+
+<p align="center">
+  <img src="images/v019-12.jpg" width="400">
+</p>
