@@ -11,6 +11,9 @@
 [Ll]ogs/
 [Mm]emoryCaptures/
 
+4025C-VR_BackUpThisFolder_ButDontShipItWithYourGame/
+4025C-VR_BurstDebugInformation_DoNotShip/
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 
 [Aa]ssets/**/*.meta
