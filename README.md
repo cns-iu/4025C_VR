@@ -37,6 +37,12 @@ Right controller actions interact with the VR room and the objects inside it. Th
 <p align="center">
   <img src="images/v019-13.jpg" width="400">
 </p>
+<p align="center">
+  <img src="images/v019-14.jpg" width="400">
+</p>
+<p align="center">
+  <img src="images/v019-15.jpg" width="400">
+</p>
 
 
 **Menu Button** - application control menu; quit, start video recording or take pictures
