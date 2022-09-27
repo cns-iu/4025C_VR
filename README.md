@@ -1,5 +1,10 @@
 # 4025C_VR
 
+<p align="center">
+  <img src="images/v019-5.jpg" width="400">
+</p>
+
+
 ## V0.1.9 notes
 
 After the app has launched, the Console window will be visible as an overlay. This is used for diagnostics. To hide it press the Menu button on the left controller.
