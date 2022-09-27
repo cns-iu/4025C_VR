@@ -34,6 +34,11 @@ Right controller actions interact with the VR room and the objects inside it. Th
 
 **Grab Button** (grab) - the three tables in the scene show various objects that can be picked up, dropped, thrown, etc. 
 
+<p align="center">
+  <img src="images/v019-13.jpg" width="400">
+</p>
+
+
 **Menu Button** - application control menu; quit, start video recording or take pictures
 
 **Thumbstick** - left/right rotates the viewer in 45 degree increments to the left/right
