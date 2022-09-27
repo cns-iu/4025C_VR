@@ -13,6 +13,11 @@ After the app has launched, the Console window will be visible as an overlay. Th
 
 Any left controller actions interact with the console window as does the left ray.
 
+<p align="center">
+  <img src="images/v019-6.jpg" width="400"><img src="images/v019-7.jpg" width="400">
+</p>
+
+
 **Trigger Button** - "press" the virtual button the ray is pointed at (Clear, Sysyem/Nodes)
 
 **Menu Button** - show/hide console
