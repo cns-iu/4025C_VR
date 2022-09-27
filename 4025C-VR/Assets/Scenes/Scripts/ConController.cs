@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Oculus.Platform;
 using UnityEngine;
+using UnityEngine.InputSystem.HID;
+
+// V2 2022-9-26
 
 public class ConController : MonoBehaviour
 {
@@ -16,7 +19,7 @@ public class ConController : MonoBehaviour
     public Material matBug;         //debugging
 
     public int sysState = 0;        // system state = default
-    public bool nodeMode = false;
+    public bool nodeMode = false;   // node debugging mode
 
     // connector state codes
     const int bDefault = 0;
@@ -36,13 +39,15 @@ public class ConController : MonoBehaviour
         // sysCommand is bSelected + bConnected + sysState
         int sysCommand = makeSysCommand(c);
 
+        // in node debugging mode no command evaluation; only node properties
         if (nodeMode == true)
         {
-            Debug.Log("node status: " + conStatusGet(c) + ", " + c.GetComponent<MeshRenderer>().material);
+            Debug.Log("node status: " + conStatusGet(c) + " system status: " + sysState + " " + c.transform.name);
             return;
         }
         if (nodeMode == false) Debug.Log("cCommand = " + sysCommand);
- 
+
+        // normal command evaluation
         switch (sysCommand)
         {
             case sysDefault + bShow:    // 1
@@ -58,28 +63,35 @@ public class ConController : MonoBehaviour
                 
                 conStatusSet(c, bDefault, matDefault);
                 sysStateSet(sysDefault);
-                conReset();
+                conListReset();
                 conUpdate();
 
                 break;
 
             case sysSelection:  // 128
                 //Debug.Log("-sysSelection = " + sysSelection);     
-                GameObject sourceConnector = Instantiate(conListSelected());    // clone source connector
 
+                // these GOs are parent objects (stars)
+                GameObject o = Instantiate(conListSelected().transform.parent.gameObject);  // parent clone is used as original
+                pReset(o);
+
+                GameObject p = conListSelected().transform.parent.gameObject;               // used as new parent (star)   
+                GameObject sourceConnector = pGetSelectedNode(p);                             // use selected source connector as pivot point
+          
+                // we have to reset original & clone stuff
                 conStatusSet(conListSelected(), bShow, matDefault);             // reset original connector "model"
                 conStatusSet(sourceConnector, bShow + bConnected, matConnected);
                 conStatusSet(c, bShow + bConnected, matBug);
-
-                // make child of clicked and update location
-                sourceConnector.transform.parent = c.transform;
-                if (sourceConnector.GetComponent<Rigidbody>())
-                {
-                    sourceConnector.GetComponent<Rigidbody>().isKinematic = true;
-                }
-                sourceConnector.transform.localPosition = new Vector3(0, 0, 0);   // 0,0,0 for real
-                sourceConnector.transform.localRotation = Quaternion.identity;
-
+                   
+                GameObject cTaxi = new GameObject();
+                cTaxi.transform.position = sourceConnector.transform.position;
+                cTaxi.transform.rotation = sourceConnector.transform.rotation;
+                p.transform.parent = cTaxi.transform;    // move complete object into taxi
+                cTaxi.transform.position = c.transform.position;
+                cTaxi.transform.rotation = c.transform.rotation;
+                p.transform.parent  = null;
+                Destroy(cTaxi);
+    
                 connections.Add(sourceConnector, c);     // add new connection to connections dictionary, used for counting)
 
                 // connector source/target exchange
@@ -87,23 +99,33 @@ public class ConController : MonoBehaviour
                 c.GetComponent<ConStatus>().thatConnector = sourceConnector;  // save this to other connector
  
                 sysStateSet(sysDefault);
-                conReset();
+                conListReset();
                 conUpdate();
 
                 break;
 
             case sysDefault + bShow + bConnected:   // 5
                 //Debug.Log("--bConnected+sysDefault = " + (bConnected + sysDefault));
-
+                GameObject p1 = c.transform.parent.gameObject;
                 GameObject destConnector = c.GetComponent<ConStatus>().thatConnector;
                 conStatusSet(destConnector, bDefault, matDefault);
 
+                // -------- we are only removing a single connector from lists, for objects with multiple connectors, need to remove ALL
+                // pRemoveFromConList(p1)
+                // pDestroy(p1)
                 connections.Remove(c);  // remove from connections list
-                conList.Remove(c);      // remove from connectores list
-                Destroy(c);             // kill object
+
+                /*
+                conList.Remove(c);      // remove from connectors list
+
+                Destroy(p1);             // kill parent object
+                */
+                pDestroy(p1);
+
+                Debug.Log("after destroy");
 
                 sysStateSet(sysDefault);
-                conReset();
+                conListReset();
                 conUpdate();
            
                 break;
@@ -123,7 +145,7 @@ public class ConController : MonoBehaviour
         if (c != null)  // make sure it;s a valid object
         {
             int s = conStatusGet(c);
-            Debug.Log("onHoverExit: " + s);
+            //Debug.Log("onHoverExit: " + s);
 
             // evaluate and update connector status
             c.GetComponent<MeshRenderer>().material = matDefault;
@@ -152,55 +174,44 @@ public class ConController : MonoBehaviour
             switch (conCommand)
             {
                 case sysDefault + bDefault:     // 0
-                    c.GetComponent<Renderer>().enabled = false;
-                    c.GetComponent<Collider>().enabled = false;
+                    conHide(c);
                     break;
 
                 case sysDefault + bShow:        // 1
-                    c.GetComponent<Renderer>().enabled = true;
-                    c.GetComponent<Collider>().enabled = true;
+                    conShow(c);
                     break;
 
                 case sysDefault + bSelected:    // 2
-                    c.GetComponent<Renderer>().enabled = true;
-                    c.GetComponent<Collider>().enabled = true;
+                    conShow(c);
                     break;
 
                 case sysDefault + bShow + bSelected:    // 3
-                    c.GetComponent<Renderer>().enabled = true;
-                    c.GetComponent<Collider>().enabled = true;
+                    conShow(c);
                     break;
                
                 case sysDefault + bConnected:   // 4
-                    c.GetComponent<Renderer>().enabled = false;
-                    c.GetComponent<Collider>().enabled = false;
+                    conHide(c);
                     break;
 
                 case sysDefault + bConnected + bShow:   // 5
-                    c.GetComponent<Renderer>().enabled = true;
-                    c.GetComponent<Collider>().enabled = true;
+                    conShow(c);
                     break;
             
                 case sysSelection + bDefault:   // 128
-                    c.GetComponent<Renderer>().enabled = true;
-                    c.GetComponent<Collider>().enabled = true;
+                    conShow(c);
                     break;
 
                 case sysSelection + bShow:      // 129
-                    c.GetComponent<Renderer>().enabled = false;
-                    c.GetComponent<Collider>().enabled = false;
+                    conHide(c);
                     break;
 
                 case sysSelection + bSelected:  // 130
-                    c.GetComponent<Renderer>().enabled = true;
-                    c.GetComponent<Collider>().enabled = true;
+                    conShow(c);
                     break;
 
-                case sysSelection + bShow + bConnected:
-                    c.GetComponent<Renderer>().enabled = false;
-                    c.GetComponent<Collider>().enabled = false;
+                case sysSelection + bShow + bConnected: // 134
+                    conHide(c);
                     break;
-
 
                 default:
                     // 
@@ -215,8 +226,39 @@ public class ConController : MonoBehaviour
         }
     }
 
+    // return selected node in parent
+    GameObject pGetSelectedNode(GameObject p)
+    {
+        foreach (Transform child in p.transform)
+        {
+            if (child.gameObject.GetComponent<ConStatus>().selected == true) return child.gameObject;
+        }     
+        return null;
+    }
 
-    void conStatusSet(GameObject c, int s, Material m)
+
+    // pReset - reset all nodes (children) on parent object
+    void pReset(GameObject p)
+    {
+        foreach (Transform child in p.transform)
+        {
+            conStatusReset(child.gameObject);
+        }
+    }
+
+
+    // destroys parent GameObject and all attached/contained nodes
+    void pDestroy(GameObject p)
+    {
+       foreach (Transform child in p.transform)
+        {
+           conList.Remove(child.gameObject);
+        }     
+        Destroy(p);             // kill parent object
+    }
+
+
+        void conStatusSet(GameObject c, int s, Material m)
     {
         // set all to default
         c.GetComponent<ConStatus>().show = false;
@@ -243,8 +285,33 @@ public class ConController : MonoBehaviour
     }
 
 
+    void conStatusReset(GameObject c)
+    {
+        // set all to default
+        c.GetComponent<ConStatus>().show = false;
+        c.GetComponent<ConStatus>().selected = false;
+        c.GetComponent<ConStatus>().connected = false;
+        c.GetComponent<MeshRenderer>().material = matDefault;
+    }
+
+
+
+    void conHide(GameObject c)
+    {
+        c.GetComponent<Renderer>().enabled = false;
+        c.GetComponent<Collider>().enabled = false;
+    }
+
+
+    void conShow(GameObject c)
+    {
+        c.GetComponent<Renderer>().enabled = true;
+        c.GetComponent<Collider>().enabled = true;
+    }
+
+
     // reset connector relationships according to tags
-    void conReset()
+    void conListReset()
     {
         // reset show status
         // clear selected status
