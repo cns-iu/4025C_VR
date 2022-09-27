@@ -7,11 +7,11 @@
 
 ## V0.1.9 notes
 
-After the app has launched, the Console window will be visible as an overlay. This is used for diagnostics. To hide it press the Menu button on the left controller.
+After the app has launched, the _console_ window will be visible as an overlay. This is used for diagnostics. To hide it press the _menu_ button on the left controller.
 
 ### Left controller functions
 
-Any left controller actions interact with the console window as does the left ray.
+Left controller actions interact with the console window, as does the left ray.
 
 <p align="center">
   <img src="images/v019-6.jpg" width="400"><img src="images/v019-7.jpg" width="400">
