@@ -11,7 +11,7 @@
   <sub>Fig.1 4025C physical workspace</sub>
 </p>
 
-Over the years we produced many IoT items, such as Moth, Dendrite, Fascinator, IoT Stars, Amaria, Millitome. In every project blueprints were developed, parts lists compiled, laser cut sheets drawn up and 3d-print files created. Many times physical items were laser cut from acrylic sheets in smaller quantities, just for testing. Often this iteration process went through several stages, producing acrylic waste. Equally 3D-printed items often needed refinements and went through repeated prints & misprints. 
+Over the years we produced many IoT items, such as Moth, Dendrite, Fascinator, IoT Stars, Amaria, Millitome. In every project blueprints were developed, parts lists compiled, laser cut sheets drawn up and 3d-print files created. Many times physical items were laser cut from acrylic sheets in smaller quantities, just for testing. Often this iteration process went through several stages, producing acrylic waste and unuseable 3D-printed items. To 
 
 insert labeled images of items
 
