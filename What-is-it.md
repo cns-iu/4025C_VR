@@ -11,9 +11,8 @@
   <sub>Fig.1 4025C physical workspace</sub>
 </p>
 
-Over the years we produced many IoT items, such as Moth, Dendrite, Fascinator, IoT Stars, Amaria, Millitome. In every project blueprints were developed, parts lists compiled, laser cut sheets drawn up and 3d-print files created. Many times physical items were laser cut from acrylic sheets in smaller quantities, just for testing. Often this iteration process went through several stages, producing acrylic waste and unuseable 3D-printed items. To 
+Over the years we produced many IoT items, such as Moth, Dendrite, Fascinator, IoT Stars, Amaria, Millitome. In every project blueprints are developed, parts lists compiled, laser cut sheets drawn up and 3d-print files created. In order to try how well fabricated parts fit together, a short run of components is 3d-printed or laser cut from acrylic sheets. Often first generation parts turn out to need refinements. Sometimes it takes multiple revisions. Each time material and production time is wasted (acrylic is also not recyclable)  
 
-insert labeled images of items
 
 A good example are the IoT stars, which are sets of star shaped acrylic pieces to be assembled into geometric models using soft PVC tubing. Many of these were lasercut and never used. 
 
