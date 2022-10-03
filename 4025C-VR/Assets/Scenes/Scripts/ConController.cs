@@ -4,7 +4,7 @@ using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
-// V2 2022-9-26
+// V2 2022-10-3
 
 public class ConController : MonoBehaviour
 {
@@ -21,15 +21,16 @@ public class ConController : MonoBehaviour
     public int sysState = 0;        // system state = default
     public bool nodeMode = false;   // node debugging mode
 
-    // connector state codes
+    // connector state codes (using lower 8 bits)
     const int bDefault = 0;
     const int bShow = 1;
     const int bSelected = 2;
     const int bConnected = 4;
 
-    // system state codes
+    // system state codes (using upper 8 bits)
     const int sysDefault = 0;
-    const int sysSelection = 128;
+    const int sysBuild = 256;
+    const int sysSelection = 512;
 
     private Dictionary<GameObject,GameObject> connections;
 
@@ -58,7 +59,7 @@ public class ConController : MonoBehaviour
 
                 break;
 
-            case sysSelection + bShow + bSelected:  // 131
+            case sysSelection + bShow + bSelected:  // 516
                 //Debug.Log("-bSelected+sysSelection = " + (bSelected + sysSelection));
                 
                 conStatusSet(c, bDefault, matDefault);
@@ -68,7 +69,7 @@ public class ConController : MonoBehaviour
 
                 break;
 
-            case sysSelection:  // 128
+            case sysSelection:  // 512
                 //Debug.Log("-sysSelection = " + sysSelection);     
 
                 // these GOs are parent objects (stars)
@@ -92,7 +93,11 @@ public class ConController : MonoBehaviour
                 p.transform.parent  = null;
                 Destroy(cTaxi);
     
-                connections.Add(sourceConnector, c);     // add new connection to connections dictionary, used for counting)
+                connections.Add(sourceConnector, c);            // add new connection to connections dictionary, used for counting only
+
+                //p.GetComponent<pStatus>().upStreanChain.Add(p); // add self to UCS
+                
+                // trace downstream and add to each USC
 
                 // connector source/target exchange
                 sourceConnector.GetComponent<ConStatus>().thatConnector = c;  // save other connector to this
@@ -107,22 +112,18 @@ public class ConController : MonoBehaviour
             case sysDefault + bShow + bConnected:   // 5
                 //Debug.Log("--bConnected+sysDefault = " + (bConnected + sysDefault));
                 GameObject p1 = c.transform.parent.gameObject;
-                GameObject destConnector = c.GetComponent<ConStatus>().thatConnector;
-                conStatusSet(destConnector, bDefault, matDefault);
+        
+                //GameObject pFirst = uscTraceDown(p1);
+                // walk up chain and pDestroy() every p
+                GameObject pLast = uscTraceUp(p1);
 
-                // -------- we are only removing a single connector from lists, for objects with multiple connectors, need to remove ALL
-                // pRemoveFromConList(p1)
-                // pDestroy(p1)
-                connections.Remove(c);  // remove from connections list
+                //if (pFirst == true) Debug.Log("pFirst: " + pFirst.name);
+                //if (pLast == true) Debug.Log("pLast: " + pLast.name);
 
-                /*
-                conList.Remove(c);      // remove from connectors list
-
-                Destroy(p1);             // kill parent object
-                */
-                pDestroy(p1);
-
-                Debug.Log("after destroy");
+                conStatusReset(c.GetComponent<ConStatus>().thatConnector);  // disconnect happens here
+                conDisconnectAll(p1);
+        
+                pDestroy(p1);                   // destroy THIS objects last
 
                 sysStateSet(sysDefault);
                 conListReset();
@@ -131,6 +132,56 @@ public class ConController : MonoBehaviour
                 break;
 
         }
+    }
+
+
+    GameObject uscTraceDown(GameObject p)
+    {
+        while (uscNextDown(p) == true)
+        {
+            p = uscNextDown(p);//
+        }
+        return p;
+    }
+
+
+    GameObject uscTraceUp(GameObject p)
+    {
+        while (uscNextUp(p) == true)
+        {
+            p = uscNextUp(p);
+            pDestroy(p);
+        }
+        return p;
+    }
+
+
+    // returns next down parent object or NULL if end of chain
+    GameObject uscNextDown(GameObject p)
+    {
+        foreach (Transform child in p.transform)
+        {
+            if (conStatusGet(child.gameObject) == bShow + bConnected)
+            {
+                return child.gameObject.GetComponent<ConStatus>().thatConnector.transform.parent.gameObject;
+                //return p;
+            }
+        }
+        return null;
+    }
+
+
+    // returns next up parent object or NULL if end of chain
+    GameObject uscNextUp(GameObject p)
+    {
+        foreach (Transform child in p.transform)
+        {
+            if (conStatusGet(child.gameObject) == bConnected)
+            {
+                return child.gameObject.GetComponent<ConStatus>().thatConnector.transform.parent.gameObject;
+            }
+        }
+        return null;
     }
 
 
@@ -145,7 +196,6 @@ public class ConController : MonoBehaviour
         if (c != null)  // make sure it;s a valid object
         {
             int s = conStatusGet(c);
-            //Debug.Log("onHoverExit: " + s);
 
             // evaluate and update connector status
             c.GetComponent<MeshRenderer>().material = matDefault;
@@ -197,19 +247,19 @@ public class ConController : MonoBehaviour
                     conShow(c);
                     break;
             
-                case sysSelection + bDefault:   // 128
+                case sysSelection + bDefault:   // 512
                     conShow(c);
                     break;
 
-                case sysSelection + bShow:      // 129
+                case sysSelection + bShow:      // 513
                     conHide(c);
                     break;
 
-                case sysSelection + bSelected:  // 130
+                case sysSelection + bSelected:  // 514
                     conShow(c);
                     break;
 
-                case sysSelection + bShow + bConnected: // 134
+                case sysSelection + bShow + bConnected: // 517
                     conHide(c);
                     break;
 
@@ -225,6 +275,17 @@ public class ConController : MonoBehaviour
             Debug.Log("--connections: " + connections.Count + "---DONE-----");
         }
     }
+
+
+    GameObject pGetConnectedNode(GameObject p)
+    {
+        foreach (Transform child in p.transform)
+        {
+            if (conStatusGet(child.gameObject) == bConnected) return child.gameObject;
+        }
+        return null;
+    }
+
 
     // return selected node in parent
     GameObject pGetSelectedNode(GameObject p)
@@ -258,7 +319,7 @@ public class ConController : MonoBehaviour
     }
 
 
-        void conStatusSet(GameObject c, int s, Material m)
+    void conStatusSet(GameObject c, int s, Material m)
     {
         // set all to default
         c.GetComponent<ConStatus>().show = false;
@@ -292,6 +353,8 @@ public class ConController : MonoBehaviour
         c.GetComponent<ConStatus>().selected = false;
         c.GetComponent<ConStatus>().connected = false;
         c.GetComponent<MeshRenderer>().material = matDefault;
+        //c.GetComponent<ConStatus>().thatConnector = null;
+        //c.GetComponent<ConStatus>().thisConnector = null;
     }
 
 
@@ -342,6 +405,22 @@ public class ConController : MonoBehaviour
             if (c.GetComponent<ConStatus>().selected == true) connector = c;
         }
         return connector;
+    }
+
+
+    void conDisconnectAll(GameObject p)
+    {
+
+        foreach (Transform child in p.transform )
+        {
+            if (child.gameObject.GetComponent<ConStatus>().thatConnector != null)
+            {
+                conStatusReset(child.gameObject.GetComponent<ConStatus>().thatConnector);
+            }
+            conStatusReset(child.gameObject);
+        }
+
+
     }
 
 
