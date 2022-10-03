@@ -32,7 +32,7 @@ In early 2020 I started to learn how to use a game engine called Unity and soon 
   <sub>Fig.3 Virtual IoT Stars - an experiment</sub>
 </p>
 
-In the Fall of 2021 I was invited to join the Red Pill/Blue Pill Unity programmers team at CNS. While the team has two large ongoing projects, I was encouraged to keep working on my "idea". I received an Oculus VR head set and started building "something", based on my IoT Stars. To start, I imported some of the digital assets 
+In the Fall of 2021 I was invited to join the Red Pill/Blue Pill Unity programmers team at CNS. While the team has two large ongoing projects, I was encouraged to keep working on my "idea". I received an Oculus VR head set and started building "something", based on my IoT Stars. To start, I imported some of the digital assets. WHile the 3d models used for 3d printing
 
 
 
