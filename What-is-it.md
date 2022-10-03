@@ -14,7 +14,7 @@
 Over the years we produced many IoT items, such as Moth, Dendrite, Fascinator, IoT Stars, Amaria, Millitome. In every project blueprints are developed, parts lists compiled, laser cut sheets drawn up and 3d-print files created. In order to try how well fabricated parts fit together, a short run of components is 3d-printed or laser cut from acrylic sheets. Often first generation parts turn out to need refinements. Sometimes it takes multiple revisions. Each time material and production time is wasted (also, acrylic is not recyclable). 
 
 
-A good example are the IoT stars, which are sets of star shaped acrylic pieces to be assembled into geometric models using soft PVC tubing. Many of these were lasercut and never used. 
+A good example are IoT stars, which are sets of star shaped acrylic pieces to be assembled into geometric models using soft PVC tubing. Many of these were lasercut and never used. 
 
 <p align="center">
   <img src="images/IoT-stars-2.jpg" width="400">
