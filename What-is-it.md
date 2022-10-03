@@ -23,7 +23,7 @@ A good example are IoT stars, which are sets of star shaped acrylic pieces to be
   <sub>Fig.2 A smattering of unused IoT Stars</sub>
 </p>
 
-In early 2020 I started to learn how to use game engine Unity and soon got the idea that there had to be a way to test our assets in a simulation before committing to producing physical items. In a virtual version of IoT Stars you would never run out of components and maybe be able to assemble structures impossible in the real world. Virtual IoT Stars turned into a small side project. It started in 2D and stayed there.
+In early 2020 I started to learn how to use a game engine called Unity and soon got the idea that there had to be a way to test our assets in a simulation before committing to producing physical items. In a virtual version of IoT Stars you would never run out of components and maybe be able to assemble structures impossible in the real world. Virtual IoT Stars turned into a small side project. It started in 2D and stayed there.
 
 <p align="center">
   <img src="images/IoT-stars-1.jpg" width="400">
