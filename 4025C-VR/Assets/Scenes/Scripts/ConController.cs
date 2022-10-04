@@ -115,7 +115,7 @@ public class ConController : MonoBehaviour
         
                 //GameObject pFirst = uscTraceDown(p1);
                 // walk up chain and pDestroy() every p
-                GameObject pLast = uscTraceUp(p1);
+                uscTraceUp(p1);
 
                 //if (pFirst == true) Debug.Log("pFirst: " + pFirst.name);
                 //if (pLast == true) Debug.Log("pLast: " + pLast.name);
@@ -144,18 +144,6 @@ public class ConController : MonoBehaviour
         return p;
     }
 
-
-    GameObject uscTraceUp(GameObject p)
-    {
-        while (uscNextUp(p) == true)
-        {
-            p = uscNextUp(p);
-            pDestroy(p);
-        }
-        return p;
-    }
-
-
     // returns next down parent object or NULL if end of chain
     GameObject uscNextDown(GameObject p)
     {
@@ -171,20 +159,58 @@ public class ConController : MonoBehaviour
     }
 
 
-    // returns next up parent object or NULL if end of chain
-    GameObject uscNextUp(GameObject p)
+    // this is called from disconnect and when next parent
+    void uscTraceUp(GameObject p)
     {
+        GameObject c = null;
         foreach (Transform child in p.transform)
         {
-            if (conStatusGet(child.gameObject) == bConnected)
-            {
-                return child.gameObject.GetComponent<ConStatus>().thatConnector.transform.parent.gameObject;
-            }
+            c = uscChild(child.gameObject);     
         }
-        return null;
+        pDestroy(p);
+    }
+
+    // 
+    GameObject uscChild (GameObject c)
+    {
+        GameObject p = c.transform.parent.gameObject;
+        switch (conStatusGet(c))
+        {
+            case bShow + bConnected:    // skip
+                //Debug.Log("bShow+bConnected: " + c.name + " parent: " + c.transform.parent.gameObject.name);
+                break;
+           
+            case bConnected:            // connected
+                //Debug.Log("bConnected: " + c.name + " parent: " + c.transform.parent.gameObject.name);// 0
+
+                p = uscNextParentUp(c);
+                uscTraceUp(p);
+                break;
+
+            case bShow:                 // we're not cathcing this?
+                //Debug.Log("bShow: " + c.name + " parent: " + c.transform.parent.gameObject.name);// 0
+                break;
+
+            default:
+                //Debug.Log("default: " + c.name + " parent: " + c.transform.parent.gameObject.name);
+                break;
+        }
+        return c;
     }
 
 
+    // returns next up parent object or NULL if end of chain
+
+    GameObject uscNextParentUp(GameObject c)
+    {
+        GameObject p = null;
+        p = c.GetComponent<ConStatus>().thatConnector.transform.parent.gameObject;
+
+        return p;
+    }
+
+
+ 
     public void connectorHover(GameObject c)
     { 
         c.GetComponent<MeshRenderer>().material = matHover;
