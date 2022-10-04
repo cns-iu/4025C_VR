@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
-// V2 2022-10-3
+// V2 2022-10-4
 
 public class ConController : MonoBehaviour
 {
@@ -33,7 +34,6 @@ public class ConController : MonoBehaviour
     const int sysSelection = 512;
 
     private Dictionary<GameObject,GameObject> connections;
-
 
     public void connectorClicked(GameObject c)
     {
@@ -95,10 +95,6 @@ public class ConController : MonoBehaviour
     
                 connections.Add(sourceConnector, c);            // add new connection to connections dictionary, used for counting only
 
-                //p.GetComponent<pStatus>().upStreanChain.Add(p); // add self to UCS
-                
-                // trace downstream and add to each USC
-
                 // connector source/target exchange
                 sourceConnector.GetComponent<ConStatus>().thatConnector = c;  // save other connector to this
                 c.GetComponent<ConStatus>().thatConnector = sourceConnector;  // save this to other connector
@@ -112,27 +108,23 @@ public class ConController : MonoBehaviour
             case sysDefault + bShow + bConnected:   // 5
                 //Debug.Log("--bConnected+sysDefault = " + (bConnected + sysDefault));
                 GameObject p1 = c.transform.parent.gameObject;
-        
-                //GameObject pFirst = uscTraceDown(p1);
-                // walk up chain and pDestroy() every p
-                uscTraceUp(p1);
 
-                //if (pFirst == true) Debug.Log("pFirst: " + pFirst.name);
-                //if (pLast == true) Debug.Log("pLast: " + pLast.name);
+                uscTraceUp(p1,pDestroy);
 
                 conStatusReset(c.GetComponent<ConStatus>().thatConnector);  // disconnect happens here
                 conDisconnectAll(p1);
         
-                pDestroy(p1);                   // destroy THIS objects last
+                pDestroy(p1);                   // destroy THIS object last
 
                 sysStateSet(sysDefault);
                 conListReset();
                 conUpdate();
            
                 break;
-
         }
     }
+
+
 
 
     GameObject uscTraceDown(GameObject p)
@@ -158,8 +150,23 @@ public class ConController : MonoBehaviour
         return null;
     }
 
-
+    //public delegate void useTraceUp(GameObject p, int y);
+    
     // this is called from disconnect and when next parent
+    public void uscTraceUp(GameObject p, Action<GameObject> myDelegate)
+    {
+        GameObject c = null;
+        foreach (Transform child in p.transform)
+        {
+            c = uscChild(child.gameObject);     
+        }
+        myDelegate.Invoke(p);
+    }
+
+
+
+    /*
+     *     // this is called from disconnect and when next parent
     void uscTraceUp(GameObject p)
     {
         GameObject c = null;
@@ -169,6 +176,8 @@ public class ConController : MonoBehaviour
         }
         pDestroy(p);
     }
+*/
+
 
     // 
     GameObject uscChild (GameObject c)
@@ -184,7 +193,8 @@ public class ConController : MonoBehaviour
                 //Debug.Log("bConnected: " + c.name + " parent: " + c.transform.parent.gameObject.name);// 0
 
                 p = uscNextParentUp(c);
-                uscTraceUp(p);
+           
+                uscTraceUp(p,pDestroy);
                 break;
 
             case bShow:                 // we're not cathcing this?
@@ -298,7 +308,7 @@ public class ConController : MonoBehaviour
         if (nodeMode == false)
         {
             Debug.Log(commandStatus + " sysState " + sysState);
-            Debug.Log("--connections: " + connections.Count + "---DONE-----");
+            Debug.Log("--connections: " + connections.Count + "---DONE-----###");
         }
     }
 
@@ -339,9 +349,10 @@ public class ConController : MonoBehaviour
     {
        foreach (Transform child in p.transform)
         {
-           conList.Remove(child.gameObject);
+            conList.Remove(child.gameObject);           // remove connector from conList
+            if (conStatusGet(child.gameObject) == bShow + bConnected) connections.Remove(child.gameObject);   // remove from connections list if necessary     
         }     
-        Destroy(p);             // kill parent object
+        Destroy(p);             // kill parent objec
     }
 
 

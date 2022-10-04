@@ -1989,8 +1989,8 @@ extern void ConController_connectorClicked_m14F85E65A36F59F1E04690349F10BE9F6B39
 extern void ConController_uscTraceDown_m76751E26E14D1E995364A4821228A3DD7AF753BD (void);
 // 0x000003E4 UnityEngine.GameObject ConController::uscNextDown(UnityEngine.GameObject)
 extern void ConController_uscNextDown_m42A87968B10CC81B65187DBACCF1359323B686F8 (void);
-// 0x000003E5 System.Void ConController::uscTraceUp(UnityEngine.GameObject)
-extern void ConController_uscTraceUp_m15F78BF30B566A11B3B5B07D080981324ABD8A42 (void);
+// 0x000003E5 System.Void ConController::uscTraceUp(UnityEngine.GameObject,System.Action`1<UnityEngine.GameObject>)
+extern void ConController_uscTraceUp_mD948ED81EFC31B86D5ECA5352BD45C3E5A6E6EF7 (void);
 // 0x000003E6 UnityEngine.GameObject ConController::uscChild(UnityEngine.GameObject)
 extern void ConController_uscChild_m81AC5E11DB20F43613DCFFA978FC7CEB3C5A9F45 (void);
 // 0x000003E7 UnityEngine.GameObject ConController::uscNextParentUp(UnityEngine.GameObject)
@@ -4644,7 +4644,7 @@ static Il2CppMethodPointer s_methodPointers[1854] =
 	ConController_connectorClicked_m14F85E65A36F59F1E04690349F10BE9F6B39D03A,
 	ConController_uscTraceDown_m76751E26E14D1E995364A4821228A3DD7AF753BD,
 	ConController_uscNextDown_m42A87968B10CC81B65187DBACCF1359323B686F8,
-	ConController_uscTraceUp_m15F78BF30B566A11B3B5B07D080981324ABD8A42,
+	ConController_uscTraceUp_mD948ED81EFC31B86D5ECA5352BD45C3E5A6E6EF7,
 	ConController_uscChild_m81AC5E11DB20F43613DCFFA978FC7CEB3C5A9F45,
 	ConController_uscNextParentUp_m6EDBDE0863A703CB3B6D58D7DB59232CEAD66CBF,
 	ConController_connectorHover_m4BA6380F08BB5291952DDF8EE04B5427945B8253,
@@ -6650,7 +6650,7 @@ static const int32_t s_InvokerIndices[1854] =
 	7058,
 	6279,
 	6279,
-	7058,
+	3960,
 	6279,
 	6279,
 	7058,
