@@ -28,6 +28,12 @@ The Main Area (MA) is the default location for the VR user. After the applicatio
 
 ## Assembly Area (AA)
 
+<p align="center">
+  <img src="images/4025C-VR-V3-AssemblyArea.jpg" height="300">
+</p>
+<p align = "center">
+  <sub>Fig.3 Assembly Area</sub>
+</p>
 
 
 
