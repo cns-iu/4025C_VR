@@ -39,7 +39,7 @@ After the user clicked the trigger object in MA, we are teleported to the AA. In
 
 ### Specifics
 
-In V2 there is a single connector list (conList) for the whole Unity scene. This list contains all connector nodes deployed in the scene at any given time. Operations add newly Instatiated nodes of remove deleted ones from the list as needed.
+In V2 there is a single connector list (conList) for the whole Unity scene. This list contains all connector nodes deployed in the scene at any given time. Operations add newly Instatiated nodes or remove deleted ones from the list as needed.
 
 V3 will use the following mechanism:
 As the user enters the AA, a ManifestNode is created. Metaphorically his node is like a stake in 3d space, where the new sassembly is going to be built. Practically it is a GameObject, positioned in AA, serving as the anchor node for the new assembly. A script on that node contains the complete manifest for this assembly, i.e. conList, pList and connectors (I am sure this is subject to change).
