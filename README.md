@@ -42,6 +42,7 @@ After the user clicked the trigger object in MA, we are teleported to the AA. In
 In V2 there is a single connector list (conList) for the whole Unity scene. This list contains all connector nodes deployed in the scene at any given time. Operations add newly Instatiated nodes or remove deleted ones from the list as needed.
 
 V3 will use the following mechanism:
+
 As the user enters the AA, a ManifestNode is created. Metaphorically his node is like a stake in 3d space, where the new sassembly is going to be built. Practically it is a GameObject, positioned in AA, serving as the anchor node for the new assembly. A script on that node contains the complete manifest for this assembly, i.e. conList, pList and connectors (I am sure this is subject to change).
 
 The user will select one of the active connector notes on one of the available coponents from a library. This component will connect to the ManifestNode in the usual manner. This action clones the clicked library object and puts the clone into the ManifestNode - its new parent. It will also update the manifest information and lists. From there the user selects available connector nodes on library components to connect their clones to the growing assembly. As this assembly process is going on with "physical" components (geometry objects) a virtual recipe could be built in parallel. 
