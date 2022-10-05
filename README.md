@@ -14,7 +14,7 @@
   <img src="images/4025-VR-V3-MA0.jpg" height="300">
 </p>
 <p align = "center">
-  <sub>Fig.1 4025C-VR Main Work area</sub>
+  <sub>Fig.1 4025C-VR main work area</sub>
 </p>
 
 
