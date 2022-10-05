@@ -46300,98 +46300,118 @@ IL_0062:
 // System.Void UnityEngine.XR.Interaction.Toolkit.XRInteractionManager::GetOfType<System.Object,System.Object>(System.Collections.Generic.List`1<TSource>,System.Collections.Generic.List`1<TDestination>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionManager_GetOfType_TisRuntimeObject_TisRuntimeObject_m9E0B7F64BC9C5FF04E35F8ED9FCC5EE5E222B341_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___source0, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___destination1, const RuntimeMethod* method) 
 {
-	Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	RuntimeObject* V_1 = NULL;
+	bool V_0 = false;
+	Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A V_1;
+	memset((&V_1), 0, sizeof(V_1));
 	RuntimeObject* V_2 = NULL;
-	bool V_3 = false;
-	int32_t G_B5_0 = 0;
+	RuntimeObject* V_3 = NULL;
+	bool V_4 = false;
+	int32_t G_B7_0 = 0;
 	{
 		// destination.Clear();
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = ___destination1;
 		NullCheck(L_0);
 		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->rgctx_data, 1));
-		// foreach (var item in source)
+		// if (source.Count == 0)
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_1 = ___source0;
 		NullCheck(L_1);
-		Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A L_2;
-		L_2 = ((  Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 3)))(L_1, il2cpp_rgctx_method(method->rgctx_data, 3));
-		V_0 = L_2;
+		int32_t L_2;
+		L_2 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 3)))(L_1, il2cpp_rgctx_method(method->rgctx_data, 3));
+		V_0 = (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		// return;
+		goto IL_0077;
+	}
+
+IL_0017:
+	{
+		// foreach (var item in source)
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_4 = ___source0;
+		NullCheck(L_4);
+		Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A L_5;
+		L_5 = ((  Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 4)))(L_4, il2cpp_rgctx_method(method->rgctx_data, 4));
+		V_1 = L_5;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0057:
+FINALLY_0068:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419((&V_0), il2cpp_rgctx_method(method->rgctx_data, 10));
+				Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419((&V_1), il2cpp_rgctx_method(method->rgctx_data, 11));
 				return;
 			}// end finally (depth: 1)
 		});
 		try
 		{// begin try (depth: 1)
 			{
-				goto IL_004c_1;
+				goto IL_005d_1;
 			}
 
-IL_0012_1:
+IL_0021_1:
 			{
 				// foreach (var item in source)
-				RuntimeObject* L_3;
-				L_3 = Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_inline((&V_0), il2cpp_rgctx_method(method->rgctx_data, 4));
-				V_1 = L_3;
+				RuntimeObject* L_6;
+				L_6 = Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_inline((&V_1), il2cpp_rgctx_method(method->rgctx_data, 5));
+				V_2 = L_6;
 				// if (item is TDestination destinationItem)
-				RuntimeObject* L_4 = V_1;
-				if (!((RuntimeObject*)IsInst((RuntimeObject*)L_4, il2cpp_rgctx_data(method->rgctx_data, 6))))
-				{
-					goto IL_003c_1;
-				}
-			}
-			{
-				RuntimeObject* L_5 = V_1;
-				V_2 = ((RuntimeObject*)Castclass((RuntimeObject*)((RuntimeObject*)IsInst((RuntimeObject*)L_5, il2cpp_rgctx_data(method->rgctx_data, 6))), il2cpp_rgctx_data(method->rgctx_data, 6)));
-				G_B5_0 = 1;
-				goto IL_003d_1;
-			}
-
-IL_003c_1:
-			{
-				G_B5_0 = 0;
-			}
-
-IL_003d_1:
-			{
-				V_3 = (bool)G_B5_0;
-				bool L_6 = V_3;
-				if (!L_6)
+				RuntimeObject* L_7 = V_2;
+				if (!((RuntimeObject*)IsInst((RuntimeObject*)L_7, il2cpp_rgctx_data(method->rgctx_data, 7))))
 				{
 					goto IL_004b_1;
 				}
 			}
 			{
-				// destination.Add(destinationItem);
-				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_7 = ___destination1;
 				RuntimeObject* L_8 = V_2;
-				NullCheck(L_7);
-				((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 7)))(L_7, L_8, il2cpp_rgctx_method(method->rgctx_data, 7));
+				V_3 = ((RuntimeObject*)Castclass((RuntimeObject*)((RuntimeObject*)IsInst((RuntimeObject*)L_8, il2cpp_rgctx_data(method->rgctx_data, 7))), il2cpp_rgctx_data(method->rgctx_data, 7)));
+				G_B7_0 = 1;
+				goto IL_004c_1;
 			}
 
 IL_004b_1:
 			{
+				G_B7_0 = 0;
 			}
 
 IL_004c_1:
 			{
-				// foreach (var item in source)
-				bool L_9;
-				L_9 = Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB((&V_0), il2cpp_rgctx_method(method->rgctx_data, 8));
-				if (L_9)
+				V_4 = (bool)G_B7_0;
+				bool L_9 = V_4;
+				if (!L_9)
 				{
-					goto IL_0012_1;
+					goto IL_005c_1;
 				}
 			}
 			{
-				goto IL_0066;
+				// destination.Add(destinationItem);
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_10 = ___destination1;
+				RuntimeObject* L_11 = V_3;
+				NullCheck(L_10);
+				((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 8)))(L_10, L_11, il2cpp_rgctx_method(method->rgctx_data, 8));
+			}
+
+IL_005c_1:
+			{
+			}
+
+IL_005d_1:
+			{
+				// foreach (var item in source)
+				bool L_12;
+				L_12 = Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB((&V_1), il2cpp_rgctx_method(method->rgctx_data, 9));
+				if (L_12)
+				{
+					goto IL_0021_1;
+				}
+			}
+			{
+				goto IL_0077;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -46400,7 +46420,7 @@ IL_004c_1:
 		}
 	}
 
-IL_0066:
+IL_0077:
 	{
 		// }
 		return;

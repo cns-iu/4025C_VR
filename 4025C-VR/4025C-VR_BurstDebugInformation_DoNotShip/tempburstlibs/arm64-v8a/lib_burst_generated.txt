@@ -165,8 +165,8 @@ Library: lib_burst_generated
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Oculus.Platform.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Core.Runtime.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll
---root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Oculus.Spatializer.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.Mathematics.dll
+--root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Oculus.Spatializer.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.XR.ARFoundation.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.Services.Core.Telemetry.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.InputSystem.dll

@@ -22552,16 +22552,6 @@ IL2CPP_EXTERN_C  int32_t LayerMask_get_value_m70CBE32210A1F0FD4ECB850285DA90ED57
 	_returnValue = LayerMask_get_value_m70CBE32210A1F0FD4ECB850285DA90ED57B87974(_thisAdjusted, method);
 	return _returnValue;
 }
-// System.Int32 UnityEngine.LayerMask::NameToLayer(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LayerMask_NameToLayer_m2764C530EDA9EC3226A36E3FD43E020B413AF139 (String_t* ___layerName0, const RuntimeMethod* method) 
-{
-	typedef int32_t (*LayerMask_NameToLayer_m2764C530EDA9EC3226A36E3FD43E020B413AF139_ftn) (String_t*);
-	static LayerMask_NameToLayer_m2764C530EDA9EC3226A36E3FD43E020B413AF139_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (LayerMask_NameToLayer_m2764C530EDA9EC3226A36E3FD43E020B413AF139_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.LayerMask::NameToLayer(System.String)");
-	int32_t icallRetVal = _il2cpp_icall_func(___layerName0);
-	return icallRetVal;
-}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
