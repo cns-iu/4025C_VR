@@ -5,7 +5,7 @@
 </p>
 
 
-## V0.1.9 notes
+## V0.1.10 notes
 
 After the app has launched, the _console_ window will be visible as an overlay. This is used for diagnostics. To hide it press the _menu_ button on the left controller.
 
@@ -73,7 +73,7 @@ The object is now moved so that both nodes are at the same location in the scene
 
 You will notice that rather than moving the original object to its destination, the app made a clone. Every successful connection clones the originator object. Infinite supply.
 
-Connections between two objects have a red connector. Technically, clicking on a red connector will dissolve the connection and delete the connected object. This works fine for two connected objects or for an object at the end of a chain. 
+Connections between two objects have a red connector. Clicking on a red connector will dissolve the connection and delete all connected objects on this particular branch.
 
 <p align="center">
   <img src="images/v019-11.jpg" width="400">
