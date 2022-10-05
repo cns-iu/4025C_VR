@@ -35,5 +35,16 @@ The Main Area (MA) is the default location for the VR user. After the applicatio
   <sub>Fig.3 Assembly Area</sub>
 </p>
 
+After the user clicked the trigger object in MA we are teleported to the AA. In AA we find a library of components, scaled to 10x their normal size. In regular size many of these components would be very hard to work with - especially the small spherical connector nodes (they are 5mm in diameter in MA and 5cm in AA). Here assembly of structures works like in V2 of the application.
+
+### Specifics
+
+In V2 there was a single connector list (conList) for the whole Unity scene. This list contained all connector nodes deployed in the scene at any given time. Operations would add newly Instatiated nodes of remove deleted ones from the list as needed.
+
+V3 will use the following mechanism:
+
+
+
+
 
 
