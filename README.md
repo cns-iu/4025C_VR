@@ -66,7 +66,7 @@ Using ManifestNodes to store assemblies will allow the building of multiple stru
 
 ## Save/Load
 
-Compressing an assembly into a form of code/data would make saving/loading trivial on a regular computer. Since no geometry (mesh) is included in the data, only info about which object was used from the library, the saved file would be fairly small.
+Compressing an assembly into a form of code/data would make saving/loading trivial on a regular computer. No geometry (mesh) is included in the data so the saved file would be fairly small.
 
 Research is needed on how to save individual files on a VR headset. Worst case scenario is to only be able to save one "game state". This game state then includes all assemblies/structures the user added during a session. This game state could be saved upon (proper) exit of the application and loaded when it is launched again.  
 
