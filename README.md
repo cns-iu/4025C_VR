@@ -35,7 +35,7 @@ The Main Area (MA) is the default location for the VR user. After the applicatio
   <sub>Fig.3 Assembly Area</sub>
 </p>
 
-After the user clicked the trigger object in MA, we are teleported to the AA. In AA we find a library of components, scaled to 10x their normal size. At regular size many of these components would be very hard to work with - especially the small spherical connector nodes (they are 5mm in diameter in MA and 5cm in AA). Here assembly of structures works like in V2 of the application.
+After the user clicked the trigger object in MA, we are teleported to the AA. In AA we find a library of components, scaled to 10x their normal size. At regular size many of these components would be very hard to work with - especially the small spherical connector nodes (they are 5mm in diameter in MA and 5cm in AA, with a clickable envelope of 7mm and 7cm respectively). Here assembly of structures works like in V2 of the application.
 
 ### Specifics
 
