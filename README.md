@@ -53,10 +53,15 @@ Assembly is finalized by creating the recipe/code/data needed to recreate the as
 
 As a default, clicking the ManifestNode in AA will teleport the user back to MA and place the finished assembly on the work table. This would require the following measures:
 - compress the assembly instructions on the ManifestNode when user exits AA
-- user arrives back in MA, ManifestNode is assembled into full assembly but at 1x scale
+- user arrives back in MA, ManifestNode is assembled into full assembly, at 1x scale
+- now the assembly can only be handled as a single object; all connector nodes are invisible and inaccessible
 - ManifestNode gets a RigidBody so it correctly interacts with objects in MA
 - ManifestNode gets a BoxCollider, properly sized and aligned with geometry, so it properly sits on a surface
-- BoxCollider is also required for any further inetraction with the assembly (picking it up, or use as trigger to revisit AA)
+- BoxCollider is also required for any further interaction with the assembly (picking it up, or use as trigger to revisit AA)
+
+A user should be able to trigger a visit to AA by clicking an assembly on the worktable. The assembly would move along to AA and be editable. 
+
+Using ManifestNodes to store assemblies will allow building of multiple structures.
 
 
 
