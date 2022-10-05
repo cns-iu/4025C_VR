@@ -78,10 +78,3 @@ Connections between two objects have a red connector. Clicking on a red connecto
 <p align="center">
   <img src="images/v019-11.jpg" width="400">
 </p>
-
-
-Connected objects in the middle of a chain can be removed, but will leave fragments from larger structures orphaned, unconnected and hanging in mid air. To be addressed in the next version.
-
-<p align="center">
-  <img src="images/v019-12.jpg" width="400">
-</p>
