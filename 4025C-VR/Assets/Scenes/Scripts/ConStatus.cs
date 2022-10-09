@@ -17,8 +17,9 @@ public class ConStatus : MonoBehaviour
     public Material defaultMaterial;
 
 
-    // Start is called before the first frame update
+    // Awake is called before the first frame update
 
+    // this setup for each connector node - super important!!!
     private void Awake()
     {
         if (thisConnector.transform.parent.parent != null)
@@ -52,11 +53,6 @@ public class ConStatus : MonoBehaviour
             library = false;
         }
       
-   
-        
-        //controllerScript.conList.Add(thisConnector);
-        
-
         // set to default visibility
         if (thisConnector.tag == "cPassive")
         {

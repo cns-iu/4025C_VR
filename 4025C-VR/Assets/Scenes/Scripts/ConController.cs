@@ -218,7 +218,6 @@ public class ConController : MonoBehaviour
     }
 
 
- 
     public void connectorHover(GameObject c)
     { 
         c.GetComponent<MeshRenderer>().material = matHover;
