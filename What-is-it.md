@@ -75,4 +75,13 @@ Amaria is the first IoT project that came into the VR workspace almost completel
 
 ### IoT Construction Set
 
-
+<p align="center">
+ <span>
+    <img src="images/pic10.jpg" height="400">
+    <img src="images/pic20.jpg" height="400">
+    <img src="images/pic30.png" height="400">
+ </span>
+</p>
+<p align = "center">
+  <sub>Fig.7 Amaria from AutoCAD design to 3d components in Cinema 4D</sub>
+</p>
