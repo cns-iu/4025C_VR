@@ -177,6 +177,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &37633517
@@ -1252,6 +1253,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &129882913
@@ -3894,6 +3896,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &468337516
@@ -5074,6 +5077,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &541579222
@@ -7591,6 +7595,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &848677846
@@ -8102,6 +8107,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &913180466
@@ -8772,6 +8778,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &945496184
@@ -12271,6 +12278,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &1373075790
@@ -12660,8 +12668,6 @@ MonoBehaviour:
   savedMaterial: {fileID: 0}
   library: {fileID: 1943014410}
   manifest: {fileID: 469081510}
-  testManifest: {fileID: 1898689285}
-  testNode: {fileID: 758016738}
   matDefault: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
   matHover: {fileID: 2100000, guid: c9dbdd5b206c543ac955e7c1bdb0fcbb, type: 2}
   matSelected: {fileID: 2100000, guid: a5cab86be6d394909a5cbf9e6c04d513, type: 2}
@@ -14305,6 +14311,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &1599135663
@@ -17565,6 +17572,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &1843837557
@@ -21959,6 +21967,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &4373709050820534765
@@ -22399,6 +22408,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &4928684958177556280
@@ -22807,6 +22817,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!23 &5700202223126860836
@@ -22869,6 +22880,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!23 &5700202223733897656
@@ -22931,6 +22943,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!23 &5700202224226885508
@@ -22993,6 +23006,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!1 &5712672005189246906
@@ -23092,6 +23106,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!4 &5908876191224952428
@@ -23580,6 +23595,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &6860584269246780193
@@ -23779,6 +23795,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &6873561900189196320
@@ -24206,6 +24223,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &7176256818204448639
@@ -24363,6 +24381,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &7208753818802289688
@@ -24553,6 +24572,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &7216661176969831727
@@ -24710,6 +24730,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &7228306299355715998
@@ -24867,6 +24888,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &7257362239941649915
@@ -25043,6 +25065,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &7311688990787247165
@@ -25315,6 +25338,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &7438402512456230269
@@ -25505,6 +25529,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &7600458535880484547
@@ -25674,6 +25699,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &7640491444797280739
@@ -25894,6 +25920,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &7696911579017395431
@@ -26051,6 +26078,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &7832316114790729026
@@ -26220,6 +26248,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &7866819753413932256
@@ -26458,6 +26487,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &8004056312448780727
@@ -26614,6 +26644,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &8045193567536623055
@@ -26925,6 +26956,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &8297949961952320498
@@ -27109,6 +27141,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &8490313938906652958
@@ -27334,6 +27367,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &8548834613897681784
@@ -27540,6 +27574,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &8571818464033979328
@@ -27851,6 +27886,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &8750636830530648673
@@ -28130,6 +28166,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &8866145948292050715
@@ -28299,6 +28336,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &8876330209060857266
@@ -28468,6 +28506,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &8904571816416797352
@@ -28672,6 +28711,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &9036752954304763980
@@ -28828,6 +28868,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!33 &9074355582474144906
@@ -28994,6 +29035,7 @@ MonoBehaviour:
   show: 0
   selected: 0
   connected: 0
+  library: 0
   currentMaterial: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 044c64dce4a8a47209c94680390c11c9, type: 2}
 --- !u!114 &9107648955804903555

@@ -5,7 +5,7 @@ using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
-// V3 2022-10-8
+// V3 2022-10-9
 
 public class ConController : MonoBehaviour
 {
@@ -14,9 +14,6 @@ public class ConController : MonoBehaviour
     //public List<GameObject> conList;
     public GameObject library;
     public GameObject manifest;
-    public GameObject testManifest;
-    public GameObject testNode;
-    //public List<GameObject> conList;
 
     public Material matDefault;
     public Material matHover;   // blue?
@@ -32,6 +29,7 @@ public class ConController : MonoBehaviour
     const int bShow = 1;
     const int bSelected = 2;
     const int bConnected = 4;
+    const int bLibrary = 8;
 
     // system state codes (using upper 8 bits)
     const int sysDefault = 0;
@@ -60,7 +58,7 @@ public class ConController : MonoBehaviour
                 //Debug.Log("-sysDefault = " + sysDefault);       
                 conStatusSet(c, bSelected + bShow, matSelected);    // set connector status
                 sysStateSet(sysSelection);                          // set system status
-                conFilter(manifest);                                       // evaluate connector status
+                conFilter(manifest);    // evaluate connector status - consoliodate?
                 conFilter(library);
 
                 break;
@@ -83,14 +81,9 @@ public class ConController : MonoBehaviour
                 GameObject p = Instantiate(conListSelected(library).transform.parent.gameObject);
                 GameObject o = conListSelected(library).transform.parent.gameObject;               // o is original parent
                
-                
-                Debug.Log("p=" + p.name);
-                Debug.Log("o=" + o.name);
-                //pReset()---- resets source object?
-
-                conFilter(manifest);
+                //conFilter(manifest);
                 GameObject sourceConnector = pGetSelectedNode(p);           // connector on new parent
-                Debug.Log("sourceConnector=" + sourceConnector.name);
+                //Debug.Log("sourceConnector=" + sourceConnector.name);
 
                 conStatusSet(pGetSelectedNode(o), bShow, matDefault);               // reset original source node "model"
                 conStatusSet(sourceConnector, bShow + bConnected, matConnected);    // clone source node
@@ -120,16 +113,13 @@ public class ConController : MonoBehaviour
                 conFilter(manifest);
                 conFilter(library);
 
-
-
                 break;
 
             case sysDefault + bShow + bConnected:   // 5
                 //Debug.Log("--bConnected+sysDefault = " + (bConnected + sysDefault));
                 GameObject p1 = c.transform.parent.gameObject;
 
-                // needs rework
-                //uscTraceUp(p1,cList,pDestroy);
+                uscTraceUp(p1,pDestroy);
 
                 conStatusReset(c.GetComponent<ConStatus>().thatConnector);  // disconnect happens here
                 conDisconnectAll(p1);
@@ -142,10 +132,13 @@ public class ConController : MonoBehaviour
                 conFilter(manifest);
            
                 break;
+
+            default:
+                Debug.Log("onClicked command fall-through!!");
+                break;
+
         }
     }
-
-
 
 
     GameObject uscTraceDown(GameObject p)
@@ -165,7 +158,6 @@ public class ConController : MonoBehaviour
             if (conStatusGet(child.gameObject) == bShow + bConnected)
             {
                 return child.gameObject.GetComponent<ConStatus>().thatConnector.transform.parent.gameObject;
-                //return p;
             }
         }
         return null;
@@ -303,8 +295,6 @@ public class ConController : MonoBehaviour
         {
             int conCommand = makeConCommand(c); // evalute connector & system state
 
-            // show commands without sysState!!!
-
             string str = " " + (conCommand & 127).ToString(); // for console
             commandStatus += str;                   // for console
 
@@ -334,6 +324,18 @@ public class ConController : MonoBehaviour
                     conShow(c);
                     break;
 
+                case sysDefault + bLibrary:     // 8
+                    conHide(c);
+                    break;
+
+                case sysDefault + bShow + bLibrary:     // 9
+                    conShow(c);
+                    break;
+
+                case sysDefault + bShow + bSelected + bLibrary:    // 3
+                    conShow(c);
+                    break;
+
                 case sysSelection + bDefault:   // 512
                     conShow(c);
                     break;
@@ -350,11 +352,22 @@ public class ConController : MonoBehaviour
                     conHide(c);
                     break;
 
+                case sysSelection + bLibrary:   // 520
+                    conHide(c);
+                    break;
+
+                case sysSelection + bShow + bLibrary:   // 521
+                    conHide(c);
+                    break;
+
+                case sysSelection + bSelected + bLibrary:  // 522
+                    conShow(c);
+                    break;
+
                 default:
                     // 
                     break;
             }
-
         }
         if (nodeMode == false)
         {
@@ -386,6 +399,7 @@ public class ConController : MonoBehaviour
         if (c.GetComponent<ConStatus>().show == true) status += bShow;
         if (c.GetComponent<ConStatus>().selected == true) status += bSelected;
         if (c.GetComponent<ConStatus>().connected == true) status += bConnected;
+        if (c.GetComponent<ConStatus>().library == true) status += bLibrary;
 
         return status;
     }
@@ -447,16 +461,10 @@ public class ConController : MonoBehaviour
         List<GameObject> conList = m.GetComponent<ManifestStatus>().conList;
         GameObject connector = null;
 
-       // string outCon = "conList: " + m.name + "("+conList.Count + ") ";      //
-
         foreach (GameObject c in conList)
         {
-            if (c.GetComponent<ConStatus>().selected == true) connector = c;
-            //string str = " " + (conCommand & 127).ToString(); // for console
-            //outCon += c.name+" ";
-            
+            if (c.GetComponent<ConStatus>().selected == true) connector = c; 
         }
-        //Debug.Log(outCon);
         return connector;
     }
 
@@ -472,12 +480,9 @@ public class ConController : MonoBehaviour
             }
             conStatusReset(child.gameObject);
         }
-
-
     }
 
-
-    // makes a unqiue command byte by adding binary numbers
+    // make command token for evaluation in conFilter()
     int makeConCommand(GameObject connector)
     {
         int bCommand = 0;
@@ -486,22 +491,23 @@ public class ConController : MonoBehaviour
         if (connector.GetComponent<ConStatus>().show == true) bCommand += bShow;
         if (connector.GetComponent<ConStatus>().selected == true) bCommand += bSelected;
         if (connector.GetComponent<ConStatus>().connected == true) bCommand += bConnected;
-   
+        if (connector.GetComponent<ConStatus>().library == true) bCommand += bLibrary;
+
         bCommand += sysState;   //add sysState
         return bCommand;
     }
 
 
-    // makes a click-reponse command byte for onClick evaluation
+    // make command token for onClick
     int makeSysCommand(GameObject connector)
     {
         int cCommand = 0;
 
         // evaluate command input state
+        if (connector.GetComponent<ConStatus>().show == true) cCommand += bShow;
         if (connector.GetComponent<ConStatus>().selected == true) cCommand += bSelected;
         if (connector.GetComponent<ConStatus>().connected == true) cCommand += bConnected;
-        if (connector.GetComponent<ConStatus>().show == true) cCommand += bShow;
-
+  
         cCommand += sysState;   //add sysState
         return cCommand;
     }
