@@ -5,7 +5,7 @@
 </p>
 
 
-## V0.1.10 notes
+## Interaction instructions
 
 After the app has launched, the _console_ window will be visible as an overlay. This is used for diagnostics. To hide it press the _menu_ button on the left controller.
 
