@@ -42,7 +42,7 @@ One project that started at that time was the [Millitome](https://docs.google.co
  <span>
     <img src="images/workspace-1.png" width="300">
     <img src="images/workspace-2.png" width="300">
-    <img src="images/workspace-2.png" width="300">
+    <img src="images/workspace-3.png" width="300">
  </span>
 </p>
 <p align = "center">
