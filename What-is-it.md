@@ -39,4 +39,9 @@ In the Fall of 2021 I was invited to join the Red Pill/Blue Pill Unity programme
 One project that started at that time was the [Millitome](https://docs.google.com/document/d/1x7tr9LrJfKZmED83aAj_K9FMvmjbxZ883Km93CsrgUM/edit?usp=sharing).
 
 
+### Amaria in VR
+
+
+### IoT Construction Set
+
 
