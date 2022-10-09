@@ -66,18 +66,12 @@ Amaria is the first IoT project that came into the VR workspace almost completel
 </p>
 
 <p align="center">
- <span>
-    <img src="images/con sequence.gif" height="400">
-    <img src="images/Amaria-Assembly-real.jpg" height="400">
-    <img src="images/Amaria V7 var1 parts.png" height="400">
- </span>
+    <img src="images/Amaria-Assembly-real.jpg" width="500">
 </p>
 <p align = "center">
   <sub>Fig.4 Millitome experiments in VR</sub>
 </p>
 
-
-con sequence.gif
 
 ### IoT Construction Set
 
