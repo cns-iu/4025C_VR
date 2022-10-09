@@ -5,13 +5,18 @@ using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
-// V2 2022-10-4
+// V3 2022-10-8
 
 public class ConController : MonoBehaviour
 {
     public Material savedMaterial;
 
-    public List<GameObject> conList;
+    //public List<GameObject> conList;
+    public GameObject library;
+    public GameObject manifest;
+    public GameObject testManifest;
+    public GameObject testNode;
+    //public List<GameObject> conList;
 
     public Material matDefault;
     public Material matHover;   // blue?
@@ -55,7 +60,8 @@ public class ConController : MonoBehaviour
                 //Debug.Log("-sysDefault = " + sysDefault);       
                 conStatusSet(c, bSelected + bShow, matSelected);    // set connector status
                 sysStateSet(sysSelection);                          // set system status
-                conUpdate();                                       // evaluate connector status
+                conFilter(manifest);                                       // evaluate connector status
+                conFilter(library);
 
                 break;
 
@@ -64,33 +70,42 @@ public class ConController : MonoBehaviour
                 
                 conStatusSet(c, bDefault, matDefault);
                 sysStateSet(sysDefault);
-                conListReset();
-                conUpdate();
+                conListReset(manifest);
+                conListReset(library);
+                conFilter(manifest);
+                conFilter(library);
 
                 break;
 
             case sysSelection:  // 512
-                //Debug.Log("-sysSelection = " + sysSelection);     
+                                //Debug.Log("-sysSelection = " + sysSelection);     
 
-                // these GOs are parent objects (stars)
-                GameObject o = Instantiate(conListSelected().transform.parent.gameObject);  // parent clone is used as original
-                pReset(o);
+                GameObject p = Instantiate(conListSelected(library).transform.parent.gameObject);
+                GameObject o = conListSelected(library).transform.parent.gameObject;               // o is original parent
+               
+                
+                Debug.Log("p=" + p.name);
+                Debug.Log("o=" + o.name);
+                //pReset()---- resets source object?
 
-                GameObject p = conListSelected().transform.parent.gameObject;               // used as new parent (star)   
-                GameObject sourceConnector = pGetSelectedNode(p);                             // use selected source connector as pivot point
-          
-                // we have to reset original & clone stuff
-                conStatusSet(conListSelected(), bShow, matDefault);             // reset original connector "model"
-                conStatusSet(sourceConnector, bShow + bConnected, matConnected);
-                conStatusSet(c, bShow + bConnected, matBug);
-                   
+                conFilter(manifest);
+                GameObject sourceConnector = pGetSelectedNode(p);           // connector on new parent
+                Debug.Log("sourceConnector=" + sourceConnector.name);
+
+                conStatusSet(pGetSelectedNode(o), bShow, matDefault);               // reset original source node "model"
+                conStatusSet(sourceConnector, bShow + bConnected, matConnected);    // clone source node
+                conStatusSet(c, bConnected, matBug);                                // clicked node
+    
                 GameObject cTaxi = new GameObject();
+
+                Transform manifestT = p.transform.parent;          // save parent (manifest)
                 cTaxi.transform.position = sourceConnector.transform.position;
                 cTaxi.transform.rotation = sourceConnector.transform.rotation;
                 p.transform.parent = cTaxi.transform;    // move complete object into taxi
                 cTaxi.transform.position = c.transform.position;
                 cTaxi.transform.rotation = c.transform.rotation;
-                p.transform.parent  = null;
+                p.transform.parent = manifestT;     // put object back into manifest
+
                 Destroy(cTaxi);
     
                 connections.Add(sourceConnector, c);            // add new connection to connections dictionary, used for counting only
@@ -100,8 +115,12 @@ public class ConController : MonoBehaviour
                 c.GetComponent<ConStatus>().thatConnector = sourceConnector;  // save this to other connector
  
                 sysStateSet(sysDefault);
-                conListReset();
-                conUpdate();
+                conListReset(manifest);
+                conListReset(library);
+                conFilter(manifest);
+                conFilter(library);
+
+
 
                 break;
 
@@ -109,7 +128,8 @@ public class ConController : MonoBehaviour
                 //Debug.Log("--bConnected+sysDefault = " + (bConnected + sysDefault));
                 GameObject p1 = c.transform.parent.gameObject;
 
-                uscTraceUp(p1,pDestroy);
+                // needs rework
+                //uscTraceUp(p1,cList,pDestroy);
 
                 conStatusReset(c.GetComponent<ConStatus>().thatConnector);  // disconnect happens here
                 conDisconnectAll(p1);
@@ -117,8 +137,9 @@ public class ConController : MonoBehaviour
                 pDestroy(p1);                   // destroy THIS object last
 
                 sysStateSet(sysDefault);
-                conListReset();
-                conUpdate();
+                conListReset(manifest);
+                conListReset(library);
+                conFilter(manifest);
            
                 break;
         }
@@ -162,21 +183,6 @@ public class ConController : MonoBehaviour
         }
         myDelegate.Invoke(p);
     }
-
-
-
-    /*
-     *     // this is called from disconnect and when next parent
-    void uscTraceUp(GameObject p)
-    {
-        GameObject c = null;
-        foreach (Transform child in p.transform)
-        {
-            c = uscChild(child.gameObject);     
-        }
-        pDestroy(p);
-    }
-*/
 
 
     // 
@@ -241,13 +247,58 @@ public class ConController : MonoBehaviour
     }
 
 
-    // evaluate bool properties on every GO in conList
-    public void conUpdate()
+    GameObject pGetConnectedNode(GameObject p)
     {
-        // if object selected flip conList (except selected)
-        //GameObject c = conListFlipShow();
-        string commandStatus = "conList(" + conList.Count + ") ";      // for console
- 
+        foreach (Transform child in p.transform)
+        {
+            if (conStatusGet(child.gameObject) == bConnected) return child.gameObject;
+        }
+        return null;
+    }
+
+
+    // return selected node in parent
+    GameObject pGetSelectedNode(GameObject p)
+    {
+        foreach (Transform child in p.transform)
+        {
+            Debug.Log("pGetSelectedNode: " + child.gameObject.name);
+            if (child.gameObject.GetComponent<ConStatus>().selected == true) return child.gameObject;
+        }     
+        return null;
+    }
+
+
+    // pReset - reset all nodes (children) on parent object
+    void pReset(GameObject p)
+    {
+        foreach (Transform child in p.transform)
+        {
+            conStatusReset(child.gameObject);
+        }
+    }
+
+
+    // destroys parent GameObject and all attached/contained nodes
+    // removes connection from respective conList on manifest
+    void pDestroy(GameObject p)
+    {
+       foreach (Transform child in p.transform)
+        {
+            p.transform.parent.gameObject.GetComponent<ManifestStatus>().conList.Remove(child.gameObject);
+            if (conStatusGet(child.gameObject) == bShow + bConnected) connections.Remove(child.gameObject);   // remove from connections list if necessary     
+        }     
+        Destroy(p);             // kill parent objec
+    }
+
+
+    // evaluate bool properties on every GO in conList
+    public void conFilter(GameObject m)
+    {
+        List<GameObject> conList = m.GetComponent<ManifestStatus>().conList;
+        
+        string commandStatus = m.name + ".conList: (" + conList.Count + ") ";      // for console
+
         foreach (GameObject c in conList)
         {
             int conCommand = makeConCommand(c); // evalute connector & system state
@@ -274,7 +325,7 @@ public class ConController : MonoBehaviour
                 case sysDefault + bShow + bSelected:    // 3
                     conShow(c);
                     break;
-               
+
                 case sysDefault + bConnected:   // 4
                     conHide(c);
                     break;
@@ -282,7 +333,7 @@ public class ConController : MonoBehaviour
                 case sysDefault + bConnected + bShow:   // 5
                     conShow(c);
                     break;
-            
+
                 case sysSelection + bDefault:   // 512
                     conShow(c);
                     break;
@@ -310,49 +361,6 @@ public class ConController : MonoBehaviour
             Debug.Log(commandStatus + " sysState " + sysState);
             Debug.Log("--connections: " + connections.Count + "---DONE-----###");
         }
-    }
-
-
-    GameObject pGetConnectedNode(GameObject p)
-    {
-        foreach (Transform child in p.transform)
-        {
-            if (conStatusGet(child.gameObject) == bConnected) return child.gameObject;
-        }
-        return null;
-    }
-
-
-    // return selected node in parent
-    GameObject pGetSelectedNode(GameObject p)
-    {
-        foreach (Transform child in p.transform)
-        {
-            if (child.gameObject.GetComponent<ConStatus>().selected == true) return child.gameObject;
-        }     
-        return null;
-    }
-
-
-    // pReset - reset all nodes (children) on parent object
-    void pReset(GameObject p)
-    {
-        foreach (Transform child in p.transform)
-        {
-            conStatusReset(child.gameObject);
-        }
-    }
-
-
-    // destroys parent GameObject and all attached/contained nodes
-    void pDestroy(GameObject p)
-    {
-       foreach (Transform child in p.transform)
-        {
-            conList.Remove(child.gameObject);           // remove connector from conList
-            if (conStatusGet(child.gameObject) == bShow + bConnected) connections.Remove(child.gameObject);   // remove from connections list if necessary     
-        }     
-        Destroy(p);             // kill parent objec
     }
 
 
@@ -411,8 +419,9 @@ public class ConController : MonoBehaviour
 
 
     // reset connector relationships according to tags
-    void conListReset()
+    void conListReset(GameObject m)
     {
+        List<GameObject> conList = m.GetComponent<ManifestStatus>().conList;
         // reset show status
         // clear selected status
         foreach (GameObject connector in conList)
@@ -433,14 +442,21 @@ public class ConController : MonoBehaviour
 
     // does conList have selected object?
     // returns: null if false, GameObject when true
-    GameObject conListSelected()
+    GameObject conListSelected(GameObject m)
     {
+        List<GameObject> conList = m.GetComponent<ManifestStatus>().conList;
         GameObject connector = null;
+
+       // string outCon = "conList: " + m.name + "("+conList.Count + ") ";      //
 
         foreach (GameObject c in conList)
         {
             if (c.GetComponent<ConStatus>().selected == true) connector = c;
+            //string str = " " + (conCommand & 127).ToString(); // for console
+            //outCon += c.name+" ";
+            
         }
+        //Debug.Log(outCon);
         return connector;
     }
 
@@ -504,11 +520,28 @@ public class ConController : MonoBehaviour
         connections = new Dictionary<GameObject, GameObject>();
         //origins = new Dictionary<GameObject, Vector3>();
 
+        /*
+        GameObject go = Instantiate(testNode.transform.parent.gameObject);
+        foreach (Transform child in go.transform)
+        {
+            Debug.Log("child of Instance: " + child.gameObject.name);
+            Debug.Log("parent (clone): " + child.parent.gameObject.name);
+            if (child.parent.parent == null) Debug.Log("no more parent");
+            //Debug.Log("parent.parent: " + child.parent.parent.gameObject.name);
+        }
+        */
+
+        //Debug.Log("testnode parent: " + testNode.transform.parent.parent.gameObject.name);
+        //Debug.Log("[0] in library: " + library.GetComponent<ManifestStatus>().conList[0].name);
+
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
+
     }
 }
