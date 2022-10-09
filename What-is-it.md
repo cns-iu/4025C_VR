@@ -52,6 +52,19 @@ One project that started at that time was the [Millitome](https://docs.google.co
 
 ### Amaria in VR
 
+Amaria is the first IoT project that came into the VR workspace almost completely.
+
+<p align="center">
+ <span>
+    <img src="images/Amaria-Assembly-line-drawing.jpg" width="300">
+    <img src="images/Amaria-Assembly-real.jpg" width="300">
+    <img src="images/Amaria V7 var1 parts.png" width="300">
+ </span>
+</p>
+<p align = "center">
+  <sub>Fig.4 Millitome experiments in VR</sub>
+</p>
+
 
 ### IoT Construction Set
 
