@@ -39,10 +39,14 @@ In the Fall of 2021 I was invited to join the Red Pill/Blue Pill Unity programme
 One project that started at that time was the [Millitome](https://docs.google.com/document/d/1x7tr9LrJfKZmED83aAj_K9FMvmjbxZ883Km93CsrgUM/edit?usp=sharing).
 
 <p align="center">
-  <img src="images/workspace-1.jpg" width="400">
+ <span>
+    <img src="images/workspace-1.png" width="300">
+    <img src="images/workspace-2.png" width="300">
+    <img src="images/workspace-2.png" width="300">
+ </span>
 </p>
 <p align = "center">
-  <sub>Fig.4 4025C physical workspace</sub>
+  <sub>Fig.4 Millitome experiments in VR</sub>
 </p>
 
 
