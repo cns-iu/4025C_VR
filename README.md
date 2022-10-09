@@ -7,7 +7,7 @@
 
 ## Interaction instructions
 
-After the app has launched, the _console_ window will be visible as an overlay. This is used for diagnostics. To hide it press the _menu_ button on the left controller.
+After the app has launched, the console window will be visible as an overlay. This is used for diagnostics. To hide it press the menu button on the left controller.
 
 ### Left controller functions
 
