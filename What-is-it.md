@@ -77,9 +77,9 @@ Amaria is the first IoT project that came into the VR workspace almost completel
 
 <p align="center">
  <span>
-    <img src="images/pic10.jpg" height="400">
-    <img src="images/pic20.jpg" height="400">
-    <img src="images/pic30.png" height="400">
+    <img src="images/pic10.jpg" height="300">
+    <img src="images/pic20.jpg" height="300">
+    <img src="images/pic30.jpg" height="300">
  </span>
 </p>
 <p align = "center">
