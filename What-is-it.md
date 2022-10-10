@@ -72,7 +72,7 @@ Amaria is the first IoT project that came into the VR workspace almost completel
   <sub>Fig.6 Amaria Assembly in VR</sub>
 </p>
 
-While on the surface, all of this sounds like dragging 3d objects from one computer application into another and then uploading it to a VR headset the asset pipeline is more complex. One item to figure out was how to make 2d items from AutoCAD into u
+All of this looks like dragging 3d objects from one computer application into another is all that's required. The asset pipeline is a little more involved. One item to figure out, was how to turn 2D geometry from AutoCAD into usable 3D objects. 
 
 
 ### IoT Construction Set
