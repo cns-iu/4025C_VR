@@ -1662,6 +1662,8 @@ struct CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7;
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 // UnityEngine.ComputeBuffer
 struct ComputeBuffer_t51EADA9015EBCC1B982C5584E9AB2734415A8233;
+// ConController
+struct ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D;
 // UnityEngine.XR.ARSubsystems.ConfigurationChooser
 struct ConfigurationChooser_t4DFAB6BE3767C3C5DA0E43FA16CD067009A487C2;
 // UnityEngine.Coroutine
@@ -36316,6 +36318,10 @@ struct SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB  : public MonoB
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___positionAA_5;
 	// UnityEngine.GameObject SceneController::positionMA
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___positionMA_6;
+	// UnityEngine.GameObject SceneController::transportTarget
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___transportTarget_7;
+	// ConController SceneController::controllerScript
+	ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* ___controllerScript_8;
 };
 
 // SceneRenderPipeline
@@ -42159,9 +42165,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6002[7] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6003[1] = 
 {
 	static_cast<int32_t>(offsetof(pStatus_tAB0ADFB7AFB9D4536AAC30594819DAD1027DF1DA, ___upStreanChain_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6004[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6004[5] = 
 {
-	static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___xrPosition_4)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___positionAA_5)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___positionMA_6)),};
+	static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___xrPosition_4)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___positionAA_5)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___positionMA_6)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___transportTarget_7)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___controllerScript_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6005[4] = 
 {
 	static_cast<int32_t>(offsetof(SelectionOutline_t5E462CA51CF9FDA9064C97C222DE83660C19F009, ___Renderer_4)),static_cast<int32_t>(offsetof(SelectionOutline_t5E462CA51CF9FDA9064C97C222DE83660C19F009, ___m_Highlighted_5)),static_cast<int32_t>(offsetof(SelectionOutline_t5E462CA51CF9FDA9064C97C222DE83660C19F009, ___m_Block_6)),static_cast<int32_t>(offsetof(SelectionOutline_t5E462CA51CF9FDA9064C97C222DE83660C19F009, ___m_HighlightActiveID_7)),};

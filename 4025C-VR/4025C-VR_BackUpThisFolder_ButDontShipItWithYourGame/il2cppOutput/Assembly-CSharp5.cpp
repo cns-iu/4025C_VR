@@ -151,8 +151,18 @@ struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 struct InteractableToolTagsU5BU5D_t9691CC6F71F873F7CCADD2EFE97DC96C689B7DBA;
 // UnityEngine.Material[]
 struct MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D;
+// OVRHand[]
+struct OVRHandU5BU5D_tF90935AD4A2EDB5D90711E5FEA8D5DD77029C839;
+// OVRMesh[]
+struct OVRMeshU5BU5D_t377D5C6C4996BA927ACB17EE21925C9443854301;
+// OVRMeshRenderer[]
+struct OVRMeshRendererU5BU5D_tFF55780FAB1E5521FA63751229939BEEA0B9D471;
 // OVROverlay[]
 struct OVROverlayU5BU5D_t0787D5D37FCAE59BD91C1125190EAF75B940B44D;
+// OVRSkeleton[]
+struct OVRSkeletonU5BU5D_t8571A9F94528C9F3D576BA4834AED2D551212F89;
+// OVRSkeletonRenderer[]
+struct OVRSkeletonRendererU5BU5D_tA05C9B59A89C88B8B7A4245774D8A7401C64F6BB;
 // System.Object[]
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 // UnityEngine.Renderer[]
@@ -251,6 +261,8 @@ struct ColliderZoneArgs_tC7431174FDF0C6002A554118B81A5E6096D41087;
 struct ColorChanger_tFEFB1654D67DE70FD1C6EF69A402F3473DBB782D;
 // UnityEngine.Component
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
+// OculusSampleFramework.ControllerBoxController
+struct ControllerBoxController_tD290909D98587F41FF89ABC80EE1769A07930B7D;
 // UnityEngine.Coroutine
 struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
 // OculusSampleFramework.CowController
@@ -271,6 +283,8 @@ struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
 struct Hand_t0A62347EF4DB551FDA3B99B5637AD55098FE07A8;
 // OVRTouchSample.HandPose
 struct HandPose_t07CBF9E66547E7ADC0D785A41DCCD8150DBCB5C8;
+// OculusSampleFramework.HandsManager
+struct HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7;
 // System.Net.HttpWebRequest
 struct HttpWebRequest_tDE1EF6EAE715BE99DB1645ED937A6A2AB930E7C9;
 // System.Net.HttpWebResponse
@@ -351,6 +365,8 @@ struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712;
 // OculusSampleFramework.SelectionCylinder
 struct SelectionCylinder_tB79C20E28823E6A7C8933C2A86C953A990F4480E;
+// UnityEngine.SkinnedMeshRenderer
+struct SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E;
 // UnityEngine.Sprite
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
 // System.IO.Stream
@@ -485,6 +501,7 @@ IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Func_2_t6AD3CFC7C337E46C1DA946EEEA6278162FB59A04_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Instructions_t01FEB47EA914F8AA333388360984BCAE99E5DF42_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IntPtr_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B_il2cpp_TypeInfo_var;
@@ -629,12 +646,14 @@ IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisAudioClipU5BU5D_t916722
 IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisAudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20_m4A6DAB15F6B65C89C78003B1125F5E954FEE719C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_mAB9094F2B1C7A4CE7D52B7AC1DB53C5A921026BE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79_m740BAD11314C21FCB97965437045A8E99A84731A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisCowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895_m97E6B2EB9165EB959FB94CAE3A6E94E6763919A2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m15CC5506915567333331D642B9E37282D4D6BDAD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisMeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5_m35C8EEF7FCE3F487F20C45DDF1C83406C2DA623F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m8FC750534B72E622FD90596C5943167FAF2CDE72_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1_mFA392D7A994C218215C035C54725490EFADC09D1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisSelectionCylinder_tB79C20E28823E6A7C8933C2A86C953A990F4480E_m9AEED8C931BE9B5ED263888557F6DA4674B1C136_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisTrainCarBase_t705A8BBC9FCF8E55A9BCFA43EDBEE3FFB1528616_mBDE14F5F8E23B3B69FB71195D3174579185DFC36_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisTrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E_m5BCF59F7C92F1386CFDC79898C0E10689D0B4524_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisTrainTrack_t327DBFA324D407E9D3EF3533C4AD8399B8DBDB09_m7B21B92304957FE8CF7B4AE441C8CE9E650F7AEF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisTransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24_m2BC290CE38979FF7BF811D45BEDE54061709D2A1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assert_IsNotNull_TisTransform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_m72240EBB45F7125B8C24DBB73BD98006E5FB6E64_RuntimeMethod_var;
@@ -3126,6 +3145,15 @@ struct ColorChanger_tFEFB1654D67DE70FD1C6EF69A402F3473DBB782D  : public MonoBeha
 {
 };
 
+// OculusSampleFramework.ControllerBoxController
+struct ControllerBoxController_tD290909D98587F41FF89ABC80EE1769A07930B7D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// OculusSampleFramework.TrainLocomotive OculusSampleFramework.ControllerBoxController::_locomotive
+	TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* ____locomotive_4;
+	// OculusSampleFramework.CowController OculusSampleFramework.ControllerBoxController::_cowController
+	CowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895* ____cowController_5;
+};
+
 // OculusSampleFramework.CowController
 struct CowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -3236,6 +3264,45 @@ struct HandPose_t07CBF9E66547E7ADC0D785A41DCCD8150DBCB5C8  : public MonoBehaviou
 	bool ___m_allowThumbsUp_5;
 	// OVRTouchSample.HandPoseId OVRTouchSample.HandPose::m_poseId
 	int32_t ___m_poseId_6;
+};
+
+// OculusSampleFramework.HandsManager
+struct HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject OculusSampleFramework.HandsManager::_leftHand
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____leftHand_5;
+	// UnityEngine.GameObject OculusSampleFramework.HandsManager::_rightHand
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____rightHand_6;
+	// OculusSampleFramework.HandsManager/HandsVisualMode OculusSampleFramework.HandsManager::VisualMode
+	int32_t ___VisualMode_7;
+	// OVRHand[] OculusSampleFramework.HandsManager::_hand
+	OVRHandU5BU5D_tF90935AD4A2EDB5D90711E5FEA8D5DD77029C839* ____hand_8;
+	// OVRSkeleton[] OculusSampleFramework.HandsManager::_handSkeleton
+	OVRSkeletonU5BU5D_t8571A9F94528C9F3D576BA4834AED2D551212F89* ____handSkeleton_9;
+	// OVRSkeletonRenderer[] OculusSampleFramework.HandsManager::_handSkeletonRenderer
+	OVRSkeletonRendererU5BU5D_tA05C9B59A89C88B8B7A4245774D8A7401C64F6BB* ____handSkeletonRenderer_10;
+	// OVRMesh[] OculusSampleFramework.HandsManager::_handMesh
+	OVRMeshU5BU5D_t377D5C6C4996BA927ACB17EE21925C9443854301* ____handMesh_11;
+	// OVRMeshRenderer[] OculusSampleFramework.HandsManager::_handMeshRenderer
+	OVRMeshRendererU5BU5D_tFF55780FAB1E5521FA63751229939BEEA0B9D471* ____handMeshRenderer_12;
+	// UnityEngine.SkinnedMeshRenderer OculusSampleFramework.HandsManager::_leftMeshRenderer
+	SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* ____leftMeshRenderer_13;
+	// UnityEngine.SkinnedMeshRenderer OculusSampleFramework.HandsManager::_rightMeshRenderer
+	SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* ____rightMeshRenderer_14;
+	// UnityEngine.GameObject OculusSampleFramework.HandsManager::_leftSkeletonVisual
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____leftSkeletonVisual_15;
+	// UnityEngine.GameObject OculusSampleFramework.HandsManager::_rightSkeletonVisual
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____rightSkeletonVisual_16;
+	// System.Single OculusSampleFramework.HandsManager::_currentHandAlpha
+	float ____currentHandAlpha_17;
+	// System.Int32 OculusSampleFramework.HandsManager::HandAlphaId
+	int32_t ___HandAlphaId_18;
+};
+
+struct HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7_StaticFields
+{
+	// OculusSampleFramework.HandsManager OculusSampleFramework.HandsManager::<Instance>k__BackingField
+	HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* ___U3CInstanceU3Ek__BackingField_19;
 };
 
 // Oculus.Voice.Demo.UIShapesDemo.Instructions
@@ -4892,6 +4959,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Marshal_SizeOf_TisUInt32_t1833D51FFA6
 // System.Void System.Runtime.InteropServices.Marshal::StructureToPtr<ovrAvatarBlendShapeParams>(T,System.IntPtr,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_StructureToPtr_TisovrAvatarBlendShapeParams_t36C1189F1E68173711B1A090FDE08CC23995443E_mE34270DE8E98EE3FC56E44D3109E125E539EF033_gshared (ovrAvatarBlendShapeParams_t36C1189F1E68173711B1A090FDE08CC23995443E ___structure0, intptr_t ___ptr1, bool ___fDeleteOld2, const RuntimeMethod* method) ;
 
+// System.Void UnityEngine.Assertions.Assert::IsNotNull<OculusSampleFramework.TrainLocomotive>(T)
+inline void Assert_IsNotNull_TisTrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E_m5BCF59F7C92F1386CFDC79898C0E10689D0B4524 (TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* ___value0, const RuntimeMethod* method)
+{
+	((  void (*) (TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E*, const RuntimeMethod*))Assert_IsNotNull_TisRuntimeObject_mFA75318800124DED2E924476F16DD129394A20AC_gshared)(___value0, method);
+}
+// System.Void UnityEngine.Assertions.Assert::IsNotNull<OculusSampleFramework.CowController>(T)
+inline void Assert_IsNotNull_TisCowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895_m97E6B2EB9165EB959FB94CAE3A6E94E6763919A2 (CowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895* ___value0, const RuntimeMethod* method)
+{
+	((  void (*) (CowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895*, const RuntimeMethod*))Assert_IsNotNull_TisRuntimeObject_mFA75318800124DED2E924476F16DD129394A20AC_gshared)(___value0, method);
+}
+// System.Void OculusSampleFramework.TrainLocomotive::StartStopStateChanged()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrainLocomotive_StartStopStateChanged_m1E6002A368988D15708B7B830F139BB129214C41 (TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* __this, const RuntimeMethod* method) ;
+// System.Void OculusSampleFramework.TrainLocomotive::DecreaseSpeedStateChanged()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrainLocomotive_DecreaseSpeedStateChanged_m45757A992DE495AC07B1F6D57DAE8CCC3E5C4FE1 (TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* __this, const RuntimeMethod* method) ;
+// System.Void OculusSampleFramework.TrainLocomotive::IncreaseSpeedStateChanged()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrainLocomotive_IncreaseSpeedStateChanged_m9DCB8688B1A116909A6C7843EECFCB16E739ECBD (TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* __this, const RuntimeMethod* method) ;
+// System.Void OculusSampleFramework.TrainLocomotive::SmokeButtonStateChanged()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrainLocomotive_SmokeButtonStateChanged_m2DD09F55E1ECD386BCA6B4F540D895A1A784DC43 (TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* __this, const RuntimeMethod* method) ;
+// System.Void OculusSampleFramework.TrainLocomotive::WhistleButtonStateChanged()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrainLocomotive_WhistleButtonStateChanged_mC99652993E8BA12B0C7EDC45FAF800C7D1326A06 (TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* __this, const RuntimeMethod* method) ;
+// System.Void OculusSampleFramework.TrainLocomotive::ReverseButtonStateChanged()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrainLocomotive_ReverseButtonStateChanged_mC8649648374AB835DC725DBDCB07617B38323223 (TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* __this, const RuntimeMethod* method) ;
+// OculusSampleFramework.HandsManager OculusSampleFramework.HandsManager::get_Instance()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline (const RuntimeMethod* method) ;
+// System.Void OculusSampleFramework.HandsManager::SwitchVisualization()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandsManager_SwitchVisualization_m172E234A4DF618280C6096D31916BF82DC885AA5 (HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* __this, const RuntimeMethod* method) ;
+// System.Void OculusSampleFramework.CowController::GoMooCowGo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CowController_GoMooCowGo_m3F36BF00ABA175A40DD535719ED46AC0FB4B49E2 (CowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Assertions.Assert::IsNotNull<UnityEngine.Animation>(T)
 inline void Assert_IsNotNull_TisAnimation_t6593B06C39E3B139808B19F2C719C860F3F61040_m5F8827A5C88AEB802BA92DCAE136FA83FF16B44F (Animation_t6593B06C39E3B139808B19F2C719C860F3F61040* ___value0, const RuntimeMethod* method)
 {
@@ -4910,8 +5007,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_m95DF07111C61D0E0F00257
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animation_Rewind_m2DFAC82FDF28BE4531009381C5444C6A0977D51D (Animation_t6593B06C39E3B139808B19F2C719C860F3F61040* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Animation::Play()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animation_Play_m717560D2F561D9E12583AB3B435E6BC996448C3E (Animation_t6593B06C39E3B139808B19F2C719C860F3F61040* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.MonoBehaviour::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Object::FindObjectOfType<OVRCameraRig>()
 inline OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9* Object_FindObjectOfType_TisOVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9_m1564DCD77DA806C8E84BE6808F00823EBCA88234 (const RuntimeMethod* method)
 {
@@ -6143,6 +6238,284 @@ IL2CPP_EXTERN_C intptr_t CDECL ovrp_GetVersion();
 #endif
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_OVRPlugin_INTERNAL
 IL2CPP_EXTERN_C int32_t CDECL ovrp_SendEvent2(char*, char*, char*);
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void OculusSampleFramework.ControllerBoxController::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControllerBoxController_Awake_m38E645C800C9E2168815468D1BD0BA7039866943 (ControllerBoxController_tD290909D98587F41FF89ABC80EE1769A07930B7D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Assert_IsNotNull_TisCowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895_m97E6B2EB9165EB959FB94CAE3A6E94E6763919A2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Assert_IsNotNull_TisTrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E_m5BCF59F7C92F1386CFDC79898C0E10689D0B4524_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Assert_tDC16963451AC4364803739B73A4477ADCB365863_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Assert.IsNotNull(_locomotive);
+		TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* L_0 = __this->____locomotive_4;
+		il2cpp_codegen_runtime_class_init_inline(Assert_tDC16963451AC4364803739B73A4477ADCB365863_il2cpp_TypeInfo_var);
+		Assert_IsNotNull_TisTrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E_m5BCF59F7C92F1386CFDC79898C0E10689D0B4524(L_0, Assert_IsNotNull_TisTrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E_m5BCF59F7C92F1386CFDC79898C0E10689D0B4524_RuntimeMethod_var);
+		// Assert.IsNotNull(_cowController);
+		CowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895* L_1 = __this->____cowController_5;
+		Assert_IsNotNull_TisCowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895_m97E6B2EB9165EB959FB94CAE3A6E94E6763919A2(L_1, Assert_IsNotNull_TisCowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895_m97E6B2EB9165EB959FB94CAE3A6E94E6763919A2_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void OculusSampleFramework.ControllerBoxController::StartStopStateChanged(OculusSampleFramework.InteractableStateArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControllerBoxController_StartStopStateChanged_mB3778CB07ADD4235D3F0B676FB92746104785510 (ControllerBoxController_tD290909D98587F41FF89ABC80EE1769A07930B7D* __this, InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* ___obj0, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		// if (obj.NewInteractableState == InteractableState.ActionState)
+		InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* L_0 = ___obj0;
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___NewInteractableState_4;
+		V_0 = (bool)((((int32_t)L_1) == ((int32_t)3))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// _locomotive.StartStopStateChanged();
+		TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* L_3 = __this->____locomotive_4;
+		NullCheck(L_3);
+		TrainLocomotive_StartStopStateChanged_m1E6002A368988D15708B7B830F139BB129214C41(L_3, NULL);
+	}
+
+IL_001c:
+	{
+		// }
+		return;
+	}
+}
+// System.Void OculusSampleFramework.ControllerBoxController::DecreaseSpeedStateChanged(OculusSampleFramework.InteractableStateArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControllerBoxController_DecreaseSpeedStateChanged_mCCCC05DDFEAC88D674D50EEE0CCAA9457C50D868 (ControllerBoxController_tD290909D98587F41FF89ABC80EE1769A07930B7D* __this, InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* ___obj0, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		// if (obj.NewInteractableState == InteractableState.ActionState)
+		InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* L_0 = ___obj0;
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___NewInteractableState_4;
+		V_0 = (bool)((((int32_t)L_1) == ((int32_t)3))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// _locomotive.DecreaseSpeedStateChanged();
+		TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* L_3 = __this->____locomotive_4;
+		NullCheck(L_3);
+		TrainLocomotive_DecreaseSpeedStateChanged_m45757A992DE495AC07B1F6D57DAE8CCC3E5C4FE1(L_3, NULL);
+	}
+
+IL_001c:
+	{
+		// }
+		return;
+	}
+}
+// System.Void OculusSampleFramework.ControllerBoxController::IncreaseSpeedStateChanged(OculusSampleFramework.InteractableStateArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControllerBoxController_IncreaseSpeedStateChanged_m7048DDA279846DFD728B9D776159A6088654B555 (ControllerBoxController_tD290909D98587F41FF89ABC80EE1769A07930B7D* __this, InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* ___obj0, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		// if (obj.NewInteractableState == InteractableState.ActionState)
+		InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* L_0 = ___obj0;
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___NewInteractableState_4;
+		V_0 = (bool)((((int32_t)L_1) == ((int32_t)3))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// _locomotive.IncreaseSpeedStateChanged();
+		TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* L_3 = __this->____locomotive_4;
+		NullCheck(L_3);
+		TrainLocomotive_IncreaseSpeedStateChanged_m9DCB8688B1A116909A6C7843EECFCB16E739ECBD(L_3, NULL);
+	}
+
+IL_001c:
+	{
+		// }
+		return;
+	}
+}
+// System.Void OculusSampleFramework.ControllerBoxController::SmokeButtonStateChanged(OculusSampleFramework.InteractableStateArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControllerBoxController_SmokeButtonStateChanged_m1321ECF679CF6ED50711BD29D6615B18437F0782 (ControllerBoxController_tD290909D98587F41FF89ABC80EE1769A07930B7D* __this, InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* ___obj0, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		// if (obj.NewInteractableState == InteractableState.ActionState)
+		InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* L_0 = ___obj0;
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___NewInteractableState_4;
+		V_0 = (bool)((((int32_t)L_1) == ((int32_t)3))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// _locomotive.SmokeButtonStateChanged();
+		TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* L_3 = __this->____locomotive_4;
+		NullCheck(L_3);
+		TrainLocomotive_SmokeButtonStateChanged_m2DD09F55E1ECD386BCA6B4F540D895A1A784DC43(L_3, NULL);
+	}
+
+IL_001c:
+	{
+		// }
+		return;
+	}
+}
+// System.Void OculusSampleFramework.ControllerBoxController::WhistleButtonStateChanged(OculusSampleFramework.InteractableStateArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControllerBoxController_WhistleButtonStateChanged_mFE9967E7C2DC937975723DC11F6BC54F96A8FC4D (ControllerBoxController_tD290909D98587F41FF89ABC80EE1769A07930B7D* __this, InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* ___obj0, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		// if (obj.NewInteractableState == InteractableState.ActionState)
+		InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* L_0 = ___obj0;
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___NewInteractableState_4;
+		V_0 = (bool)((((int32_t)L_1) == ((int32_t)3))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// _locomotive.WhistleButtonStateChanged();
+		TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* L_3 = __this->____locomotive_4;
+		NullCheck(L_3);
+		TrainLocomotive_WhistleButtonStateChanged_mC99652993E8BA12B0C7EDC45FAF800C7D1326A06(L_3, NULL);
+	}
+
+IL_001c:
+	{
+		// }
+		return;
+	}
+}
+// System.Void OculusSampleFramework.ControllerBoxController::ReverseButtonStateChanged(OculusSampleFramework.InteractableStateArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControllerBoxController_ReverseButtonStateChanged_m4F6BE8E6200D7FCF1B2F06D46BDFF953686B79AA (ControllerBoxController_tD290909D98587F41FF89ABC80EE1769A07930B7D* __this, InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* ___obj0, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		// if (obj.NewInteractableState == InteractableState.ActionState)
+		InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* L_0 = ___obj0;
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___NewInteractableState_4;
+		V_0 = (bool)((((int32_t)L_1) == ((int32_t)3))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// _locomotive.ReverseButtonStateChanged();
+		TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E* L_3 = __this->____locomotive_4;
+		NullCheck(L_3);
+		TrainLocomotive_ReverseButtonStateChanged_mC8649648374AB835DC725DBDCB07617B38323223(L_3, NULL);
+	}
+
+IL_001c:
+	{
+		// }
+		return;
+	}
+}
+// System.Void OculusSampleFramework.ControllerBoxController::SwitchVisualization(OculusSampleFramework.InteractableStateArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControllerBoxController_SwitchVisualization_m78C17FFC24CE18F1AB056700B01255FE866ECEEC (ControllerBoxController_tD290909D98587F41FF89ABC80EE1769A07930B7D* __this, InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* ___obj0, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		// if (obj.NewInteractableState == InteractableState.ActionState)
+		InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* L_0 = ___obj0;
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___NewInteractableState_4;
+		V_0 = (bool)((((int32_t)L_1) == ((int32_t)3))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		// HandsManager.Instance.SwitchVisualization();
+		HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* L_3;
+		L_3 = HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline(NULL);
+		NullCheck(L_3);
+		HandsManager_SwitchVisualization_m172E234A4DF618280C6096D31916BF82DC885AA5(L_3, NULL);
+	}
+
+IL_001b:
+	{
+		// }
+		return;
+	}
+}
+// System.Void OculusSampleFramework.ControllerBoxController::GoMoo(OculusSampleFramework.InteractableStateArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControllerBoxController_GoMoo_m9EF4E1A50EC27132D96E77419226655A33A412A5 (ControllerBoxController_tD290909D98587F41FF89ABC80EE1769A07930B7D* __this, InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* ___obj0, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		// if (obj.NewInteractableState == InteractableState.ActionState)
+		InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906* L_0 = ___obj0;
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___NewInteractableState_4;
+		V_0 = (bool)((((int32_t)L_1) == ((int32_t)3))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// _cowController.GoMooCowGo();
+		CowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895* L_3 = __this->____cowController_5;
+		NullCheck(L_3);
+		CowController_GoMooCowGo_m3F36BF00ABA175A40DD535719ED46AC0FB4B49E2(L_3, NULL);
+	}
+
+IL_001c:
+	{
+		// }
+		return;
+	}
+}
+// System.Void OculusSampleFramework.ControllerBoxController::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControllerBoxController__ctor_mD53ADDA5919AA04AF1BC48BF2C2971836BFA1896 (ControllerBoxController_tD290909D98587F41FF89ABC80EE1769A07930B7D* __this, const RuntimeMethod* method) 
+{
+	{
+		// [SerializeField] private TrainLocomotive _locomotive = null;
+		__this->____locomotive_4 = (TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____locomotive_4), (void*)(TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E*)NULL);
+		// [SerializeField] private CowController _cowController = null;
+		__this->____cowController_5 = (CowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____cowController_5), (void*)(CowController_t6BEDAB80805CFAE6BDA0C9BBCC7E24E5EA103895*)NULL);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
 #endif
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -22845,6 +23218,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRP_1_30_0__cctor_m6E294458421E00DD670B
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public static HandsManager Instance { get; private set; }
+		HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* L_0 = ((HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7_StaticFields*)il2cpp_codegen_static_fields_for(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7_il2cpp_TypeInfo_var))->___U3CInstanceU3Ek__BackingField_19;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* OVRCameraRig_get_centerEyeAnchor_mAD81013ECF2681FB19E07FFF32861CD7F4BA2357_inline (OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9* __this, const RuntimeMethod* method) 
 {
 	{
