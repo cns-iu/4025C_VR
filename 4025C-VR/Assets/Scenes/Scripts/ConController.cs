@@ -5,7 +5,7 @@ using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
-// V3 2022-10-9
+// V3 2022-10-10
 
 public class ConController : MonoBehaviour
 {
@@ -272,7 +272,7 @@ public class ConController : MonoBehaviour
 
     // destroys parent GameObject and all attached/contained nodes
     // removes connection from respective conList on manifest
-    void pDestroy(GameObject p)
+    public void pDestroy(GameObject p)
     {
        foreach (Transform child in p.transform)
         {
@@ -376,7 +376,7 @@ public class ConController : MonoBehaviour
     }
 
 
-    void conStatusSet(GameObject c, int s, Material m)
+    public void conStatusSet(GameObject c, int s, Material m)
     {
         // set all to default
         c.GetComponent<ConStatus>().show = false;

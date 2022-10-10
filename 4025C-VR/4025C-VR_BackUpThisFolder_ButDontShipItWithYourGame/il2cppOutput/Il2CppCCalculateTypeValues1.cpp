@@ -48706,6 +48706,8 @@ struct SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB  : public MonoB
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___transportTarget_7;
 	// ConController SceneController::controllerScript
 	ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* ___controllerScript_8;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> SceneController::manifestList
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___manifestList_9;
 };
 
 // SceneRenderPipeline
