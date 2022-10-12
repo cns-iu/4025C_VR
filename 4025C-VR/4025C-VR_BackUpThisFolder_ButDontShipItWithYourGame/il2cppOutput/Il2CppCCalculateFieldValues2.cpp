@@ -1882,6 +1882,8 @@ struct LocomotionProvider_tC65B288AF39EACCD294F953F300BA33E33C2017B;
 struct LocomotionSystem_t969449BF16C7ED7A4A08A07CB480440C79AD2D6B;
 // UnityEngine.Yoga.Logger
 struct Logger_t092B1218ED93DD47180692D5761559B2054234A0;
+// ManifestStatus
+struct ManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9;
 // Oculus.Platform.Models.MatchmakingAdminSnapshot
 struct MatchmakingAdminSnapshot_t4782211192F69D0CCE99B9846E1D7874FA5D03D6;
 // Oculus.Platform.Models.MatchmakingAdminSnapshotCandidateList
@@ -36322,8 +36324,12 @@ struct SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB  : public MonoB
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___transportTarget_7;
 	// ConController SceneController::controllerScript
 	ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* ___controllerScript_8;
+	// ManifestStatus SceneController::manStatus
+	ManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9* ___manStatus_9;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> SceneController::manifestList
-	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___manifestList_9;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___manifestList_10;
+	// UnityEngine.GameObject SceneController::testManifest
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___testManifest_11;
 };
 
 // SceneRenderPipeline
@@ -42167,9 +42173,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6002[7] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6003[1] = 
 {
 	static_cast<int32_t>(offsetof(pStatus_tAB0ADFB7AFB9D4536AAC30594819DAD1027DF1DA, ___upStreanChain_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6004[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6004[14] = 
 {
-	static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___xrPosition_4)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___positionAA_5)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___positionMA_6)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___transportTarget_7)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___controllerScript_8)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___manifestList_9)),};
+	static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___xrPosition_4)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___positionAA_5)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___positionMA_6)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___transportTarget_7)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___controllerScript_8)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___manStatus_9)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___manifestList_10)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___testManifest_11)),0,0,0,0,0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6005[4] = 
 {
 	static_cast<int32_t>(offsetof(SelectionOutline_t5E462CA51CF9FDA9064C97C222DE83660C19F009, ___Renderer_4)),static_cast<int32_t>(offsetof(SelectionOutline_t5E462CA51CF9FDA9064C97C222DE83660C19F009, ___m_Highlighted_5)),static_cast<int32_t>(offsetof(SelectionOutline_t5E462CA51CF9FDA9064C97C222DE83660C19F009, ___m_Block_6)),static_cast<int32_t>(offsetof(SelectionOutline_t5E462CA51CF9FDA9064C97C222DE83660C19F009, ___m_HighlightActiveID_7)),};

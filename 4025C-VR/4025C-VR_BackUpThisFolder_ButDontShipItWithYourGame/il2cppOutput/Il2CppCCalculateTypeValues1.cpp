@@ -2190,6 +2190,8 @@ struct LocomotionSystem_t969449BF16C7ED7A4A08A07CB480440C79AD2D6B;
 struct LocomotionTeleport_t68D4613BD404E40D8DB85E4B0F602D3958A11EFC;
 // UnityEngine.Yoga.Logger
 struct Logger_t092B1218ED93DD47180692D5761559B2054234A0;
+// ManifestStatus
+struct ManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9;
 // Oculus.Platform.Models.MatchmakingAdminSnapshot
 struct MatchmakingAdminSnapshot_t4782211192F69D0CCE99B9846E1D7874FA5D03D6;
 // Oculus.Platform.Models.MatchmakingAdminSnapshotCandidateList
@@ -45774,7 +45776,7 @@ struct ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D  : public MonoBeh
 	// System.Boolean ConController::nodeMode
 	bool ___nodeMode_13;
 	// System.Collections.Generic.Dictionary`2<UnityEngine.GameObject,UnityEngine.GameObject> ConController::connections
-	Dictionary_2_t9987DACE70B120172EBEAF2BB5853128595A2CDF* ___connections_22;
+	Dictionary_2_t9987DACE70B120172EBEAF2BB5853128595A2CDF* ___connections_23;
 };
 
 // ConStatus
@@ -45794,10 +45796,12 @@ struct ConStatus_t31932389CD4E250D9D7420584C6EEB3839F6BD0A  : public MonoBehavio
 	bool ___connected_9;
 	// System.Boolean ConStatus::library
 	bool ___library_10;
+	// System.Boolean ConStatus::initIgnore
+	bool ___initIgnore_11;
 	// UnityEngine.Material ConStatus::currentMaterial
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___currentMaterial_11;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___currentMaterial_12;
 	// UnityEngine.Material ConStatus::defaultMaterial
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___defaultMaterial_12;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___defaultMaterial_13;
 };
 
 // OculusSampleFramework.ControllerBoxController
@@ -47030,6 +47034,18 @@ struct ManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9  : public MonoBe
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___pList_5;
 	// System.Collections.Generic.Dictionary`2<UnityEngine.GameObject,UnityEngine.GameObject> ManifestStatus::connections
 	Dictionary_2_t9987DACE70B120172EBEAF2BB5853128595A2CDF* ___connections_6;
+	// System.Single ManifestStatus::colliderMaxX
+	float ___colliderMaxX_7;
+	// System.Single ManifestStatus::colliderMaxY
+	float ___colliderMaxY_8;
+	// System.Single ManifestStatus::colliderMaxZ
+	float ___colliderMaxZ_9;
+	// System.Single ManifestStatus::colliderMinX
+	float ___colliderMinX_10;
+	// System.Single ManifestStatus::colliderMinY
+	float ___colliderMinY_11;
+	// System.Single ManifestStatus::colliderMinZ
+	float ___colliderMinZ_12;
 };
 
 // Oculus.Platform.Samples.VrHoops.MatchController
@@ -48706,8 +48722,12 @@ struct SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB  : public MonoB
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___transportTarget_7;
 	// ConController SceneController::controllerScript
 	ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* ___controllerScript_8;
+	// ManifestStatus SceneController::manStatus
+	ManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9* ___manStatus_9;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> SceneController::manifestList
-	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___manifestList_9;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___manifestList_10;
+	// UnityEngine.GameObject SceneController::testManifest
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___testManifest_11;
 };
 
 // SceneRenderPipeline

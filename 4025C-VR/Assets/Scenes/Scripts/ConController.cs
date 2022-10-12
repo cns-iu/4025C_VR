@@ -5,7 +5,7 @@ using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
-// V3 2022-10-10
+// V3 2022-10-11
 
 public class ConController : MonoBehaviour
 {
@@ -30,6 +30,7 @@ public class ConController : MonoBehaviour
     const int bSelected = 2;
     const int bConnected = 4;
     const int bLibrary = 8;
+    const int bInitIgnore = 16;
 
     // system state codes (using upper 8 bits)
     const int sysDefault = 0;
@@ -56,11 +57,10 @@ public class ConController : MonoBehaviour
         {
             case sysDefault + bShow:    // 1
                 //Debug.Log("-sysDefault = " + sysDefault);       
-                conStatusSet(c, bSelected + bShow, matSelected);    // set connector status
+                conStatusSet(c, bSelected + bShow + bLibrary, matSelected);    // set connector status
                 sysStateSet(sysSelection);                          // set system status
                 conFilter(manifest);    // evaluate connector status - consoliodate?
                 conFilter(library);
-
                 break;
 
             case sysSelection + bShow + bSelected:  // 516
@@ -72,11 +72,10 @@ public class ConController : MonoBehaviour
                 conListReset(library);
                 conFilter(manifest);
                 conFilter(library);
-
                 break;
 
             case sysSelection:  // 512
-                                //Debug.Log("-sysSelection = " + sysSelection);     
+                //Debug.Log("-sysSelection = " + sysSelection);     
 
                 GameObject p = Instantiate(conListSelected(library).transform.parent.gameObject);
                 GameObject o = conListSelected(library).transform.parent.gameObject;               // o is original parent
@@ -253,7 +252,7 @@ public class ConController : MonoBehaviour
     {
         foreach (Transform child in p.transform)
         {
-            Debug.Log("pGetSelectedNode: " + child.gameObject.name);
+            Debug.Log("pGetSelectedNode: " + child.gameObject.name + " " + child.gameObject.GetComponent<ConStatus>().selected);
             if (child.gameObject.GetComponent<ConStatus>().selected == true) return child.gameObject;
         }     
         return null;
@@ -376,18 +375,34 @@ public class ConController : MonoBehaviour
     }
 
 
+    // set conStatus of c; add required status values
+    // usage: conStatusSet(c, bSelected + bShow, matSelected)
     public void conStatusSet(GameObject c, int s, Material m)
     {
         // set all to default
         c.GetComponent<ConStatus>().show = false;
         c.GetComponent<ConStatus>().selected = false;
         c.GetComponent<ConStatus>().connected = false;
-        c.GetComponent<MeshRenderer>().material = m;
+        c.GetComponent<ConStatus>().library = false;
+        if (m != false) c.GetComponent<MeshRenderer>().material = m;
 
         // evaluate and update connector status
         if ((s & bShow) == bShow) c.GetComponent<ConStatus>().show = true;
         if ((s & bSelected) == bSelected) c.GetComponent<ConStatus>().selected = true;
         if ((s & bConnected) == bConnected) c.GetComponent<ConStatus>().connected = true;
+        if ((s & bLibrary) == bLibrary) c.GetComponent<ConStatus>().library = true;
+    }
+
+
+    // set all objects in list to requested status
+    public void conListStatusSet(GameObject manifest, int status, Material material)
+    {
+        List<GameObject> conList = manifest.GetComponent<ManifestStatus>().conList;
+
+        foreach (GameObject c in conList)
+        {
+            conStatusSet(c, status, material);
+        }
     }
 
 
@@ -491,6 +506,7 @@ public class ConController : MonoBehaviour
         if (connector.GetComponent<ConStatus>().selected == true) bCommand += bSelected;
         if (connector.GetComponent<ConStatus>().connected == true) bCommand += bConnected;
         if (connector.GetComponent<ConStatus>().library == true) bCommand += bLibrary;
+        if (connector.GetComponent<ConStatus>().initIgnore == true) bCommand += bInitIgnore;
 
         bCommand += sysState;   //add sysState
         return bCommand;
