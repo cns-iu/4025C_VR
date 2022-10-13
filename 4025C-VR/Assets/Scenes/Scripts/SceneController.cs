@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using OculusSampleFramework;
 //using System.Numerics;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
-// 2022-10-11
+// 2022-10-13
 
 
 public class SceneController : MonoBehaviour
@@ -11,6 +13,7 @@ public class SceneController : MonoBehaviour
     public GameObject xrPosition;
     public GameObject positionAA;
     public GameObject positionMA;
+    public GameObject positionTestArea;
     public GameObject transportTarget;
 
     public ConController controllerScript;  //access to ConnectorController
@@ -32,11 +35,16 @@ public class SceneController : MonoBehaviour
         xrPosition.transform.position = positionAA.transform.position;
     }
 
+    public void jumpToTestArea(GameObject c)
+    {
+        xrPosition.transform.position = positionTestArea.transform.position;
+    }
+
     public void jumpToMA(GameObject c)
     {
         xrPosition.transform.position = positionMA.transform.position;
         GameObject manifestOriginal = controllerScript.manifest;
-        controllerScript.conListStatusSet(manifestOriginal, bInitIgnore, null); // prevents instantiated nodes from being added to conList
+        controllerScript.ConListInitIgnoreStatusSet(manifestOriginal); // prevents instantiated nodes from being added to conList
         GameObject manifestCopy = Instantiate(manifestOriginal);
         manifestList.Add(manifestCopy);         // store in global manifest list
 
@@ -51,11 +59,11 @@ public class SceneController : MonoBehaviour
             if (croot.name == "croot")
             {
                 manifestOriginal.GetComponent<ManifestStatus>().conList.Add(croot);
-                controllerScript.conStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
+                controllerScript.ConStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
             }
             else
             {
-                controllerScript.pDestroy(child.gameObject);
+                controllerScript.PDestroy(child.gameObject);
             }
         }
 
@@ -66,11 +74,49 @@ public class SceneController : MonoBehaviour
         manifestCopy.transform.localScale = new Vector3(objectScale.x / 10, objectScale.y / 10, objectScale.z / 10);
 
         // todo package into BoxCollider
-        groupCollider(manifestCopy);
-        BoxCollider bc = manifestCopy.AddComponent<BoxCollider>() as BoxCollider;
+        //BoxCollider bc = manifestCopy.AddComponent<BoxCollider>() as BoxCollider;
+        FitToChildren(manifestCopy);
+        
         //manifestCopy.AddComponent<XR>
 
     }
+
+
+    void FitToChildren(GameObject m)
+    {
+        BoxCollider bc = m.AddComponent<BoxCollider>() as BoxCollider;
+        if (m.GetComponent<Collider>() is BoxCollider)
+        {
+
+            bool hasBounds = false;
+            Bounds bounds = new Bounds(Vector3.zero, Vector3.zero);
+
+            for (int i = 0; i < m.transform.childCount; ++i)
+            {
+                Renderer childRenderer = m.transform.GetChild(i).GetComponent<Renderer>();
+                if (childRenderer != null)
+                {
+                    if (hasBounds)
+                    {
+                        bounds.Encapsulate(childRenderer.bounds);
+                    }
+                    else
+                    {
+                        bounds = childRenderer.bounds;
+                        hasBounds = true;
+                    }
+                }
+            }
+
+            BoxCollider collider = (BoxCollider)m.GetComponent<Collider>();
+            collider.center = bounds.center - m.transform.position;
+            collider.size = bounds.size;
+            Rigidbody rb = m.AddComponent<Rigidbody>() as Rigidbody;
+            Debug.Log("bounds " + bounds.size);
+            m.AddComponent<XRGrabInteractable>();
+        }
+    }
+
 
 
     public void jumpHover(GameObject c)
@@ -85,46 +131,11 @@ public class SceneController : MonoBehaviour
     }
 
 
-    void groupCollider(GameObject m)
-    {
-        float maxX = 0, maxY = 0, maxZ = 0, minX = 0, minY = 0, minZ = 0;
-        List<GameObject> conList = m.GetComponent<ManifestStatus>().conList;
-        Debug.Log("groupCollider:");
-
-        foreach (GameObject c in conList)
-        {
-
-
-            Debug.Log(c.name);
-            Debug.Log(c.transform.position.x + " " + c.transform.position.y + " " + c.transform.position.z);
-            Debug.Log(c.transform.localPosition.x + " " + c.transform.localPosition.y + " " + c.transform.localPosition.z);
-
-            if (c.transform.position.x > maxX) maxX = c.transform.position.x;
-            if (c.transform.position.y > maxY) maxY = c.transform.position.y;
-            if (c.transform.position.z > maxZ) maxZ = c.transform.position.z;
-            if (c.transform.position.x < minX) minX = c.transform.position.x;
-            if (c.transform.position.y < minY) minY = c.transform.position.y;
-            if (c.transform.position.z < minZ) minZ = c.transform.position.z;
-
-        }
-        manStatus.colliderMaxX = maxX;
-        manStatus.colliderMaxY = maxY;
-        manStatus.colliderMaxZ = maxZ;
-        manStatus.colliderMinX = minX;
-        manStatus.colliderMinY = minY;
-        manStatus.colliderMinZ = minZ;
-
-        BoxCollider bc = m.AddComponent<BoxCollider>() as BoxCollider;
-        bc.size = new Vector3(maxX+Mathf.Abs(minX), maxY+Mathf.Abs(minY), maxZ+Mathf.Abs(minZ));
-
-    }
-
-
-
     // Start is called before the first frame update
     void Start()
     {
-        groupCollider(testManifest);
+        //GroupCollider(testManifest);
+        FitToChildren(testManifest);
 
     }
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 2022-10-11
+// 2022-10-13
 
 public class ConStatus : MonoBehaviour
 {
@@ -24,8 +24,14 @@ public class ConStatus : MonoBehaviour
     // this setup for each connector node - super important!!!
     private void Awake()
     {
+        /*
+            Debug.Log("conStatus.awake " + thisConnector.transform.parent.gameObject.name +
+            " " +  thisConnector.name +
+            " selected = " +
+            selected);
+        */
         if (thisConnector.transform.parent.parent != null)
-        {
+        { 
             // these are in manifests (library) grandparent != NULL
             GameObject pp = thisConnector.transform.parent.parent.transform.gameObject;
             pp.GetComponent<ManifestStatus>().conList.Add(thisConnector);
@@ -47,13 +53,18 @@ public class ConStatus : MonoBehaviour
         }
         else
         {
+            // here parent is on top-level
             // ignore connectors with set initIgnore status
             if (thisConnector.GetComponent<ConStatus>().initIgnore != true)
             {
                 // this catches newly instantiated (in root hierarchy)
-                thisConnector.transform.parent.parent = controllerScript.manifest.transform;
+                //thisConnector.transform.parent.parent = controllerScript.manifest.transform; //======!!!!!^$&%*^
                 controllerScript.manifest.GetComponent<ManifestStatus>().conList.Add(thisConnector);
                 //selected = false;
+                /*
+                Debug.Log("conStatus.top level " + thisConnector.transform.parent.gameObject.name + " " +
+                    thisConnector.name + " selected = " + selected);
+                */
                 connected = false;
                 library = false;
             }
