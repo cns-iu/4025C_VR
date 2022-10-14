@@ -5,7 +5,7 @@ using OculusSampleFramework;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-// 2022-10-13
+// 2022-10-14
 
 
 public class SceneController : MonoBehaviour
@@ -67,17 +67,26 @@ public class SceneController : MonoBehaviour
             }
         }
 
-        // package copy into 0.1 scale XRInteractable
-        // move to MA and scale
-        manifestCopy.transform.position = transportTarget.transform.position;
-        Vector3 objectScale = manifestCopy.transform.localScale;
-        manifestCopy.transform.localScale = new Vector3(objectScale.x / 10, objectScale.y / 10, objectScale.z / 10);
+        AssemblyPackage(manifestCopy);
+       
+    }
 
-        // todo package into BoxCollider
-        //BoxCollider bc = manifestCopy.AddComponent<BoxCollider>() as BoxCollider;
-        FitToChildren(manifestCopy);
-        
-        //manifestCopy.AddComponent<XR>
+    void AssemblyPackage(GameObject m)
+    {
+        FitToChildren(m);
+        Rigidbody rb = m.AddComponent<Rigidbody>() as Rigidbody;
+
+        // de-activate all nodes
+        foreach (GameObject c in m.GetComponent<ManifestStatus>().conList)
+        {
+            c.SetActive(false);
+        }
+
+        m.AddComponent<XRGrabInteractable>();
+
+        m.transform.position = transportTarget.transform.position;
+        Vector3 objectScale = m.transform.localScale;
+        m.transform.localScale = new Vector3(objectScale.x / 10, objectScale.y / 10, objectScale.z / 10);
 
     }
 
@@ -111,9 +120,7 @@ public class SceneController : MonoBehaviour
             BoxCollider collider = (BoxCollider)m.GetComponent<Collider>();
             collider.center = bounds.center - m.transform.position;
             collider.size = bounds.size;
-            Rigidbody rb = m.AddComponent<Rigidbody>() as Rigidbody;
             Debug.Log("bounds " + bounds.size);
-            m.AddComponent<XRGrabInteractable>();
         }
     }
 
@@ -135,7 +142,7 @@ public class SceneController : MonoBehaviour
     void Start()
     {
         //GroupCollider(testManifest);
-        FitToChildren(testManifest);
+        AssemblyPackage(testManifest);
 
     }
 
