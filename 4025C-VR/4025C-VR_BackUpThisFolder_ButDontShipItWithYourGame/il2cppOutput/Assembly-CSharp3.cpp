@@ -3773,18 +3773,6 @@ struct ManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9  : public MonoBe
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___pList_5;
 	// System.Collections.Generic.Dictionary`2<UnityEngine.GameObject,UnityEngine.GameObject> ManifestStatus::connections
 	Dictionary_2_t9987DACE70B120172EBEAF2BB5853128595A2CDF* ___connections_6;
-	// System.Single ManifestStatus::colliderMaxX
-	float ___colliderMaxX_7;
-	// System.Single ManifestStatus::colliderMaxY
-	float ___colliderMaxY_8;
-	// System.Single ManifestStatus::colliderMaxZ
-	float ___colliderMaxZ_9;
-	// System.Single ManifestStatus::colliderMinX
-	float ___colliderMinX_10;
-	// System.Single ManifestStatus::colliderMinY
-	float ___colliderMinY_11;
-	// System.Single ManifestStatus::colliderMinZ
-	float ___colliderMinZ_12;
 };
 
 // MouseTester

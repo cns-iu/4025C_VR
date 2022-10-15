@@ -5,15 +5,15 @@ using OculusSampleFramework;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-// 2022-10-14
+// 2022-10-15
 
 
 public class SceneController : MonoBehaviour
 {
     public GameObject xrPosition;
-    public GameObject positionAA;
-    public GameObject positionMA;
-    public GameObject positionTestArea;
+    public GameObject jumpTargetAssembly;
+    public GameObject jumpTargetMain;
+    public GameObject jumpTargetTest;
     public GameObject transportTarget;
 
     public ConController controllerScript;  //access to ConnectorController
@@ -30,25 +30,34 @@ public class SceneController : MonoBehaviour
     const int bLibrary = 8;
     const int bInitIgnore = 16;
 
-    public void jumpToAA(GameObject c)
+    public void jumpToAssembly(GameObject c)
     {
-        xrPosition.transform.position = positionAA.transform.position;
+        xrPosition.transform.position = jumpTargetAssembly.transform.position;
+        jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
+        jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
+        jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
+
     }
 
-    public void jumpToTestArea(GameObject c)
+    public void jumpToTest(GameObject c)
     {
-        xrPosition.transform.position = positionTestArea.transform.position;
+        xrPosition.transform.position = jumpTargetTest.transform.position;
+        jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
+        jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
+        jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
     }
 
-    public void jumpToMA(GameObject c)
+    public void jumpToMain(GameObject c)
     {
-        xrPosition.transform.position = positionMA.transform.position;
+        xrPosition.transform.position = jumpTargetMain.transform.position;
+        jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
+        jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
+        jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
+
         GameObject manifestOriginal = controllerScript.manifest;
         controllerScript.ConListInitIgnoreStatusSet(manifestOriginal); // prevents instantiated nodes from being added to conList
         GameObject manifestCopy = Instantiate(manifestOriginal);
         manifestList.Add(manifestCopy);         // store in global manifest list
-
-        //Debug.Log("manifestList count " + manifestList.Count);
 
         // clear original manifest and add default node
         manifestOriginal.GetComponent<ManifestStatus>().conList.Clear();
@@ -67,7 +76,7 @@ public class SceneController : MonoBehaviour
             }
         }
 
-        AssemblyPackage(manifestCopy);
+        if (manifestCopy != null) AssemblyPackage(manifestCopy);
        
     }
 
@@ -91,6 +100,7 @@ public class SceneController : MonoBehaviour
     }
 
 
+    // add boxcollider and size it to enclose all children
     void FitToChildren(GameObject m)
     {
         BoxCollider bc = m.AddComponent<BoxCollider>() as BoxCollider;
@@ -120,7 +130,7 @@ public class SceneController : MonoBehaviour
             BoxCollider collider = (BoxCollider)m.GetComponent<Collider>();
             collider.center = bounds.center - m.transform.position;
             collider.size = bounds.size;
-            Debug.Log("bounds " + bounds.size);
+            //Debug.Log("bounds " + bounds.size);
         }
     }
 
@@ -141,8 +151,11 @@ public class SceneController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //GroupCollider(testManifest);
+        // build and packacke test assembly
         AssemblyPackage(testManifest);
+        jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
+        jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
+        jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
 
     }
 

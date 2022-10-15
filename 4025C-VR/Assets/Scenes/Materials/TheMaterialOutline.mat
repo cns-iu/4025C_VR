@@ -44,6 +44,8 @@ Material:
     m_Floats:
     - Boolean_A48C4DFA: 0
     - HighlightActive: 0
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors: []
   m_BuildTextureStacks: []
 --- !u!114 &5574727293662245669
