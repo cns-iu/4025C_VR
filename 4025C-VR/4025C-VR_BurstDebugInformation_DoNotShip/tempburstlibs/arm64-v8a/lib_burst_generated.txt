@@ -189,6 +189,7 @@ Library: lib_burst_generated
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.Services.Core.Internal.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/VoiceSDK.Runtime.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.Services.Core.Analytics.dll
+--root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.ScriptableBuildPipeline.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/AssistantCoreSDKRuntime.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.Services.Core.Scheduler.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.Services.Core.Registration.dll

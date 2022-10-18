@@ -5,7 +5,7 @@ using OculusSampleFramework;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-// 2022-10-15
+// 2022-10-17
 
 
 public class SceneController : MonoBehaviour
@@ -30,12 +30,19 @@ public class SceneController : MonoBehaviour
     const int bLibrary = 8;
     const int bInitIgnore = 16;
 
-    public void jumpToAssembly(GameObject c)
+    public void soundTrigger(GameObject c)
     {
+        c.GetComponent<AudioSource>().Play();
+        Debug.Log("beam sound should be here");
+    }
+
+    public void jumpToAssembly(GameObject c)
+    {     
         xrPosition.transform.position = jumpTargetAssembly.transform.position;
         jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
         jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
+        jumpTargetAssembly.GetComponent<AudioSource>().Play();
 
     }
 
@@ -45,6 +52,7 @@ public class SceneController : MonoBehaviour
         jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
+        jumpTargetTest.GetComponent<AudioSource>().Play();
     }
 
     public void jumpToMain(GameObject c)
@@ -53,6 +61,8 @@ public class SceneController : MonoBehaviour
         jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
         jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
+        jumpTargetMain.GetComponent<AudioSource>().Play();
+
 
         GameObject manifestOriginal = controllerScript.manifest;
         controllerScript.ConListInitIgnoreStatusSet(manifestOriginal); // prevents instantiated nodes from being added to conList
@@ -156,6 +166,7 @@ public class SceneController : MonoBehaviour
         jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
         jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
+        GameObject.Find("ToAssembly").GetComponent<AudioSource>().Play();
 
     }
 
