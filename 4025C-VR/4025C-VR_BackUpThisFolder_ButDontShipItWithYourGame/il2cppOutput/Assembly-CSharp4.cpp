@@ -383,6 +383,8 @@ struct ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121;
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 // ConController
 struct ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D;
+// ConStatus
+struct ConStatus_t31932389CD4E250D9D7420584C6EEB3839F6BD0A;
 // UnityEngine.Coroutine
 struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
 // UnityEngine.XR.Interaction.Toolkit.DeactivateEvent
@@ -770,6 +772,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponentInParent_TisDistance
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m4F30DAB8E5B57E8DB6BD8C0C3BB11CCB57690C4A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisColliderZone_tA9DAAD7F9B3FDEC5B607DB97A934B1081CCF7E19_m7A2EC25B368D445B7526FAB2AD64A0B0AB259607_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisConStatus_t31932389CD4E250D9D7420584C6EEB3839F6BD0A_m2AC31FA5159EA932BCAAA82900D02A684DA2C712_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisDistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB_m6BBE82283ED0D7C8A926AC28CAB69193B7276E4F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisInteractable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2_m0CDEA8EF47A15EFA3EB104C354E834030C56E3D3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9_mD492B9F41191226703A4F73322299529A5EC1202_RuntimeMethod_var;
@@ -3500,6 +3503,31 @@ struct ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D  : public MonoBeh
 	Dictionary_2_t9987DACE70B120172EBEAF2BB5853128595A2CDF* ___connections_23;
 };
 
+// ConStatus
+struct ConStatus_t31932389CD4E250D9D7420584C6EEB3839F6BD0A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject ConStatus::thisConnector
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___thisConnector_4;
+	// UnityEngine.GameObject ConStatus::thatConnector
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___thatConnector_5;
+	// ConController ConStatus::controllerScript
+	ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* ___controllerScript_6;
+	// System.Boolean ConStatus::show
+	bool ___show_7;
+	// System.Boolean ConStatus::selected
+	bool ___selected_8;
+	// System.Boolean ConStatus::connected
+	bool ___connected_9;
+	// System.Boolean ConStatus::library
+	bool ___library_10;
+	// System.Boolean ConStatus::initIgnore
+	bool ___initIgnore_11;
+	// UnityEngine.Material ConStatus::currentMaterial
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___currentMaterial_12;
+	// UnityEngine.Material ConStatus::defaultMaterial
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___defaultMaterial_13;
+};
+
 // OculusSampleFramework.FingerTipPokeToolView
 struct FingerTipPokeToolView_t3D2D7DCEA0E6690414A5F66E4DD64362549CB667  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -5507,6 +5535,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
 // System.Void ConController::ConStatusSet(UnityEngine.GameObject,System.Int32,UnityEngine.Material)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConController_ConStatusSet_m9FDC32787DDFD880694DE41DB97316FE06A86FE5 (ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___c0, int32_t ___s1, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m2, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::GetComponent<ConStatus>()
+inline ConStatus_t31932389CD4E250D9D7420584C6EEB3839F6BD0A* GameObject_GetComponent_TisConStatus_t31932389CD4E250D9D7420584C6EEB3839F6BD0A_m2AC31FA5159EA932BCAAA82900D02A684DA2C712 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  ConStatus_t31932389CD4E250D9D7420584C6EEB3839F6BD0A* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
 // System.Void ConController::PDestroy(UnityEngine.GameObject)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConController_PDestroy_mAE12C181D011D19F2017EA0AC4D7373B25B13085 (ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___p0, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
@@ -7774,6 +7807,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneController_jumpToMain_mA320E8CACE2E
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m4F30DAB8E5B57E8DB6BD8C0C3BB11CCB57690C4A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisConStatus_t31932389CD4E250D9D7420584C6EEB3839F6BD0A_m2AC31FA5159EA932BCAAA82900D02A684DA2C712_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9_mD492B9F41191226703A4F73322299529A5EC1202_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisTransportSwitch_tF59E31DD5BDC6AFED547E7D35585585B2B605485_mACE5465CB620333550A962664188AB9AFC144065_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
@@ -7864,47 +7898,51 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneController_jumpToMain_mA320E8CACE2E
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = V_1;
 		NullCheck(L_22);
 		List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_inline(L_22, L_23, List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_RuntimeMethod_var);
-		// manifestOriginal.GetComponent<ManifestStatus>().conList.Clear();
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = V_0;
+		// controllerScript.manifest.GetComponent<ManifestStatus>().conList.Clear();
+		ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* L_24 = __this->___controllerScript_9;
 		NullCheck(L_24);
-		ManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9* L_25;
-		L_25 = GameObject_GetComponent_TisManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9_mD492B9F41191226703A4F73322299529A5EC1202(L_24, GameObject_GetComponent_TisManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9_mD492B9F41191226703A4F73322299529A5EC1202_RuntimeMethod_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = L_24->___manifest_6;
 		NullCheck(L_25);
-		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_26 = L_25->___conList_4;
+		ManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9* L_26;
+		L_26 = GameObject_GetComponent_TisManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9_mD492B9F41191226703A4F73322299529A5EC1202(L_25, GameObject_GetComponent_TisManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9_mD492B9F41191226703A4F73322299529A5EC1202_RuntimeMethod_var);
 		NullCheck(L_26);
-		List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_inline(L_26, List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_RuntimeMethod_var);
-		// foreach (Transform child in manifestOriginal.transform)
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = V_0;
+		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_27 = L_26->___conList_4;
 		NullCheck(L_27);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28;
-		L_28 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_27, NULL);
+		List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_inline(L_27, List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_RuntimeMethod_var);
+		// foreach (Transform child in controllerScript.manifest.transform)
+		ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* L_28 = __this->___controllerScript_9;
 		NullCheck(L_28);
-		RuntimeObject* L_29;
-		L_29 = Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404(L_28, NULL);
-		V_2 = L_29;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = L_28->___manifest_6;
+		NullCheck(L_29);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_30;
+		L_30 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_29, NULL);
+		NullCheck(L_30);
+		RuntimeObject* L_31;
+		L_31 = Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404(L_30, NULL);
+		V_2 = L_31;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0147:
+FINALLY_0178:
 			{// begin finally (depth: 1)
 				{
-					RuntimeObject* L_30 = V_2;
-					V_6 = ((RuntimeObject*)IsInst((RuntimeObject*)L_30, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var));
-					RuntimeObject* L_31 = V_6;
-					if (!L_31)
+					RuntimeObject* L_32 = V_2;
+					V_6 = ((RuntimeObject*)IsInst((RuntimeObject*)L_32, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var));
+					RuntimeObject* L_33 = V_6;
+					if (!L_33)
 					{
-						goto IL_015b;
+						goto IL_018c;
 					}
 				}
 				{
-					RuntimeObject* L_32 = V_6;
-					NullCheck(L_32);
-					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_32);
+					RuntimeObject* L_34 = V_6;
+					NullCheck(L_34);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_34);
 				}
 
-IL_015b:
+IL_018c:
 				{
 					return;
 				}
@@ -7913,92 +7951,101 @@ IL_015b:
 		try
 		{// begin try (depth: 1)
 			{
-				goto IL_013d_1;
+				goto IL_016b_1;
 			}
 
-IL_00c5_1:
+IL_00dc_1:
 			{
-				// foreach (Transform child in manifestOriginal.transform)
-				RuntimeObject* L_33 = V_2;
-				NullCheck(L_33);
-				RuntimeObject* L_34;
-				L_34 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_33);
-				V_3 = ((Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)CastclassClass((RuntimeObject*)L_34, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var));
-				// GameObject croot = child.GetChild(0).gameObject;
-				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35 = V_3;
+				// foreach (Transform child in controllerScript.manifest.transform)
+				RuntimeObject* L_35 = V_2;
 				NullCheck(L_35);
-				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36;
-				L_36 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_35, 0, NULL);
-				NullCheck(L_36);
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_37;
-				L_37 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_36, NULL);
-				V_4 = L_37;
-				// if (croot.name == "croot")
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = V_4;
+				RuntimeObject* L_36;
+				L_36 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_35);
+				V_3 = ((Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)CastclassClass((RuntimeObject*)L_36, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var));
+				// GameObject croot = child.GetChild(0).gameObject;
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_37 = V_3;
+				NullCheck(L_37);
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_38;
+				L_38 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_37, 0, NULL);
 				NullCheck(L_38);
-				String_t* L_39;
-				L_39 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_38, NULL);
-				bool L_40;
-				L_40 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_39, _stringLiteralDD2E47A33EC3F6941BE352D58019FA46B343531B, NULL);
-				V_5 = L_40;
-				bool L_41 = V_5;
-				if (!L_41)
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_39;
+				L_39 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_38, NULL);
+				V_4 = L_39;
+				// if (croot.name == "croot")
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = V_4;
+				NullCheck(L_40);
+				String_t* L_41;
+				L_41 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_40, NULL);
+				bool L_42;
+				L_42 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_41, _stringLiteralDD2E47A33EC3F6941BE352D58019FA46B343531B, NULL);
+				V_5 = L_42;
+				bool L_43 = V_5;
+				if (!L_43)
 				{
-					goto IL_0128_1;
+					goto IL_0156_1;
 				}
 			}
 			{
-				// manifestOriginal.GetComponent<ManifestStatus>().conList.Add(croot);
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_42 = V_0;
-				NullCheck(L_42);
-				ManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9* L_43;
-				L_43 = GameObject_GetComponent_TisManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9_mD492B9F41191226703A4F73322299529A5EC1202(L_42, GameObject_GetComponent_TisManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9_mD492B9F41191226703A4F73322299529A5EC1202_RuntimeMethod_var);
-				NullCheck(L_43);
-				List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_44 = L_43->___conList_4;
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_45 = V_4;
+				// controllerScript.manifest.GetComponent<ManifestStatus>().conList.Add(croot);    //add to conList
+				ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* L_44 = __this->___controllerScript_9;
 				NullCheck(L_44);
-				List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_inline(L_44, L_45, List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_RuntimeMethod_var);
-				// controllerScript.ConStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
-				ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* L_46 = __this->___controllerScript_9;
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_47 = V_4;
-				ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* L_48 = __this->___controllerScript_9;
-				NullCheck(L_48);
-				Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_49 = L_48->___matDefault_7;
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_45 = L_44->___manifest_6;
+				NullCheck(L_45);
+				ManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9* L_46;
+				L_46 = GameObject_GetComponent_TisManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9_mD492B9F41191226703A4F73322299529A5EC1202(L_45, GameObject_GetComponent_TisManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9_mD492B9F41191226703A4F73322299529A5EC1202_RuntimeMethod_var);
 				NullCheck(L_46);
-				ConController_ConStatusSet_m9FDC32787DDFD880694DE41DB97316FE06A86FE5(L_46, L_47, 0, L_49, NULL);
-				goto IL_013c_1;
+				List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_47 = L_46->___conList_4;
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_48 = V_4;
+				NullCheck(L_47);
+				List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_inline(L_47, L_48, List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_RuntimeMethod_var);
+				// controllerScript.ConStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
+				ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* L_49 = __this->___controllerScript_9;
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_50 = V_4;
+				ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* L_51 = __this->___controllerScript_9;
+				NullCheck(L_51);
+				Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_52 = L_51->___matDefault_7;
+				NullCheck(L_49);
+				ConController_ConStatusSet_m9FDC32787DDFD880694DE41DB97316FE06A86FE5(L_49, L_50, 0, L_52, NULL);
+				// croot.GetComponent<ConStatus>().initIgnore = false;
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_53 = V_4;
+				NullCheck(L_53);
+				ConStatus_t31932389CD4E250D9D7420584C6EEB3839F6BD0A* L_54;
+				L_54 = GameObject_GetComponent_TisConStatus_t31932389CD4E250D9D7420584C6EEB3839F6BD0A_m2AC31FA5159EA932BCAAA82900D02A684DA2C712(L_53, GameObject_GetComponent_TisConStatus_t31932389CD4E250D9D7420584C6EEB3839F6BD0A_m2AC31FA5159EA932BCAAA82900D02A684DA2C712_RuntimeMethod_var);
+				NullCheck(L_54);
+				L_54->___initIgnore_11 = (bool)0;
+				goto IL_016a_1;
 			}
 
-IL_0128_1:
+IL_0156_1:
 			{
 				// controllerScript.PDestroy(child.gameObject);
-				ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* L_50 = __this->___controllerScript_9;
-				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_51 = V_3;
-				NullCheck(L_51);
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_52;
-				L_52 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_51, NULL);
-				NullCheck(L_50);
-				ConController_PDestroy_mAE12C181D011D19F2017EA0AC4D7373B25B13085(L_50, L_52, NULL);
+				ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D* L_55 = __this->___controllerScript_9;
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_56 = V_3;
+				NullCheck(L_56);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_57;
+				L_57 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_56, NULL);
+				NullCheck(L_55);
+				ConController_PDestroy_mAE12C181D011D19F2017EA0AC4D7373B25B13085(L_55, L_57, NULL);
 			}
 
-IL_013c_1:
+IL_016a_1:
 			{
 			}
 
-IL_013d_1:
+IL_016b_1:
 			{
-				// foreach (Transform child in manifestOriginal.transform)
-				RuntimeObject* L_53 = V_2;
-				NullCheck(L_53);
-				bool L_54;
-				L_54 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_53);
-				if (L_54)
+				// foreach (Transform child in controllerScript.manifest.transform)
+				RuntimeObject* L_58 = V_2;
+				NullCheck(L_58);
+				bool L_59;
+				L_59 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_58);
+				if (L_59)
 				{
-					goto IL_00c5_1;
+					goto IL_00dc_1;
 				}
 			}
 			{
-				goto IL_015c;
+				goto IL_018d;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -8007,27 +8054,27 @@ IL_013d_1:
 		}
 	}
 
-IL_015c:
+IL_018d:
 	{
 		// if (manifestCopy != null) AssemblyPackage(manifestCopy);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_55 = V_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_60 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_56;
-		L_56 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_55, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		V_7 = L_56;
-		bool L_57 = V_7;
-		if (!L_57)
+		bool L_61;
+		L_61 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_60, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		V_7 = L_61;
+		bool L_62 = V_7;
+		if (!L_62)
 		{
-			goto IL_0171;
+			goto IL_01a2;
 		}
 	}
 	{
 		// if (manifestCopy != null) AssemblyPackage(manifestCopy);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_58 = V_1;
-		SceneController_AssemblyPackage_m0456D6324BAA65D8E6BC2684DF9C339200C0B8B9(__this, L_58, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_63 = V_1;
+		SceneController_AssemblyPackage_m0456D6324BAA65D8E6BC2684DF9C339200C0B8B9(__this, L_63, NULL);
 	}
 
-IL_0171:
+IL_01a2:
 	{
 		// }
 		return;

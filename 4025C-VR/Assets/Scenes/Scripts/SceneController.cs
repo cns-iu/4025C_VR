@@ -5,7 +5,7 @@ using OculusSampleFramework;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-// 2022-10-17
+// 2022-10-19
 
 
 public class SceneController : MonoBehaviour
@@ -70,21 +70,24 @@ public class SceneController : MonoBehaviour
         manifestList.Add(manifestCopy);         // store in global manifest list
 
         // clear original manifest and add default node
-        manifestOriginal.GetComponent<ManifestStatus>().conList.Clear();
+        controllerScript.manifest.GetComponent<ManifestStatus>().conList.Clear();
        
-        foreach (Transform child in manifestOriginal.transform)
+        foreach (Transform child in controllerScript.manifest.transform)
         {
             GameObject croot = child.GetChild(0).gameObject;
             if (croot.name == "croot")
             {
-                manifestOriginal.GetComponent<ManifestStatus>().conList.Add(croot);
+                controllerScript.manifest.GetComponent<ManifestStatus>().conList.Add(croot);    //add to conList
                 controllerScript.ConStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
+                croot.GetComponent<ConStatus>().initIgnore = false;
             }
             else
             {
                 controllerScript.PDestroy(child.gameObject);
             }
         }
+     
+
 
         if (manifestCopy != null) AssemblyPackage(manifestCopy);
        
