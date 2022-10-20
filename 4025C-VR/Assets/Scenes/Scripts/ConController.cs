@@ -5,7 +5,7 @@ using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
-// V3 2022-10-17
+// V3 2022-10-19
 
 public class ConController : MonoBehaviour
 {
@@ -140,30 +140,6 @@ public class ConController : MonoBehaviour
         }
     }
 
-
-    GameObject UscTraceDown(GameObject p)
-    {
-        while (UscNextDown(p) == true)
-        {
-            p = UscNextDown(p);//
-        }
-        return p;
-    }
-
-    // returns next down parent object or NULL if end of chain
-    GameObject UscNextDown(GameObject p)
-    {
-        foreach (Transform child in p.transform)
-        {
-            if (ConStatusGet(child.gameObject) == bShow + bConnected)
-            {
-                return child.gameObject.GetComponent<ConStatus>().thatConnector.transform.parent.gameObject;
-            }
-        }
-        return null;
-    }
-
-    //public delegate void useTraceUp(GameObject p, int y);
     
     // this is called from disconnect and when next parent
     public void UscTraceUp(GameObject p, Action<GameObject> myDelegate)
@@ -535,24 +511,6 @@ public class ConController : MonoBehaviour
     void Start()
     {
         connections = new Dictionary<GameObject, GameObject>();
-        //origins = new Dictionary<GameObject, Vector3>();
-
-        /*
-        GameObject go = Instantiate(testNode.transform.parent.gameObject);
-        foreach (Transform child in go.transform)
-        {
-            Debug.Log("child of Instance: " + child.gameObject.name);
-            Debug.Log("parent (clone): " + child.parent.gameObject.name);
-            if (child.parent.parent == null) Debug.Log("no more parent");
-            //Debug.Log("parent.parent: " + child.parent.parent.gameObject.name);
-        }
-        */
-
-        //Debug.Log("testnode parent: " + testNode.transform.parent.parent.gameObject.name);
-        //Debug.Log("[0] in library: " + library.GetComponent<ManifestStatus>().conList[0].name);
-
-
-
     }
 
     // Update is called once per frame

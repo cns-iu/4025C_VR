@@ -64,34 +64,35 @@ public class SceneController : MonoBehaviour
         jumpTargetMain.GetComponent<AudioSource>().Play();
 
 
-        GameObject manifestOriginal = controllerScript.manifest;
-        controllerScript.ConListInitIgnoreStatusSet(manifestOriginal); // prevents instantiated nodes from being added to conList
-        GameObject manifestCopy = Instantiate(manifestOriginal);
-        manifestList.Add(manifestCopy);         // store in global manifest list
-
-        // clear original manifest and add default node
-        controllerScript.manifest.GetComponent<ManifestStatus>().conList.Clear();
-       
-        foreach (Transform child in controllerScript.manifest.transform)
+        if (controllerScript.manifest.GetComponent<ManifestStatus>().conList.Count != 1)
         {
-            GameObject croot = child.GetChild(0).gameObject;
-            if (croot.name == "croot")
+            //GameObject manifestOriginal = controllerScript.manifest;
+            controllerScript.ConListInitIgnoreStatusSet(controllerScript.manifest); // prevents instantiated nodes from being added to conList
+            GameObject manifestCopy = Instantiate(controllerScript.manifest);
+            manifestList.Add(manifestCopy);         // store in global manifest list
+
+            // clear original manifest and add default node
+            controllerScript.manifest.GetComponent<ManifestStatus>().conList.Clear();
+
+            foreach (Transform child in controllerScript.manifest.transform)
             {
-                controllerScript.manifest.GetComponent<ManifestStatus>().conList.Add(croot);    //add to conList
-                controllerScript.ConStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
-                croot.GetComponent<ConStatus>().initIgnore = false;
+                GameObject croot = child.GetChild(0).gameObject;
+                if (croot.name == "croot")
+                {
+                    controllerScript.manifest.GetComponent<ManifestStatus>().conList.Add(croot);    //add to conList
+                    controllerScript.ConStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
+                    croot.GetComponent<ConStatus>().initIgnore = false;
+                }
+                else
+                {
+                    controllerScript.PDestroy(child.gameObject);
+                }
             }
-            else
-            {
-                controllerScript.PDestroy(child.gameObject);
-            }
+            // check if user made something
+            if (manifestCopy != null) AssemblyPackage(manifestCopy);
         }
-     
-
-
-        if (manifestCopy != null) AssemblyPackage(manifestCopy);
-       
     }
+
 
     void AssemblyPackage(GameObject m)
     {
@@ -170,7 +171,6 @@ public class SceneController : MonoBehaviour
         jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
         jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         GameObject.Find("ToAssembly").GetComponent<AudioSource>().Play();
-
     }
 
     // Update is called once per frame

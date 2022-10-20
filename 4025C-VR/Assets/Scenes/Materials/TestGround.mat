@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LibraryGround
-  m_Shader: {fileID: -6465566751694194690, guid: c05ee94ea6b5b470381b799adb595d5e, type: 3}
+  m_Name: TestGround
+  m_Shader: {fileID: -6465566751694194690, guid: 26d27e85547f74e43a083fe9588c3979, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -68,12 +68,8 @@ Material:
         m_Texture: {fileID: 2800000, guid: 1b30e935cd9392841a8c65048733c5c4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture2DAsset_b3423754d1754a59ae734204c16c23ae_Out_0:
-        m_Texture: {fileID: 2800000, guid: 484cead340e744a6ba217b9391b8c598, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _Texture2DAsset_c5457278d53541ff99e03e9f23111c95_Out_0:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 484cead340e744a6ba217b9391b8c598, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
