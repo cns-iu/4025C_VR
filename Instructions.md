@@ -53,7 +53,7 @@ Left controller actions interact with the console window, as does the left ray. 
 In this version there are three planes the user can teleport to. This is done by triggering one of the teleport spheres. These spheres hang over the user's head, slightly to the left and can't be seen unless you look up. 
 
 <p align="center">
-  <img src="images/Transport-nodes.png" width="400"><img src="images/Transport-nodes.png" width="400">
+  <img src="images/Transport-nodes.png" width="400">
 </p>
 
 Three areas can be visited:
@@ -67,7 +67,7 @@ Here the user interacts with objects at their natural size. Objects on the three
 The assembly area contains individual components, sized to 10x their natural size. These components can be assembled into complex larger structures by connecting the green nodes on various components. 
 
 <p align="center">
-  <img src="images/Assembly-Area.png" width="400"><img src="images/Assembly-Area.png" width="400">
+  <img src="images/Assembly-Area.png" width="400">
 </p>
 
 
@@ -76,7 +76,7 @@ After entering the area, select and click any of the green nodes. The clicked no
 
 The green base node.
 <p align="center">
-  <img src="images/Root-Node.png" width="400"><img src="images/Root-Node.png" width="400">
+  <img src="images/Root-Node.png" width="400">
 </p>
 
 
