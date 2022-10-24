@@ -12,9 +12,16 @@ public class VisibilityToggle : MonoBehaviour
     {
         toggleReference.action.started += Toggle;
         
+
     }
 
-  
+    private void Start()
+    {
+        bool isActive = !gameObject.activeSelf;
+        gameObject.SetActive(isActive);
+    }
+
+
     private void OnDestroy()
     {
         toggleReference.action.started -= Toggle;

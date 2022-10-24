@@ -5,7 +5,7 @@ using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
-// V3 2022-10-19
+// V3 2022-10-20
 
 public class ConController : MonoBehaviour
 {
@@ -178,7 +178,6 @@ public class ConController : MonoBehaviour
 
 
     // returns next up parent object or NULL if end of chain
-
     GameObject UscNextParentUp(GameObject c)
     {
         GameObject p = null;

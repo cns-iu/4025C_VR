@@ -5,7 +5,7 @@ using UnityEngine;
 public class ManifestStatus : MonoBehaviour
 {
     public List<GameObject> conList;
-    public List<GameObject> pList;
+    public List<GameObject> parentList;
     public Dictionary<GameObject, GameObject> connections;
 
     // Start is called before the first frame update
