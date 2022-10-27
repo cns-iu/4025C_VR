@@ -204,7 +204,9 @@ public class SceneController : MonoBehaviour
     {
         testInt ++;
 
-        Debug.Log("saving prefs:" + testInt + " console: " + visibilityToggle.consoleVisibility);
+        Debug.Log("saving prefs:" + testInt + " console: " +
+            visibilityToggle.consoleVisibility + " DMM: " +
+            dmmMover.distance);
 
         PlayerPrefs.SetInt("TestInt", testInt);
         PlayerPrefs.SetInt("consoleVisibility", visibilityToggle.consoleVisibility);
@@ -221,8 +223,20 @@ public class SceneController : MonoBehaviour
         dmmMover.distance = PlayerPrefs.GetFloat("distance", 1f);
 
         visibilityToggle.ToggleConsole();
+        dmmMover.Layout();
 
-        Debug.Log("loading prefs: " + testInt + " console: " + visibilityToggle.consoleVisibility);
+        Debug.Log("loading prefs: " + testInt + " console: " +
+            visibilityToggle.consoleVisibility + " DMM: " +
+            dmmMover.distance);
+    }
 
+    public void SaveData()
+    {
+        Debug.Log("saving data...");
+    }
+
+    public void LoadData()
+    {
+        Debug.Log("loading data...");
     }
 }

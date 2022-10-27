@@ -379,16 +379,16 @@ extern void PureAttribute__ctor_mEAFD7538811204E5F43B816F28B63FA197A6A09A (void)
 extern void PlayerPrefsException__ctor_m89A0364957C9AD220773C847E9AD8D54FED067FB (void);
 // 0x000000ED System.Boolean UnityEngine.PlayerPrefs::TrySetInt(System.String,System.Int32)
 extern void PlayerPrefs_TrySetInt_mDA9E314012D21BB1B5877C830E784F4E8D69BA3E (void);
-// 0x000000EE System.Boolean UnityEngine.PlayerPrefs::TrySetSetString(System.String,System.String)
-extern void PlayerPrefs_TrySetSetString_m801A5CB66F2C5AC8AE768B041E770FB08329C238 (void);
+// 0x000000EE System.Boolean UnityEngine.PlayerPrefs::TrySetFloat(System.String,System.Single)
+extern void PlayerPrefs_TrySetFloat_mE4BC8D66F48985EC165F03842C60FC9030ABACD4 (void);
 // 0x000000EF System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)
 extern void PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948 (void);
 // 0x000000F0 System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)
 extern void PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D (void);
-// 0x000000F1 System.Void UnityEngine.PlayerPrefs::SetString(System.String,System.String)
-extern void PlayerPrefs_SetString_mF4F457C81BB75F0213547C6287BA36E15E1F0256 (void);
-// 0x000000F2 System.String UnityEngine.PlayerPrefs::GetString(System.String,System.String)
-extern void PlayerPrefs_GetString_mE80FED64ACC3134149C8202FDDDE774C29CB0AF2 (void);
+// 0x000000F1 System.Void UnityEngine.PlayerPrefs::SetFloat(System.String,System.Single)
+extern void PlayerPrefs_SetFloat_m1E8EA662BB9D8CF339D7DA2C452FCDFED88C5285 (void);
+// 0x000000F2 System.Single UnityEngine.PlayerPrefs::GetFloat(System.String,System.Single)
+extern void PlayerPrefs_GetFloat_m4A9B511E92C8BDEBB64D9B2557126FB030895A4D (void);
 // 0x000000F3 System.Void UnityEngine.PlayerPrefs::Save()
 extern void PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE (void);
 // 0x000000F4 System.Void UnityEngine.Keyframe::.ctor(System.Single,System.Single)
@@ -7185,11 +7185,11 @@ static Il2CppMethodPointer s_methodPointers[3622] =
 	PureAttribute__ctor_mEAFD7538811204E5F43B816F28B63FA197A6A09A,
 	PlayerPrefsException__ctor_m89A0364957C9AD220773C847E9AD8D54FED067FB,
 	PlayerPrefs_TrySetInt_mDA9E314012D21BB1B5877C830E784F4E8D69BA3E,
-	PlayerPrefs_TrySetSetString_m801A5CB66F2C5AC8AE768B041E770FB08329C238,
+	PlayerPrefs_TrySetFloat_mE4BC8D66F48985EC165F03842C60FC9030ABACD4,
 	PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948,
 	PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D,
-	PlayerPrefs_SetString_mF4F457C81BB75F0213547C6287BA36E15E1F0256,
-	PlayerPrefs_GetString_mE80FED64ACC3134149C8202FDDDE774C29CB0AF2,
+	PlayerPrefs_SetFloat_m1E8EA662BB9D8CF339D7DA2C452FCDFED88C5285,
+	PlayerPrefs_GetFloat_m4A9B511E92C8BDEBB64D9B2557126FB030895A4D,
 	PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE,
 	Keyframe__ctor_mECF144086B28785BE911A22C06194A9E0FBF3C34,
 	Keyframe__ctor_m0E7D85642F12A3DAFA1768351CC7670648C41AB2,
@@ -12197,11 +12197,11 @@ static const int32_t s_InvokerIndices[3622] =
 	8968,
 	7081,
 	12196,
-	12200,
+	12202,
 	13083,
 	12455,
-	13090,
-	12583,
+	13096,
+	12673,
 	15610,
 	4044,
 	1527,

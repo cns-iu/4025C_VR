@@ -20,7 +20,7 @@ public class DMMMover : MonoBehaviour {
 
 
     private void Start() {
-        Layout();
+        //Layout();
     }
 
     private void Update() {
@@ -38,7 +38,7 @@ public class DMMMover : MonoBehaviour {
         }
     }
 
-    private void Layout() {
+    public void Layout() {
         // Set position
         Vector3 position = transform.localPosition;
         position.z = distance;

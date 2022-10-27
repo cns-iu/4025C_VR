@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-// 2022-10-24
+// 2022-10-27
 
 public class HUDConsole : MonoBehaviour {
 
@@ -51,17 +51,12 @@ public class HUDConsole : MonoBehaviour {
     public void ResetPrefs()
     {
         Debug.Log("Before reset prefs: " +
-            sceneController.testInt +
-            ", " +
-            sceneController.testString);
+            sceneController.testInt);
 
         sceneController.testInt = 0;
-        sceneController.testString = "default";
 
         Debug.Log("After reset prefs: " +
-            sceneController.testInt +
-            ", " +
-            sceneController.testString);
+            sceneController.testInt);
     }
 
 
