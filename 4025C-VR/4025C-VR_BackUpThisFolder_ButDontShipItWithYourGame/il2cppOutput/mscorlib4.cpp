@@ -1769,28 +1769,6 @@ struct NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643
 	Il2CppChar* ____allDigits_4;
 };
 #pragma pack(pop, tp)
-// Native definition for P/Invoke marshalling of System.Number/NumberBuffer
-#pragma pack(push, tp, 1)
-struct NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshaled_pinvoke
-{
-	int32_t ___precision_0;
-	int32_t ___scale_1;
-	int32_t ____sign_2;
-	DigitsAndNullTerminator_tEF216B2D9886B3B6EBDBBA0E540214C013C02ECA ____digits_3;
-	Il2CppChar* ____allDigits_4;
-};
-#pragma pack(pop, tp)
-// Native definition for COM marshalling of System.Number/NumberBuffer
-#pragma pack(push, tp, 1)
-struct NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshaled_com
-{
-	int32_t ___precision_0;
-	int32_t ___scale_1;
-	int32_t ____sign_2;
-	DigitsAndNullTerminator_tEF216B2D9886B3B6EBDBBA0E540214C013C02ECA ____digits_3;
-	Il2CppChar* ____allDigits_4;
-};
-#pragma pack(pop, tp)
 
 // System.ReadOnlySpan`1<System.Byte>
 struct ReadOnlySpan_1_tA850A6C0E88ABBA37646A078ACBC24D6D5FD9B4D 

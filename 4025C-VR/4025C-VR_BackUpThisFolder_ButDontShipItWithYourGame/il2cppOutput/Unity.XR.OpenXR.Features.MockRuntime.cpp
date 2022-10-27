@@ -755,46 +755,49 @@ inline bool Dictionary_2_TryGetValue_mC24ED42B1D62F196005DEF99454A30DCEF6E0A5F (
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_ClearFunctionCallbacks_m90C02869CBC305172014649CC205D02AB4A5071C (const RuntimeMethod* method) ;
 // System.Void UnityEngine.XR.OpenXR.Features.OpenXRFeature::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenXRFeature__ctor_m120460E34ECC22ED2DB96797A6DCB5C870E78852 (OpenXRFeature_tC2F8F480D62C277B2ECDD605F64E45053CD85143* __this, const RuntimeMethod* method) ;
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
+IL2CPP_EXTERN_C intptr_t DEFAULT_CALL MockRuntime_HookCreateInstance(intptr_t);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
+IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_SetKeepFunctionCallbacks(int32_t);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_SetView(int32_t, int32_t, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_SetViewState(int32_t, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_SetReferenceSpace(int32_t, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_SetActionSpace(uint64_t, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL MockRuntime_RegisterScriptEventCallback(Il2CppMethodPointer);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL MockRuntime_TransitionToState(int32_t, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL MockRuntime_GetSessionState();
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_RequestExitSession();
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_CauseInstanceLoss();
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
-IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_SetEnvironmentBlendMode(int32_t);
-#endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_SetReferenceSpaceBounds(int32_t, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_GetEndFrameStats(int32_t*, int32_t*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_ActivateSecondaryView(int32_t, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_RegisterFunctionCallbacks(Il2CppMethodPointer, Il2CppMethodPointer);
 #endif
 #ifdef __clang__
@@ -1539,22 +1542,67 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_OnInstanceDestroy_m87D9042CA
 		return;
 	}
 }
-// System.Void UnityEngine.XR.OpenXR.Features.Mock.MockRuntime::SetViewPose(UnityEngine.XR.OpenXR.NativeTypes.XrViewConfigurationType,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector4)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetViewPose_m2637BCEAF504A16C376848DB796F5481E126B0D1 (int32_t ___viewConfigurationType0, int32_t ___viewIndex1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___orientation3, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___fov4, const RuntimeMethod* method) 
+// System.IntPtr UnityEngine.XR.OpenXR.Features.Mock.MockRuntime::HookCreateInstance(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t MockRuntime_HookCreateInstance_mE4A794C1096A017EE20CDB40DC10FCB74C5C529E (intptr_t ___func0, const RuntimeMethod* method) 
 {
-	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t, int32_t, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (intptr_t);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
-		int parameterSize = sizeof(int32_t) + sizeof(int32_t) + sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2) + sizeof(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974) + sizeof(Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_SetView", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		int parameterSize = sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_HookCreateInstance", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
+	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(MockRuntime_HookCreateInstance)(___func0);
+	#else
+	intptr_t returnValue = il2cppPInvokeFunc(___func0);
+	#endif
+
+	return returnValue;
+}
+// System.Void UnityEngine.XR.OpenXR.Features.Mock.MockRuntime::SetKeepFunctionCallbacks(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetKeepFunctionCallbacks_m8E0E300D594B6DE823AE6800E23FC829AAD55EB4 (bool ___value0, const RuntimeMethod* method) 
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 4;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_SetKeepFunctionCallbacks", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
+	reinterpret_cast<PInvokeFunc>(MockRuntime_SetKeepFunctionCallbacks)(static_cast<int32_t>(___value0));
+	#else
+	il2cppPInvokeFunc(static_cast<int32_t>(___value0));
+	#endif
+
+}
+// System.Void UnityEngine.XR.OpenXR.Features.Mock.MockRuntime::SetViewPose(UnityEngine.XR.OpenXR.NativeTypes.XrViewConfigurationType,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector4)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetViewPose_m2637BCEAF504A16C376848DB796F5481E126B0D1 (int32_t ___viewConfigurationType0, int32_t ___viewIndex1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___orientation3, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___fov4, const RuntimeMethod* method) 
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t, int32_t, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(int32_t) + sizeof(int32_t) + sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2) + sizeof(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974) + sizeof(Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_SetView", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	reinterpret_cast<PInvokeFunc>(MockRuntime_SetView)(___viewConfigurationType0, ___viewIndex1, ___position2, ___orientation3, ___fov4);
 	#else
 	il2cppPInvokeFunc(___viewConfigurationType0, ___viewIndex1, ___position2, ___orientation3, ___fov4);
@@ -1565,18 +1613,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetViewPose_m2637BCEAF504A16
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetViewState_mF705DAE94FD37B98CA8D4EFE4869110FECF96E42 (int32_t ___viewConfigurationType0, int32_t ___viewStateFlags1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(int32_t) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_SetViewState", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_SetViewState", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	reinterpret_cast<PInvokeFunc>(MockRuntime_SetViewState)(___viewConfigurationType0, ___viewStateFlags1);
 	#else
 	il2cppPInvokeFunc(___viewConfigurationType0, ___viewStateFlags1);
@@ -1587,18 +1635,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetViewState_mF705DAE94FD37B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetSpace_mA64A4E84288E70ABCA4540F29A7348B55F0F09B5 (int32_t ___referenceSpace0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position1, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___orientation2, int32_t ___locationFlags3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(int32_t) + sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2) + sizeof(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_SetReferenceSpace", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_SetReferenceSpace", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	reinterpret_cast<PInvokeFunc>(MockRuntime_SetReferenceSpace)(___referenceSpace0, ___position1, ___orientation2, ___locationFlags3);
 	#else
 	il2cppPInvokeFunc(___referenceSpace0, ___position1, ___orientation2, ___locationFlags3);
@@ -1609,18 +1657,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetSpace_mA64A4E84288E70ABCA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetSpace_mDA5CD3C832B62544D145B905197DCF2130505B26 (uint64_t ___actionHandle0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position1, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___orientation2, int32_t ___locationFlags3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (uint64_t, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(uint64_t) + sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2) + sizeof(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_SetActionSpace", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_SetActionSpace", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	reinterpret_cast<PInvokeFunc>(MockRuntime_SetActionSpace)(___actionHandle0, ___position1, ___orientation2, ___locationFlags3);
 	#else
 	il2cppPInvokeFunc(___actionHandle0, ___position1, ___orientation2, ___locationFlags3);
@@ -1631,12 +1679,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetSpace_mDA5CD3C832B62544D1
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MockRuntime_Internal_RegisterScriptEventCallback_mA892D9EF37F87E25AD3DAEC396B1CD8289C2AA1C (ScriptEventDelegate_t0DE50F0234F04B68173703087BFCB08BB4922E20* ___callback0, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (Il2CppMethodPointer);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_RegisterScriptEventCallback", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_RegisterScriptEventCallback", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -1646,7 +1694,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MockRuntime_Internal_RegisterScriptEv
 	____callback0_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___callback0));
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(MockRuntime_RegisterScriptEventCallback)(____callback0_marshaled);
 	#else
 	int32_t returnValue = il2cppPInvokeFunc(____callback0_marshaled);
@@ -1658,18 +1706,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MockRuntime_Internal_RegisterScriptEv
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MockRuntime_Internal_TransitionToState_m5D9A59AAF1E0CF512791ADE220FB09DF70109BFF (int32_t ___state0, bool ___forceTransition1, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(int32_t) + 4;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_TransitionToState", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_TransitionToState", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(MockRuntime_TransitionToState)(___state0, static_cast<int32_t>(___forceTransition1));
 	#else
 	int32_t returnValue = il2cppPInvokeFunc(___state0, static_cast<int32_t>(___forceTransition1));
@@ -1681,18 +1729,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MockRuntime_Internal_TransitionToState_m
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MockRuntime_Internal_GetSessionState_mD58FE1DDA879C6A4744F40160981F6C238D2B2F4 (const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) ();
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = 0;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_GetSessionState", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_GetSessionState", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(MockRuntime_GetSessionState)();
 	#else
 	int32_t returnValue = il2cppPInvokeFunc();
@@ -1704,18 +1752,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MockRuntime_Internal_GetSessionState_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_RequestExitSession_mC6194C165F491EC79777DA2EE2631237E12B6169 (const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) ();
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = 0;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_RequestExitSession", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_RequestExitSession", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	reinterpret_cast<PInvokeFunc>(MockRuntime_RequestExitSession)();
 	#else
 	il2cppPInvokeFunc();
@@ -1726,43 +1774,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_RequestExitSession_mC6194C16
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_CauseInstanceLoss_m644A81DF5FAFDE1768A0EAACB4B32D58908C0029 (const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) ();
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = 0;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_CauseInstanceLoss", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_CauseInstanceLoss", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	reinterpret_cast<PInvokeFunc>(MockRuntime_CauseInstanceLoss)();
 	#else
 	il2cppPInvokeFunc();
-	#endif
-
-}
-// System.Void UnityEngine.XR.OpenXR.Features.Mock.MockRuntime::SetEnvironmentBlendMode(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetEnvironmentBlendMode_mBE58E094F4117EEC38DDA94EEBD1E553E914048D (int32_t ___environmentBlendMode0, const RuntimeMethod* method) 
-{
-	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
-	static PInvokeFunc il2cppPInvokeFunc;
-	if (il2cppPInvokeFunc == NULL)
-	{
-		int parameterSize = sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_SetEnvironmentBlendMode", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
-		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
-	}
-	#endif
-
-	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
-	reinterpret_cast<PInvokeFunc>(MockRuntime_SetEnvironmentBlendMode)(___environmentBlendMode0);
-	#else
-	il2cppPInvokeFunc(___environmentBlendMode0);
 	#endif
 
 }
@@ -1770,18 +1796,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetEnvironmentBlendMode_mBE5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetReferenceSpaceBounds_mF998A5259FAB1F2888C148356379E58C68E35382 (int32_t ___referenceSpace0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___bounds1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(int32_t) + sizeof(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_SetReferenceSpaceBounds", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_SetReferenceSpaceBounds", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	reinterpret_cast<PInvokeFunc>(MockRuntime_SetReferenceSpaceBounds)(___referenceSpace0, ___bounds1);
 	#else
 	il2cppPInvokeFunc(___referenceSpace0, ___bounds1);
@@ -1792,18 +1818,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_SetReferenceSpaceBounds_mF99
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_GetEndFrameStats_m2CA6ACA741702E5BDA2E30C5AC8559BD2BA4FA90 (int32_t* ___primaryLayerCount0, int32_t* ___secondaryLayerCount1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t*, int32_t*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(int32_t*) + sizeof(int32_t*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_GetEndFrameStats", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_GetEndFrameStats", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	reinterpret_cast<PInvokeFunc>(MockRuntime_GetEndFrameStats)(___primaryLayerCount0, ___secondaryLayerCount1);
 	#else
 	il2cppPInvokeFunc(___primaryLayerCount0, ___secondaryLayerCount1);
@@ -1814,18 +1840,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_GetEndFrameStats_m2CA6ACA741
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_ActivateSecondaryView_mEA131BD49CD0DDD69B6AFCD7DCBC0250B36F19D9 (int32_t ___viewConfigurationType0, bool ___activate1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(int32_t) + 4;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_ActivateSecondaryView", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_ActivateSecondaryView", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	reinterpret_cast<PInvokeFunc>(MockRuntime_ActivateSecondaryView)(___viewConfigurationType0, static_cast<int32_t>(___activate1));
 	#else
 	il2cppPInvokeFunc(___viewConfigurationType0, static_cast<int32_t>(___activate1));
@@ -1836,12 +1862,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_ActivateSecondaryView_mEA131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_MockRuntime_RegisterFunctionCallbacks_m8FE38D5A0491C53530C2765EA4BA2CFDCA278A58 (BeforeFunctionDelegate_t767D515AE77977BF5EA389123E37EB685DDADDDA* ___hookBefore0, AfterFunctionDelegate_t2794658426C2B81F53841DCC65EED4E864522552* ___hookAfter1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (Il2CppMethodPointer, Il2CppMethodPointer);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_runtime"), "MockRuntime_RegisterFunctionCallbacks", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_RegisterFunctionCallbacks", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -1855,7 +1881,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_MockRuntime_RegisterFunction
 	____hookAfter1_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___hookAfter1));
 
 	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_runtime_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 	reinterpret_cast<PInvokeFunc>(MockRuntime_RegisterFunctionCallbacks)(____hookBefore0_marshaled, ____hookAfter1_marshaled);
 	#else
 	il2cppPInvokeFunc(____hookBefore0_marshaled, ____hookAfter1_marshaled);

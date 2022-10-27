@@ -4359,8 +4359,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RijndaelManagedTransform_Reset_m0A01E6C9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_Memcpy_mD0ABB1CFA4E5CD409977A2E19D002C8589324A41 (uint8_t* ___pDest0, int32_t ___destIndex1, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___src2, int32_t ___srcIndex3, int32_t ___len4, const RuntimeMethod* method) ;
 // System.Void System.Security.Cryptography.RijndaelManagedTransform::Enc(System.Int32*,System.Int32*,System.Int32*,System.Int32*,System.Int32*,System.Int32*)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RijndaelManagedTransform_Enc_mBC8F3DE74DECA755F832AAE060703DA79382931C (RijndaelManagedTransform_t4A8EE6780840A49B73D54C22252FD85038B7DA19* __this, int32_t* ___encryptindex0, int32_t* ___encryptKeyExpansion1, int32_t* ___T2, int32_t* ___TF3, int32_t* ___work4, int32_t* ___temp5, const RuntimeMethod* method) ;
-// System.Void System.Buffer::Memcpy(System.Byte*,System.Byte*,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_Memcpy_m87345ACEE449F8CEA42341BC9F4AFC3743EF96D1 (uint8_t* ___dest0, uint8_t* ___src1, int32_t ___len2, const RuntimeMethod* method) ;
+// System.Void System.Buffer::Memcpy(System.Byte*,System.Byte*,System.Int32,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_Memcpy_mB203712DD2D0E5DF1CF52F752638F8B94E03E217 (uint8_t* ___dest0, uint8_t* ___src1, int32_t ___len2, bool ___useICall3, const RuntimeMethod* method) ;
 // System.Void System.Security.Cryptography.RijndaelManagedTransform::Dec(System.Int32*,System.Int32*,System.Int32*,System.Int32*,System.Int32*,System.Int32*)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RijndaelManagedTransform_Dec_m1B1D3DA43A43958141E72C6E58D3EE694D033C20 (RijndaelManagedTransform_t4A8EE6780840A49B73D54C22252FD85038B7DA19* __this, int32_t* ___decryptindex0, int32_t* ___decryptKeyExpansion1, int32_t* ___iT2, int32_t* ___iTF3, int32_t* ___work4, int32_t* ___temp5, const RuntimeMethod* method) ;
 // System.Int32 System.Security.Cryptography.RijndaelManagedTransform::rot3(System.Int32)
@@ -23865,7 +23865,7 @@ IL_01a4:
 		int32_t L_76 = ___outputOffset4;
 		V_16 = L_76;
 		V_17 = 0;
-		goto IL_0672;
+		goto IL_0673;
 	}
 
 IL_01d6:
@@ -24465,7 +24465,7 @@ IL_0559:
 		int32_t L_325 = __this->___m_inputBlockSize_5;
 		bool L_326;
 		L_326 = Buffer_InternalBlockCopy_m89CDD7EB43A555DA0ABB0D7A126FDABF2AB2C0F5((RuntimeArray*)L_319, ((int32_t)il2cpp_codegen_multiply(L_320, L_321)), (RuntimeArray*)L_322, ((int32_t)il2cpp_codegen_subtract(L_323, L_324)), L_325, NULL);
-		goto IL_0663;
+		goto IL_0664;
 	}
 
 IL_059a:
@@ -24533,7 +24533,7 @@ IL_0619:
 		int32_t L_358 = __this->___m_cipherMode_0;
 		if ((!(((uint32_t)L_358) == ((uint32_t)1))))
 		{
-			goto IL_0663;
+			goto IL_0664;
 		}
 	}
 	{
@@ -24572,11 +24572,11 @@ IL_0651:
 		int32_t* L_363 = V_29;
 		int32_t* L_364 = V_14;
 		int32_t L_365 = __this->___m_blockSizeBytes_4;
-		Buffer_Memcpy_m87345ACEE449F8CEA42341BC9F4AFC3743EF96D1((uint8_t*)L_363, (uint8_t*)L_364, L_365, NULL);
+		Buffer_Memcpy_mB203712DD2D0E5DF1CF52F752638F8B94E03E217((uint8_t*)L_363, (uint8_t*)L_364, L_365, (bool)1, NULL);
 		V_30 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)NULL;
 	}
 
-IL_0663:
+IL_0664:
 	{
 		int32_t L_366 = V_3;
 		int32_t L_367 = __this->___m_inputBlockSize_5;
@@ -24585,7 +24585,7 @@ IL_0663:
 		V_17 = ((int32_t)il2cpp_codegen_add(L_368, 1));
 	}
 
-IL_0672:
+IL_0673:
 	{
 		int32_t L_369 = V_17;
 		int32_t L_370 = V_15;

@@ -2502,6 +2502,16 @@ struct SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_StaticFields
 	// System.Int32 System.Threading.SpinLock::MAXIMUM_WAITERS
 	int32_t ___MAXIMUM_WAITERS_1;
 };
+// Native definition for P/Invoke marshalling of System.Threading.SpinLock
+struct SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshaled_pinvoke
+{
+	int32_t ___m_owner_0;
+};
+// Native definition for COM marshalling of System.Threading.SpinLock
+struct SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshaled_com
+{
+	int32_t ___m_owner_0;
+};
 
 // System.Threading.SpinWait
 struct SpinWait_t51CFFA8FF70F1B430E075F96CFD936260D8CE675 
@@ -21466,6 +21476,38 @@ IL2CPP_EXTERN_C  void U3CWaitUntilCountOrTimeoutAsyncU3Ed__32_SetStateMachine_mC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Conversion methods for marshalling of: System.Threading.SpinLock
+IL2CPP_EXTERN_C void SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshal_pinvoke(const SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816& unmarshaled, SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshaled_pinvoke& marshaled)
+{
+	marshaled.___m_owner_0 = unmarshaled.___m_owner_0;
+}
+IL2CPP_EXTERN_C void SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshal_pinvoke_back(const SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshaled_pinvoke& marshaled, SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816& unmarshaled)
+{
+	int32_t unmarshaledm_owner_temp_0;
+	memset((&unmarshaledm_owner_temp_0), 0, sizeof(unmarshaledm_owner_temp_0));
+	unmarshaledm_owner_temp_0 = marshaled.___m_owner_0;
+	unmarshaled.___m_owner_0 = unmarshaledm_owner_temp_0;
+}
+// Conversion method for clean up from marshalling of: System.Threading.SpinLock
+IL2CPP_EXTERN_C void SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshal_pinvoke_cleanup(SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: System.Threading.SpinLock
+IL2CPP_EXTERN_C void SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshal_com(const SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816& unmarshaled, SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshaled_com& marshaled)
+{
+	marshaled.___m_owner_0 = unmarshaled.___m_owner_0;
+}
+IL2CPP_EXTERN_C void SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshal_com_back(const SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshaled_com& marshaled, SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816& unmarshaled)
+{
+	int32_t unmarshaledm_owner_temp_0;
+	memset((&unmarshaledm_owner_temp_0), 0, sizeof(unmarshaledm_owner_temp_0));
+	unmarshaledm_owner_temp_0 = marshaled.___m_owner_0;
+	unmarshaled.___m_owner_0 = unmarshaledm_owner_temp_0;
+}
+// Conversion method for clean up from marshalling of: System.Threading.SpinLock
+IL2CPP_EXTERN_C void SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshal_com_cleanup(SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshaled_com& marshaled)
+{
+}
 // System.Void System.Threading.SpinLock::.ctor(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpinLock__ctor_mF7669674C8FDD2A84B44BE845F2016B13F20E83B (SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816* __this, bool ___enableThreadOwnerTracking0, const RuntimeMethod* method) 
 {

@@ -5,7 +5,7 @@ using OculusSampleFramework;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-// 2022-10-26
+// 2022-10-27
 
 
 public class SceneController : MonoBehaviour
@@ -32,8 +32,8 @@ public class SceneController : MonoBehaviour
 
     // for preference saving tests
     public int testInt = 0;
-    public string testString = "default";
     public VisibilityToggle visibilityToggle;
+    public DMMMover dmmMover;
 
 
 
@@ -206,9 +206,9 @@ public class SceneController : MonoBehaviour
 
         Debug.Log("saving prefs:" + testInt + " console: " + visibilityToggle.consoleVisibility);
 
-        PlayerPrefs.SetString("Model", "star7u");
         PlayerPrefs.SetInt("TestInt", testInt);
         PlayerPrefs.SetInt("consoleVisibility", visibilityToggle.consoleVisibility);
+        PlayerPrefs.SetFloat("distance", dmmMover.distance);
         PlayerPrefs.Save();
     }
 
@@ -216,9 +216,9 @@ public class SceneController : MonoBehaviour
     public void LoadPrefs()
     {
         
-        string objectModel = PlayerPrefs.GetString("Model", "nothing");
         testInt = PlayerPrefs.GetInt("TestInt", 0);
         visibilityToggle.consoleVisibility = PlayerPrefs.GetInt("consoleVisibility", 0);
+        dmmMover.distance = PlayerPrefs.GetFloat("distance", 1f);
 
         visibilityToggle.ToggleConsole();
 

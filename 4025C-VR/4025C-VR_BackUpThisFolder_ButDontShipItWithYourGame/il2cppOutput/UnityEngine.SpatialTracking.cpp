@@ -1294,7 +1294,7 @@ IL_001c_1:
 				}
 			}
 			{
-				// if(nodeState.TryGetPosition(out resultPose.position))
+				// if (nodeState.TryGetPosition(out resultPose.position))
 				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_7 = ___resultPose1;
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_8 = (&L_7->___position_0);
 				bool L_9;
@@ -1867,11 +1867,11 @@ IL_000a:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedPoseDriver_set_poseProviderComponent_mE69DED5BA85FA1712F75CCD9217223FA1A0F35EA (TrackedPoseDriver_t5A2DEE7957ED76932DB7460383BF09AB1CB4CCCD* __this, BasePoseProvider_t55E2883DF2C8052200284D64B68471636876FA1D* ___value0, const RuntimeMethod* method) 
 {
 	{
-		// m_PoseProviderComponent = value;
+		// set { m_PoseProviderComponent = value; }
 		BasePoseProvider_t55E2883DF2C8052200284D64B68471636876FA1D* L_0 = ___value0;
 		__this->___m_PoseProviderComponent_6 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_PoseProviderComponent_6), (void*)L_0);
-		// }
+		// set { m_PoseProviderComponent = value; }
 		return;
 	}
 }
@@ -1885,49 +1885,52 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TrackedPoseDriver_GetPoseData_m3B8070
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PoseDataSource_tF08072CF4DBA9641E6AE6D1DBA1D421DA9C46858_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
-	int32_t V_1 = 0;
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
 	{
-		// if (m_PoseProviderComponent != null)
+		// return m_PoseProviderComponent != null
+		//     ? m_PoseProviderComponent.GetPoseFromProvider(out resultPose)
+		//     : PoseDataSource.GetDataFromSource(poseSource, out resultPose);
 		BasePoseProvider_t55E2883DF2C8052200284D64B68471636876FA1D* L_0 = __this->___m_PoseProviderComponent_6;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		V_0 = L_1;
-		bool L_2 = V_0;
-		if (!L_2)
+		if (L_1)
 		{
-			goto IL_0021;
+			goto IL_0018;
 		}
 	}
 	{
-		// return m_PoseProviderComponent.GetPoseFromProvider(out resultPose);
-		BasePoseProvider_t55E2883DF2C8052200284D64B68471636876FA1D* L_3 = __this->___m_PoseProviderComponent_6;
-		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_4 = ___resultPose2;
-		NullCheck(L_3);
-		int32_t L_5;
-		L_5 = VirtualFuncInvoker1< int32_t, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* >::Invoke(4 /* UnityEngine.SpatialTracking.PoseDataFlags UnityEngine.Experimental.XR.Interaction.BasePoseProvider::GetPoseFromProvider(UnityEngine.Pose&) */, L_3, L_4);
-		V_1 = L_5;
-		goto IL_002b;
-	}
-
-IL_0021:
-	{
-		// return PoseDataSource.GetDataFromSource(poseSource, out resultPose);
-		int32_t L_6 = ___poseSource1;
-		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_7 = ___resultPose2;
+		int32_t L_2 = ___poseSource1;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_3 = ___resultPose2;
 		il2cpp_codegen_runtime_class_init_inline(PoseDataSource_tF08072CF4DBA9641E6AE6D1DBA1D421DA9C46858_il2cpp_TypeInfo_var);
-		int32_t L_8;
-		L_8 = PoseDataSource_GetDataFromSource_mD37A9CC706B99D7A2535DEA7CB0D40F7F47B277A(L_6, L_7, NULL);
-		V_1 = L_8;
-		goto IL_002b;
+		int32_t L_4;
+		L_4 = PoseDataSource_GetDataFromSource_mD37A9CC706B99D7A2535DEA7CB0D40F7F47B277A(L_2, L_3, NULL);
+		G_B3_0 = L_4;
+		goto IL_0024;
 	}
 
-IL_002b:
+IL_0018:
+	{
+		BasePoseProvider_t55E2883DF2C8052200284D64B68471636876FA1D* L_5 = __this->___m_PoseProviderComponent_6;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_6 = ___resultPose2;
+		NullCheck(L_5);
+		int32_t L_7;
+		L_7 = VirtualFuncInvoker1< int32_t, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* >::Invoke(4 /* UnityEngine.SpatialTracking.PoseDataFlags UnityEngine.Experimental.XR.Interaction.BasePoseProvider::GetPoseFromProvider(UnityEngine.Pose&) */, L_5, L_6);
+		G_B3_0 = L_7;
+	}
+
+IL_0024:
+	{
+		V_0 = G_B3_0;
+		goto IL_0027;
+	}
+
+IL_0027:
 	{
 		// }
-		int32_t L_9 = V_1;
-		return L_9;
+		int32_t L_8 = V_0;
+		return L_8;
 	}
 }
 // UnityEngine.SpatialTracking.TrackedPoseDriver/TrackingType UnityEngine.SpatialTracking.TrackedPoseDriver::get_trackingType()
@@ -2486,12 +2489,6 @@ IL_001d:
 // System.Void UnityEngine.SpatialTracking.TrackedPoseDriver::PerformUpdate()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedPoseDriver_PerformUpdate_m7ECADDEEA9C6EC284D0EB169605B6BCA34449D97 (TrackedPoseDriver_t5A2DEE7957ED76932DB7460383BF09AB1CB4CCCD* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
 	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	int32_t V_1 = 0;
@@ -2512,49 +2509,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedPoseDriver_PerformUpdate_m7ECADDE
 	}
 	{
 		// return;
-		goto IL_005c;
+		goto IL_004e;
 	}
 
 IL_0010:
 	{
-		// Pose currentPose = new Pose();
-		il2cpp_codegen_initobj((&V_0), sizeof(Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971));
-		// currentPose = Pose.identity;
-		il2cpp_codegen_runtime_class_init_inline(Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_il2cpp_TypeInfo_var);
-		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_2;
-		L_2 = Pose_get_identity_m145C7BA9D895CD7F8CCE2483B69764F7A9FEC66E(NULL);
-		V_0 = L_2;
 		// PoseDataFlags poseFlags = GetPoseData(m_Device, m_PoseSource, out currentPose);
-		int32_t L_3 = __this->___m_Device_4;
-		int32_t L_4 = __this->___m_PoseSource_5;
-		int32_t L_5;
-		L_5 = TrackedPoseDriver_GetPoseData_m3B8070CB063DE4D7A901AD9715E0016B68AADE6C(__this, L_3, L_4, (&V_0), NULL);
-		V_1 = L_5;
-		// if(poseFlags != PoseDataFlags.NoData)
-		int32_t L_6 = V_1;
-		V_3 = (bool)((!(((uint32_t)L_6) <= ((uint32_t)0)))? 1 : 0);
-		bool L_7 = V_3;
-		if (!L_7)
+		int32_t L_2 = __this->___m_Device_4;
+		int32_t L_3 = __this->___m_PoseSource_5;
+		int32_t L_4;
+		L_4 = TrackedPoseDriver_GetPoseData_m3B8070CB063DE4D7A901AD9715E0016B68AADE6C(__this, L_2, L_3, (&V_0), NULL);
+		V_1 = L_4;
+		// if (poseFlags != PoseDataFlags.NoData)
+		int32_t L_5 = V_1;
+		V_3 = (bool)((!(((uint32_t)L_5) <= ((uint32_t)0)))? 1 : 0);
+		bool L_6 = V_3;
+		if (!L_6)
 		{
-			goto IL_005c;
+			goto IL_004e;
 		}
 	}
 	{
 		// Pose localPose = TransformPoseByOriginIfNeeded(currentPose);
-		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_8 = V_0;
-		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_9;
-		L_9 = TrackedPoseDriver_TransformPoseByOriginIfNeeded_mA8C3ADCF55349F26E6AC90CC2488217ECC49F1B2(__this, L_8, NULL);
-		V_4 = L_9;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_7 = V_0;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_8;
+		L_8 = TrackedPoseDriver_TransformPoseByOriginIfNeeded_mA8C3ADCF55349F26E6AC90CC2488217ECC49F1B2(__this, L_7, NULL);
+		V_4 = L_8;
 		// SetLocalTransform(localPose.position, localPose.rotation, poseFlags);
-		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_10 = V_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = L_10.___position_0;
-		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_12 = V_4;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_13 = L_12.___rotation_1;
-		int32_t L_14 = V_1;
-		VirtualActionInvoker3< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, int32_t >::Invoke(11 /* System.Void UnityEngine.SpatialTracking.TrackedPoseDriver::SetLocalTransform(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.SpatialTracking.PoseDataFlags) */, __this, L_11, L_13, L_14);
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_9 = V_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = L_9.___position_0;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_11 = V_4;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_12 = L_11.___rotation_1;
+		int32_t L_13 = V_1;
+		VirtualActionInvoker3< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, int32_t >::Invoke(11 /* System.Void UnityEngine.SpatialTracking.TrackedPoseDriver::SetLocalTransform(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.SpatialTracking.PoseDataFlags) */, __this, L_10, L_12, L_13);
 	}
 
-IL_005c:
+IL_004e:
 	{
 		// }
 		return;
@@ -2566,9 +2556,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedPoseDriver__ctor_mCB5636C22D68590
 	{
 		// TrackedPose m_PoseSource = TrackedPoseDriver.TrackedPose.Center;
 		__this->___m_PoseSource_5 = 2;
-		// BasePoseProvider m_PoseProviderComponent = null;
-		__this->___m_PoseProviderComponent_6 = (BasePoseProvider_t55E2883DF2C8052200284D64B68471636876FA1D*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_PoseProviderComponent_6), (void*)(BasePoseProvider_t55E2883DF2C8052200284D64B68471636876FA1D*)NULL);
 		// UpdateType m_UpdateType = UpdateType.UpdateAndBeforeRender;
 		__this->___m_UpdateType_8 = 0;
 		// bool m_UseRelativeTransform = false;
@@ -2591,7 +2578,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BasePoseProvider_GetPoseFromProvider_
 	bool V_0 = false;
 	int32_t V_1 = 0;
 	{
-		// if(TryGetPoseFromProvider(out output))
+		// if (TryGetPoseFromProvider(out output))
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_0 = ___output0;
 		bool L_1;
 		L_1 = VirtualFuncInvoker1< bool, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* >::Invoke(5 /* System.Boolean UnityEngine.Experimental.XR.Interaction.BasePoseProvider::TryGetPoseFromProvider(UnityEngine.Pose&) */, __this, L_0);

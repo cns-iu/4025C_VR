@@ -2,19 +2,22 @@
 using UnityEngine.InputSystem;
 using TMPro;
 
+// 2022-10-27
+
 public class DMMMover : MonoBehaviour {
 
     public Transform container;
     public float speed = 2;
     public float minimumDepth = 0.3f;
     public float maximumDepth = 10f;
+    public float distance = 1f;
     public TextMeshProUGUI textOutput;
 
     public InputActionReference thumbStickReference;
 
     private Vector2 thumbStickPrevious = new Vector2();
     private Vector2 thumbStick = new Vector2();
-    private float distance = 1;
+
 
     private void Start() {
         Layout();

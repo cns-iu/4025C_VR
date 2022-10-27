@@ -79,3 +79,11 @@ Update Mode: updateDependencies
 
 The following packages were updated:
   com.unity.ide.rider from version 3.0.14 to 3.0.15
+
+=== Thu Oct 27 15:39:39 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.xr.openxr from version 1.4.2 to 1.5.3

@@ -51,6 +51,21 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 {
 };
 
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	// System.Boolean System.Boolean::m_value
+	bool ___m_value_0;
+};
+
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
 // System.IntPtr
 struct IntPtr_t 
 {
@@ -146,6 +161,10 @@ struct OpenXRFeature_tC2F8F480D62C277B2ECDD605F64E45053CD85143_StaticFields
 // UnityEngine.XR.OpenXR.Features.OculusQuestSupport.OculusQuestFeature
 struct OculusQuestFeature_tF5FA7128BB36F546D5CF7094A93B812DAC667810  : public OpenXRFeature_tC2F8F480D62C277B2ECDD605F64E45053CD85143
 {
+	// System.Boolean UnityEngine.XR.OpenXR.Features.OculusQuestSupport.OculusQuestFeature::targetQuest
+	bool ___targetQuest_17;
+	// System.Boolean UnityEngine.XR.OpenXR.Features.OculusQuestSupport.OculusQuestFeature::targetQuest2
+	bool ___targetQuest2_18;
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -172,6 +191,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenXRFeature__ctor_m120460E34ECC22ED2DB
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusQuestFeature__ctor_mF38393F1A5FA04C3AF781D82EC58A4CBB9D85AA2 (OculusQuestFeature_tF5FA7128BB36F546D5CF7094A93B812DAC667810* __this, const RuntimeMethod* method) 
 {
 	{
+		// public bool targetQuest = true;
+		__this->___targetQuest_17 = (bool)1;
+		// public bool targetQuest2 = true;
+		__this->___targetQuest2_18 = (bool)1;
 		OpenXRFeature__ctor_m120460E34ECC22ED2DB96797A6DCB5C870E78852(__this, NULL);
 		return;
 	}

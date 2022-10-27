@@ -920,6 +920,7 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 };
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=60
+#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D60_t10893C5AF02B4D44B2395D29E4E7BB59F648AF17 
 {
 	union
@@ -933,6 +934,7 @@ struct __StaticArrayInitTypeSizeU3D60_t10893C5AF02B4D44B2395D29E4E7BB59F648AF17
 		uint8_t __StaticArrayInitTypeSizeU3D60_t10893C5AF02B4D44B2395D29E4E7BB59F648AF17__padding[60];
 	};
 };
+#pragma pack(pop, tp)
 
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.InputDevice>
 struct Enumerator_t2A0DD7C3F41DE0D8FD672B874BDDB066261ECB01 
