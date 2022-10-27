@@ -1,9 +1,12 @@
 ﻿using TMPro;
 using UnityEngine;
 
+// 2022-10-24
+
 public class HUDConsole : MonoBehaviour {
 
     public ConController controllerScript;    //access to ConnectorController
+    public SceneController sceneController;
     public TextMeshProUGUI buttonModeText;
 
     private const int MAX_SIZE = 2048;
@@ -12,21 +15,26 @@ public class HUDConsole : MonoBehaviour {
 
     private string fullLog = string.Empty;
 
+
     private void Start() {
         Application.logMessageReceived += EventLogRecieved; 
     }
+
 
     private void OnDestroy() {
         Application.logMessageReceived -= EventLogRecieved;
     }
 
-    public void ClearLog() {
+
+    public void ClearLog()
+    {
         fullLog = string.Empty;
         textField.text = fullLog;
     }
 
-    public void ModeSwitch(){
-       
+
+    public void ModeSwitch()
+    {
         if (controllerScript.nodeMode == false)
         {
             controllerScript.nodeMode = true;
@@ -37,8 +45,25 @@ public class HUDConsole : MonoBehaviour {
             controllerScript.nodeMode = false;
             buttonModeText.text = "System";
         }
-       
     }
+
+
+    public void ResetPrefs()
+    {
+        Debug.Log("Before reset prefs: " +
+            sceneController.testInt +
+            ", " +
+            sceneController.testString);
+
+        sceneController.testInt = 0;
+        sceneController.testString = "default";
+
+        Debug.Log("After reset prefs: " +
+            sceneController.testInt +
+            ", " +
+            sceneController.testString);
+    }
+
 
     private void EventLogRecieved(string pMessage, string pStackTrace, LogType pType) {
         fullLog = $"[{pType}] {pMessage}\n{fullLog}";

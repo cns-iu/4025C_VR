@@ -5,7 +5,7 @@ using OculusSampleFramework;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-// 2022-10-19
+// 2022-10-26
 
 
 public class SceneController : MonoBehaviour
@@ -29,6 +29,13 @@ public class SceneController : MonoBehaviour
     const int bConnected = 4;
     const int bLibrary = 8;
     const int bInitIgnore = 16;
+
+    // for preference saving tests
+    public int testInt = 0;
+    public string testString = "default";
+    public VisibilityToggle visibilityToggle;
+
+
 
     public void soundTrigger(GameObject c)
     {
@@ -165,6 +172,8 @@ public class SceneController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        LoadPrefs();    // only seems to work from Start()
         // build and packacke test assembly
         AssemblyPackage(testManifest);
         jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
@@ -173,9 +182,47 @@ public class SceneController : MonoBehaviour
         GameObject.Find("ToAssembly").GetComponent<AudioSource>().Play();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void OnApplicationFocus(bool focus)
+    {
+        if (!focus)
+        {
+            SavePrefs();
+        }
+    }
+
+    /*
+    not working on Oculus
+    private void OnApplicationQuit()
+    {
+        SavePrefs();
+    }
+    */
+
+
+    public void SavePrefs()
+    {
+        testInt ++;
+
+        Debug.Log("saving prefs:" + testInt + " console: " + visibilityToggle.consoleVisibility);
+
+        PlayerPrefs.SetString("Model", "star7u");
+        PlayerPrefs.SetInt("TestInt", testInt);
+        PlayerPrefs.SetInt("consoleVisibility", visibilityToggle.consoleVisibility);
+        PlayerPrefs.Save();
+    }
+
+
+    public void LoadPrefs()
     {
         
+        string objectModel = PlayerPrefs.GetString("Model", "nothing");
+        testInt = PlayerPrefs.GetInt("TestInt", 0);
+        visibilityToggle.consoleVisibility = PlayerPrefs.GetInt("consoleVisibility", 0);
+
+        visibilityToggle.ToggleConsole();
+
+        Debug.Log("loading prefs: " + testInt + " console: " + visibilityToggle.consoleVisibility);
+
     }
 }
