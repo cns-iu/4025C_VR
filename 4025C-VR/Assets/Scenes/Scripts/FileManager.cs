@@ -8,6 +8,7 @@ using UnityEngine;
 
 public class FileManager : MonoBehaviour
 {
+    /*
     public static bool WriteToFile(string a_FileName, string a_FileContents)
     {
         var fullPath = Path.Combine(Application.persistentDataPath, a_FileName);
@@ -40,4 +41,5 @@ public class FileManager : MonoBehaviour
             return false;
         }
     }
+    */
 }

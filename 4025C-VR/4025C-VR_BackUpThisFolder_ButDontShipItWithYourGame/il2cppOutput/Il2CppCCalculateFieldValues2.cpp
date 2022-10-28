@@ -35985,12 +35985,12 @@ struct InteractionHandler_t62AC7C075C994CBDADD4E9B90E45F76960E807AE  : public Mo
 // JsonTests
 struct JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// System.String JsonTests::playerName
-	String_t* ___playerName_4;
-	// System.Int32 JsonTests::lives
-	int32_t ___lives_5;
-	// System.Single JsonTests::health
-	float ___health_6;
+	// System.String JsonTests::starModel
+	String_t* ___starModel_4;
+	// System.Int32 JsonTests::starConnectors
+	int32_t ___starConnectors_5;
+	// System.Int32 JsonTests::starID
+	int32_t ___starID_6;
 };
 
 // UnityEngine.XR.OpenXR.Features.Interactions.KHRSimpleControllerProfile
@@ -43131,7 +43131,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6021[6] =
 	static_cast<int32_t>(offsetof(HUDConsole_t530FB15B00A54B0D6D5D17BFA29BC41B9196E70E, ___controllerScript_4)),static_cast<int32_t>(offsetof(HUDConsole_t530FB15B00A54B0D6D5D17BFA29BC41B9196E70E, ___sceneController_5)),static_cast<int32_t>(offsetof(HUDConsole_t530FB15B00A54B0D6D5D17BFA29BC41B9196E70E, ___buttonModeText_6)),0,static_cast<int32_t>(offsetof(HUDConsole_t530FB15B00A54B0D6D5D17BFA29BC41B9196E70E, ___textField_8)),static_cast<int32_t>(offsetof(HUDConsole_t530FB15B00A54B0D6D5D17BFA29BC41B9196E70E, ___fullLog_9)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6022[3] = 
 {
-	static_cast<int32_t>(offsetof(JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD, ___playerName_4)),static_cast<int32_t>(offsetof(JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD, ___lives_5)),static_cast<int32_t>(offsetof(JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD, ___health_6)),};
+	static_cast<int32_t>(offsetof(JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD, ___starModel_4)),static_cast<int32_t>(offsetof(JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD, ___starConnectors_5)),static_cast<int32_t>(offsetof(JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD, ___starID_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6023[6] = 
 {
 	static_cast<int32_t>(offsetof(LineRendererSettings_t3EFA49CB38F075B008C5DB769713314BF515BDD1, ___rend_4)),static_cast<int32_t>(offsetof(LineRendererSettings_t3EFA49CB38F075B008C5DB769713314BF515BDD1, ___points_5)),static_cast<int32_t>(offsetof(LineRendererSettings_t3EFA49CB38F075B008C5DB769713314BF515BDD1, ___panel_6)),static_cast<int32_t>(offsetof(LineRendererSettings_t3EFA49CB38F075B008C5DB769713314BF515BDD1, ___img_7)),static_cast<int32_t>(offsetof(LineRendererSettings_t3EFA49CB38F075B008C5DB769713314BF515BDD1, ___btn_8)),static_cast<int32_t>(offsetof(LineRendererSettings_t3EFA49CB38F075B008C5DB769713314BF515BDD1, ___layerMask_9)),};

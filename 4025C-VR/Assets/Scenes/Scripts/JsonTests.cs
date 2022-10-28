@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class JsonTests : MonoBehaviour
 {
-    public string playerName;
-    public int lives;
-    public float health;
+    
+    public string starModel;
+    public int starConnectors;
+    public int starID;
 
     public string SaveToString()
     {
         return JsonUtility.ToJson(this);
     }
 
+    /*
     public void Start()
     {
         playerName = "Peter Dummkopf";
@@ -22,6 +24,7 @@ public class JsonTests : MonoBehaviour
         string wtf = SaveToString();
         Debug.Log(wtf);
     }
+    */
 
     
 

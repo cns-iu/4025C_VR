@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using OculusSampleFramework;
 //using System.Numerics;
 using UnityEngine;
@@ -34,8 +36,7 @@ public class SceneController : MonoBehaviour
     public int testInt = 0;
     public VisibilityToggle visibilityToggle;
     public DMMMover dmmMover;
-
-
+    //public JsonTests jsonTests;
 
     public void soundTrigger(GameObject c)
     {
@@ -174,6 +175,7 @@ public class SceneController : MonoBehaviour
     {
 
         LoadPrefs();    // only seems to work from Start()
+        SaveData();
         // build and packacke test assembly
         AssemblyPackage(testManifest);
         jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
@@ -233,13 +235,58 @@ public class SceneController : MonoBehaviour
 
     public void SaveData()
     {
-       // string a_Saveables = "testObject";
+        GetComponent<JsonTests>().starModel = "s3u";
+        GetComponent<JsonTests>().starConnectors = 3;
+        GetComponent<JsonTests>().starID = 2;
+
+        string wtf = GetComponent<JsonTests>().SaveToString();
+        string a_FileName = "SaveData01.dat";
+        Debug.Log(wtf);
+        // string a_Saveables = "testObject";
         //SaveDataManager.SaveJsonData(IEnumerable<ISaveable> a_Saveables);
         Debug.Log("saving data...");
+        WriteToFile(a_FileName, wtf);
     }
+
+   
 
     public void LoadData()
     {
         Debug.Log("loading data...");
+    }
+
+   
+
+    public static bool WriteToFile(string a_FileName, string a_FileContents)
+    {
+        var fullPath = Path.Combine(Application.persistentDataPath, a_FileName);
+
+        try
+        {
+            File.WriteAllText(fullPath, a_FileContents);
+            return true;
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Failed to write to {fullPath} with exception {e}");
+            return false;
+        }
+    }
+
+    public static bool LoadFromFile(string a_FileName, out string result)
+    {
+        var fullPath = Path.Combine(Application.persistentDataPath, a_FileName);
+
+        try
+        {
+            result = File.ReadAllText(fullPath);
+            return true;
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Failed to read from {fullPath} with exception {e}");
+            result = "";
+            return false;
+        }
     }
 }

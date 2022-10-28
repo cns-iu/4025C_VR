@@ -47409,12 +47409,12 @@ struct InteractionHandler_t62AC7C075C994CBDADD4E9B90E45F76960E807AE  : public Mo
 // JsonTests
 struct JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// System.String JsonTests::playerName
-	String_t* ___playerName_4;
-	// System.Int32 JsonTests::lives
-	int32_t ___lives_5;
-	// System.Single JsonTests::health
-	float ___health_6;
+	// System.String JsonTests::starModel
+	String_t* ___starModel_4;
+	// System.Int32 JsonTests::starConnectors
+	int32_t ___starConnectors_5;
+	// System.Int32 JsonTests::starID
+	int32_t ___starID_6;
 };
 
 // UnityEngine.XR.OpenXR.Features.Interactions.KHRSimpleControllerProfile

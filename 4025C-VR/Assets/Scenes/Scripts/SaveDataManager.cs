@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 public class SaveDataManager : MonoBehaviour
 {
+    /*
     public static void SaveJsonData(IEnumerable<ISaveable> a_Saveables)
     {
         SaveData sd = new SaveData();
@@ -34,4 +35,5 @@ public class SaveDataManager : MonoBehaviour
             Debug.Log("Load complete");
         }
     }
+    */
 }

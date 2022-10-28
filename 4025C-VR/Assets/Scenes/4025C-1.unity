@@ -24154,14 +24154,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816387184}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d6ddcce56e384f4a92a5f4290efdcfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: Dr Charles
-  lives: 9
-  health: 0.8
+  starModel: 
+  starConnectors: 0
+  starID: 0
 --- !u!1 &1829734203
 GameObject:
   m_ObjectHideFlags: 0

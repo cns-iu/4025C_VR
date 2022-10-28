@@ -406,6 +406,8 @@ struct ObjectManipulator_tA13D2F669B8A95F2E2D5B70B62944C65DB0B4C37;
 struct OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847;
 // OverlayPassthrough
 struct OverlayPassthrough_tB1254B7C8C316EE465B3D82B5DADBBB4B9DFD657;
+// ParentData
+struct ParentData_tA9CD478AD6DF9C9F1818DE0C3267408D39A8BD05;
 // PassthroughBrush
 struct PassthroughBrush_t10BDE8CD2D5F114064044E1020825B0DD5AB9A8F;
 // PassthroughController
@@ -539,7 +541,6 @@ IL2CPP_EXTERN_C RuntimeClass* Controller_tBCAA59EAD9BFE2381E974A48B203D044B6CE1E
 IL2CPP_EXTERN_C RuntimeClass* DebugUIBuilder_tC18B19AE08445BA1378C7DABB0E4858217E02E71_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t9987DACE70B120172EBEAF2BB5853128595A2CDF_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GrabbedObject_tA6B05BA3219A736CE99A71B4098441732453DFFA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
@@ -595,7 +596,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745
 IL2CPP_EXTERN_C String_t* _stringLiteral25D74BC981E6316A5E3CAEEA0BAF3C438F5C94DA;
 IL2CPP_EXTERN_C String_t* _stringLiteral25F02F199E16DB6F2624967748D0D1B6A32D78B6;
 IL2CPP_EXTERN_C String_t* _stringLiteral266C74B0675105E75BD82D538C620DB31451081A;
-IL2CPP_EXTERN_C String_t* _stringLiteral26AE9A96102735089502425A2F167CC3E7B24061;
 IL2CPP_EXTERN_C String_t* _stringLiteral27BC30BD0D04E5E0805E0ECABB847EFA2F2AD34F;
 IL2CPP_EXTERN_C String_t* _stringLiteral2874EF83369B550F7785E38A29E43121158E6B67;
 IL2CPP_EXTERN_C String_t* _stringLiteral2F7234099CCD07F9C0939ACCC13D7F7F6E95DBAD;
@@ -611,7 +611,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral3D444DD76EADB57D88274F632D01D1FEDBA936B5
 IL2CPP_EXTERN_C String_t* _stringLiteral430E518F836082E0683698AB9E3F79D39C7F5140;
 IL2CPP_EXTERN_C String_t* _stringLiteral441B32D4A5494A0DCB604A5EBE2FBE261CB611D7;
 IL2CPP_EXTERN_C String_t* _stringLiteral44755943728AC74A2C46AEFBB77C5C904EBF0B80;
-IL2CPP_EXTERN_C String_t* _stringLiteral49923F1DF42F9D5F9E57AF2E333E6BC0702CDC98;
 IL2CPP_EXTERN_C String_t* _stringLiteral549B0068FE6C0F8A113CBB1A633A21528CA9B58A;
 IL2CPP_EXTERN_C String_t* _stringLiteral5A09C959900637EEA13DFE369C935527B2043663;
 IL2CPP_EXTERN_C String_t* _stringLiteral5CAEDEE1BCFE56335D2C1E70E1A38971982325AD;
@@ -656,7 +655,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC2B6B580C3EFF943BC369D46920A84437F2849AA
 IL2CPP_EXTERN_C String_t* _stringLiteralC3234E6795E3D6E27C181302AFCA62208A2ADCA7;
 IL2CPP_EXTERN_C String_t* _stringLiteralC40762E8E6AAA0C944E491481ADCEE08D9228B49;
 IL2CPP_EXTERN_C String_t* _stringLiteralCD4C24586A494F48B8447F200488E5DC6072B55A;
-IL2CPP_EXTERN_C String_t* _stringLiteralDA239E31B6E2591BE90F456C9141DBCC18C52474;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralF1B522ED0EDFDFA9B9158B84A066DD4DF20743D3;
 IL2CPP_EXTERN_C String_t* _stringLiteralF7DDF59B44DDF9253B657C54053522CF694D3FBE;
@@ -3709,12 +3707,12 @@ struct HandMeshUI_tA9E45B97E256958006F46E223574B6B59C875526  : public MonoBehavi
 // JsonTests
 struct JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// System.String JsonTests::playerName
-	String_t* ___playerName_4;
-	// System.Int32 JsonTests::lives
-	int32_t ___lives_5;
-	// System.Single JsonTests::health
-	float ___health_6;
+	// System.String JsonTests::starModel
+	String_t* ___starModel_4;
+	// System.Int32 JsonTests::starConnectors
+	int32_t ___starConnectors_5;
+	// System.Int32 JsonTests::starID
+	int32_t ___starID_6;
 };
 
 // LineRendererSettings
@@ -4016,6 +4014,13 @@ struct OverlayPassthrough_tB1254B7C8C316EE465B3D82B5DADBBB4B9DFD657  : public Mo
 {
 	// OVRPassthroughLayer OverlayPassthrough::passthroughLayer
 	OVRPassthroughLayer_tE81E021B78942BCB1DCCAEDDC82A25C9F6AD771F* ___passthroughLayer_4;
+};
+
+// ParentData
+struct ParentData_tA9CD478AD6DF9C9F1818DE0C3267408D39A8BD05  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.String ParentData::parentType
+	String_t* ___parentType_4;
 };
 
 // PassthroughBrush
@@ -6332,16 +6337,6 @@ inline BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* Component_GetCompo
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Slider_set_maxValue_m43F3BF47C6D7063D80C578FD9B95AD88494203BE (Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* __this, float ___value0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.UI.Slider::set_minValue(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Slider_set_minValue_mC4D1F7709276A9A418F9284A04799FF767DEDC4F (Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* __this, float ___value0, const RuntimeMethod* method) ;
-// System.String UnityEngine.Application::get_persistentDataPath()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399 (const RuntimeMethod* method) ;
-// System.String System.IO.Path::Combine(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE (String_t* ___path10, String_t* ___path21, const RuntimeMethod* method) ;
-// System.Void System.IO.File::WriteAllText(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void File_WriteAllText_m8AE8932A417928EF1E86F1E6B37C7A41904614D1 (String_t* ___path0, String_t* ___contents1, const RuntimeMethod* method) ;
-// System.String System.String::Format(System.String,System.Object,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987 (String_t* ___format0, RuntimeObject* ___arg01, RuntimeObject* ___arg12, const RuntimeMethod* method) ;
-// System.String System.IO.File::ReadAllText(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* File_ReadAllText_mA4A939F853D573379F7129AFDC469B91E9747BAA (String_t* ___path0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Application/LogCallback::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LogCallback__ctor_m327A4C69691F8A4B01D405858E48B8A7D9D2A79D (LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Application::add_logMessageReceived(UnityEngine.Application/LogCallback)
@@ -6356,8 +6351,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE (String_t* __this, int32_t ___startIndex0, int32_t ___length1, const RuntimeMethod* method) ;
 // System.String UnityEngine.JsonUtility::ToJson(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JsonUtility_ToJson_m28CC6843B9D3723D88AD13EA3829B71FDE7826BA (RuntimeObject* ___obj0, const RuntimeMethod* method) ;
-// System.String JsonTests::SaveToString()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JsonTests_SaveToString_m34ABDD10E57EF4F2353DBC201F1C6C4730334B50 (JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD* __this, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<UnityEngine.UI.Image>()
 inline Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* GameObject_GetComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mA59EA7D5F9133B2593F4AB70B099928BA955EE7D (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
 {
@@ -22105,147 +22098,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Example__ctor_m7474237BC419746BA35DC0391
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Boolean FileManager::WriteToFile(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FileManager_WriteToFile_m54E8E710E4736BFDD406C091DB99D73ACCEDD0F4 (String_t* ___a_FileName0, String_t* ___a_FileContents1, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	String_t* V_0 = NULL;
-	bool V_1 = false;
-	Exception_t* V_2 = NULL;
-	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
-	{
-		// var fullPath = Path.Combine(Application.persistentDataPath, a_FileName);
-		String_t* L_0;
-		L_0 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
-		String_t* L_1 = ___a_FileName0;
-		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
-		String_t* L_2;
-		L_2 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_0, L_1, NULL);
-		V_0 = L_2;
-	}
-	try
-	{// begin try (depth: 1)
-		// File.WriteAllText(fullPath, a_FileContents);
-		String_t* L_3 = V_0;
-		String_t* L_4 = ___a_FileContents1;
-		File_WriteAllText_m8AE8932A417928EF1E86F1E6B37C7A41904614D1(L_3, L_4, NULL);
-		// return true;
-		V_1 = (bool)1;
-		goto IL_0032;
-	}// end try (depth: 1)
-	catch(Il2CppExceptionWrapper& e)
-	{
-		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
-		{
-			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_001a;
-		}
-		throw e;
-	}
-
-CATCH_001a:
-	{// begin catch(System.Exception)
-		// catch (Exception e)
-		V_2 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-		// Debug.LogError($"Failed to write to {fullPath} with exception {e}");
-		String_t* L_5 = V_0;
-		Exception_t* L_6 = V_2;
-		String_t* L_7;
-		L_7 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral49923F1DF42F9D5F9E57AF2E333E6BC0702CDC98)), L_5, L_6, NULL);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
-		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_7, NULL);
-		// return false;
-		V_1 = (bool)0;
-		IL2CPP_POP_ACTIVE_EXCEPTION();
-		goto IL_0032;
-	}// end catch (depth: 1)
-
-IL_0032:
-	{
-		// }
-		bool L_8 = V_1;
-		return L_8;
-	}
-}
-// System.Boolean FileManager::LoadFromFile(System.String,System.String&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FileManager_LoadFromFile_m9454F19C228B28D11E135AD598FAEF64E157425F (String_t* ___a_FileName0, String_t** ___result1, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	String_t* V_0 = NULL;
-	bool V_1 = false;
-	Exception_t* V_2 = NULL;
-	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
-	{
-		// var fullPath = Path.Combine(Application.persistentDataPath, a_FileName);
-		String_t* L_0;
-		L_0 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
-		String_t* L_1 = ___a_FileName0;
-		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
-		String_t* L_2;
-		L_2 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_0, L_1, NULL);
-		V_0 = L_2;
-	}
-	try
-	{// begin try (depth: 1)
-		// result = File.ReadAllText(fullPath);
-		String_t** L_3 = ___result1;
-		String_t* L_4 = V_0;
-		String_t* L_5;
-		L_5 = File_ReadAllText_mA4A939F853D573379F7129AFDC469B91E9747BAA(L_4, NULL);
-		*((RuntimeObject**)L_3) = (RuntimeObject*)L_5;
-		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_3, (void*)(RuntimeObject*)L_5);
-		// return true;
-		V_1 = (bool)1;
-		goto IL_0039;
-	}// end try (depth: 1)
-	catch(Il2CppExceptionWrapper& e)
-	{
-		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
-		{
-			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_001a;
-		}
-		throw e;
-	}
-
-CATCH_001a:
-	{// begin catch(System.Exception)
-		// catch (Exception e)
-		V_2 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-		// Debug.LogError($"Failed to read from {fullPath} with exception {e}");
-		String_t* L_6 = V_0;
-		Exception_t* L_7 = V_2;
-		String_t* L_8;
-		L_8 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDA239E31B6E2591BE90F456C9141DBCC18C52474)), L_6, L_7, NULL);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
-		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_8, NULL);
-		// result = "";
-		String_t** L_9 = ___result1;
-		*((RuntimeObject**)L_9) = (RuntimeObject*)((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709));
-		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_9, (void*)(RuntimeObject*)((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709)));
-		// return false;
-		V_1 = (bool)0;
-		IL2CPP_POP_ACTIVE_EXCEPTION();
-		goto IL_0039;
-	}// end catch (depth: 1)
-
-IL_0039:
-	{
-		// }
-		bool L_10 = V_1;
-		return L_10;
-	}
-}
 // System.Void FileManager::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileManager__ctor_m0B6F55C564B49AAC572BC8A7B1A93A3A5A1EE8B1 (FileManager_tE4C22CEBE26FF2470C75193FDD4C8238ED68161B* __this, const RuntimeMethod* method) 
 {
@@ -22517,37 +22369,6 @@ IL_000a:
 		// }
 		String_t* L_1 = V_0;
 		return L_1;
-	}
-}
-// System.Void JsonTests::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JsonTests_Start_m57F33A65DB608EEE3E7300AE21B24A6C6BC4E81B (JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral26AE9A96102735089502425A2F167CC3E7B24061);
-		s_Il2CppMethodInitialized = true;
-	}
-	String_t* V_0 = NULL;
-	{
-		// playerName = "Peter Dummkopf";
-		__this->___playerName_4 = _stringLiteral26AE9A96102735089502425A2F167CC3E7B24061;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___playerName_4), (void*)_stringLiteral26AE9A96102735089502425A2F167CC3E7B24061);
-		// lives = 111;
-		__this->___lives_5 = ((int32_t)111);
-		// health = 12.8f;
-		__this->___health_6 = (12.8000002f);
-		// string wtf = SaveToString();
-		String_t* L_0;
-		L_0 = JsonTests_SaveToString_m34ABDD10E57EF4F2353DBC201F1C6C4730334B50(__this, NULL);
-		V_0 = L_0;
-		// Debug.Log(wtf);
-		String_t* L_1 = V_0;
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_1, NULL);
-		// }
-		return;
 	}
 }
 // System.Void JsonTests::.ctor()
@@ -23371,6 +23192,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusInput__ctor_m71E4EB0C904A36ADA7C36
 		// private XRController controller = null;
 		__this->___controller_5 = (XRController_t928E104C899E51FDE12C0A8AC68874587C46C28F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___controller_5), (void*)(XRController_t928E104C899E51FDE12C0A8AC68874587C46C28F*)NULL);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void ParentData::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParentData_Awake_mED61AD4ACC11F3DA5E9368448FFC50AB0C72C89E (ParentData_tA9CD478AD6DF9C9F1818DE0C3267408D39A8BD05* __this, const RuntimeMethod* method) 
+{
+	{
+		// parentType = this.name;
+		String_t* L_0;
+		L_0 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(__this, NULL);
+		__this->___parentType_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___parentType_4), (void*)L_0);
+		// }
+		return;
+	}
+}
+// System.Void ParentData::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParentData_Update_m0C17A6693C2C7B2D01871E358BB5E1AFBDE581F9 (ParentData_tA9CD478AD6DF9C9F1818DE0C3267408D39A8BD05* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void ParentData::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParentData__ctor_m396879909322C0A12E67F6E07A867FDFD3374B90 (ParentData_tA9CD478AD6DF9C9F1818DE0C3267408D39A8BD05* __this, const RuntimeMethod* method) 
+{
+	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
