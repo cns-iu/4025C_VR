@@ -24043,6 +24043,10 @@ GameObject:
   - component: {fileID: 1816387188}
   - component: {fileID: 1816387185}
   - component: {fileID: 1816387189}
+  - component: {fileID: 1816387192}
+  - component: {fileID: 1816387191}
+  - component: {fileID: 1816387190}
+  - component: {fileID: 1816387193}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -24105,6 +24109,59 @@ MonoBehaviour:
   testInt: 0
   visibilityToggle: {fileID: 1792838857}
   dmmMover: {fileID: 1792838856}
+--- !u!114 &1816387190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816387184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a0ee1d8ff6641ec87d6539fffcb0fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1816387191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816387184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44bf3cb2cd8f240b3917c12a330a5910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1816387192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816387184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0a7b1ea5a0c84ff181e371aaac4ae42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Score: 0
+  m_StarData: []
+--- !u!114 &1816387193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816387184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6ddcce56e384f4a92a5f4290efdcfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Dr Charles
+  lives: 9
+  health: 0.8
 --- !u!1 &1829734203
 GameObject:
   m_ObjectHideFlags: 0

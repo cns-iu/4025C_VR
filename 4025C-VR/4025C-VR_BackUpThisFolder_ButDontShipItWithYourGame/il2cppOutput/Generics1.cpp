@@ -748,6 +748,8 @@ struct Action_1_tC9ED24C0095E54421C391A3B5E7FD6B0D75CFDB2;
 struct Action_1_tD79B5E685127070AEC1ECA23726EC00981506A0B;
 // System.Action`1<Oculus.Platform.Samples.VrVoiceChat.RoomManager/Invite>
 struct Action_1_tCC53847F54FDFE9B93D89BBA4F82C9997BCA2406;
+// System.Action`1<SaveData/StarData>
+struct Action_1_t0F7EB19B4CE46FC6A662426DE086E50750CEE49E;
 // System.Action`1<UnityEngine.Rendering.Universal.ShadowUtility/Edge>
 struct Action_1_tA92AFB339FAE68919988F1265D49D5B106700E4A;
 // System.Action`1<UnityEngine.UIElements.TemplateAsset/AttributeOverride>
@@ -5410,6 +5412,27 @@ struct Invite_tA25C16236BD1D8390F4E48254754E821E1D19B6A_marshaled_com
 {
 	uint64_t ___RoomID_0;
 	Il2CppChar* ___OwnerID_1;
+};
+
+// SaveData/StarData
+struct StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A 
+{
+	// System.String SaveData/StarData::m_type
+	String_t* ___m_type_0;
+	// System.Int32 SaveData/StarData::m_int
+	int32_t ___m_int_1;
+};
+// Native definition for P/Invoke marshalling of SaveData/StarData
+struct StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A_marshaled_pinvoke
+{
+	char* ___m_type_0;
+	int32_t ___m_int_1;
+};
+// Native definition for COM marshalling of SaveData/StarData
+struct StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A_marshaled_com
+{
+	Il2CppChar* ___m_type_0;
+	int32_t ___m_int_1;
 };
 
 // UnityEngine.UIElements.StylePropertyAnimationSystem/ElementPropertyPair
@@ -10247,6 +10270,11 @@ struct Action_1_tD79B5E685127070AEC1ECA23726EC00981506A0B  : public MulticastDel
 
 // System.Action`1<Oculus.Platform.Samples.VrVoiceChat.RoomManager/Invite>
 struct Action_1_tCC53847F54FDFE9B93D89BBA4F82C9997BCA2406  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<SaveData/StarData>
+struct Action_1_t0F7EB19B4CE46FC6A662426DE086E50750CEE49E  : public MulticastDelegate_t
 {
 };
 
@@ -30137,6 +30165,84 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mC0F255ED28CB7B182833A958
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mC93460459B522A578026909D564DAD962AF50610_gshared (Action_1_tCC53847F54FDFE9B93D89BBA4F82C9997BCA2406* __this, Invite_tA25C16236BD1D8390F4E48254754E821E1D19B6A ___obj0, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, Invite_tA25C16236BD1D8390F4E48254754E821E1D19B6A, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void Action_1_Invoke_mDFE98B5B7A7084A31A61B06B7CDA84A206B77B52_Multicast(Action_1_t0F7EB19B4CE46FC6A662426DE086E50750CEE49E* __this, StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A ___obj0, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Action_1_t0F7EB19B4CE46FC6A662426DE086E50750CEE49E* currentDelegate = reinterpret_cast<Action_1_t0F7EB19B4CE46FC6A662426DE086E50750CEE49E*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void Action_1_Invoke_mDFE98B5B7A7084A31A61B06B7CDA84A206B77B52_OpenInst(Action_1_t0F7EB19B4CE46FC6A662426DE086E50750CEE49E* __this, StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A ___obj0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
+}
+void Action_1_Invoke_mDFE98B5B7A7084A31A61B06B7CDA84A206B77B52_OpenStatic(Action_1_t0F7EB19B4CE46FC6A662426DE086E50750CEE49E* __this, StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A ___obj0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
+}
+void Action_1_Invoke_mDFE98B5B7A7084A31A61B06B7CDA84A206B77B52_OpenStaticInvoker(Action_1_t0F7EB19B4CE46FC6A662426DE086E50750CEE49E* __this, StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A ___obj0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker1< StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
+}
+void Action_1_Invoke_mDFE98B5B7A7084A31A61B06B7CDA84A206B77B52_ClosedStaticInvoker(Action_1_t0F7EB19B4CE46FC6A662426DE086E50750CEE49E* __this, StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A ___obj0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< RuntimeObject*, StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
+}
+// System.Void System.Action`1<SaveData/StarData>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m22D5FC4F4E7DB979445CF7A5909A3C732BE983A7_gshared (Action_1_t0F7EB19B4CE46FC6A662426DE086E50750CEE49E* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 1;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mDFE98B5B7A7084A31A61B06B7CDA84A206B77B52_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mDFE98B5B7A7084A31A61B06B7CDA84A206B77B52_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mDFE98B5B7A7084A31A61B06B7CDA84A206B77B52_OpenStatic;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		if (___object0 == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+	}
+	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mDFE98B5B7A7084A31A61B06B7CDA84A206B77B52_Multicast;
+}
+// System.Void System.Action`1<SaveData/StarData>::Invoke(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mDFE98B5B7A7084A31A61B06B7CDA84A206B77B52_gshared (Action_1_t0F7EB19B4CE46FC6A662426DE086E50750CEE49E* __this, StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A ___obj0, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, StarData_tE63168229C7FA2B23DDDE92274DB7CD78119F37A, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 #ifdef __clang__

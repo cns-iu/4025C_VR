@@ -13,6 +13,7 @@
 
 4025C-VR_BackUpThisFolder_ButDontShipItWithYourGame/
 4025C-VR_BurstDebugInformation_DoNotShip/
+4025C-VR/4025C-VR_BackUpThisFolder_ButDontShipItWithYourGame/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 
@@ -73,3 +74,4 @@ crashlytics-build.properties
 
 # Layout file
 *.dwlt
+

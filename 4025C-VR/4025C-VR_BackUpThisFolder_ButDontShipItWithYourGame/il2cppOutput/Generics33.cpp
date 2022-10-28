@@ -11,6 +11,16 @@
 #include <stdint.h>
 
 
+struct VirtualActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
 template <typename R>
 struct VirtualFuncInvoker0
 {
@@ -149,6 +159,8 @@ struct InvokerFuncInvoker2<R, T1*, T2*>
 	}
 };
 
+// System.Action`1<System.Object>
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
 // System.Comparison`1<System.Object>
 struct Comparison_1_t62E531E7B8260E2C6C2718C3BDB8CF8655139645;
 // System.Collections.Generic.Dictionary`2<System.Object,System.Int32>
@@ -175,6 +187,10 @@ struct EqualityComparer_1_tBE7039362398A2C9BD71FAAAB935B7FF9F6EA862;
 struct EqualityComparer_1_t7BD194EF0EF9D754203F4B95A88927DF3621DA17;
 // System.Collections.Generic.EqualityComparer`1<UnityEngine.Vector3Int>
 struct EqualityComparer_1_tE6E8D94B4D1DB3845EC548C4F693E989CCEBEE09;
+// UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1<System.Object>
+struct GestureRecognizer_1_t36E2F5A12154F0109297A031C6EC1C0F28EB8267;
+// UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>
+struct Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8;
 // System.Reflection.RuntimePropertyInfo/Getter`2<System.Object,System.Object>
 struct Getter_2_t10A1DA06B72A5F8B2DC213ACFB609284774C458D;
 // UnityEngine.Rendering.Universal.LibTessDotNet.PriorityHeap`1/HandleElem<System.Object>
@@ -367,6 +383,8 @@ struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA;
 struct UInt64U5BU5D_tAB1A62450AC0899188486EDB9FC066B8BEED9299;
 // UnityEngine.Vector3Int[]
 struct Vector3IntU5BU5D_t7A7C64EB93B0E0C1989C82C3D0A003294FC6EC5E;
+// UnityEngine.XR.ARFoundation.ARSessionOrigin
+struct ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3;
 // System.ArgumentException
 struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263;
 // System.ArgumentNullException
@@ -379,6 +397,8 @@ struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235;
 struct Delegate_t;
 // System.DelegateData
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// UnityEngine.GameObject
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 // System.Collections.IDictionary
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 // System.Collections.IEnumerator
@@ -411,6 +431,8 @@ struct String_t;
 struct Type_t;
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+// Unity.XR.CoreUtils.XROrigin
+struct XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE;
 
 IL2CPP_EXTERN_C RuntimeClass* ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var;
@@ -731,6 +753,46 @@ struct EqualityComparer_1_tE6E8D94B4D1DB3845EC548C4F693E989CCEBEE09_StaticFields
 {
 	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
 	EqualityComparer_1_tE6E8D94B4D1DB3845EC548C4F693E989CCEBEE09* ___defaultComparer_0;
+};
+
+// UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1<System.Object>
+struct GestureRecognizer_1_t36E2F5A12154F0109297A031C6EC1C0F28EB8267  : public RuntimeObject
+{
+	// System.Action`1<T> UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1::onGestureStarted
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___onGestureStarted_0;
+	// Unity.XR.CoreUtils.XROrigin UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1::<xrOrigin>k__BackingField
+	XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE* ___U3CxrOriginU3Ek__BackingField_1;
+	// System.Collections.Generic.List`1<T> UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1::<gestures>k__BackingField
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___U3CgesturesU3Ek__BackingField_2;
+	// System.Collections.Generic.List`1<T> UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1::m_PostponedGesturesToRemove
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___m_PostponedGesturesToRemove_3;
+	// System.Collections.Generic.List`1<T> UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1::m_DeadGesturePool
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___m_DeadGesturePool_4;
+	// System.Boolean UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1::m_IsUpdatingGestures
+	bool ___m_IsUpdatingGestures_5;
+	// UnityEngine.XR.ARFoundation.ARSessionOrigin UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1::<arSessionOrigin>k__BackingField
+	ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* ___U3CarSessionOriginU3Ek__BackingField_6;
+	// System.Collections.Generic.List`1<T> UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1::m_Gestures
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___m_Gestures_7;
+};
+
+// UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>
+struct Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8  : public RuntimeObject
+{
+	// System.Action`1<T> UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1::onStart
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___onStart_0;
+	// System.Action`1<T> UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1::onUpdated
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___onUpdated_1;
+	// System.Action`1<T> UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1::onFinished
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___onFinished_2;
+	// System.Boolean UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1::<isCanceled>k__BackingField
+	bool ___U3CisCanceledU3Ek__BackingField_3;
+	// UnityEngine.GameObject UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1::<targetObject>k__BackingField
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___U3CtargetObjectU3Ek__BackingField_4;
+	// UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1<T> UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1::<recognizer>k__BackingField
+	GestureRecognizer_1_t36E2F5A12154F0109297A031C6EC1C0F28EB8267* ___U3CrecognizerU3Ek__BackingField_5;
+	// System.Boolean UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1::m_HasStarted
+	bool ___m_HasStarted_6;
 };
 
 // UnityEngine.Rendering.Universal.LibTessDotNet.PriorityHeap`1/HandleElem<System.Object>
@@ -1769,6 +1831,29 @@ struct Int32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C
 	int32_t ___value___2;
 };
 
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
+{
+	// System.IntPtr UnityEngine.Object::m_CachedPtr
+	intptr_t ___m_CachedPtr_0;
+};
+
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	// System.Int32 UnityEngine.Object::OffsetOfInstanceIDInCPlusPlusObject
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject_1;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+	intptr_t ___m_CachedPtr_0;
+};
+// Native definition for COM marshalling of UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+	intptr_t ___m_CachedPtr_0;
+};
+
 // System.RuntimeTypeHandle
 struct RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B 
 {
@@ -1783,6 +1868,11 @@ struct Enumerator_t7D5101A67438B617297CAB96AD1375249E187BCE
 	InlinedArray_1_tCD4550E16CF87B93F7C4EF9D0F922C1D5E99FA43 ___array_0;
 	// System.Int32 UnityEngine.InputSystem.Utilities.InlinedArray`1/Enumerator::index
 	int32_t ___index_1;
+};
+
+// UnityEngine.GameObject
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
 };
 
 // System.MulticastDelegate
@@ -1830,6 +1920,11 @@ struct Type_t_StaticFields
 	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterName_5;
 	// System.Reflection.MemberFilter System.Type::FilterNameIgnoreCase
 	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterNameIgnoreCase_6;
+};
+
+// System.Action`1<System.Object>
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87  : public MulticastDelegate_t
+{
 };
 
 // System.Comparison`1<System.Object>
@@ -2740,6 +2835,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* InlinedArray_1_System_Collecti
 
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Delegate System.Delegate::Combine(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00 (Delegate_t* ___a0, Delegate_t* ___b1, const RuntimeMethod* method) ;
+// System.Delegate System.Delegate::Remove(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3 (Delegate_t* ___source0, Delegate_t* ___value1, const RuntimeMethod* method) ;
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57 (RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ___handle0, const RuntimeMethod* method) ;
 // System.Int32 Unity.Burst.BurstRuntime::HashStringWithFNV1A32(System.String)
@@ -2956,6 +3055,547 @@ inline RuntimeObject* InlinedArray_1_System_Collections_IEnumerable_GetEnumerato
 {
 	return ((  RuntimeObject* (*) (InlinedArray_1_tCD4550E16CF87B93F7C4EF9D0F922C1D5E99FA43*, const RuntimeMethod*))InlinedArray_1_System_Collections_IEnumerable_GetEnumerator_m8AD6865F86C8AE23A675247BB9903586765BFF58_gshared)(__this, method);
 }
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::.ctor(UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1__ctor_mDF2E4D22812B2932B9B4D7FC299E5C2224B07CAD_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, GestureRecognizer_1_t36E2F5A12154F0109297A031C6EC1C0F28EB8267* ___recognizer0, const RuntimeMethod* method) 
+{
+	{
+		// internal Gesture(GestureRecognizer<T> recognizer)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
+		// this.recognizer = recognizer;
+		GestureRecognizer_1_t36E2F5A12154F0109297A031C6EC1C0F28EB8267* L_0 = ___recognizer0;
+		__this->___U3CrecognizerU3Ek__BackingField_5 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrecognizerU3Ek__BackingField_5), (void*)L_0);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::add_onStart(System.Action`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_add_onStart_mE49CC420EBB1C2E4E04B15E0EA8463BB8F40BB53_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___value0, const RuntimeMethod* method) 
+{
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_0 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_1 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_2 = NULL;
+	{
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_0 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)__this->___onStart_0;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_2 = V_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00((Delegate_t*)L_2, (Delegate_t*)L_3, NULL);
+		V_2 = ((Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)Castclass((RuntimeObject*)L_4, il2cpp_rgctx_data(method->klass->rgctx_data, 0)));
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87** L_5 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87**)(&__this->___onStart_0);
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_6 = V_2;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_7 = V_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_9 = V_0;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)L_9) == ((RuntimeObject*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::remove_onStart(System.Action`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_remove_onStart_m6180C38E41325E5992DA0C7440889D964D8597C0_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___value0, const RuntimeMethod* method) 
+{
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_0 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_1 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_2 = NULL;
+	{
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_0 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)__this->___onStart_0;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_2 = V_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3((Delegate_t*)L_2, (Delegate_t*)L_3, NULL);
+		V_2 = ((Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)Castclass((RuntimeObject*)L_4, il2cpp_rgctx_data(method->klass->rgctx_data, 0)));
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87** L_5 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87**)(&__this->___onStart_0);
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_6 = V_2;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_7 = V_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_9 = V_0;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)L_9) == ((RuntimeObject*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::add_onUpdated(System.Action`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_add_onUpdated_m3A61521D7231FB37E0C072012F4761AAFF2FFDBF_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___value0, const RuntimeMethod* method) 
+{
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_0 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_1 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_2 = NULL;
+	{
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_0 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)__this->___onUpdated_1;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_2 = V_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00((Delegate_t*)L_2, (Delegate_t*)L_3, NULL);
+		V_2 = ((Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)Castclass((RuntimeObject*)L_4, il2cpp_rgctx_data(method->klass->rgctx_data, 0)));
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87** L_5 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87**)(&__this->___onUpdated_1);
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_6 = V_2;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_7 = V_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_9 = V_0;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)L_9) == ((RuntimeObject*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::remove_onUpdated(System.Action`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_remove_onUpdated_mE3A7C037B1C29736598616A4C5A5E58DFC49DF0F_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___value0, const RuntimeMethod* method) 
+{
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_0 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_1 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_2 = NULL;
+	{
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_0 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)__this->___onUpdated_1;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_2 = V_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3((Delegate_t*)L_2, (Delegate_t*)L_3, NULL);
+		V_2 = ((Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)Castclass((RuntimeObject*)L_4, il2cpp_rgctx_data(method->klass->rgctx_data, 0)));
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87** L_5 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87**)(&__this->___onUpdated_1);
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_6 = V_2;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_7 = V_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_9 = V_0;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)L_9) == ((RuntimeObject*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::add_onFinished(System.Action`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_add_onFinished_mD2CFB39802AF3595C2AB55EFECE826E7697BF458_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___value0, const RuntimeMethod* method) 
+{
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_0 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_1 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_2 = NULL;
+	{
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_0 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)__this->___onFinished_2;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_2 = V_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00((Delegate_t*)L_2, (Delegate_t*)L_3, NULL);
+		V_2 = ((Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)Castclass((RuntimeObject*)L_4, il2cpp_rgctx_data(method->klass->rgctx_data, 0)));
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87** L_5 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87**)(&__this->___onFinished_2);
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_6 = V_2;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_7 = V_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_9 = V_0;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)L_9) == ((RuntimeObject*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::remove_onFinished(System.Action`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_remove_onFinished_m61C0BA8BD5F93A49C082CD796740C4752D8EEA39_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___value0, const RuntimeMethod* method) 
+{
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_0 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_1 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* V_2 = NULL;
+	{
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_0 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)__this->___onFinished_2;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_2 = V_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3((Delegate_t*)L_2, (Delegate_t*)L_3, NULL);
+		V_2 = ((Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)Castclass((RuntimeObject*)L_4, il2cpp_rgctx_data(method->klass->rgctx_data, 0)));
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87** L_5 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87**)(&__this->___onFinished_2);
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_6 = V_2;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_7 = V_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_9 = V_0;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)L_9) == ((RuntimeObject*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Boolean UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::get_isCanceled()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Gesture_1_get_isCanceled_m1078472C721C62109767B52D374B4368793114D8_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, const RuntimeMethod* method) 
+{
+	{
+		// public bool isCanceled { get; private set; }
+		bool L_0 = (bool)__this->___U3CisCanceledU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::set_isCanceled(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_set_isCanceled_mD22775864929FDDCA63733067C0BA52199DA01A0_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, bool ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public bool isCanceled { get; private set; }
+		bool L_0 = ___value0;
+		__this->___U3CisCanceledU3Ek__BackingField_3 = L_0;
+		return;
+	}
+}
+// UnityEngine.GameObject UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::get_targetObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Gesture_1_get_targetObject_m92F38594D383EC616FCFC8E1152EBD1BF534D25A_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, const RuntimeMethod* method) 
+{
+	{
+		// public GameObject targetObject { get; protected set; }
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)__this->___U3CtargetObjectU3Ek__BackingField_4;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::set_targetObject(UnityEngine.GameObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_set_targetObject_m91796AF74BB4563492485C4DD75CD58C59935F5C_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public GameObject targetObject { get; protected set; }
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___value0;
+		__this->___U3CtargetObjectU3Ek__BackingField_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtargetObjectU3Ek__BackingField_4), (void*)L_0);
+		return;
+	}
+}
+// UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1<T> UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::get_recognizer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GestureRecognizer_1_t36E2F5A12154F0109297A031C6EC1C0F28EB8267* Gesture_1_get_recognizer_mF973C7F1A05EE37CCCCE0F9EAF0CD6BBE275E4FE_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, const RuntimeMethod* method) 
+{
+	{
+		// protected internal GestureRecognizer<T> recognizer { get; }
+		GestureRecognizer_1_t36E2F5A12154F0109297A031C6EC1C0F28EB8267* L_0 = (GestureRecognizer_1_t36E2F5A12154F0109297A031C6EC1C0F28EB8267*)__this->___U3CrecognizerU3Ek__BackingField_5;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_Update_m94005DF506FF2A72725FF3D83E11577B336A84D4_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	int32_t G_B3_0 = 0;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* G_B9_0 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* G_B8_0 = NULL;
+	{
+		// if (!m_HasStarted && CanStart())
+		bool L_0 = (bool)__this->___m_HasStarted_6;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		bool L_1;
+		L_1 = VirtualFuncInvoker0< bool >::Invoke(4 /* System.Boolean UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::CanStart() */, __this);
+		G_B3_0 = ((int32_t)(L_1));
+		goto IL_0012;
+	}
+
+IL_0011:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0012:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		// Start();
+		((  void (*) (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
+		// return;
+		goto IL_0055;
+	}
+
+IL_0020:
+	{
+		// if (m_HasStarted)
+		bool L_3 = (bool)__this->___m_HasStarted_6;
+		V_1 = L_3;
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		// if (UpdateGesture())
+		bool L_5;
+		L_5 = VirtualFuncInvoker0< bool >::Invoke(6 /* System.Boolean UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::UpdateGesture() */, __this);
+		V_2 = L_5;
+		bool L_6 = V_2;
+		if (!L_6)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		// onUpdated?.Invoke(this as T);
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_7 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)__this->___onUpdated_1;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_8 = L_7;
+		G_B8_0 = L_8;
+		if (L_8)
+		{
+			G_B9_0 = L_8;
+			goto IL_0042;
+		}
+	}
+	{
+		goto IL_0053;
+	}
+
+IL_0042:
+	{
+		NullCheck(G_B9_0);
+		((  void (*) (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))(G_B9_0, ((RuntimeObject*)Castclass((RuntimeObject*)((RuntimeObject*)IsInst((RuntimeObject*)__this, il2cpp_rgctx_data(method->klass->rgctx_data, 5))), il2cpp_rgctx_data(method->klass->rgctx_data, 5))), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
+	}
+
+IL_0053:
+	{
+	}
+
+IL_0054:
+	{
+	}
+
+IL_0055:
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::Reinitialize()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_Reinitialize_mD5477771D764CE3349CCC09F122BDE7F4605520B_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, const RuntimeMethod* method) 
+{
+	{
+		// onStart = null;
+		__this->___onStart_0 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___onStart_0), (void*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)NULL);
+		// onUpdated = null;
+		__this->___onUpdated_1 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___onUpdated_1), (void*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)NULL);
+		// onFinished = null;
+		__this->___onFinished_2 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___onFinished_2), (void*)(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)NULL);
+		// isCanceled = false;
+		((  void (*) (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
+		// targetObject = null;
+		((  void (*) (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8*, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))(__this, (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		// m_HasStarted = false;
+		__this->___m_HasStarted_6 = (bool)0;
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::Cancel()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_Cancel_m7842EEAC0DE03B7377598EA64E9DFC7B4261C417_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, const RuntimeMethod* method) 
+{
+	{
+		// isCanceled = true;
+		((  void (*) (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))(__this, (bool)1, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
+		// OnCancel();
+		VirtualActionInvoker0::Invoke(7 /* System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::OnCancel() */, __this);
+		// Complete();
+		((  void (*) (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::Complete()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_Complete_m493C7D2AC0F87AE3B6CF95503CA64A3F5226BB5A_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, const RuntimeMethod* method) 
+{
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* G_B2_0 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* G_B1_0 = NULL;
+	{
+		// OnFinish();
+		VirtualActionInvoker0::Invoke(8 /* System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::OnFinish() */, __this);
+		// onFinished?.Invoke(this as T);
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_0 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)__this->___onFinished_2;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_1 = L_0;
+		G_B1_0 = L_1;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_0014;
+		}
+	}
+	{
+		goto IL_0025;
+	}
+
+IL_0014:
+	{
+		NullCheck(G_B2_0);
+		((  void (*) (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))(G_B2_0, ((RuntimeObject*)Castclass((RuntimeObject*)((RuntimeObject*)IsInst((RuntimeObject*)__this, il2cpp_rgctx_data(method->klass->rgctx_data, 5))), il2cpp_rgctx_data(method->klass->rgctx_data, 5))), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
+	}
+
+IL_0025:
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_Start_mF6D50B9D28617DE5DC1D555F27800370877DE4EC_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, const RuntimeMethod* method) 
+{
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* G_B2_0 = NULL;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* G_B1_0 = NULL;
+	{
+		// m_HasStarted = true;
+		__this->___m_HasStarted_6 = (bool)1;
+		// OnStart();
+		VirtualActionInvoker0::Invoke(5 /* System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::OnStart() */, __this);
+		// onStart?.Invoke(this as T);
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_0 = (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*)__this->___onStart_0;
+		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_1 = L_0;
+		G_B1_0 = L_1;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_001b;
+		}
+	}
+	{
+		goto IL_002c;
+	}
+
+IL_001b:
+	{
+		NullCheck(G_B2_0);
+		((  void (*) (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))(G_B2_0, ((RuntimeObject*)Castclass((RuntimeObject*)((RuntimeObject*)IsInst((RuntimeObject*)__this, il2cpp_rgctx_data(method->klass->rgctx_data, 5))), il2cpp_rgctx_data(method->klass->rgctx_data, 5))), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
+	}
+
+IL_002c:
+	{
+		// }
+		return;
+	}
+}
+// System.Boolean UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::get_WasCancelled()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Gesture_1_get_WasCancelled_m41137224BC90ECEC36AC77728518955A6BC58914_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, const RuntimeMethod* method) 
+{
+	{
+		// public bool WasCancelled => isCanceled;
+		bool L_0;
+		L_0 = ((  bool (*) (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		return L_0;
+	}
+}
+// UnityEngine.GameObject UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::get_TargetObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Gesture_1_get_TargetObject_mEC30FA7B7A986EA91914963AA3ABBFAFBA3A6F01_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, const RuntimeMethod* method) 
+{
+	{
+		// get => targetObject;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = ((  GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* (*) (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		return L_0;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::set_TargetObject(UnityEngine.GameObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gesture_1_set_TargetObject_m5AD34D9EF01E65DB99F137B9EF7A443F0AC2B9B1_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// protected set => targetObject = value;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___value0;
+		((  void (*) (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8*, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		return;
+	}
+}
+// UnityEngine.XR.Interaction.Toolkit.AR.GestureRecognizer`1<T> UnityEngine.XR.Interaction.Toolkit.AR.Gesture`1<System.Object>::get_m_Recognizer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GestureRecognizer_1_t36E2F5A12154F0109297A031C6EC1C0F28EB8267* Gesture_1_get_m_Recognizer_m9475F88F90BB8490DAB8EB56D2189D91180CCD84_gshared (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8* __this, const RuntimeMethod* method) 
+{
+	{
+		// protected internal GestureRecognizer<T> m_Recognizer => recognizer;
+		GestureRecognizer_1_t36E2F5A12154F0109297A031C6EC1C0F28EB8267* L_0;
+		L_0 = ((  GestureRecognizer_1_t36E2F5A12154F0109297A031C6EC1C0F28EB8267* (*) (Gesture_1_t766A790B49A7840C0133EB04B5E41FFF564C75C8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -20154,6 +20794,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922F
 		return L_5;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -48857,6 +49521,46 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyValuePair_2U5BU5D_t105762EC2DE353037ECAD13
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void System.Collections.Concurrent.IProducerConsumerCollectionDebugView`1<System.Object>::.ctor(System.Collections.Concurrent.IProducerConsumerCollection`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IProducerConsumerCollectionDebugView_1__ctor_m9D44455C5FE2CE266AE087219B4B2AC4258231CF_gshared (IProducerConsumerCollectionDebugView_1_t749726E9501FC72C88093436162C2CA82FADFCF6* __this, RuntimeObject* ___collection0, const RuntimeMethod* method) 
 {
@@ -48894,6 +49598,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922F
 		return L_1;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

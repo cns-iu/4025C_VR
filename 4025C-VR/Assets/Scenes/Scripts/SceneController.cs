@@ -230,8 +230,11 @@ public class SceneController : MonoBehaviour
             dmmMover.distance);
     }
 
+
     public void SaveData()
     {
+       // string a_Saveables = "testObject";
+        //SaveDataManager.SaveJsonData(IEnumerable<ISaveable> a_Saveables);
         Debug.Log("saving data...");
     }
 
