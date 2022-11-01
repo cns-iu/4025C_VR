@@ -14,6 +14,11 @@ public class JsonTests : MonoBehaviour
         return JsonUtility.ToJson(this);
     }
 
+    public void LoadFromJson(string a_Json)
+    {
+        JsonUtility.FromJsonOverwrite(a_Json, this);
+    }
+
     /*
     public void Start()
     {

@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using OculusSampleFramework;
+using OVRSimpleJSON;
 //using System.Numerics;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.InputSystem;
 
-// 2022-10-27
+// 2022-10-31
 
 
 public class SceneController : MonoBehaviour
@@ -33,9 +35,10 @@ public class SceneController : MonoBehaviour
     const int bInitIgnore = 16;
 
     // for preference saving tests
-    public int testInt = 0;
+    public int testInt = 0;     // counts number of prefs save/load from last reset
     public VisibilityToggle visibilityToggle;
     public DMMMover dmmMover;
+    public string a_FileName = "SaveData01.dat";
     //public JsonTests jsonTests;
 
     public void soundTrigger(GameObject c)
@@ -175,14 +178,23 @@ public class SceneController : MonoBehaviour
     {
 
         LoadPrefs();    // only seems to work from Start()
-        SaveData();
+        //SaveData();
         // build and packacke test assembly
-        AssemblyPackage(testManifest);
+        //AssemblyPackage(testManifest);
         jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
         jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         GameObject.Find("ToAssembly").GetComponent<AudioSource>().Play();
     }
+
+
+   public void OnKeyboard(InputValue v)
+    {
+       //float c = v.GetType
+        Debug.Log("Peter: " + v.Get<float>() );
+    }
+
+
 
 
     void OnApplicationFocus(bool focus)
@@ -232,15 +244,26 @@ public class SceneController : MonoBehaviour
             dmmMover.distance);
     }
 
+    // what a friggin crutch!
+    private void Update()
+    {
+        var keyboard = Keyboard.current;
+        if (keyboard.sKey.wasPressedThisFrame) SaveData();
+        if (keyboard.lKey.wasPressedThisFrame) LoadData();
+
+    }
+
 
     public void SaveData()
     {
-        GetComponent<JsonTests>().starModel = "s3u";
-        GetComponent<JsonTests>().starConnectors = 3;
-        GetComponent<JsonTests>().starID = 2;
+        //GetComponent<JsonTests>().starModel = testManifest.transform.GetChild(0).gameObject.name;
+        GetComponent<JsonTests>().starModel = controllerScript.manifest.transform.GetChild(1).gameObject.name;
+        //GetComponent<JsonTests>().starModel = "s3u";
+        GetComponent<JsonTests>().starConnectors = controllerScript.manifest.transform.GetChild(1).childCount;
+
+        GetComponent<JsonTests>().starID = 66;
 
         string wtf = GetComponent<JsonTests>().SaveToString();
-        string a_FileName = "SaveData01.dat";
         Debug.Log(wtf);
         // string a_Saveables = "testObject";
         //SaveDataManager.SaveJsonData(IEnumerable<ISaveable> a_Saveables);
@@ -253,6 +276,33 @@ public class SceneController : MonoBehaviour
     public void LoadData()
     {
         Debug.Log("loading data...");
+
+        //LoadFromFile(a_FileName, string wtf);
+        LoadFromFile(a_FileName, out var wtf);
+        Debug.Log("json loaded: " + wtf);
+
+        GetComponent<JsonTests>().LoadFromJson(wtf);
+        Debug.Log("starModel: " + GetComponent<JsonTests>().starModel);
+
+        GameObject d = null;
+        foreach (Transform t in controllerScript.library.transform)
+        {
+            if (t.gameObject.GetComponent<ParentData>().parentType == GetComponent<JsonTests>().starModel)
+            {
+                d = t.gameObject;
+                Debug.Log("found object in library");   //this is no matching?
+            }
+        }
+        
+
+        if (d != null)
+        {
+            GameObject p = Instantiate(d);
+            p.transform.parent = jumpTargetTest.transform;
+            p.transform.localPosition = new Vector3(0,2f,0);
+            Debug.Log("instantiated: " + p.name);
+        }
+       
     }
 
    

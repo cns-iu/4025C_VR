@@ -8747,7 +8747,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.5e-44, y: 3.537e-42, z: 6e-44, w: 1e-45}
+  m_BoundingSphereOverride: {x: 0, y: 5.3e-44, z: 6.0567e-41, w: 1.6114932e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -12229,8 +12229,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955621194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.85, y: -17.56, z: -55.95}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 2.23, z: 0}
+  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 347767547}
@@ -12242,8 +12242,8 @@ Transform:
   - {fileID: 1313848427}
   - {fileID: 710266167}
   - {fileID: 1338860302}
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Father: {fileID: 1435831525}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &961199383
 GameObject:
@@ -17830,6 +17830,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 848544461}
+  - {fileID: 955621197}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19913,7 +19914,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1577749887
 MonoBehaviour:
@@ -24030,7 +24031,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1816387184
 GameObject:
@@ -24047,6 +24048,7 @@ GameObject:
   - component: {fileID: 1816387191}
   - component: {fileID: 1816387190}
   - component: {fileID: 1816387193}
+  - component: {fileID: 1816387194}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -24109,6 +24111,7 @@ MonoBehaviour:
   testInt: 0
   visibilityToggle: {fileID: 1792838857}
   dmmMover: {fileID: 1792838856}
+  a_FileName: SaveData01.dat
 --- !u!114 &1816387190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24162,6 +24165,52 @@ MonoBehaviour:
   starModel: 
   starConnectors: 0
   starID: 0
+--- !u!114 &1816387194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816387184}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 409115acae5e541c2b5de30918b153ad, type: 3}
+  m_NotificationBehavior: 1
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1816387189}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: KeyPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 82cf47ee-f62f-4f8a-84f3-215c26f90321
+    m_ActionName: Desktop/Keyboard[/Keyboard/s,/Keyboard/l,/Keyboard/space]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: Keyboard&Mouse
+  m_DefaultActionMap: Desktop
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1829734203
 GameObject:
   m_ObjectHideFlags: 0
