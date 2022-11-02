@@ -49394,14 +49394,16 @@ struct SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB  : public MonoB
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___manifestList_11;
 	// UnityEngine.GameObject SceneController::testManifest
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___testManifest_12;
+	// UnityEngine.GameObject SceneController::loadNode
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___loadNode_13;
 	// System.Int32 SceneController::testInt
-	int32_t ___testInt_19;
+	int32_t ___testInt_20;
 	// VisibilityToggle SceneController::visibilityToggle
-	VisibilityToggle_t789DCA8529DA0B41A13DEC8D3E8BB446E81E14E7* ___visibilityToggle_20;
+	VisibilityToggle_t789DCA8529DA0B41A13DEC8D3E8BB446E81E14E7* ___visibilityToggle_21;
 	// DMMMover SceneController::dmmMover
-	DMMMover_tC9BB5644DE6900AAAE8C8D5ECB587B13BDF1587E* ___dmmMover_21;
+	DMMMover_tC9BB5644DE6900AAAE8C8D5ECB587B13BDF1587E* ___dmmMover_22;
 	// System.String SceneController::a_FileName
-	String_t* ___a_FileName_22;
+	String_t* ___a_FileName_23;
 };
 
 // SceneRenderPipeline

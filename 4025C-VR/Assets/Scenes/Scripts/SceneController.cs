@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
 
-// 2022-10-31
+// 2022-11-1
 
 
 public class SceneController : MonoBehaviour
@@ -26,6 +26,7 @@ public class SceneController : MonoBehaviour
     public List<GameObject> manifestList;        // all manifests
 
     public GameObject testManifest;
+    public GameObject loadNode;             // loading objects deposited to this manifest
 
     const int bDefault = 0;
     const int bShow = 1;
@@ -188,15 +189,6 @@ public class SceneController : MonoBehaviour
     }
 
 
-   public void OnKeyboard(InputValue v)
-    {
-       //float c = v.GetType
-        Debug.Log("Peter: " + v.Get<float>() );
-    }
-
-
-
-
     void OnApplicationFocus(bool focus)
     {
         if (!focus)
@@ -244,6 +236,14 @@ public class SceneController : MonoBehaviour
             dmmMover.distance);
     }
 
+
+
+    public void OnKeyboard(InputValue v)
+    {
+        //float c = v.GetType
+        Debug.Log("Peter: " + v.Get<float>());
+    }
+
     // what a friggin crutch!
     private void Update()
     {
@@ -256,18 +256,14 @@ public class SceneController : MonoBehaviour
 
     public void SaveData()
     {
-        //GetComponent<JsonTests>().starModel = testManifest.transform.GetChild(0).gameObject.name;
-        GetComponent<JsonTests>().starModel = controllerScript.manifest.transform.GetChild(1).gameObject.name;
-        //GetComponent<JsonTests>().starModel = "s3u";
+        GetComponent<JsonTests>().starModel = controllerScript.manifest.transform.GetChild(1).gameObject.GetComponent<ParentData>().parentType;
         GetComponent<JsonTests>().starConnectors = controllerScript.manifest.transform.GetChild(1).childCount;
-
         GetComponent<JsonTests>().starID = 66;
 
         string wtf = GetComponent<JsonTests>().SaveToString();
         Debug.Log(wtf);
-        // string a_Saveables = "testObject";
-        //SaveDataManager.SaveJsonData(IEnumerable<ISaveable> a_Saveables);
-        Debug.Log("saving data...");
+
+        Debug.Log("saving data...starModel = " + controllerScript.manifest.transform.GetChild(1).gameObject.GetComponent<ParentData>().parentType);
         WriteToFile(a_FileName, wtf);
     }
 
@@ -275,9 +271,6 @@ public class SceneController : MonoBehaviour
 
     public void LoadData()
     {
-        Debug.Log("loading data...");
-
-        //LoadFromFile(a_FileName, string wtf);
         LoadFromFile(a_FileName, out var wtf);
         Debug.Log("json loaded: " + wtf);
 
@@ -294,15 +287,14 @@ public class SceneController : MonoBehaviour
             }
         }
         
-
         if (d != null)
         {
             GameObject p = Instantiate(d);
-            p.transform.parent = jumpTargetTest.transform;
-            p.transform.localPosition = new Vector3(0,2f,0);
+      
+            p.transform.parent = loadNode.transform;
+            p.transform.localPosition = new Vector3(0, 1.5f, 0);
             Debug.Log("instantiated: " + p.name);
-        }
-       
+        } 
     }
 
    

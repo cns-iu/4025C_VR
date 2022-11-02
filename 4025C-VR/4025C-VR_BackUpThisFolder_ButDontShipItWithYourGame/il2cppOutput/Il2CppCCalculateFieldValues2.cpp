@@ -37189,14 +37189,16 @@ struct SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB  : public MonoB
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___manifestList_11;
 	// UnityEngine.GameObject SceneController::testManifest
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___testManifest_12;
+	// UnityEngine.GameObject SceneController::loadNode
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___loadNode_13;
 	// System.Int32 SceneController::testInt
-	int32_t ___testInt_19;
+	int32_t ___testInt_20;
 	// VisibilityToggle SceneController::visibilityToggle
-	VisibilityToggle_t789DCA8529DA0B41A13DEC8D3E8BB446E81E14E7* ___visibilityToggle_20;
+	VisibilityToggle_t789DCA8529DA0B41A13DEC8D3E8BB446E81E14E7* ___visibilityToggle_21;
 	// DMMMover SceneController::dmmMover
-	DMMMover_tC9BB5644DE6900AAAE8C8D5ECB587B13BDF1587E* ___dmmMover_21;
+	DMMMover_tC9BB5644DE6900AAAE8C8D5ECB587B13BDF1587E* ___dmmMover_22;
 	// System.String SceneController::a_FileName
-	String_t* ___a_FileName_22;
+	String_t* ___a_FileName_23;
 };
 
 // SceneRenderPipeline
@@ -43152,9 +43154,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6028[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6029[2] = 
 {
 	static_cast<int32_t>(offsetof(SaveData_tD8A7BA38011DB392E3FC7630525E745AED3AAF29, ___m_Score_4)),static_cast<int32_t>(offsetof(SaveData_tD8A7BA38011DB392E3FC7630525E745AED3AAF29, ___m_StarData_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6032[19] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6032[20] = 
 {
-	static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___xrPosition_4)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___jumpTargetAssembly_5)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___jumpTargetMain_6)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___jumpTargetTest_7)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___transportTarget_8)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___controllerScript_9)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___manStatus_10)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___manifestList_11)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___testManifest_12)),0,0,0,0,0,0,static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___testInt_19)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___visibilityToggle_20)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___dmmMover_21)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___a_FileName_22)),};
+	static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___xrPosition_4)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___jumpTargetAssembly_5)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___jumpTargetMain_6)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___jumpTargetTest_7)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___transportTarget_8)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___controllerScript_9)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___manStatus_10)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___manifestList_11)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___testManifest_12)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___loadNode_13)),0,0,0,0,0,0,static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___testInt_20)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___visibilityToggle_21)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___dmmMover_22)),static_cast<int32_t>(offsetof(SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB, ___a_FileName_23)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6033[4] = 
 {
 	static_cast<int32_t>(offsetof(SelectionOutline_t5E462CA51CF9FDA9064C97C222DE83660C19F009, ___Renderer_4)),static_cast<int32_t>(offsetof(SelectionOutline_t5E462CA51CF9FDA9064C97C222DE83660C19F009, ___m_Highlighted_5)),static_cast<int32_t>(offsetof(SelectionOutline_t5E462CA51CF9FDA9064C97C222DE83660C19F009, ___m_Block_6)),static_cast<int32_t>(offsetof(SelectionOutline_t5E462CA51CF9FDA9064C97C222DE83660C19F009, ___m_HighlightActiveID_7)),};
