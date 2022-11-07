@@ -46396,22 +46396,24 @@ struct ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D  : public MonoBeh
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___library_5;
 	// UnityEngine.GameObject ConController::manifest
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___manifest_6;
+	// UnityEngine.GameObject ConController::testManifest
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___testManifest_7;
 	// UnityEngine.Material ConController::matDefault
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___matDefault_7;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___matDefault_8;
 	// UnityEngine.Material ConController::matHover
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___matHover_8;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___matHover_9;
 	// UnityEngine.Material ConController::matSelected
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___matSelected_9;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___matSelected_10;
 	// UnityEngine.Material ConController::matConnected
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___matConnected_10;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___matConnected_11;
 	// UnityEngine.Material ConController::matBug
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___matBug_11;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___matBug_12;
 	// System.Int32 ConController::sysState
-	int32_t ___sysState_12;
+	int32_t ___sysState_13;
 	// System.Boolean ConController::nodeMode
-	bool ___nodeMode_13;
+	bool ___nodeMode_14;
 	// System.Collections.Generic.Dictionary`2<UnityEngine.GameObject,UnityEngine.GameObject> ConController::connections
-	Dictionary_2_t9987DACE70B120172EBEAF2BB5853128595A2CDF* ___connections_23;
+	Dictionary_2_t9987DACE70B120172EBEAF2BB5853128595A2CDF* ___connections_24;
 };
 
 // ConStatus
@@ -47409,12 +47411,8 @@ struct InteractionHandler_t62AC7C075C994CBDADD4E9B90E45F76960E807AE  : public Mo
 // JsonTests
 struct JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// System.String JsonTests::starModel
-	String_t* ___starModel_4;
-	// System.Int32 JsonTests::starConnectors
-	int32_t ___starConnectors_5;
-	// System.Int32 JsonTests::starID
-	int32_t ___starID_6;
+	// System.Collections.Generic.List`1<System.String> JsonTests::parents
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___parents_4;
 };
 
 // UnityEngine.XR.OpenXR.Features.Interactions.KHRSimpleControllerProfile
@@ -49392,10 +49390,10 @@ struct SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB  : public MonoB
 	ManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9* ___manStatus_10;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> SceneController::manifestList
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___manifestList_11;
-	// UnityEngine.GameObject SceneController::testManifest
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___testManifest_12;
 	// UnityEngine.GameObject SceneController::loadNode
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___loadNode_13;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___loadNode_12;
+	// UnityEngine.GameObject SceneController::saveManifest
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___saveManifest_13;
 	// System.Int32 SceneController::testInt
 	int32_t ___testInt_20;
 	// VisibilityToggle SceneController::visibilityToggle

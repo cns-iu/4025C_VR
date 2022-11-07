@@ -5,7 +5,7 @@ using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
-// V3 2022-10-24
+// V3 2022-11-6
 
 public class ConController : MonoBehaviour
 {
@@ -14,6 +14,7 @@ public class ConController : MonoBehaviour
     //public List<GameObject> conList;
     public GameObject library;
     public GameObject manifest;
+    public GameObject testManifest;
 
     public Material matDefault;
     public Material matHover;   // blue?
@@ -41,6 +42,7 @@ public class ConController : MonoBehaviour
 
     private Dictionary<GameObject,GameObject> connections;
 
+
     public void connectorClicked(GameObject c)
     {
         // sysCommand is bSelected + bConnected + sysState
@@ -57,7 +59,7 @@ public class ConController : MonoBehaviour
         // normal command evaluation
         switch (sysCommand)
         {
-            case sysDefault + bShow:    // 1
+            case sysDefault + bShow:    // 1 = clicked on node in default state, select clicked node
                 //Debug.Log("-sysDefault = " + sysDefault);       
                 ConStatusSet(c, bSelected + bShow, matSelected);    // set connector status
                 SysStateSet(sysSelection);                          // set system status
@@ -65,7 +67,7 @@ public class ConController : MonoBehaviour
                 ConFilter(library);
                 break;
 
-            case sysSelection + bShow + bSelected:  // 516
+            case sysSelection + bShow + bSelected:  // 516 = clicked on selected (yellow) now in selection state, de-select selected
                 //Debug.Log("-bSelected+sysSelection = " + (bSelected + sysSelection));
                 
                 ConStatusSet(c, bDefault, matDefault);
@@ -76,7 +78,7 @@ public class ConController : MonoBehaviour
                 ConFilter(library);
                 break;
 
-            case sysSelection:  // 512
+            case sysSelection:  // 512 = clicked on connection destination node in selection state, connect nodes
                 //Debug.Log("-sysSelection = " + sysSelection);     
 
                 GameObject p = Instantiate(ConListSelected(library).transform.parent.gameObject);
@@ -102,7 +104,8 @@ public class ConController : MonoBehaviour
                 Destroy(cTaxi);
     
                 connections.Add(sourceConnector, c);            // add new connection to connections dictionary, used for counting only
-
+                library.GetComponent<ManifestStatus>().parentList.Add(p);
+                
                 // connector source/target exchange
                 sourceConnector.GetComponent<ConStatus>().thatConnector = c;  // save other connector to this
                 c.GetComponent<ConStatus>().thatConnector = sourceConnector;  // save this to other connector
@@ -115,7 +118,7 @@ public class ConController : MonoBehaviour
 
                 break;
 
-            case sysDefault + bShow + bConnected:   // 5
+            case sysDefault + bShow + bConnected:   // 5 = click on red (connected) node, delete upstream assembly
                 //Debug.Log("--bConnected+sysDefault = " + (bConnected + sysDefault));
                 GameObject p1 = c.transform.parent.gameObject;
 

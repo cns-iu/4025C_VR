@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// 2022-11-6
+
 public class JsonTests : MonoBehaviour
 {
-    
-    public string starModel;
-    public int starConnectors;
-    public int starID;
+    public List<string> parents;
 
     public string SaveToString()
     {
@@ -16,6 +15,7 @@ public class JsonTests : MonoBehaviour
 
     public void LoadFromJson(string a_Json)
     {
+        parents.Clear();
         JsonUtility.FromJsonOverwrite(a_Json, this);
     }
 

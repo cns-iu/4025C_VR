@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
 
-// 2022-11-1
+// 2022-11-6
 
 
 public class SceneController : MonoBehaviour
@@ -25,8 +25,9 @@ public class SceneController : MonoBehaviour
 
     public List<GameObject> manifestList;        // all manifests
 
-    public GameObject testManifest;
+    //public GameObject testManifest;
     public GameObject loadNode;             // loading objects deposited to this manifest
+    GameObject saveManifest;
 
     const int bDefault = 0;
     const int bShow = 1;
@@ -111,7 +112,7 @@ public class SceneController : MonoBehaviour
         FitToChildren(m);
         Rigidbody rb = m.AddComponent<Rigidbody>() as Rigidbody;
 
-        // de-activate all nodes
+        // de-activate all nodes; can this be reversible?
         foreach (GameObject c in m.GetComponent<ManifestStatus>().conList)
         {
             c.SetActive(false);
@@ -156,7 +157,6 @@ public class SceneController : MonoBehaviour
             BoxCollider collider = (BoxCollider)m.GetComponent<Collider>();
             collider.center = bounds.center - m.transform.position;
             collider.size = bounds.size;
-            //Debug.Log("bounds " + bounds.size);
         }
     }
 
@@ -241,7 +241,7 @@ public class SceneController : MonoBehaviour
     public void OnKeyboard(InputValue v)
     {
         //float c = v.GetType
-        Debug.Log("Peter: " + v.Get<float>());
+        Debug.Log("keyboard button: " + v.Get<float>());
     }
 
     // what a friggin crutch!
@@ -250,43 +250,66 @@ public class SceneController : MonoBehaviour
         var keyboard = Keyboard.current;
         if (keyboard.sKey.wasPressedThisFrame) SaveData();
         if (keyboard.lKey.wasPressedThisFrame) LoadData();
+        if (keyboard.tKey.wasPressedThisFrame) SomeTest();
 
+    }
+
+    void SomeTest()
+    {
+        Debug.Log("SystemInfo: " + SystemInfo.deviceType);
+         
     }
 
 
     public void SaveData()
     {
-        GetComponent<JsonTests>().starModel = controllerScript.manifest.transform.GetChild(1).gameObject.GetComponent<ParentData>().parentType;
-        GetComponent<JsonTests>().starConnectors = controllerScript.manifest.transform.GetChild(1).childCount;
-        GetComponent<JsonTests>().starID = 66;
+        saveManifest = controllerScript.manifest;
+
+        // switch manifest when running on desktop computer
+        if (SystemInfo.deviceType == DeviceType.Desktop) saveManifest = controllerScript.testManifest;
+
+        foreach (GameObject g in saveManifest.GetComponent<ManifestStatus>().parentList)
+        {
+            GetComponent<JsonTests>().parents.Add(g.name);
+        }
 
         string wtf = GetComponent<JsonTests>().SaveToString();
-        Debug.Log(wtf);
-
-        Debug.Log("saving data...starModel = " + controllerScript.manifest.transform.GetChild(1).gameObject.GetComponent<ParentData>().parentType);
-        WriteToFile(a_FileName, wtf);
+        Debug.Log("saving data..." + wtf);
     }
 
    
 
     public void LoadData()
     {
+        
+
         LoadFromFile(a_FileName, out var wtf);
         Debug.Log("json loaded: " + wtf);
 
         GetComponent<JsonTests>().LoadFromJson(wtf);
-        Debug.Log("starModel: " + GetComponent<JsonTests>().starModel);
+        //Debug.Log("starModel: " + GetComponent<JsonTests>().starModel);
 
+        foreach (string s in GetComponent<JsonTests>().parents)
+        {
+            GameObject g = FindInLibrary(s);
+            Debug.Log("found string: " + g.name);
+        }
+
+        /*
         GameObject d = null;
         foreach (Transform t in controllerScript.library.transform)
         {
+        
             if (t.gameObject.GetComponent<ParentData>().parentType == GetComponent<JsonTests>().starModel)
             {
                 d = t.gameObject;
                 Debug.Log("found object in library");   //this is no matching?
             }
+            
         }
-        
+        */
+
+        /*
         if (d != null)
         {
             GameObject p = Instantiate(d);
@@ -294,7 +317,24 @@ public class SceneController : MonoBehaviour
             p.transform.parent = loadNode.transform;
             p.transform.localPosition = new Vector3(0, 1.5f, 0);
             Debug.Log("instantiated: " + p.name);
-        } 
+        }
+        */
+    }
+
+
+    GameObject FindInLibrary(string pType)
+    {
+        GameObject p = null;
+
+        foreach (Transform t in controllerScript.library.transform)
+        {
+            if (t.gameObject.GetComponent<ParentData>().parentType == pType)
+            {
+                p = t.gameObject;
+                Debug.Log("found object in library");   //this is no matching?
+            }
+        }
+        return p;
     }
 
    
