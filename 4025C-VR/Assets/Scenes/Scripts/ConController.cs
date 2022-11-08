@@ -5,7 +5,7 @@ using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
-// V3 2022-11-6
+// V3 2022-11-7
 
 public class ConController : MonoBehaviour
 {
@@ -40,7 +40,7 @@ public class ConController : MonoBehaviour
     const int sysBuild = 256;
     const int sysSelection = 512;
 
-    private Dictionary<GameObject,GameObject> connections;
+    public Dictionary<GameObject, GameObject> connections;
 
 
     public void connectorClicked(GameObject c)
@@ -102,9 +102,9 @@ public class ConController : MonoBehaviour
                 p.transform.parent = manifestT;     // put object back into manifest
 
                 Destroy(cTaxi);
-    
-                connections.Add(sourceConnector, c);            // add new connection to connections dictionary, used for counting only
-                library.GetComponent<ManifestStatus>().parentList.Add(p);
+
+                connections.Add(sourceConnector, c);            // add new connection to connections dictionary, used for counting only 
+                manifest.GetComponent<ManifestStatus>().parentList.Add(p);
                 
                 // connector source/target exchange
                 sourceConnector.GetComponent<ConStatus>().thatConnector = c;  // save other connector to this
@@ -513,6 +513,7 @@ public class ConController : MonoBehaviour
     void Start()
     {
         connections = new Dictionary<GameObject, GameObject>();
+        manifest.GetComponent<ManifestStatus>().parentList.Add(manifest.transform.GetChild(0).gameObject);
     }
 
     // Update is called once per frame

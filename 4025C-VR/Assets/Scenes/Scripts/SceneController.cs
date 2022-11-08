@@ -8,8 +8,9 @@ using OVRSimpleJSON;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
+using static JsonTests;
 
-// 2022-11-6
+// 2022-11-7
 
 
 public class SceneController : MonoBehaviour
@@ -40,7 +41,8 @@ public class SceneController : MonoBehaviour
     public int testInt = 0;     // counts number of prefs save/load from last reset
     public VisibilityToggle visibilityToggle;
     public DMMMover dmmMover;
-    public string a_FileName = "SaveData01.dat";
+    public string fileName = "SaveState01.txt";
+
     //public JsonTests jsonTests;
 
     public void soundTrigger(GameObject c)
@@ -264,17 +266,43 @@ public class SceneController : MonoBehaviour
     public void SaveData()
     {
         saveManifest = controllerScript.manifest;
+        //controllerScript.connections;
+
 
         // switch manifest when running on desktop computer
         if (SystemInfo.deviceType == DeviceType.Desktop) saveManifest = controllerScript.testManifest;
 
+        // encode parent list
         foreach (GameObject g in saveManifest.GetComponent<ManifestStatus>().parentList)
         {
-            GetComponent<JsonTests>().parents.Add(g.name);
+            GetComponent<JsonTests>().parents.Add(g.GetComponent<ParentData>().parentType);
         }
 
+        //foreach (GameObject g in controllerScript.connections.Keys)
+        foreach (KeyValuePair<GameObject, GameObject> entry in controllerScript.connections)
+        {
+            Debug.Log("entry key: " + entry.Key.name);
+            Debug.Log("entry value: " + entry.Value.name);
+
+        }
+        /*
+        // encode conList
+        Debug.Log("conList count: " + saveManifest.GetComponent<ManifestStatus>().conList.Count);
+        foreach (GameObject g in saveManifest.GetComponent<ManifestStatus>().conList)
+        {
+            JsonTests.cListEntry listEntry = new cListEntry();
+            //listEntry.parentID = g.GetComponent<ConStatus>().???;
+            listEntry.parentID = 0;
+            listEntry.conName = g.name;
+            listEntry.conThat = -1;
+            listEntry.conActive = false;
+            GetComponent<JsonTests>().cList.Add(listEntry);
+        }*/
+  
+
         string wtf = GetComponent<JsonTests>().SaveToString();
-        Debug.Log("saving data..." + wtf);
+        WriteToFile(fileName, wtf);
+        Debug.Log("saving data to file: " + fileName + "->" + wtf);
     }
 
    
@@ -283,7 +311,7 @@ public class SceneController : MonoBehaviour
     {
         
 
-        LoadFromFile(a_FileName, out var wtf);
+        LoadFromFile(fileName, out var wtf);
         Debug.Log("json loaded: " + wtf);
 
         GetComponent<JsonTests>().LoadFromJson(wtf);
@@ -346,6 +374,7 @@ public class SceneController : MonoBehaviour
         try
         {
             File.WriteAllText(fullPath, a_FileContents);
+            Debug.Log("writing to: " + fullPath);
             return true;
         }
         catch (Exception e)

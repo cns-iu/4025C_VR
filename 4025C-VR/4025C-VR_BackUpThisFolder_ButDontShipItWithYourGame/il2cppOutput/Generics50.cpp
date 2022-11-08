@@ -62,8 +62,8 @@ struct Action_1_t949B075BD154084CD176B99EE92564EB5B403889;
 struct Action_1_tCA07E7CAE14E2DB6F47853EE259BC57E86EDE6FE;
 // System.Action`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct Action_1_tCCB66B182EF6A3D43A5463760EBBB99D536A2C70;
-// System.Action`1<ONSPPropagationGeometry/MeshMaterial>
-struct Action_1_tD8BB9EFE2B7DDD26EEB17E5E57EAB694425AC7AC;
+// System.Action`1<JsonTests/cListEntry>
+struct Action_1_t988D740EBD7CC057D5A62DBD07D2BCB0F3E718CC;
 // System.Comparison`1<UnityEngine.Rendering.Universal.DecalEntityManager/CombinedChunks>
 struct Comparison_1_t1D70AD681199BAE9A46BB890478D827A9BA04A36;
 // System.Comparison`1<UnityEngine.UIElements.FocusController/FocusedElement>
@@ -82,8 +82,8 @@ struct Comparison_1_tD99FA69CB413A36512D95EF33FBE88F6DC46AA18;
 struct Comparison_1_tE64EEF1779008CF267B47D29FF3CA17C7C66C9EF;
 // System.Comparison`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct Comparison_1_t0AC918C940F16A046B367004E65100581BDD00E6;
-// System.Comparison`1<ONSPPropagationGeometry/MeshMaterial>
-struct Comparison_1_t62DA3A02A101CB89F4D9B0F005989DDA71EBD173;
+// System.Comparison`1<JsonTests/cListEntry>
+struct Comparison_1_t11E4F7D5C8075D4A60D00038D22B2D999A371FC5;
 // System.Collections.Generic.Dictionary`2<System.String,UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct Dictionary_2_t6682243BDABA638FCBE4F1D9875B5B1455A7686E;
 // System.Collections.Generic.IComparer`1<UnityEngine.Rendering.Universal.DecalEntityManager/CombinedChunks>
@@ -104,8 +104,8 @@ struct IComparer_1_tCDDC02FF0589EC30F420F6EE36CCFF23DB34D259;
 struct IComparer_1_tD7FFF5A431F1E668415978A54D9441432DAB18BD;
 // System.Collections.Generic.IComparer`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct IComparer_1_tB779007A85708B910040E5975DAF287B51C4B703;
-// System.Collections.Generic.IComparer`1<ONSPPropagationGeometry/MeshMaterial>
-struct IComparer_1_t2549D6674D346CC1E4800D264D59C226B4B12887;
+// System.Collections.Generic.IComparer`1<JsonTests/cListEntry>
+struct IComparer_1_t417F7CE8441DB556D69B1211680BCCC2D4EFD55D;
 // System.Collections.Generic.IEnumerable`1<UnityEngine.Rendering.Universal.DecalEntityManager/CombinedChunks>
 struct IEnumerable_1_tA1F5EB99AEB36735BD670C028EE5F5297B45F02A;
 // System.Collections.Generic.IEnumerable`1<UnityEngine.UIElements.FocusController/FocusedElement>
@@ -124,8 +124,8 @@ struct IEnumerable_1_tB1CBD8584610F6122FB9F16A9A9985BB7CCD1711;
 struct IEnumerable_1_t39CE18DC20924FF80062EA2FE9CF6258B0DC6E4E;
 // System.Collections.Generic.IEnumerable`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct IEnumerable_1_t7886238EF7DC77A68D0FBB352FED1C732EF306A0;
-// System.Collections.Generic.IEnumerable`1<ONSPPropagationGeometry/MeshMaterial>
-struct IEnumerable_1_t4B377F225DF601FE6E2735672102D6529880E88D;
+// System.Collections.Generic.IEnumerable`1<JsonTests/cListEntry>
+struct IEnumerable_1_t6F84A1F90B3F6123410EBA8BCE005EC44CDCA5A6;
 // System.Collections.Generic.IEnumerator`1<UnityEngine.Rendering.Universal.DecalEntityManager/CombinedChunks>
 struct IEnumerator_1_t20AFA076D833EB2E12C0B759132EBEC849E718CB;
 // System.Collections.Generic.IEnumerator`1<UnityEngine.UIElements.FocusController/FocusedElement>
@@ -144,8 +144,8 @@ struct IEnumerator_1_tFB94D0AF6D95F58DEC65B8B3CEFC8EA4F2418CB2;
 struct IEnumerator_1_t4E06F33491A804E82FDDB3F72C9F920F622A3EA6;
 // System.Collections.Generic.IEnumerator`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct IEnumerator_1_tF129A86A709F185A2268C6A66EEC790456389E7C;
-// System.Collections.Generic.IEnumerator`1<ONSPPropagationGeometry/MeshMaterial>
-struct IEnumerator_1_tEBC9A73DCFD1EDDDE54C2946D411A8C41513CBDB;
+// System.Collections.Generic.IEnumerator`1<JsonTests/cListEntry>
+struct IEnumerator_1_t932CDC3211022C478DE17DAF239F41DF2B321BD6;
 // System.Collections.Generic.IList`1<UnityEngine.Rendering.Universal.DecalEntityManager/CombinedChunks>
 struct IList_1_t4D32144A0F28CC2EC0F9AAD327B0E25A7468BC49;
 // System.Collections.Generic.IList`1<UnityEngine.UIElements.FocusController/FocusedElement>
@@ -164,8 +164,8 @@ struct IList_1_tCF196AA607A7A3796B6AA9EA0209A09E0CD761AC;
 struct IList_1_t34DCF64EB95BACAB7DAE7A61766656DA9C858E3D;
 // System.Collections.Generic.IList`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct IList_1_t810C089499559DDD43D40C1668065FFBC2B87B15;
-// System.Collections.Generic.IList`1<ONSPPropagationGeometry/MeshMaterial>
-struct IList_1_tBA5D5D6551BBBA183AA565EB01BD1492DC78D28C;
+// System.Collections.Generic.IList`1<JsonTests/cListEntry>
+struct IList_1_t1140C2847CB5CFA4B49C455C84BD45D110C9ECD7;
 // System.Collections.Generic.List`1<UnityEngine.Rendering.Universal.DecalEntityManager/CombinedChunks>
 struct List_1_t75FC6D059D696BAD77462D09FCDC98B4A7B7D3D4;
 // System.Collections.Generic.List`1<UnityEngine.UIElements.FocusController/FocusedElement>
@@ -184,8 +184,8 @@ struct List_1_tBF847DD77CE898FDD304012AB5DFBFC15986D8F7;
 struct List_1_tC41C589EC5D2B0C53BF9E6B76193FECB76139177;
 // System.Collections.Generic.List`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct List_1_t4A80BCCFB0BC8742C8BB601365DB07226750573A;
-// System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>
-struct List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE;
+// System.Collections.Generic.List`1<JsonTests/cListEntry>
+struct List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F;
 // System.Predicate`1<UnityEngine.Rendering.Universal.DecalEntityManager/CombinedChunks>
 struct Predicate_1_tABC7C098EE8EF07897599821E821E7475DD7748A;
 // System.Predicate`1<UnityEngine.UIElements.FocusController/FocusedElement>
@@ -204,8 +204,8 @@ struct Predicate_1_tDA45FFEC703500A529E702D9733C1C2095D663FC;
 struct Predicate_1_tF07631EDC3B41687C1E8B085B75A0ABB943B36A6;
 // System.Predicate`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct Predicate_1_t30B6C0EA4B49279CABE20C001AAC4DD54EAE9AB6;
-// System.Predicate`1<ONSPPropagationGeometry/MeshMaterial>
-struct Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860;
+// System.Predicate`1<JsonTests/cListEntry>
+struct Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1;
 // System.Collections.ObjectModel.ReadOnlyCollection`1<UnityEngine.Rendering.Universal.DecalEntityManager/CombinedChunks>
 struct ReadOnlyCollection_1_t4398B62349E9CF609C519AD584D9EB272080CD25;
 // System.Collections.ObjectModel.ReadOnlyCollection`1<UnityEngine.UIElements.FocusController/FocusedElement>
@@ -224,8 +224,8 @@ struct ReadOnlyCollection_1_t43CCE4A4885B7525F7B0608DE07C1EFD9CC89E7F;
 struct ReadOnlyCollection_1_t59B66790920C73A895649885DFB16F30E5BFF450;
 // System.Collections.ObjectModel.ReadOnlyCollection`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct ReadOnlyCollection_1_t03A86E09A767AAC7CE5E15528EF2766741A2C79F;
-// System.Collections.ObjectModel.ReadOnlyCollection`1<ONSPPropagationGeometry/MeshMaterial>
-struct ReadOnlyCollection_1_t6CD7B2EC4A26F344188D44236BB72D97E16F9AB3;
+// System.Collections.ObjectModel.ReadOnlyCollection`1<JsonTests/cListEntry>
+struct ReadOnlyCollection_1_tA6424890FF816698BBD0C7724A8B5FD4486A76E2;
 // System.Delegate[]
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 // System.IntPtr[]
@@ -236,8 +236,6 @@ struct InternedStringU5BU5D_t0B851758733FC0B118D84BE83AED10A0404C18D5;
 struct NameAndParametersU5BU5D_tA6C2AC34ACDB1967A7A2CEF4BE1D717ADA695CA2;
 // UnityEngine.InputSystem.Utilities.NamedValue[]
 struct NamedValueU5BU5D_tADD8F1373B88C55F68499688D72C21A97F63303A;
-// ONSPPropagationMaterial[]
-struct ONSPPropagationMaterialU5BU5D_t09366E3A22D05CEBD56F798F10E24B4E0126FE57;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 // System.Type[]
@@ -260,8 +258,8 @@ struct ControlItemU5BU5D_t7798E8B7C7F58B8F6D13B567539CD82E962C7104;
 struct TreeViewItemWrapperU5BU5D_tA8CE70B133105201BE01C82F78D06FACBBDBF55A;
 // UnityEngine.InputSystem.Utilities.JsonParser/JsonValue[]
 struct JsonValueU5BU5D_tCC9BDCF1DE43F923B72BEF6FE9AB4FBAEF445DB3;
-// ONSPPropagationGeometry/MeshMaterial[]
-struct MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3;
+// JsonTests/cListEntry[]
+struct cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0;
 // System.Reflection.Binder
 struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235;
 // UnityEngine.Rendering.Universal.DecalCachedChunk
@@ -284,8 +282,6 @@ struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
 struct ITreeViewItem_t0C5908872EA2842688BFFB2055D5096EC1EA9EFC;
 // System.Reflection.MemberFilter
 struct MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553;
-// UnityEngine.MeshFilter
-struct MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5;
 // System.Reflection.MethodInfo
 struct MethodInfo_t;
 // System.Runtime.Serialization.SafeSerializationManager
@@ -319,7 +315,7 @@ struct BindingOverrideJsonU5BU5D_t4D6C8281F1138E5751DBB4DFFFDF907D8EF375A5;
 struct ControlItemU5BU5D_t7798E8B7C7F58B8F6D13B567539CD82E962C7104;
 struct TreeViewItemWrapperU5BU5D_tA8CE70B133105201BE01C82F78D06FACBBDBF55A;
 struct JsonValueU5BU5D_tCC9BDCF1DE43F923B72BEF6FE9AB4FBAEF445DB3;
-struct MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3;
+struct cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0;
 
 IL2CPP_EXTERN_C_BEGIN
 IL2CPP_EXTERN_C_END
@@ -501,11 +497,11 @@ struct List_1_t4A80BCCFB0BC8742C8BB601365DB07226750573A_StaticFields
 	JsonValueU5BU5D_tCC9BDCF1DE43F923B72BEF6FE9AB4FBAEF445DB3* ___s_emptyArray_5;
 };
 
-// System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>
-struct List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE  : public RuntimeObject
+// System.Collections.Generic.List`1<JsonTests/cListEntry>
+struct List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F  : public RuntimeObject
 {
 	// T[] System.Collections.Generic.List`1::_items
-	MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* ____items_1;
+	cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* ____items_1;
 	// System.Int32 System.Collections.Generic.List`1::_size
 	int32_t ____size_2;
 	// System.Int32 System.Collections.Generic.List`1::_version
@@ -514,10 +510,10 @@ struct List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE_StaticFields
+struct List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F_StaticFields
 {
 	// T[] System.Collections.Generic.List`1::s_emptyArray
-	MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* ___s_emptyArray_5;
+	cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* ___s_emptyArray_5;
 };
 
 // System.Collections.ObjectModel.ReadOnlyCollection`1<UnityEngine.Rendering.Universal.DecalEntityManager/CombinedChunks>
@@ -601,8 +597,8 @@ struct ReadOnlyCollection_1_t03A86E09A767AAC7CE5E15528EF2766741A2C79F  : public 
 	RuntimeObject* ____syncRoot_1;
 };
 
-// System.Collections.ObjectModel.ReadOnlyCollection`1<ONSPPropagationGeometry/MeshMaterial>
-struct ReadOnlyCollection_1_t6CD7B2EC4A26F344188D44236BB72D97E16F9AB3  : public RuntimeObject
+// System.Collections.ObjectModel.ReadOnlyCollection`1<JsonTests/cListEntry>
+struct ReadOnlyCollection_1_tA6424890FF816698BBD0C7724A8B5FD4486A76E2  : public RuntimeObject
 {
 	// System.Collections.Generic.IList`1<T> System.Collections.ObjectModel.ReadOnlyCollection`1::list
 	RuntimeObject* ___list_0;
@@ -1408,25 +1404,33 @@ struct TreeViewItemWrapper_tFA593EC4B06E0C963C0EAA9C18DDC99EEDC05D1F_marshaled_c
 	RuntimeObject* ___item_1;
 };
 
-// ONSPPropagationGeometry/MeshMaterial
-struct MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF 
+// JsonTests/cListEntry
+struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 
 {
-	// UnityEngine.MeshFilter ONSPPropagationGeometry/MeshMaterial::meshFilter
-	MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* ___meshFilter_0;
-	// ONSPPropagationMaterial[] ONSPPropagationGeometry/MeshMaterial::materials
-	ONSPPropagationMaterialU5BU5D_t09366E3A22D05CEBD56F798F10E24B4E0126FE57* ___materials_1;
+	// System.Int32 JsonTests/cListEntry::parentID
+	int32_t ___parentID_0;
+	// System.String JsonTests/cListEntry::conName
+	String_t* ___conName_1;
+	// System.Int32 JsonTests/cListEntry::conThat
+	int32_t ___conThat_2;
+	// System.Boolean JsonTests/cListEntry::conActive
+	bool ___conActive_3;
 };
-// Native definition for P/Invoke marshalling of ONSPPropagationGeometry/MeshMaterial
-struct MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF_marshaled_pinvoke
+// Native definition for P/Invoke marshalling of JsonTests/cListEntry
+struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_marshaled_pinvoke
 {
-	MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* ___meshFilter_0;
-	ONSPPropagationMaterialU5BU5D_t09366E3A22D05CEBD56F798F10E24B4E0126FE57* ___materials_1;
+	int32_t ___parentID_0;
+	char* ___conName_1;
+	int32_t ___conThat_2;
+	int32_t ___conActive_3;
 };
-// Native definition for COM marshalling of ONSPPropagationGeometry/MeshMaterial
-struct MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF_marshaled_com
+// Native definition for COM marshalling of JsonTests/cListEntry
+struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_marshaled_com
 {
-	MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* ___meshFilter_0;
-	ONSPPropagationMaterialU5BU5D_t09366E3A22D05CEBD56F798F10E24B4E0126FE57* ___materials_1;
+	int32_t ___parentID_0;
+	Il2CppChar* ___conName_1;
+	int32_t ___conThat_2;
+	int32_t ___conActive_3;
 };
 
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.Rendering.Universal.DecalEntityManager/CombinedChunks>
@@ -1507,17 +1511,17 @@ struct Enumerator_tF7C4CF85F9832CF08B5EE4A7E07D95D2816AE53D
 	TreeViewItemWrapper_tFA593EC4B06E0C963C0EAA9C18DDC99EEDC05D1F ____current_3;
 };
 
-// System.Collections.Generic.List`1/Enumerator<ONSPPropagationGeometry/MeshMaterial>
-struct Enumerator_tE59015DA67D3C46E1B6B2B095DF7FA99F30DC421 
+// System.Collections.Generic.List`1/Enumerator<JsonTests/cListEntry>
+struct Enumerator_t9867880800A2398587D6C2CFEEFA115D893CE35A 
 {
 	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::_list
-	List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* ____list_0;
+	List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* ____list_0;
 	// System.Int32 System.Collections.Generic.List`1/Enumerator::_index
 	int32_t ____index_1;
 	// System.Int32 System.Collections.Generic.List`1/Enumerator::_version
 	int32_t ____version_2;
 	// T System.Collections.Generic.List`1/Enumerator::_current
-	MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF ____current_3;
+	cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ____current_3;
 };
 
 // System.Delegate
@@ -2025,8 +2029,8 @@ struct Action_1_tCCB66B182EF6A3D43A5463760EBBB99D536A2C70  : public MulticastDel
 {
 };
 
-// System.Action`1<ONSPPropagationGeometry/MeshMaterial>
-struct Action_1_tD8BB9EFE2B7DDD26EEB17E5E57EAB694425AC7AC  : public MulticastDelegate_t
+// System.Action`1<JsonTests/cListEntry>
+struct Action_1_t988D740EBD7CC057D5A62DBD07D2BCB0F3E718CC  : public MulticastDelegate_t
 {
 };
 
@@ -2075,8 +2079,8 @@ struct Comparison_1_t0AC918C940F16A046B367004E65100581BDD00E6  : public Multicas
 {
 };
 
-// System.Comparison`1<ONSPPropagationGeometry/MeshMaterial>
-struct Comparison_1_t62DA3A02A101CB89F4D9B0F005989DDA71EBD173  : public MulticastDelegate_t
+// System.Comparison`1<JsonTests/cListEntry>
+struct Comparison_1_t11E4F7D5C8075D4A60D00038D22B2D999A371FC5  : public MulticastDelegate_t
 {
 };
 
@@ -2138,8 +2142,8 @@ struct Predicate_1_t30B6C0EA4B49279CABE20C001AAC4DD54EAE9AB6  : public Multicast
 {
 };
 
-// System.Predicate`1<ONSPPropagationGeometry/MeshMaterial>
-struct Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860  : public MulticastDelegate_t
+// System.Predicate`1<JsonTests/cListEntry>
+struct Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1  : public MulticastDelegate_t
 {
 };
 
@@ -2602,45 +2606,39 @@ struct JsonValueU5BU5D_tCC9BDCF1DE43F923B72BEF6FE9AB4FBAEF445DB3  : public Runti
 		#endif
 	}
 };
-// ONSPPropagationGeometry/MeshMaterial[]
-struct MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3  : public RuntimeArray
+// JsonTests/cListEntry[]
+struct cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0  : public RuntimeArray
 {
-	ALIGN_FIELD (8) MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF m_Items[1];
+	ALIGN_FIELD (8) cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 m_Items[1];
 
-	inline MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF GetAt(il2cpp_array_size_t index) const
+	inline cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 GetAt(il2cpp_array_size_t index) const
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		return m_Items[index];
 	}
-	inline MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF* GetAddressAt(il2cpp_array_size_t index)
+	inline cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905* GetAddressAt(il2cpp_array_size_t index)
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		return m_Items + index;
 	}
-	inline void SetAt(il2cpp_array_size_t index, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF value)
+	inline void SetAt(il2cpp_array_size_t index, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 value)
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___meshFilter_0), (void*)NULL);
-		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
-		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___materials_1), (void*)NULL);
-		#endif
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___conName_1), (void*)NULL);
 	}
-	inline MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF GetAtUnchecked(il2cpp_array_size_t index) const
+	inline cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 GetAtUnchecked(il2cpp_array_size_t index) const
 	{
 		return m_Items[index];
 	}
-	inline MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	inline cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905* GetAddressAtUnchecked(il2cpp_array_size_t index)
 	{
 		return m_Items + index;
 	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF value)
+	inline void SetAtUnchecked(il2cpp_array_size_t index, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 value)
 	{
 		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___meshFilter_0), (void*)NULL);
-		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
-		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___materials_1), (void*)NULL);
-		#endif
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___conName_1), (void*)NULL);
 	}
 };
 
@@ -2663,8 +2661,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m558A4A25FF93BC37508FED
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m253654798EFCBD9A886DB63013CDB98B0F17293C_gshared (Enumerator_tF7C4CF85F9832CF08B5EE4A7E07D95D2816AE53D* __this, List_1_tC41C589EC5D2B0C53BF9E6B76193FECB76139177* ___list0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1/Enumerator<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>::.ctor(System.Collections.Generic.List`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mDF0E4CF176785A231F637DA8223FC158B3277EBD_gshared (Enumerator_t06B71EF17663E35C7B0EA1A12263D9A5C5E116EB* __this, List_1_t4A80BCCFB0BC8742C8BB601365DB07226750573A* ___list0, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1/Enumerator<ONSPPropagationGeometry/MeshMaterial>::.ctor(System.Collections.Generic.List`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mB7848EB082576C9354F3903527561BD485148157_gshared (Enumerator_tE59015DA67D3C46E1B6B2B095DF7FA99F30DC421* __this, List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* ___list0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1/Enumerator<JsonTests/cListEntry>::.ctor(System.Collections.Generic.List`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m631FEBDC2DAF3A118F8539B7CCE9239D0182E11E_gshared (Enumerator_t9867880800A2398587D6C2CFEEFA115D893CE35A* __this, List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* ___list0, const RuntimeMethod* method) ;
 
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
@@ -2741,10 +2739,10 @@ inline void Enumerator__ctor_mDF0E4CF176785A231F637DA8223FC158B3277EBD (Enumerat
 {
 	((  void (*) (Enumerator_t06B71EF17663E35C7B0EA1A12263D9A5C5E116EB*, List_1_t4A80BCCFB0BC8742C8BB601365DB07226750573A*, const RuntimeMethod*))Enumerator__ctor_mDF0E4CF176785A231F637DA8223FC158B3277EBD_gshared)(__this, ___list0, method);
 }
-// System.Void System.Collections.Generic.List`1/Enumerator<ONSPPropagationGeometry/MeshMaterial>::.ctor(System.Collections.Generic.List`1<T>)
-inline void Enumerator__ctor_mB7848EB082576C9354F3903527561BD485148157 (Enumerator_tE59015DA67D3C46E1B6B2B095DF7FA99F30DC421* __this, List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* ___list0, const RuntimeMethod* method)
+// System.Void System.Collections.Generic.List`1/Enumerator<JsonTests/cListEntry>::.ctor(System.Collections.Generic.List`1<T>)
+inline void Enumerator__ctor_m631FEBDC2DAF3A118F8539B7CCE9239D0182E11E (Enumerator_t9867880800A2398587D6C2CFEEFA115D893CE35A* __this, List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* ___list0, const RuntimeMethod* method)
 {
-	((  void (*) (Enumerator_tE59015DA67D3C46E1B6B2B095DF7FA99F30DC421*, List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, const RuntimeMethod*))Enumerator__ctor_mB7848EB082576C9354F3903527561BD485148157_gshared)(__this, ___list0, method);
+	((  void (*) (Enumerator_t9867880800A2398587D6C2CFEEFA115D893CE35A*, List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, const RuntimeMethod*))Enumerator__ctor_m631FEBDC2DAF3A118F8539B7CCE9239D0182E11E_gshared)(__this, ___list0, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -23316,20 +23314,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__cctor_m643F2B94AA9DC072357740D91
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m70BC951137D51AD87A089BAAC37BDD6E6808A935_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m53948685158D63ADAE9BFB3FEBD16EB652AC6476_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_0 = ((List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_emptyArray_5;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_0 = ((List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_emptyArray_5;
 		__this->____items_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____items_1), (void*)L_0);
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m6841C0DCF0F3907235033FFB15C59B3EF97F360D_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___capacity0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m8E83AB05D5F00A8F6564C9E95C81D114A928B5CA_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___capacity0, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
@@ -23353,7 +23351,7 @@ IL_0012:
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_2 = ((List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_emptyArray_5;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_2 = ((List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_emptyArray_5;
 		__this->____items_1 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____items_1), (void*)L_2);
 		return;
@@ -23362,14 +23360,14 @@ IL_0012:
 IL_0021:
 	{
 		int32_t L_3 = ___capacity0;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_4 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)(MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)SZArrayNew(il2cpp_rgctx_data(method->klass->rgctx_data, 1), (uint32_t)L_3);
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_4 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)(cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)SZArrayNew(il2cpp_rgctx_data(method->klass->rgctx_data, 1), (uint32_t)L_3);
 		__this->____items_1 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____items_1), (void*)L_4);
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m78A1D6178AA08C226E78A90BB99E9BEA334B02D5_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, RuntimeObject* ___collection0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m9DEE8E35F4A6F7039807CA46268D51E7C653C1EA_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, RuntimeObject* ___collection0, const RuntimeMethod* method) 
 {
 	RuntimeObject* V_0 = NULL;
 	int32_t V_1 = 0;
@@ -23399,7 +23397,7 @@ IL_000f:
 		RuntimeObject* L_3 = V_0;
 		NullCheck(L_3);
 		int32_t L_4;
-		L_4 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<ONSPPropagationGeometry/MeshMaterial>::get_Count() */, il2cpp_rgctx_data(method->klass->rgctx_data, 2), L_3);
+		L_4 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<JsonTests/cListEntry>::get_Count() */, il2cpp_rgctx_data(method->klass->rgctx_data, 2), L_3);
 		V_1 = L_4;
 		int32_t L_5 = V_1;
 		if (L_5)
@@ -23409,7 +23407,7 @@ IL_000f:
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_6 = ((List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_emptyArray_5;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_6 = ((List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_emptyArray_5;
 		__this->____items_1 = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____items_1), (void*)L_6);
 		return;
@@ -23418,13 +23416,13 @@ IL_000f:
 IL_002f:
 	{
 		int32_t L_7 = V_1;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_8 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)(MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)SZArrayNew(il2cpp_rgctx_data(method->klass->rgctx_data, 1), (uint32_t)L_7);
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_8 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)(cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)SZArrayNew(il2cpp_rgctx_data(method->klass->rgctx_data, 1), (uint32_t)L_7);
 		__this->____items_1 = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____items_1), (void*)L_8);
 		RuntimeObject* L_9 = V_0;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_10 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_10 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		NullCheck(L_9);
-		InterfaceActionInvoker2< MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*, int32_t >::Invoke(5 /* System.Void System.Collections.Generic.ICollection`1<ONSPPropagationGeometry/MeshMaterial>::CopyTo(T[],System.Int32) */, il2cpp_rgctx_data(method->klass->rgctx_data, 2), L_9, L_10, 0);
+		InterfaceActionInvoker2< cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*, int32_t >::Invoke(5 /* System.Void System.Collections.Generic.ICollection`1<JsonTests/cListEntry>::CopyTo(T[],System.Int32) */, il2cpp_rgctx_data(method->klass->rgctx_data, 2), L_9, L_10, 0);
 		int32_t L_11 = V_1;
 		__this->____size_2 = L_11;
 		return;
@@ -23434,27 +23432,27 @@ IL_0050:
 	{
 		__this->____size_2 = 0;
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_12 = ((List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_emptyArray_5;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_12 = ((List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_emptyArray_5;
 		__this->____items_1 = L_12;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____items_1), (void*)L_12);
 		RuntimeObject* L_13 = ___collection0;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(__this, L_13, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(__this, L_13, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::get_Capacity()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_get_Capacity_mA9E3C66EDA76AC0A01E6AB4984B6841D07A2EC83_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Int32 System.Collections.Generic.List`1<JsonTests/cListEntry>::get_Capacity()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_get_Capacity_m46EE0E1A021D91B8C149519BE0DEDE84E866E3BA_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_0 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_0 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		NullCheck(L_0);
 		return ((int32_t)(((RuntimeArray*)L_0)->max_length));
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::set_Capacity(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Capacity_mC748E02FD925750DE8470848CE1A9E3CBFF58CD8_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___value0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::set_Capacity(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Capacity_mA2E1CF4B08131FCAAC19D0C120E08400FC73A5D9_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___value0, const RuntimeMethod* method) 
 {
-	MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* V_0 = NULL;
+	cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* V_0 = NULL;
 	{
 		int32_t L_0 = ___value0;
 		int32_t L_1 = (int32_t)__this->____size_2;
@@ -23470,7 +23468,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Capacity_mC748E02FD925750DE84
 IL_0012:
 	{
 		int32_t L_2 = ___value0;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_3 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_3 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		NullCheck(L_3);
 		if ((((int32_t)L_2) == ((int32_t)((int32_t)(((RuntimeArray*)L_3)->max_length)))))
 		{
@@ -23486,7 +23484,7 @@ IL_0012:
 	}
 	{
 		int32_t L_5 = ___value0;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_6 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)(MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)SZArrayNew(il2cpp_rgctx_data(method->klass->rgctx_data, 1), (uint32_t)L_5);
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_6 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)(cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)SZArrayNew(il2cpp_rgctx_data(method->klass->rgctx_data, 1), (uint32_t)L_5);
 		V_0 = L_6;
 		int32_t L_7 = (int32_t)__this->____size_2;
 		if ((((int32_t)L_7) <= ((int32_t)0)))
@@ -23495,15 +23493,15 @@ IL_0012:
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_8 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_9 = V_0;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_8 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_9 = V_0;
 		int32_t L_10 = (int32_t)__this->____size_2;
 		Array_Copy_mB4904E17BD92E320613A3251C0205E0786B3BF41((RuntimeArray*)L_8, 0, (RuntimeArray*)L_9, 0, L_10, NULL);
 	}
 
 IL_0045:
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_11 = V_0;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_11 = V_0;
 		__this->____items_1 = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____items_1), (void*)L_11);
 		return;
@@ -23512,7 +23510,7 @@ IL_0045:
 IL_004d:
 	{
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_12 = ((List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_emptyArray_5;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_12 = ((List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_emptyArray_5;
 		__this->____items_1 = L_12;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____items_1), (void*)L_12);
 	}
@@ -23522,37 +23520,37 @@ IL_0058:
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::get_Count()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mECF53229EA76BDD14DE4A97CC8AA209F0CAF10F9_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Int32 System.Collections.Generic.List`1<JsonTests/cListEntry>::get_Count()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mA424D646C6132D5AC74F3A3D00C972DCCC04BCD8_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = (int32_t)__this->____size_2;
 		return L_0;
 	}
 }
-// System.Boolean System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.IList.get_IsFixedSize()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_System_Collections_IList_get_IsFixedSize_mFAD2E58DEC78CE844AF35AEF81726E273E3B32B2_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Boolean System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.IList.get_IsFixedSize()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_System_Collections_IList_get_IsFixedSize_mF81E4954B45649998EE4F2CF6D15B8A6D1755A16_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	{
 		return (bool)0;
 	}
 }
-// System.Boolean System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.Generic.ICollection<T>.get_IsReadOnly()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m3D2A075CF3F64A320610A03CE83A7B4F4145CC48_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Boolean System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.Generic.ICollection<T>.get_IsReadOnly()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_mF037168CB8F9EC7C6723562608969E59CB52896F_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	{
 		return (bool)0;
 	}
 }
-// System.Boolean System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.IList.get_IsReadOnly()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_System_Collections_IList_get_IsReadOnly_m981D5DB407AB45BF1671997F2A4D04727C584C96_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Boolean System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.IList.get_IsReadOnly()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_System_Collections_IList_get_IsReadOnly_mF50566E065C4DFBBD378679D10D089918BD016C5_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	{
 		return (bool)0;
 	}
 }
-// System.Object System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.ICollection.get_SyncRoot()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_System_Collections_ICollection_get_SyncRoot_m52991C3636CAC96BCF78279D5AC7D3674C0C1673_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Object System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.ICollection.get_SyncRoot()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_System_Collections_ICollection_get_SyncRoot_mE870AF95691F486ED5DFF098EC2782D669A7BBBB_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -23582,8 +23580,8 @@ IL_001a:
 		return L_4;
 	}
 }
-// T System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::get_Item(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF List_1_get_Item_m88F0807191009EE8A74CCFAD41A6B5887A2B4B9C_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, const RuntimeMethod* method) 
+// T System.Collections.Generic.List`1<JsonTests/cListEntry>::get_Item(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 List_1_get_Item_mA08DDFC8F356CA457B07D66F6DB7FE3B7D584E67_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = ___index0;
@@ -23599,16 +23597,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MeshMaterial_t52CF0208BCA9BCF6873521E07010419
 
 IL_000e:
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_2 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_2 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_3 = ___index0;
 		NullCheck(L_2);
 		int32_t L_4 = L_3;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		return L_5;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::set_Item(System.Int32,T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Item_m1D15F8D46DC85F9C56981A156A79770631C2A97D_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF ___value1, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::set_Item(System.Int32,T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Item_mE42AE4575EF5CE49C0FB40062B95EAB63D119CD1_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___value1, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = ___index0;
@@ -23624,20 +23622,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Item_m1D15F8D46DC85F9C56981A1
 
 IL_000e:
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_2 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_2 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_3 = ___index0;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_4 = ___value1;
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_4 = ___value1;
 		NullCheck(L_2);
-		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(L_3), (MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF)L_4);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(L_3), (cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905)L_4);
 		int32_t L_5 = (int32_t)__this->____version_3;
 		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_5, 1));
 		return;
 	}
 }
-// System.Boolean System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::IsCompatibleObject(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_IsCompatibleObject_mE47DCA001E62A4612290F6963C82532A12B72A8C_gshared (RuntimeObject* ___value0, const RuntimeMethod* method) 
+// System.Boolean System.Collections.Generic.List`1<JsonTests/cListEntry>::IsCompatibleObject(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_IsCompatibleObject_mD581050647402B80A1FB5728578609757FB536EE_gshared (RuntimeObject* ___value0, const RuntimeMethod* method) 
 {
-	MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF V_0;
+	cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		RuntimeObject* L_0 = ___value0;
@@ -23654,9 +23652,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_IsCompatibleObject_mE47DCA001E62A
 		}
 	}
 	{
-		il2cpp_codegen_initobj((&V_0), sizeof(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF));
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_2 = V_0;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_3 = L_2;
+		il2cpp_codegen_initobj((&V_0), sizeof(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_2 = V_0;
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_3 = L_2;
 		RuntimeObject* L_4 = Box(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 6), &L_3);
 		return (bool)((((RuntimeObject*)(RuntimeObject*)L_4) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 	}
@@ -23671,20 +23669,20 @@ IL_001f:
 		return (bool)1;
 	}
 }
-// System.Object System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.IList.get_Item(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_System_Collections_IList_get_Item_m967CC4CFD39D91B343DCBBE8FEF8F2558F84AD8F_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, const RuntimeMethod* method) 
+// System.Object System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.IList.get_Item(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_System_Collections_IList_get_Item_mA0BC5F25AE84987772B3B1C53D361EED1DC2ECF8_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = ___index0;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_1;
-		L_1 = ((  MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_2 = L_1;
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_1;
+		L_1 = ((  cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_2 = L_1;
 		RuntimeObject* L_3 = Box(il2cpp_rgctx_data(method->klass->rgctx_data, 6), &L_2);
 		return L_3;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.IList.set_Item(System.Int32,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_System_Collections_IList_set_Item_mA778916888F6C105ADEBFFFBCE2E7AB174CADDAF_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, RuntimeObject* ___value1, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.IList.set_Item(System.Int32,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_System_Collections_IList_set_Item_m1F7C396F4A0E98AD449890574CCABC44D5E0AE47_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, RuntimeObject* ___value1, const RuntimeMethod* method) 
 {
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
@@ -23695,7 +23693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_System_Collections_IList_set_Item
 	{// begin try (depth: 1)
 		int32_t L_1 = ___index0;
 		RuntimeObject* L_2 = ___value1;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))(__this, L_1, ((*(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)((MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)UnBox(L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 6))))), il2cpp_rgctx_method(method->klass->rgctx_data, 9));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))(__this, L_1, ((*(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)((cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)UnBox(L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 6))))), il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 		goto IL_002a;
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -23725,20 +23723,20 @@ IL_002a:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Add(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Add_m63C1929FAF1B72B1D94D79D0DB750E443B8F9B07_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF ___item0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::Add(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Add_m41527291129ABA2F23B8137CB58BFE92C0F0FFAA_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___item0, const RuntimeMethod* method) 
 {
-	MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* V_0 = NULL;
+	cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
 		int32_t L_0 = (int32_t)__this->____version_3;
 		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_1 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_1 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		V_0 = L_1;
 		int32_t L_2 = (int32_t)__this->____size_2;
 		V_1 = L_2;
 		int32_t L_3 = V_1;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_4 = V_0;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_4 = V_0;
 		NullCheck(L_4);
 		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
 		{
@@ -23748,42 +23746,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Add_m63C1929FAF1B72B1D94D79D0DB75
 	{
 		int32_t L_5 = V_1;
 		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_6 = V_0;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_6 = V_0;
 		int32_t L_7 = V_1;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_8 = ___item0;
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_8 = ___item0;
 		NullCheck(L_6);
-		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF)L_8);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905)L_8);
 		return;
 	}
 
 IL_0034:
 	{
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_9 = ___item0;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_9 = ___item0;
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::AddWithResize(T)
-IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m2C20FDE434E93C5EB9620F9BD048F2EADA4EE13A_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF ___item0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::AddWithResize(T)
+IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m38B2BA57730D55742B118B4DEAF5D86DA255841A_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___item0, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
 		int32_t L_0 = (int32_t)__this->____size_2;
 		V_0 = L_0;
 		int32_t L_1 = V_0;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, ((int32_t)il2cpp_codegen_add(L_1, 1)), il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, ((int32_t)il2cpp_codegen_add(L_1, 1)), il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		int32_t L_2 = V_0;
 		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_2, 1));
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_3 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_3 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_4 = V_0;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_5 = ___item0;
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_5 = ___item0;
 		NullCheck(L_3);
-		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_4), (MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF)L_5);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_4), (cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905)L_5);
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.IList.Add(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_System_Collections_IList_Add_m6D288E5849D57775E7BB1C194FFC304B0EE34117_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
+// System.Int32 System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.IList.Add(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_System_Collections_IList_Add_mDB958C028536C8CD2D5BD207E3EB968BB1CF6454_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
 {
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
@@ -23793,7 +23791,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_System_Collections_IList_Add_m
 	try
 	{// begin try (depth: 1)
 		RuntimeObject* L_1 = ___item0;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(__this, ((*(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)((MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)UnBox(L_1, il2cpp_rgctx_data(method->klass->rgctx_data, 6))))), il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(__this, ((*(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)((cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)UnBox(L_1, il2cpp_rgctx_data(method->klass->rgctx_data, 6))))), il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		goto IL_0029;
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -23821,32 +23819,32 @@ CATCH_0016:
 IL_0029:
 	{
 		int32_t L_5;
-		L_5 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		L_5 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		return ((int32_t)il2cpp_codegen_subtract(L_5, 1));
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::AddRange(System.Collections.Generic.IEnumerable`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_AddRange_m25D7A619B07A1ACBD944EEBBBCA59432F25760D4_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, RuntimeObject* ___collection0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::AddRange(System.Collections.Generic.IEnumerable`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_AddRange_m37C769CA75A6B06D292DED0E1E6A88B3FD71B014_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, RuntimeObject* ___collection0, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = (int32_t)__this->____size_2;
 		RuntimeObject* L_1 = ___collection0;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))(__this, L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))(__this, L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
 		return;
 	}
 }
-// System.Collections.ObjectModel.ReadOnlyCollection`1<T> System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::AsReadOnly()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlyCollection_1_t6CD7B2EC4A26F344188D44236BB72D97E16F9AB3* List_1_AsReadOnly_mED89EC66FDEF21806BA092B01653FCE37338E8E9_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Collections.ObjectModel.ReadOnlyCollection`1<T> System.Collections.Generic.List`1<JsonTests/cListEntry>::AsReadOnly()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlyCollection_1_tA6424890FF816698BBD0C7724A8B5FD4486A76E2* List_1_AsReadOnly_m62FECB575165FDF2916582C9AF46134307D57C12_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	{
-		ReadOnlyCollection_1_t6CD7B2EC4A26F344188D44236BB72D97E16F9AB3* L_0 = (ReadOnlyCollection_1_t6CD7B2EC4A26F344188D44236BB72D97E16F9AB3*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 16));
+		ReadOnlyCollection_1_tA6424890FF816698BBD0C7724A8B5FD4486A76E2* L_0 = (ReadOnlyCollection_1_tA6424890FF816698BBD0C7724A8B5FD4486A76E2*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 16));
 		NullCheck(L_0);
-		((  void (*) (ReadOnlyCollection_1_t6CD7B2EC4A26F344188D44236BB72D97E16F9AB3*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 17)))(L_0, (RuntimeObject*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 17));
+		((  void (*) (ReadOnlyCollection_1_tA6424890FF816698BBD0C7724A8B5FD4486A76E2*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 17)))(L_0, (RuntimeObject*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 17));
 		return L_0;
 	}
 }
-// System.Int32 System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::BinarySearch(System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_BinarySearch_m67689E94751F9AA5296E10297897E6F2B9BB54C7_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, int32_t ___count1, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF ___item2, RuntimeObject* ___comparer3, const RuntimeMethod* method) 
+// System.Int32 System.Collections.Generic.List`1<JsonTests/cListEntry>::BinarySearch(System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_BinarySearch_m04F925EE198B1DC32E4DBC5804605CCD13FB1BE0_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, int32_t ___count1, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___item2, RuntimeObject* ___comparer3, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = ___index0;
@@ -23887,43 +23885,43 @@ IL_0015:
 
 IL_0027:
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_5 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_5 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_6 = ___index0;
 		int32_t L_7 = ___count1;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_8 = ___item2;
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_8 = ___item2;
 		RuntimeObject* L_9 = ___comparer3;
 		int32_t L_10;
-		L_10 = ((  int32_t (*) (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*, int32_t, int32_t, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))(L_5, L_6, L_7, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+		L_10 = ((  int32_t (*) (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*, int32_t, int32_t, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))(L_5, L_6, L_7, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
 		return L_10;
 	}
 }
-// System.Int32 System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::BinarySearch(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_BinarySearch_m5C1FC38F10D2AB8512959D6F9DFDF98D52B63437_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF ___item0, const RuntimeMethod* method) 
+// System.Int32 System.Collections.Generic.List`1<JsonTests/cListEntry>::BinarySearch(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_BinarySearch_mF6EAFDEDDFB1509CAAE81681AE77291EE6F5E642_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___item0, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0;
-		L_0 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_1 = ___item0;
+		L_0 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_1 = ___item0;
 		int32_t L_2;
-		L_2 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, int32_t, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))(__this, 0, L_0, L_1, (RuntimeObject*)NULL, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		L_2 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, int32_t, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))(__this, 0, L_0, L_1, (RuntimeObject*)NULL, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
 		return L_2;
 	}
 }
-// System.Int32 System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::BinarySearch(T,System.Collections.Generic.IComparer`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_BinarySearch_m4B075F940934410052EF6958FF381476D12DE481_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF ___item0, RuntimeObject* ___comparer1, const RuntimeMethod* method) 
+// System.Int32 System.Collections.Generic.List`1<JsonTests/cListEntry>::BinarySearch(T,System.Collections.Generic.IComparer`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_BinarySearch_m8629DA40A4CCC234AFBEA50910D539DF34EC7835_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___item0, RuntimeObject* ___comparer1, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0;
-		L_0 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_1 = ___item0;
+		L_0 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_1 = ___item0;
 		RuntimeObject* L_2 = ___comparer1;
 		int32_t L_3;
-		L_3 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, int32_t, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))(__this, 0, L_0, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		L_3 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, int32_t, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))(__this, 0, L_0, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
 		return L_3;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Clear()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Clear_mB5679ADC8C40388959F23857291439DFE95E11F1_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::Clear()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Clear_mE555C31721EB6884AB2E32E2ABCDF6C91E6CFF9E_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
@@ -23945,7 +23943,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Clear_mB5679ADC8C40388959F2385729
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_3 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_3 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_4 = V_0;
 		Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB((RuntimeArray*)L_3, 0, L_4, NULL);
 		return;
@@ -23961,8 +23959,8 @@ IL_003c:
 		return;
 	}
 }
-// System.Boolean System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Contains(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Contains_m9723A4952517046889803E9473C4D5D491A88EFC_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF ___item0, const RuntimeMethod* method) 
+// System.Boolean System.Collections.Generic.List`1<JsonTests/cListEntry>::Contains(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Contains_m245F2D435CD37B24B7946FAD42D23334BF4AC6E2_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___item0, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = (int32_t)__this->____size_2;
@@ -23972,9 +23970,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Contains_m9723A4952517046889803E9
 		}
 	}
 	{
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_1 = ___item0;
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_1 = ___item0;
 		int32_t L_2;
-		L_2 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 20)))(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
+		L_2 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 20)))(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		return (bool)((((int32_t)((((int32_t)L_2) == ((int32_t)(-1)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 
@@ -23983,8 +23981,8 @@ IL_0016:
 		return (bool)0;
 	}
 }
-// System.Boolean System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.IList.Contains(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_System_Collections_IList_Contains_mE5785FFA542F72FD278050F8D7F57E59E6B8F250_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
+// System.Boolean System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.IList.Contains(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_System_Collections_IList_Contains_mCFC84A4AE573984122AB8E50EFB162631A844A06_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = ___item0;
@@ -23999,7 +23997,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_System_Collections_IList_Contains
 	{
 		RuntimeObject* L_2 = ___item0;
 		bool L_3;
-		L_3 = ((  bool (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 22)))(__this, ((*(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)((MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)UnBox(L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 6))))), il2cpp_rgctx_method(method->klass->rgctx_data, 22));
+		L_3 = ((  bool (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 22)))(__this, ((*(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)((cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)UnBox(L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 6))))), il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		return L_3;
 	}
 
@@ -24008,17 +24006,17 @@ IL_0015:
 		return (bool)0;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::CopyTo(T[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_CopyTo_mA366391E7AB297A5E0CD1B1CEB4D1C35616714D5_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* ___array0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::CopyTo(T[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_CopyTo_m3241E6A367EC8D2840F7A2A9105CBC6FBB8014F0_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* ___array0, const RuntimeMethod* method) 
 {
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_0 = ___array0;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 23)))(__this, L_0, 0, il2cpp_rgctx_method(method->klass->rgctx_data, 23));
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_0 = ___array0;
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 23)))(__this, L_0, 0, il2cpp_rgctx_method(method->klass->rgctx_data, 23));
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_System_Collections_ICollection_CopyTo_m03A0B55F309765E9745747B6673CB098E5589FDC_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, RuntimeArray* ___array0, int32_t ___arrayIndex1, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_System_Collections_ICollection_CopyTo_m2398CBF8B2759A524B4F5A2785B4113C04FE620B_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, RuntimeArray* ___array0, int32_t ___arrayIndex1, const RuntimeMethod* method) 
 {
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
@@ -24047,7 +24045,7 @@ IL_0012:
 	}
 	try
 	{// begin try (depth: 1)
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_3 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_3 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		RuntimeArray* L_4 = ___array0;
 		int32_t L_5 = ___arrayIndex1;
 		int32_t L_6 = (int32_t)__this->____size_2;
@@ -24076,25 +24074,25 @@ IL_0031:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::CopyTo(T[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_CopyTo_m4FB8695F11A41839E802B1BE805426878EAA34E5_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* ___array0, int32_t ___arrayIndex1, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::CopyTo(T[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_CopyTo_mFD32D5AF217ACB823B3213CBB2CB1F71ED54127F_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* ___array0, int32_t ___arrayIndex1, const RuntimeMethod* method) 
 {
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_0 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_1 = ___array0;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_0 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_1 = ___array0;
 		int32_t L_2 = ___arrayIndex1;
 		int32_t L_3 = (int32_t)__this->____size_2;
 		Array_Copy_mB4904E17BD92E320613A3251C0205E0786B3BF41((RuntimeArray*)L_0, 0, (RuntimeArray*)L_1, L_2, L_3, NULL);
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::EnsureCapacity(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_EnsureCapacity_m91CE7BA4B5CB7F32659C56868BD027287F6D6501_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___min0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::EnsureCapacity(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_EnsureCapacity_m6C9A7E06F83868649B781B00ABA1E0E1DD3D8573_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___min0, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	int32_t G_B4_0 = 0;
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_0 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_0 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		NullCheck(L_0);
 		int32_t L_1 = ___min0;
 		if ((((int32_t)((int32_t)(((RuntimeArray*)L_0)->max_length))) >= ((int32_t)L_1)))
@@ -24103,7 +24101,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_EnsureCapacity_m91CE7BA4B5CB7F326
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_2 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_2 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		NullCheck(L_2);
 		if (!(((RuntimeArray*)L_2)->max_length))
 		{
@@ -24111,7 +24109,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_EnsureCapacity_m91CE7BA4B5CB7F326
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_3 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_3 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		NullCheck(L_3);
 		G_B4_0 = ((int32_t)il2cpp_codegen_multiply(((int32_t)(((RuntimeArray*)L_3)->max_length)), 2));
 		goto IL_0021;
@@ -24152,7 +24150,7 @@ IL_0030:
 IL_0036:
 	{
 		int32_t L_8 = V_0;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 24)))(__this, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 24));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 24)))(__this, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 24));
 	}
 
 IL_003d:
@@ -24160,24 +24158,24 @@ IL_003d:
 		return;
 	}
 }
-// System.Boolean System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Exists(System.Predicate`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Exists_m74182AAD03E64216ADE65A1727D2D4F542434668_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* ___match0, const RuntimeMethod* method) 
+// System.Boolean System.Collections.Generic.List`1<JsonTests/cListEntry>::Exists(System.Predicate`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Exists_m0B6D4479FCF8D38D8FA9789AD585B02247278ABC_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* ___match0, const RuntimeMethod* method) 
 {
 	{
-		Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* L_0 = ___match0;
+		Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* L_0 = ___match0;
 		int32_t L_1;
-		L_1 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 25)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 25));
+		L_1 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 25)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 25));
 		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)(-1)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
-// T System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Find(System.Predicate`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF List_1_Find_m643961BA547D0F05FA24A0FB4DA3B13B69F0DAE6_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* ___match0, const RuntimeMethod* method) 
+// T System.Collections.Generic.List`1<JsonTests/cListEntry>::Find(System.Predicate`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 List_1_Find_m638D9D33A679D73BE67849B3577CFFF485B2471B_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* ___match0, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
-	MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF V_1;
+	cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* L_0 = ___match0;
+		Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* L_0 = ___match0;
 		if (L_0)
 		{
 			goto IL_0009;
@@ -24195,26 +24193,26 @@ IL_0009:
 
 IL_000d:
 	{
-		Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* L_1 = ___match0;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_2 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* L_1 = ___match0;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_2 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_3 = V_0;
 		NullCheck(L_2);
 		int32_t L_4 = L_3;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		NullCheck(L_1);
 		bool L_6;
-		L_6 = ((  bool (*) (Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 27)))(L_1, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 27));
+		L_6 = ((  bool (*) (Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 27)))(L_1, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		if (!L_6)
 		{
 			goto IL_002e;
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_7 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_7 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_8 = V_0;
 		NullCheck(L_7);
 		int32_t L_9 = L_8;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
 		return L_10;
 	}
 
@@ -24234,24 +24232,24 @@ IL_0032:
 		}
 	}
 	{
-		il2cpp_codegen_initobj((&V_1), sizeof(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF));
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_14 = V_1;
+		il2cpp_codegen_initobj((&V_1), sizeof(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_14 = V_1;
 		return L_14;
 	}
 }
-// System.Int32 System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::FindIndex(System.Predicate`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_FindIndex_m9B167FB8A3AF570D3A524489F7A5E6C89D19DCC7_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* ___match0, const RuntimeMethod* method) 
+// System.Int32 System.Collections.Generic.List`1<JsonTests/cListEntry>::FindIndex(System.Predicate`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_FindIndex_mE12B272479691F2F5B2DC45BAB795F668035D4E3_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* ___match0, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = (int32_t)__this->____size_2;
-		Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* L_1 = ___match0;
+		Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* L_1 = ___match0;
 		int32_t L_2;
-		L_2 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, int32_t, Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(__this, 0, L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
+		L_2 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, int32_t, Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(__this, 0, L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		return L_2;
 	}
 }
-// System.Int32 System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::FindIndex(System.Int32,System.Int32,System.Predicate`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_FindIndex_mEE18962108118C602CE7917662AE5BA356E4CB68_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___startIndex0, int32_t ___count1, Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* ___match2, const RuntimeMethod* method) 
+// System.Int32 System.Collections.Generic.List`1<JsonTests/cListEntry>::FindIndex(System.Int32,System.Int32,System.Predicate`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_FindIndex_mE8161E16D9BD2205DB0774A7E932B4BE354243C2_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___startIndex0, int32_t ___count1, Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* ___match2, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
@@ -24292,7 +24290,7 @@ IL_001d:
 
 IL_0022:
 	{
-		Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* L_6 = ___match2;
+		Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* L_6 = ___match2;
 		if (L_6)
 		{
 			goto IL_002b;
@@ -24314,15 +24312,15 @@ IL_002b:
 
 IL_0033:
 	{
-		Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* L_10 = ___match2;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_11 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* L_10 = ___match2;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_11 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_12 = V_1;
 		NullCheck(L_11);
 		int32_t L_13 = L_12;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 		NullCheck(L_10);
 		bool L_15;
-		L_15 = ((  bool (*) (Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 27)))(L_10, L_14, il2cpp_rgctx_method(method->klass->rgctx_data, 27));
+		L_15 = ((  bool (*) (Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 27)))(L_10, L_14, il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		if (!L_15)
 		{
 			goto IL_0049;
@@ -24352,13 +24350,13 @@ IL_004d:
 		return (-1);
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::ForEach(System.Action`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_ForEach_m80537E03B22DCCFBE39296A6A5A9E1F4B79A1975_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, Action_1_tD8BB9EFE2B7DDD26EEB17E5E57EAB694425AC7AC* ___action0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::ForEach(System.Action`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_ForEach_m3BF9D5616A49751F702AEED06C0EBE3C5263E1F8_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, Action_1_t988D740EBD7CC057D5A62DBD07D2BCB0F3E718CC* ___action0, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	{
-		Action_1_tD8BB9EFE2B7DDD26EEB17E5E57EAB694425AC7AC* L_0 = ___action0;
+		Action_1_t988D740EBD7CC057D5A62DBD07D2BCB0F3E718CC* L_0 = ___action0;
 		if (L_0)
 		{
 			goto IL_000a;
@@ -24386,14 +24384,14 @@ IL_0015:
 		}
 	}
 	{
-		Action_1_tD8BB9EFE2B7DDD26EEB17E5E57EAB694425AC7AC* L_4 = ___action0;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_5 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		Action_1_t988D740EBD7CC057D5A62DBD07D2BCB0F3E718CC* L_4 = ___action0;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_5 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_6 = V_1;
 		NullCheck(L_5);
 		int32_t L_7 = L_6;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
 		NullCheck(L_4);
-		((  void (*) (Action_1_tD8BB9EFE2B7DDD26EEB17E5E57EAB694425AC7AC*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 30)))(L_4, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 30));
+		((  void (*) (Action_1_t988D740EBD7CC057D5A62DBD07D2BCB0F3E718CC*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 30)))(L_4, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 30));
 		int32_t L_9 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_9, 1));
 	}
@@ -24426,44 +24424,44 @@ IL_004b:
 		return;
 	}
 }
-// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::GetEnumerator()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_tE59015DA67D3C46E1B6B2B095DF7FA99F30DC421 List_1_GetEnumerator_m52CB4614384C758B74F386CFF9CF7172D6205639_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<JsonTests/cListEntry>::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t9867880800A2398587D6C2CFEEFA115D893CE35A List_1_GetEnumerator_mCE43222801B5052048CB7DDF7D2F2100C9C8645C_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	{
-		Enumerator_tE59015DA67D3C46E1B6B2B095DF7FA99F30DC421 L_0;
+		Enumerator_t9867880800A2398587D6C2CFEEFA115D893CE35A L_0;
 		memset((&L_0), 0, sizeof(L_0));
-		Enumerator__ctor_mB7848EB082576C9354F3903527561BD485148157((&L_0), __this, /*hidden argument*/il2cpp_rgctx_method(method->klass->rgctx_data, 32));
+		Enumerator__ctor_m631FEBDC2DAF3A118F8539B7CCE9239D0182E11E((&L_0), __this, /*hidden argument*/il2cpp_rgctx_method(method->klass->rgctx_data, 32));
 		return L_0;
 	}
 }
-// System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_mA0D54775729964569C366FAC082EB76A40E1AA59_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m8CA55BAFCCF5FC9B7D1E2622BEE77A153DF12FE5_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	{
-		Enumerator_tE59015DA67D3C46E1B6B2B095DF7FA99F30DC421 L_0;
+		Enumerator_t9867880800A2398587D6C2CFEEFA115D893CE35A L_0;
 		memset((&L_0), 0, sizeof(L_0));
-		Enumerator__ctor_mB7848EB082576C9354F3903527561BD485148157((&L_0), __this, /*hidden argument*/il2cpp_rgctx_method(method->klass->rgctx_data, 32));
-		Enumerator_tE59015DA67D3C46E1B6B2B095DF7FA99F30DC421 L_1 = L_0;
+		Enumerator__ctor_m631FEBDC2DAF3A118F8539B7CCE9239D0182E11E((&L_0), __this, /*hidden argument*/il2cpp_rgctx_method(method->klass->rgctx_data, 32));
+		Enumerator_t9867880800A2398587D6C2CFEEFA115D893CE35A L_1 = L_0;
 		RuntimeObject* L_2 = Box(il2cpp_rgctx_data(method->klass->rgctx_data, 31), &L_1);
 		return (RuntimeObject*)L_2;
 	}
 }
-// System.Collections.IEnumerator System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.IEnumerable.GetEnumerator()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_System_Collections_IEnumerable_GetEnumerator_m3EEE09707CA5710F6B2FB9F4518B4EB195470F12_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Collections.IEnumerator System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.IEnumerable.GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_System_Collections_IEnumerable_GetEnumerator_mDAF35E8D117C1FE2DD25D6EB1E462FCE78694D0B_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	{
-		Enumerator_tE59015DA67D3C46E1B6B2B095DF7FA99F30DC421 L_0;
+		Enumerator_t9867880800A2398587D6C2CFEEFA115D893CE35A L_0;
 		memset((&L_0), 0, sizeof(L_0));
-		Enumerator__ctor_mB7848EB082576C9354F3903527561BD485148157((&L_0), __this, /*hidden argument*/il2cpp_rgctx_method(method->klass->rgctx_data, 32));
-		Enumerator_tE59015DA67D3C46E1B6B2B095DF7FA99F30DC421 L_1 = L_0;
+		Enumerator__ctor_m631FEBDC2DAF3A118F8539B7CCE9239D0182E11E((&L_0), __this, /*hidden argument*/il2cpp_rgctx_method(method->klass->rgctx_data, 32));
+		Enumerator_t9867880800A2398587D6C2CFEEFA115D893CE35A L_1 = L_0;
 		RuntimeObject* L_2 = Box(il2cpp_rgctx_data(method->klass->rgctx_data, 31), &L_1);
 		return (RuntimeObject*)L_2;
 	}
 }
-// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::GetRange(System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* List_1_GetRange_m256B86FF0B48F8119CC5CB86C33C1864066C7930_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, int32_t ___count1, const RuntimeMethod* method) 
+// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1<JsonTests/cListEntry>::GetRange(System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* List_1_GetRange_m53F40E4ED345CE6A5ED4FA715118E97E6C2247D3_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, int32_t ___count1, const RuntimeMethod* method) 
 {
-	List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* V_0 = NULL;
+	List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* V_0 = NULL;
 	{
 		int32_t L_0 = ___index0;
 		if ((((int32_t)L_0) >= ((int32_t)0)))
@@ -24504,39 +24502,39 @@ IL_0015:
 IL_0027:
 	{
 		int32_t L_5 = ___count1;
-		List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* L_6 = (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 33));
+		List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* L_6 = (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 33));
 		NullCheck(L_6);
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 34)))(L_6, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 34));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 34)))(L_6, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 34));
 		V_0 = L_6;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_7 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_7 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_8 = ___index0;
-		List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* L_9 = V_0;
+		List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* L_9 = V_0;
 		NullCheck(L_9);
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_10 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)L_9->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_10 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)L_9->____items_1;
 		int32_t L_11 = ___count1;
 		Array_Copy_mB4904E17BD92E320613A3251C0205E0786B3BF41((RuntimeArray*)L_7, L_8, (RuntimeArray*)L_10, 0, L_11, NULL);
-		List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* L_12 = V_0;
+		List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* L_12 = V_0;
 		int32_t L_13 = ___count1;
 		NullCheck(L_12);
 		L_12->____size_2 = L_13;
-		List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* L_14 = V_0;
+		List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* L_14 = V_0;
 		return L_14;
 	}
 }
-// System.Int32 System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::IndexOf(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_IndexOf_m733D731986DEE940E67BF65EE94C941B4C41622B_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF ___item0, const RuntimeMethod* method) 
+// System.Int32 System.Collections.Generic.List`1<JsonTests/cListEntry>::IndexOf(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_IndexOf_mC3524019A9298088C7628913E208EB8F4C63EB08_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___item0, const RuntimeMethod* method) 
 {
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_0 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_1 = ___item0;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_0 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_1 = ___item0;
 		int32_t L_2 = (int32_t)__this->____size_2;
 		int32_t L_3;
-		L_3 = ((  int32_t (*) (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, int32_t, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 35)))(L_0, L_1, 0, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+		L_3 = ((  int32_t (*) (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, int32_t, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 35)))(L_0, L_1, 0, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 35));
 		return L_3;
 	}
 }
-// System.Int32 System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.IList.IndexOf(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_System_Collections_IList_IndexOf_mB653087666C96E04C27C367123B4C7895F151ED9_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
+// System.Int32 System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.IList.IndexOf(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_System_Collections_IList_IndexOf_m39776CE243BC3E546D59F3EB968892C7A8B1E86F_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = ___item0;
@@ -24551,7 +24549,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_System_Collections_IList_Index
 	{
 		RuntimeObject* L_2 = ___item0;
 		int32_t L_3;
-		L_3 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 20)))(__this, ((*(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)((MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)UnBox(L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 6))))), il2cpp_rgctx_method(method->klass->rgctx_data, 20));
+		L_3 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 20)))(__this, ((*(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)((cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)UnBox(L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 6))))), il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		return L_3;
 	}
 
@@ -24560,8 +24558,8 @@ IL_0015:
 		return (-1);
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Insert(System.Int32,T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Insert_m4C694302CBDD4AEDFCA8012E175D5F0AACE28474_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF ___item1, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::Insert(System.Int32,T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Insert_m24AFEC3DB9C1F24A73236BDFFA0D9204AED82872_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___item1, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = ___index0;
@@ -24578,7 +24576,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Insert_m4C694302CBDD4AEDFCA8012E1
 IL_0012:
 	{
 		int32_t L_2 = (int32_t)__this->____size_2;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_3 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_3 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		NullCheck(L_3);
 		if ((!(((uint32_t)L_2) == ((uint32_t)((int32_t)(((RuntimeArray*)L_3)->max_length))))))
 		{
@@ -24587,7 +24585,7 @@ IL_0012:
 	}
 	{
 		int32_t L_4 = (int32_t)__this->____size_2;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, ((int32_t)il2cpp_codegen_add(L_4, 1)), il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, ((int32_t)il2cpp_codegen_add(L_4, 1)), il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 	}
 
 IL_0030:
@@ -24600,9 +24598,9 @@ IL_0030:
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_7 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_7 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_8 = ___index0;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_9 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_9 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_10 = ___index0;
 		int32_t L_11 = (int32_t)__this->____size_2;
 		int32_t L_12 = ___index0;
@@ -24611,11 +24609,11 @@ IL_0030:
 
 IL_0056:
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_13 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_13 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_14 = ___index0;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_15 = ___item1;
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_15 = ___item1;
 		NullCheck(L_13);
-		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(L_14), (MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF)L_15);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(L_14), (cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905)L_15);
 		int32_t L_16 = (int32_t)__this->____size_2;
 		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t L_17 = (int32_t)__this->____version_3;
@@ -24623,8 +24621,8 @@ IL_0056:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.IList.Insert(System.Int32,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_System_Collections_IList_Insert_mD2BD046F3F45333E006BD126AF51EFB896346319_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, RuntimeObject* ___item1, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.IList.Insert(System.Int32,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_System_Collections_IList_Insert_mDDB2DB247715F77EE3C63BB7071D1C5171803C07_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, RuntimeObject* ___item1, const RuntimeMethod* method) 
 {
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
@@ -24635,7 +24633,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_System_Collections_IList_Insert_m
 	{// begin try (depth: 1)
 		int32_t L_1 = ___index0;
 		RuntimeObject* L_2 = ___item1;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 36)))(__this, L_1, ((*(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)((MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)UnBox(L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 6))))), il2cpp_rgctx_method(method->klass->rgctx_data, 36));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 36)))(__this, L_1, ((*(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)((cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)UnBox(L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 6))))), il2cpp_rgctx_method(method->klass->rgctx_data, 36));
 		goto IL_002a;
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -24665,8 +24663,8 @@ IL_002a:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::InsertRange(System.Int32,System.Collections.Generic.IEnumerable`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_InsertRange_m4E344203BDBA13CB5A4BD96DC5E2C24181A07C9B_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, RuntimeObject* ___collection1, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::InsertRange(System.Int32,System.Collections.Generic.IEnumerable`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_InsertRange_m0C2568E15786C0331248847A241E1C6FEDBF5292_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, RuntimeObject* ___collection1, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -24716,7 +24714,7 @@ IL_0017:
 		RuntimeObject* L_5 = V_0;
 		NullCheck(L_5);
 		int32_t L_6;
-		L_6 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<ONSPPropagationGeometry/MeshMaterial>::get_Count() */, il2cpp_rgctx_data(method->klass->rgctx_data, 2), L_5);
+		L_6 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<JsonTests/cListEntry>::get_Count() */, il2cpp_rgctx_data(method->klass->rgctx_data, 2), L_5);
 		V_1 = L_6;
 		int32_t L_7 = V_1;
 		if ((((int32_t)L_7) <= ((int32_t)0)))
@@ -24727,7 +24725,7 @@ IL_0017:
 	{
 		int32_t L_8 = (int32_t)__this->____size_2;
 		int32_t L_9 = V_1;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, ((int32_t)il2cpp_codegen_add(L_8, L_9)), il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, ((int32_t)il2cpp_codegen_add(L_8, L_9)), il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		int32_t L_10 = ___index0;
 		int32_t L_11 = (int32_t)__this->____size_2;
 		if ((((int32_t)L_10) >= ((int32_t)L_11)))
@@ -24736,9 +24734,9 @@ IL_0017:
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_12 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_12 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_13 = ___index0;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_14 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_14 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_15 = ___index0;
 		int32_t L_16 = V_1;
 		int32_t L_17 = (int32_t)__this->____size_2;
@@ -24749,21 +24747,21 @@ IL_0017:
 IL_0066:
 	{
 		RuntimeObject* L_19 = V_0;
-		if ((!(((RuntimeObject*)(List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*)__this) == ((RuntimeObject*)(RuntimeObject*)L_19))))
+		if ((!(((RuntimeObject*)(List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*)__this) == ((RuntimeObject*)(RuntimeObject*)L_19))))
 		{
 			goto IL_009f;
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_20 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_21 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_20 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_21 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_22 = ___index0;
 		int32_t L_23 = ___index0;
 		Array_Copy_mB4904E17BD92E320613A3251C0205E0786B3BF41((RuntimeArray*)L_20, 0, (RuntimeArray*)L_21, L_22, L_23, NULL);
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_24 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_24 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_25 = ___index0;
 		int32_t L_26 = V_1;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_27 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_27 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_28 = ___index0;
 		int32_t L_29 = (int32_t)__this->____size_2;
 		int32_t L_30 = ___index0;
@@ -24774,10 +24772,10 @@ IL_0066:
 IL_009f:
 	{
 		RuntimeObject* L_31 = V_0;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_32 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_32 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_33 = ___index0;
 		NullCheck(L_31);
-		InterfaceActionInvoker2< MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*, int32_t >::Invoke(5 /* System.Void System.Collections.Generic.ICollection`1<ONSPPropagationGeometry/MeshMaterial>::CopyTo(T[],System.Int32) */, il2cpp_rgctx_data(method->klass->rgctx_data, 2), L_31, L_32, L_33);
+		InterfaceActionInvoker2< cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*, int32_t >::Invoke(5 /* System.Void System.Collections.Generic.ICollection`1<JsonTests/cListEntry>::CopyTo(T[],System.Int32) */, il2cpp_rgctx_data(method->klass->rgctx_data, 2), L_31, L_32, L_33);
 	}
 
 IL_00ac:
@@ -24801,7 +24799,7 @@ IL_00bc:
 		RuntimeObject* L_38 = ___collection1;
 		NullCheck(L_38);
 		RuntimeObject* L_39;
-		L_39 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<ONSPPropagationGeometry/MeshMaterial>::GetEnumerator() */, il2cpp_rgctx_data(method->klass->rgctx_data, 37), L_38);
+		L_39 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<JsonTests/cListEntry>::GetEnumerator() */, il2cpp_rgctx_data(method->klass->rgctx_data, 37), L_38);
 		V_2 = L_39;
 	}
 	{
@@ -24842,9 +24840,9 @@ IL_00ce_1:
 				___index0 = ((int32_t)il2cpp_codegen_add(L_43, 1));
 				RuntimeObject* L_44 = V_2;
 				NullCheck(L_44);
-				MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_45;
-				L_45 = InterfaceFuncInvoker0< MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<ONSPPropagationGeometry/MeshMaterial>::get_Current() */, il2cpp_rgctx_data(method->klass->rgctx_data, 39), L_44);
-				((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 36)))(__this, L_43, L_45, il2cpp_rgctx_method(method->klass->rgctx_data, 36));
+				cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_45;
+				L_45 = InterfaceFuncInvoker0< cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<JsonTests/cListEntry>::get_Current() */, il2cpp_rgctx_data(method->klass->rgctx_data, 39), L_44);
+				((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 36)))(__this, L_43, L_45, il2cpp_rgctx_method(method->klass->rgctx_data, 36));
 			}
 
 IL_00e0_1:
@@ -24871,7 +24869,7 @@ IL_00e0_1:
 IL_00f4:
 	{
 		RuntimeObject* L_48 = ___collection1;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(__this, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(__this, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
 	}
 
 IL_00fb:
@@ -24881,14 +24879,14 @@ IL_00fb:
 		return;
 	}
 }
-// System.Boolean System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Remove(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Remove_m71AAC3C097DF8DFB29E8B24885AC8E4F43256A63_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF ___item0, const RuntimeMethod* method) 
+// System.Boolean System.Collections.Generic.List`1<JsonTests/cListEntry>::Remove(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Remove_mAA4CC1F273C832964CDC4E4ADF70FF1E8C81F7AA_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___item0, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_0 = ___item0;
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_0 = ___item0;
 		int32_t L_1;
-		L_1 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 20)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
+		L_1 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 20)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		V_0 = L_1;
 		int32_t L_2 = V_0;
 		if ((((int32_t)L_2) < ((int32_t)0)))
@@ -24898,7 +24896,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Remove_m71AAC3C097DF8DFB29E8B2488
 	}
 	{
 		int32_t L_3 = V_0;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 41)))(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 41)))(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
 		return (bool)1;
 	}
 
@@ -24907,8 +24905,8 @@ IL_0015:
 		return (bool)0;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::System.Collections.IList.Remove(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_System_Collections_IList_Remove_m559222B212DB9289C9ED09689B80C8B3D8B8C8C0_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::System.Collections.IList.Remove(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_System_Collections_IList_Remove_mC0E9DB9672C83C023824E384257CC4C062BBC65F_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = ___item0;
@@ -24923,7 +24921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_System_Collections_IList_Remove_m
 	{
 		RuntimeObject* L_2 = ___item0;
 		bool L_3;
-		L_3 = ((  bool (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 42)))(__this, ((*(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)((MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF*)UnBox(L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 6))))), il2cpp_rgctx_method(method->klass->rgctx_data, 42));
+		L_3 = ((  bool (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 42)))(__this, ((*(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)((cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)UnBox(L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 6))))), il2cpp_rgctx_method(method->klass->rgctx_data, 42));
 	}
 
 IL_0015:
@@ -24931,13 +24929,13 @@ IL_0015:
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::RemoveAll(System.Predicate`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_RemoveAll_m5228E162CB2C408998DD69672AB1E59EE09F4792_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* ___match0, const RuntimeMethod* method) 
+// System.Int32 System.Collections.Generic.List`1<JsonTests/cListEntry>::RemoveAll(System.Predicate`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_RemoveAll_m3A401A6609DFAD96A7B6B8E3A3CF42C3D5C6639E_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* ___match0, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	{
-		Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* L_0 = ___match0;
+		Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* L_0 = ___match0;
 		if (L_0)
 		{
 			goto IL_0009;
@@ -24969,15 +24967,15 @@ IL_0011:
 		}
 	}
 	{
-		Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* L_4 = ___match0;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_5 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* L_4 = ___match0;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_5 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		int32_t L_7 = L_6;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
 		NullCheck(L_4);
 		bool L_9;
-		L_9 = ((  bool (*) (Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 27)))(L_4, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 27));
+		L_9 = ((  bool (*) (Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 27)))(L_4, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		if (!L_9)
 		{
 			goto IL_000d;
@@ -25020,15 +25018,15 @@ IL_0043:
 		}
 	}
 	{
-		Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860* L_16 = ___match0;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_17 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* L_16 = ___match0;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_17 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_18 = V_1;
 		NullCheck(L_17);
 		int32_t L_19 = L_18;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_20 = (L_17)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_20 = (L_17)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
 		NullCheck(L_16);
 		bool L_21;
-		L_21 = ((  bool (*) (Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860*, MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 27)))(L_16, L_20, il2cpp_rgctx_method(method->klass->rgctx_data, 27));
+		L_21 = ((  bool (*) (Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 27)))(L_16, L_20, il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		if (L_21)
 		{
 			goto IL_003f;
@@ -25045,19 +25043,19 @@ IL_0060:
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_24 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_24 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_25 = V_0;
 		int32_t L_26 = L_25;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_26, 1));
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_27 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_27 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_28 = V_1;
 		int32_t L_29 = L_28;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_29, 1));
 		NullCheck(L_27);
 		int32_t L_30 = L_29;
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_31 = (L_27)->GetAt(static_cast<il2cpp_array_size_t>(L_30));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_31 = (L_27)->GetAt(static_cast<il2cpp_array_size_t>(L_30));
 		NullCheck(L_24);
-		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(L_26), (MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF)L_31);
+		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(L_26), (cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905)L_31);
 	}
 
 IL_0089:
@@ -25076,7 +25074,7 @@ IL_0089:
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_34 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_34 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_35 = V_0;
 		int32_t L_36 = (int32_t)__this->____size_2;
 		int32_t L_37 = V_0;
@@ -25094,10 +25092,10 @@ IL_00ad:
 		return ((int32_t)il2cpp_codegen_subtract(L_38, L_39));
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::RemoveAt(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m1C3CF945AA19EF43ACB52D7A1CAF4452D501314F_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::RemoveAt(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m3A76E4DC8653EECB6EAE9FBC3D38F88B44392124_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, const RuntimeMethod* method) 
 {
-	MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF V_0;
+	cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		int32_t L_0 = ___index0;
@@ -25123,9 +25121,9 @@ IL_000e:
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_5 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_5 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_6 = ___index0;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_7 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_7 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_8 = ___index0;
 		int32_t L_9 = (int32_t)__this->____size_2;
 		int32_t L_10 = ___index0;
@@ -25140,12 +25138,12 @@ IL_0042:
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_11 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_11 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_12 = (int32_t)__this->____size_2;
-		il2cpp_codegen_initobj((&V_0), sizeof(MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF));
-		MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_13 = V_0;
+		il2cpp_codegen_initobj((&V_0), sizeof(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905));
+		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_13 = V_0;
 		NullCheck(L_11);
-		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(L_12), (MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF)L_13);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(L_12), (cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905)L_13);
 	}
 
 IL_0063:
@@ -25155,8 +25153,8 @@ IL_0063:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::RemoveRange(System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveRange_mE1C045E62680BDDB70F1E1DCEC381BA622EB3AFA_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, int32_t ___count1, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::RemoveRange(System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveRange_mCB96F9A199BBA0DF1B4C8DCBE399CFC2FFBB277A_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, int32_t ___count1, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = ___index0;
@@ -25216,10 +25214,10 @@ IL_0027:
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_11 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_11 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_12 = ___index0;
 		int32_t L_13 = ___count1;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_14 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_14 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_15 = ___index0;
 		int32_t L_16 = (int32_t)__this->____size_2;
 		int32_t L_17 = ___index0;
@@ -25236,7 +25234,7 @@ IL_0066:
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_19 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_19 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_20 = (int32_t)__this->____size_2;
 		int32_t L_21 = ___count1;
 		Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB((RuntimeArray*)L_19, L_20, L_21, NULL);
@@ -25247,18 +25245,18 @@ IL_008d:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Reverse()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Reverse_mDE17001C85565E1ECBD57DC1126359EFEC50C787_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::Reverse()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Reverse_m83D2B7C329DEA900446B22589F4D15C5CE3F4328_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0;
-		L_0 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 43)))(__this, 0, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 43));
+		L_0 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 43)))(__this, 0, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 43));
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Reverse(System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Reverse_m303ABBC1604BCADEC2D0E5DAC2BBA6C4AA33913C_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, int32_t ___count1, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::Reverse(System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Reverse_mDF8E1FE823E2546C2A22459FB13E6720BBA4A9E6_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, int32_t ___count1, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = ___index0;
@@ -25306,10 +25304,10 @@ IL_0027:
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_6 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_6 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_7 = ___index0;
 		int32_t L_8 = ___count1;
-		((  void (*) (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*, int32_t, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 44)))(L_6, L_7, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 44));
+		((  void (*) (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*, int32_t, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 44)))(L_6, L_7, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 44));
 	}
 
 IL_0038:
@@ -25319,29 +25317,29 @@ IL_0038:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Sort()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_m111AFE06F1A1AEB00755F484ADFAABBDE6B46400_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::Sort()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_m426342D8B000B4B3984C342C253EE9DE7AE7A6AA_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0;
-		L_0 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 45)))(__this, 0, L_0, (RuntimeObject*)NULL, il2cpp_rgctx_method(method->klass->rgctx_data, 45));
+		L_0 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 45)))(__this, 0, L_0, (RuntimeObject*)NULL, il2cpp_rgctx_method(method->klass->rgctx_data, 45));
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Sort(System.Collections.Generic.IComparer`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_m6CD8FF909ECCB613DD6DF91932AB2E134495E88C_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, RuntimeObject* ___comparer0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::Sort(System.Collections.Generic.IComparer`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_m28CF1AE6183C2FC7FE523B635C5A546526294288_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, RuntimeObject* ___comparer0, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0;
-		L_0 = ((  int32_t (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		L_0 = ((  int32_t (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		RuntimeObject* L_1 = ___comparer0;
-		((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 45)))(__this, 0, L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 45));
+		((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 45)))(__this, 0, L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 45));
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_mC01C1C624BC16E549B126E372CCF0E710EBE2D3E_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, int32_t ___index0, int32_t ___count1, RuntimeObject* ___comparer2, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_m29A5DED5F980C1853C08269821E137BAB010FC98_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, int32_t ___index0, int32_t ___count1, RuntimeObject* ___comparer2, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = ___index0;
@@ -25389,11 +25387,11 @@ IL_0027:
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_6 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_6 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_7 = ___index0;
 		int32_t L_8 = ___count1;
 		RuntimeObject* L_9 = ___comparer2;
-		((  void (*) (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*, int32_t, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 46)))(L_6, L_7, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 46));
+		((  void (*) (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*, int32_t, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 46)))(L_6, L_7, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 46));
 	}
 
 IL_0039:
@@ -25403,11 +25401,11 @@ IL_0039:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::Sort(System.Comparison`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_mA271A9885C3E38AE3DD349F32946F3410AD9C56E_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, Comparison_1_t62DA3A02A101CB89F4D9B0F005989DDA71EBD173* ___comparison0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::Sort(System.Comparison`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_m1E71B5036F102CB427D3618CA5A5C75EB3946A02_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, Comparison_1_t11E4F7D5C8075D4A60D00038D22B2D999A371FC5* ___comparison0, const RuntimeMethod* method) 
 {
 	{
-		Comparison_1_t62DA3A02A101CB89F4D9B0F005989DDA71EBD173* L_0 = ___comparison0;
+		Comparison_1_t11E4F7D5C8075D4A60D00038D22B2D999A371FC5* L_0 = ___comparison0;
 		if (L_0)
 		{
 			goto IL_000a;
@@ -25426,11 +25424,11 @@ IL_000a:
 		}
 	}
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_2 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_2 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 		int32_t L_3 = (int32_t)__this->____size_2;
-		Comparison_1_t62DA3A02A101CB89F4D9B0F005989DDA71EBD173* L_4 = ___comparison0;
+		Comparison_1_t11E4F7D5C8075D4A60D00038D22B2D999A371FC5* L_4 = ___comparison0;
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 48));
-		((  void (*) (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*, int32_t, int32_t, Comparison_1_t62DA3A02A101CB89F4D9B0F005989DDA71EBD173*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 47)))(L_2, 0, L_3, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 47));
+		((  void (*) (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*, int32_t, int32_t, Comparison_1_t11E4F7D5C8075D4A60D00038D22B2D999A371FC5*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 47)))(L_2, 0, L_3, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 47));
 	}
 
 IL_0026:
@@ -25440,10 +25438,10 @@ IL_0026:
 		return;
 	}
 }
-// T[] System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::ToArray()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* List_1_ToArray_m96799F22FCBE994BD2C44322FB60ACFF20A239D9_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, const RuntimeMethod* method) 
+// T[] System.Collections.Generic.List`1<JsonTests/cListEntry>::ToArray()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* List_1_ToArray_m8938A5DEFDB87236C4911A3E340037327D3368CC_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, const RuntimeMethod* method) 
 {
-	MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* V_0 = NULL;
+	cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* V_0 = NULL;
 	{
 		int32_t L_0 = (int32_t)__this->____size_2;
 		if (L_0)
@@ -25453,25 +25451,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MeshMaterialU5BU5D_tD94C137F6566403049A0BF569
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_1 = ((List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_emptyArray_5;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_1 = ((List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_emptyArray_5;
 		return L_1;
 	}
 
 IL_000e:
 	{
 		int32_t L_2 = (int32_t)__this->____size_2;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_3 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)(MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)SZArrayNew(il2cpp_rgctx_data(method->klass->rgctx_data, 1), (uint32_t)L_2);
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_3 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)(cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)SZArrayNew(il2cpp_rgctx_data(method->klass->rgctx_data, 1), (uint32_t)L_2);
 		V_0 = L_3;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_4 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_5 = V_0;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_4 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_5 = V_0;
 		int32_t L_6 = (int32_t)__this->____size_2;
 		Array_Copy_mB4904E17BD92E320613A3251C0205E0786B3BF41((RuntimeArray*)L_4, 0, (RuntimeArray*)L_5, 0, L_6, NULL);
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_7 = V_0;
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_7 = V_0;
 		return L_7;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::AddEnumerable(System.Collections.Generic.IEnumerable`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_AddEnumerable_mAFC8D308B5E586CC1BCF85291B7385D73686522E_gshared (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE* __this, RuntimeObject* ___enumerable0, const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::AddEnumerable(System.Collections.Generic.IEnumerable`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_AddEnumerable_mAA6653BF9E9D0863D9F90519FFB94B37B7526E1B_gshared (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* __this, RuntimeObject* ___enumerable0, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -25481,7 +25479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_AddEnumerable_mAFC8D308B5E586CC1B
 		s_Il2CppMethodInitialized = true;
 	}
 	RuntimeObject* V_0 = NULL;
-	MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF V_1;
+	cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	int32_t V_2 = 0;
 	{
@@ -25490,7 +25488,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_AddEnumerable_mAFC8D308B5E586CC1B
 		RuntimeObject* L_1 = ___enumerable0;
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<ONSPPropagationGeometry/MeshMaterial>::GetEnumerator() */, il2cpp_rgctx_data(method->klass->rgctx_data, 37), L_1);
+		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<JsonTests/cListEntry>::GetEnumerator() */, il2cpp_rgctx_data(method->klass->rgctx_data, 37), L_1);
 		V_0 = L_2;
 	}
 	{
@@ -25528,11 +25526,11 @@ IL_0017_1:
 			{
 				RuntimeObject* L_5 = V_0;
 				NullCheck(L_5);
-				MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_6;
-				L_6 = InterfaceFuncInvoker0< MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<ONSPPropagationGeometry/MeshMaterial>::get_Current() */, il2cpp_rgctx_data(method->klass->rgctx_data, 39), L_5);
+				cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_6;
+				L_6 = InterfaceFuncInvoker0< cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<JsonTests/cListEntry>::get_Current() */, il2cpp_rgctx_data(method->klass->rgctx_data, 39), L_5);
 				V_1 = L_6;
 				int32_t L_7 = (int32_t)__this->____size_2;
-				MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_8 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+				cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_8 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 				NullCheck(L_8);
 				if ((!(((uint32_t)L_7) == ((uint32_t)((int32_t)(((RuntimeArray*)L_8)->max_length))))))
 				{
@@ -25541,20 +25539,20 @@ IL_0017_1:
 			}
 			{
 				int32_t L_9 = (int32_t)__this->____size_2;
-				((  void (*) (List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, ((int32_t)il2cpp_codegen_add(L_9, 1)), il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+				((  void (*) (List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, ((int32_t)il2cpp_codegen_add(L_9, 1)), il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 			}
 
 IL_003c_1:
 			{
-				MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_10 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)__this->____items_1;
+				cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_10 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)__this->____items_1;
 				int32_t L_11 = (int32_t)__this->____size_2;
 				V_2 = L_11;
 				int32_t L_12 = V_2;
 				__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_12, 1));
 				int32_t L_13 = V_2;
-				MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF L_14 = V_1;
+				cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_14 = V_1;
 				NullCheck(L_10);
-				(L_10)->SetAt(static_cast<il2cpp_array_size_t>(L_13), (MeshMaterial_t52CF0208BCA9BCF6873521E070104191B8C9FECF)L_14);
+				(L_10)->SetAt(static_cast<il2cpp_array_size_t>(L_13), (cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905)L_14);
 			}
 
 IL_0059_1:
@@ -25583,13 +25581,13 @@ IL_006d:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.List`1<ONSPPropagationGeometry/MeshMaterial>::.cctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__cctor_m92A88D26C7833F769BAF74D77FDCC02CB5D371BF_gshared (const RuntimeMethod* method) 
+// System.Void System.Collections.Generic.List`1<JsonTests/cListEntry>::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__cctor_mE4ACA07959DB7B46A732910FA45935948B53B909_gshared (const RuntimeMethod* method) 
 {
 	{
-		MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3* L_0 = (MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)(MeshMaterialU5BU5D_tD94C137F6566403049A0BF5692FEFC22F5D2C4B3*)SZArrayNew(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 1), (uint32_t)0);
-		((List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_emptyArray_5 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&((List_1_tF17A93AB45AE6FC6B77C2D2D19C46DAA8A5CFCCE_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_emptyArray_5), (void*)L_0);
+		cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0* L_0 = (cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)(cListEntryU5BU5D_tB7118C118E4D5062FF954355974C65C66EB46CF0*)SZArrayNew(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 1), (uint32_t)0);
+		((List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_emptyArray_5 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_emptyArray_5), (void*)L_0);
 		return;
 	}
 }

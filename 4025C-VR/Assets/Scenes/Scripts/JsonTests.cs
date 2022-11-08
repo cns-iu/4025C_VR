@@ -2,11 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 2022-11-6
+// 2022-11-7
 
 public class JsonTests : MonoBehaviour
 {
     public List<string> parents;
+
+   [System.Serializable]
+    public struct cListEntry
+    {
+        public int parentID;
+        public string conName;
+        public int conThat;
+        public bool conActive;
+    }
+    public List<cListEntry> cList;
 
     public string SaveToString()
     {
