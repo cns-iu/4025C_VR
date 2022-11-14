@@ -385,8 +385,8 @@ struct Predicate_1_t81E65ECFCC613C16F7408ECA5D3D94536697174D;
 struct Predicate_1_tF07631EDC3B41687C1E8B085B75A0ABB943B36A6;
 // System.Predicate`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct Predicate_1_t30B6C0EA4B49279CABE20C001AAC4DD54EAE9AB6;
-// System.Predicate`1<JsonTests/cListEntry>
-struct Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1;
+// System.Predicate`1<JsonTests/connectionEntry>
+struct Predicate_1_tFE191890DDD8DEA3AD3ABFA69672AB1F4E9B6BCD;
 // System.Predicate`1<ONSPPropagationGeometry/MeshMaterial>
 struct Predicate_1_tAFD11688F064F2D8F62B4D7444315A8DF43ED860;
 // System.Predicate`1<ONSPPropagationGeometry/TerrainMaterial>
@@ -3754,33 +3754,17 @@ struct TreeViewItemWrapper_tFA593EC4B06E0C963C0EAA9C18DDC99EEDC05D1F_marshaled_c
 	RuntimeObject* ___item_1;
 };
 
-// JsonTests/cListEntry
-struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 
+// JsonTests/connectionEntry
+struct connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A 
 {
-	// System.Int32 JsonTests/cListEntry::parentID
-	int32_t ___parentID_0;
-	// System.String JsonTests/cListEntry::conName
-	String_t* ___conName_1;
-	// System.Int32 JsonTests/cListEntry::conThat
-	int32_t ___conThat_2;
-	// System.Boolean JsonTests/cListEntry::conActive
-	bool ___conActive_3;
-};
-// Native definition for P/Invoke marshalling of JsonTests/cListEntry
-struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_marshaled_pinvoke
-{
-	int32_t ___parentID_0;
-	char* ___conName_1;
-	int32_t ___conThat_2;
-	int32_t ___conActive_3;
-};
-// Native definition for COM marshalling of JsonTests/cListEntry
-struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_marshaled_com
-{
-	int32_t ___parentID_0;
-	Il2CppChar* ___conName_1;
-	int32_t ___conThat_2;
-	int32_t ___conActive_3;
+	// System.Int32 JsonTests/connectionEntry::fromChild
+	int32_t ___fromChild_0;
+	// System.Int32 JsonTests/connectionEntry::fromParent
+	int32_t ___fromParent_1;
+	// System.Int32 JsonTests/connectionEntry::toChild
+	int32_t ___toChild_2;
+	// System.Int32 JsonTests/connectionEntry::toParent
+	int32_t ___toParent_3;
 };
 
 // ONSPPropagationGeometry/MeshMaterial
@@ -6837,8 +6821,8 @@ struct Predicate_1_t30B6C0EA4B49279CABE20C001AAC4DD54EAE9AB6  : public Multicast
 {
 };
 
-// System.Predicate`1<JsonTests/cListEntry>
-struct Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1  : public MulticastDelegate_t
+// System.Predicate`1<JsonTests/connectionEntry>
+struct Predicate_1_tFE191890DDD8DEA3AD3ABFA69672AB1F4E9B6BCD  : public MulticastDelegate_t
 {
 };
 
@@ -14646,39 +14630,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_mC6982AB4C2C416569788
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-bool Predicate_1_Invoke_m46C860ED09AB4AFE1FFBBE2B59F0D12D00F50603_Multicast(Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___obj0, const RuntimeMethod* method)
+bool Predicate_1_Invoke_mBFA25DB8F9705C889CE48EF29C03600BF65B771D_Multicast(Predicate_1_tFE191890DDD8DEA3AD3ABFA69672AB1F4E9B6BCD* __this, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___obj0, const RuntimeMethod* method)
 {
 	il2cpp_array_size_t length = __this->___delegates_13->max_length;
 	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
 	bool retVal = false;
 	for (il2cpp_array_size_t i = 0; i < length; i++)
 	{
-		Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* currentDelegate = reinterpret_cast<Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1*>(delegatesToInvoke[i]);
-		typedef bool (*FunctionPointerType) (RuntimeObject*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*);
+		Predicate_1_tFE191890DDD8DEA3AD3ABFA69672AB1F4E9B6BCD* currentDelegate = reinterpret_cast<Predicate_1_tFE191890DDD8DEA3AD3ABFA69672AB1F4E9B6BCD*>(delegatesToInvoke[i]);
+		typedef bool (*FunctionPointerType) (RuntimeObject*, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A, const RuntimeMethod*);
 		retVal = ((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 	return retVal;
 }
-bool Predicate_1_Invoke_m46C860ED09AB4AFE1FFBBE2B59F0D12D00F50603_OpenInst(Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___obj0, const RuntimeMethod* method)
+bool Predicate_1_Invoke_mBFA25DB8F9705C889CE48EF29C03600BF65B771D_OpenInst(Predicate_1_tFE191890DDD8DEA3AD3ABFA69672AB1F4E9B6BCD* __this, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___obj0, const RuntimeMethod* method)
 {
-	typedef bool (*FunctionPointerType) (cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*);
+	typedef bool (*FunctionPointerType) (connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
 }
-bool Predicate_1_Invoke_m46C860ED09AB4AFE1FFBBE2B59F0D12D00F50603_OpenStatic(Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___obj0, const RuntimeMethod* method)
+bool Predicate_1_Invoke_mBFA25DB8F9705C889CE48EF29C03600BF65B771D_OpenStatic(Predicate_1_tFE191890DDD8DEA3AD3ABFA69672AB1F4E9B6BCD* __this, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___obj0, const RuntimeMethod* method)
 {
-	typedef bool (*FunctionPointerType) (cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*);
+	typedef bool (*FunctionPointerType) (connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
 }
-bool Predicate_1_Invoke_m46C860ED09AB4AFE1FFBBE2B59F0D12D00F50603_OpenStaticInvoker(Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___obj0, const RuntimeMethod* method)
+bool Predicate_1_Invoke_mBFA25DB8F9705C889CE48EF29C03600BF65B771D_OpenStaticInvoker(Predicate_1_tFE191890DDD8DEA3AD3ABFA69672AB1F4E9B6BCD* __this, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___obj0, const RuntimeMethod* method)
 {
-	return InvokerFuncInvoker1< bool, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
+	return InvokerFuncInvoker1< bool, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
 }
-bool Predicate_1_Invoke_m46C860ED09AB4AFE1FFBBE2B59F0D12D00F50603_ClosedStaticInvoker(Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___obj0, const RuntimeMethod* method)
+bool Predicate_1_Invoke_mBFA25DB8F9705C889CE48EF29C03600BF65B771D_ClosedStaticInvoker(Predicate_1_tFE191890DDD8DEA3AD3ABFA69672AB1F4E9B6BCD* __this, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___obj0, const RuntimeMethod* method)
 {
-	return InvokerFuncInvoker2< bool, RuntimeObject*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
+	return InvokerFuncInvoker2< bool, RuntimeObject*, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
 }
-// System.Void System.Predicate`1<JsonTests/cListEntry>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Predicate_1__ctor_m5D0AEE82793E5A693DB1009DF3FA587F5B07B9CA_gshared (Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+// System.Void System.Predicate`1<JsonTests/connectionEntry>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Predicate_1__ctor_mED58A29EC84271C5227CE53628E8E48B18AAAF84_gshared (Predicate_1_tFE191890DDD8DEA3AD3ABFA69672AB1F4E9B6BCD* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
 {
 	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
 	__this->___method_3 = ___method1;
@@ -14691,12 +14675,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Predicate_1__ctor_m5D0AEE82793E5A693DB10
 		bool isOpen = parameterCount == 1;
 		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
 			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Predicate_1_Invoke_m46C860ED09AB4AFE1FFBBE2B59F0D12D00F50603_OpenStaticInvoker;
+				__this->___invoke_impl_1 = (intptr_t)&Predicate_1_Invoke_mBFA25DB8F9705C889CE48EF29C03600BF65B771D_OpenStaticInvoker;
 			else
-				__this->___invoke_impl_1 = (intptr_t)&Predicate_1_Invoke_m46C860ED09AB4AFE1FFBBE2B59F0D12D00F50603_ClosedStaticInvoker;
+				__this->___invoke_impl_1 = (intptr_t)&Predicate_1_Invoke_mBFA25DB8F9705C889CE48EF29C03600BF65B771D_ClosedStaticInvoker;
 		else
 			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Predicate_1_Invoke_m46C860ED09AB4AFE1FFBBE2B59F0D12D00F50603_OpenStatic;
+				__this->___invoke_impl_1 = (intptr_t)&Predicate_1_Invoke_mBFA25DB8F9705C889CE48EF29C03600BF65B771D_OpenStatic;
 			else
 				{
 					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -14710,12 +14694,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Predicate_1__ctor_m5D0AEE82793E5A693DB10
 		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 	}
-	__this->___extra_arg_5 = (intptr_t)&Predicate_1_Invoke_m46C860ED09AB4AFE1FFBBE2B59F0D12D00F50603_Multicast;
+	__this->___extra_arg_5 = (intptr_t)&Predicate_1_Invoke_mBFA25DB8F9705C889CE48EF29C03600BF65B771D_Multicast;
 }
-// System.Boolean System.Predicate`1<JsonTests/cListEntry>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m46C860ED09AB4AFE1FFBBE2B59F0D12D00F50603_gshared (Predicate_1_t6F7AAC26C50B539BEC6614479C27E5CB0B89CDC1* __this, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___obj0, const RuntimeMethod* method) 
+// System.Boolean System.Predicate`1<JsonTests/connectionEntry>::Invoke(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_mBFA25DB8F9705C889CE48EF29C03600BF65B771D_gshared (Predicate_1_tFE191890DDD8DEA3AD3ABFA69672AB1F4E9B6BCD* __this, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___obj0, const RuntimeMethod* method) 
 {
-	typedef bool (*FunctionPointerType) (RuntimeObject*, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905, const RuntimeMethod*);
+	typedef bool (*FunctionPointerType) (RuntimeObject*, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 #ifdef __clang__

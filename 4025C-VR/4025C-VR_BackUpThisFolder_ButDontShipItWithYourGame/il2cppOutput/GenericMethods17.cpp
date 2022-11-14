@@ -7909,33 +7909,17 @@ struct TreeViewItemWrapper_tFA593EC4B06E0C963C0EAA9C18DDC99EEDC05D1F_marshaled_c
 	RuntimeObject* ___item_1;
 };
 
-// JsonTests/cListEntry
-struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 
+// JsonTests/connectionEntry
+struct connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A 
 {
-	// System.Int32 JsonTests/cListEntry::parentID
-	int32_t ___parentID_0;
-	// System.String JsonTests/cListEntry::conName
-	String_t* ___conName_1;
-	// System.Int32 JsonTests/cListEntry::conThat
-	int32_t ___conThat_2;
-	// System.Boolean JsonTests/cListEntry::conActive
-	bool ___conActive_3;
-};
-// Native definition for P/Invoke marshalling of JsonTests/cListEntry
-struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_marshaled_pinvoke
-{
-	int32_t ___parentID_0;
-	char* ___conName_1;
-	int32_t ___conThat_2;
-	int32_t ___conActive_3;
-};
-// Native definition for COM marshalling of JsonTests/cListEntry
-struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_marshaled_com
-{
-	int32_t ___parentID_0;
-	Il2CppChar* ___conName_1;
-	int32_t ___conThat_2;
-	int32_t ___conActive_3;
+	// System.Int32 JsonTests/connectionEntry::fromChild
+	int32_t ___fromChild_0;
+	// System.Int32 JsonTests/connectionEntry::fromParent
+	int32_t ___fromParent_1;
+	// System.Int32 JsonTests/connectionEntry::toChild
+	int32_t ___toChild_2;
+	// System.Int32 JsonTests/connectionEntry::toParent
+	int32_t ___toParent_3;
 };
 
 // ONSPPropagationGeometry/MeshMaterial
@@ -35016,10 +35000,10 @@ IL_0019:
 		return;
 	}
 }
-// System.Void System.ThrowHelper::IfNullAndNullsAreIllegalThenThrow<JsonTests/cListEntry>(System.Object,System.ExceptionArgument)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_IfNullAndNullsAreIllegalThenThrow_TiscListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_m4FA67E8516581B3CE3E70E582FF27754B3B7E4C3_gshared (RuntimeObject* ___value0, int32_t ___argName1, const RuntimeMethod* method) 
+// System.Void System.ThrowHelper::IfNullAndNullsAreIllegalThenThrow<JsonTests/connectionEntry>(System.Object,System.ExceptionArgument)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_IfNullAndNullsAreIllegalThenThrow_TisconnectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A_m549C64032CD07DFF0F53115B1C2E0E1B68F53E81_gshared (RuntimeObject* ___value0, int32_t ___argName1, const RuntimeMethod* method) 
 {
-	cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 V_0;
+	connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		RuntimeObject* L_0 = ___value0;
@@ -35029,7 +35013,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_IfNullAndNullsAreIllegalThen
 		}
 	}
 	{
-		il2cpp_codegen_initobj((&V_0), sizeof(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905));
+		il2cpp_codegen_initobj((&V_0), sizeof(connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A));
 	}
 	{
 		int32_t L_2 = ___argName1;
@@ -38476,14 +38460,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JsonValue_t01DB320267C848E729A400EF2345979978
 		return ((JsonValue_t01DB320267C848E729A400EF2345979978F851D2*)il2cpp_codegen_add((intptr_t)L_0, ((intptr_t)il2cpp_codegen_multiply(L_1, ((intptr_t)L_2)))));
 	}
 }
-// T& System.Runtime.CompilerServices.Unsafe::Add<JsonTests/cListEntry>(T&,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905* Unsafe_Add_TiscListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_m03C93EF15C5EB728509A3E2AD60ADA53AF5BAF80_gshared (cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905* ___source0, int32_t ___elementOffset1, const RuntimeMethod* method) 
+// T& System.Runtime.CompilerServices.Unsafe::Add<JsonTests/connectionEntry>(T&,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A* Unsafe_Add_TisconnectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A_mF053A24732816CC9C284BD964F74E4571AB2E34D_gshared (connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A* ___source0, int32_t ___elementOffset1, const RuntimeMethod* method) 
 {
 	{
-		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905* L_0 = ___source0;
+		connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A* L_0 = ___source0;
 		int32_t L_1 = ___elementOffset1;
-		uint32_t L_2 = sizeof(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905);
-		return ((cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)il2cpp_codegen_add((intptr_t)L_0, ((intptr_t)il2cpp_codegen_multiply(L_1, ((intptr_t)L_2)))));
+		uint32_t L_2 = sizeof(connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A);
+		return ((connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A*)il2cpp_codegen_add((intptr_t)L_0, ((intptr_t)il2cpp_codegen_multiply(L_1, ((intptr_t)L_2)))));
 	}
 }
 // T& System.Runtime.CompilerServices.Unsafe::Add<ONSPPropagationGeometry/MeshMaterial>(T&,System.Int32)
@@ -39910,12 +39894,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JsonValue_t01DB320267C848E729A400EF2345979978
 		return (JsonValue_t01DB320267C848E729A400EF2345979978F851D2*)(L_0);
 	}
 }
-// TTo& System.Runtime.CompilerServices.Unsafe::As<System.Byte,JsonTests/cListEntry>(TFrom&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905* Unsafe_As_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TiscListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_m132E09F8CCE81AE9FDBBC2D93A98181EA05CF6D2_gshared (uint8_t* ___source0, const RuntimeMethod* method) 
+// TTo& System.Runtime.CompilerServices.Unsafe::As<System.Byte,JsonTests/connectionEntry>(TFrom&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A* Unsafe_As_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisconnectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A_m81A410C9D08B03A791AA445C2AE09BF01DFFBF00_gshared (uint8_t* ___source0, const RuntimeMethod* method) 
 {
 	{
 		uint8_t* L_0 = ___source0;
-		return (cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905*)(L_0);
+		return (connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A*)(L_0);
 	}
 }
 // TTo& System.Runtime.CompilerServices.Unsafe::As<System.Byte,ONSPPropagationGeometry/MeshMaterial>(TFrom&)
@@ -41371,12 +41355,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Unsafe_IsAddressLessThan_TisJsonValue_t0
 		return (bool)((!(((RuntimeObject*)(uintptr_t)L_0) >= ((RuntimeObject*)(uintptr_t)L_1)))? 1 : 0);
 	}
 }
-// System.Boolean System.Runtime.CompilerServices.Unsafe::IsAddressLessThan<JsonTests/cListEntry>(T&,T&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Unsafe_IsAddressLessThan_TiscListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_mA051E6E91F1985A31C1B64A4144ED17341D0BA97_gshared (cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905* ___left0, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905* ___right1, const RuntimeMethod* method) 
+// System.Boolean System.Runtime.CompilerServices.Unsafe::IsAddressLessThan<JsonTests/connectionEntry>(T&,T&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Unsafe_IsAddressLessThan_TisconnectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A_m63A30F42A93B5C3159FE9E096947B760A4BBFF3A_gshared (connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A* ___left0, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A* ___right1, const RuntimeMethod* method) 
 {
 	{
-		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905* L_0 = ___left0;
-		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905* L_1 = ___right1;
+		connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A* L_0 = ___left0;
+		connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A* L_1 = ___right1;
 		return (bool)((!(((RuntimeObject*)(uintptr_t)L_0) >= ((RuntimeObject*)(uintptr_t)L_1)))? 1 : 0);
 	}
 }

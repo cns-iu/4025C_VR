@@ -5,7 +5,7 @@ using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
-// V3 2022-11-7
+// V3 2022-11-13
 
 public class ConController : MonoBehaviour
 {
@@ -40,7 +40,7 @@ public class ConController : MonoBehaviour
     const int sysBuild = 256;
     const int sysSelection = 512;
 
-    public Dictionary<GameObject, GameObject> connections;
+    //public Dictionary<GameObject, GameObject> connections;
 
 
     public void connectorClicked(GameObject c)
@@ -62,9 +62,10 @@ public class ConController : MonoBehaviour
             case sysDefault + bShow:    // 1 = clicked on node in default state, select clicked node
                 //Debug.Log("-sysDefault = " + sysDefault);       
                 ConStatusSet(c, bSelected + bShow, matSelected);    // set connector status
-                SysStateSet(sysSelection);                          // set system status
+                SysStateSet(sysSelection);                          // set system status     
                 ConFilter(manifest);    // evaluate connector status - consoliodate?
                 ConFilter(library);
+                
                 break;
 
             case sysSelection + bShow + bSelected:  // 516 = clicked on selected (yellow) now in selection state, de-select selected
@@ -103,7 +104,7 @@ public class ConController : MonoBehaviour
 
                 Destroy(cTaxi);
 
-                connections.Add(sourceConnector, c);            // add new connection to connections dictionary, used for counting only 
+                manifest.GetComponent<ManifestStatus>().connections.Add(sourceConnector, c);            // add new connection to connections dictionary, used for counting only 
                 manifest.GetComponent<ManifestStatus>().parentList.Add(p);
                 
                 // connector source/target exchange
@@ -114,7 +115,7 @@ public class ConController : MonoBehaviour
                 ConListReset(manifest);
                 ConListReset(library);
                 ConFilter(manifest);
-                ConFilter(library);
+                ConFilter(library);        
 
                 break;
 
@@ -252,7 +253,7 @@ public class ConController : MonoBehaviour
        foreach (Transform child in p.transform)
         {
             p.transform.parent.gameObject.GetComponent<ManifestStatus>().conList.Remove(child.gameObject);
-            if (ConStatusGet(child.gameObject) == bShow + bConnected) connections.Remove(child.gameObject);   // remove from connections list if necessary     
+            if (ConStatusGet(child.gameObject) == bShow + bConnected) manifest.GetComponent<ManifestStatus>().connections.Remove(child.gameObject);   // remove from connections list if necessary     
         }     
         Destroy(p);             // kill parent objec
     }
@@ -346,7 +347,7 @@ public class ConController : MonoBehaviour
         if (nodeMode == false)
         {
             Debug.Log(commandStatus + " sysState " + sysState);
-            Debug.Log("--connections: " + connections.Count + "---DONE-----###");
+            Debug.Log("--connections: " + m.GetComponent<ManifestStatus>().connections.Count + "---DONE-COMMAND CYCLE----###");
         }
     }
 
@@ -444,7 +445,7 @@ public class ConController : MonoBehaviour
 
     // does conList have selected object?
     // returns: null if false, GameObject when true
-    GameObject ConListSelected(GameObject m)
+    public GameObject ConListSelected(GameObject m)
     {
         List<GameObject> conList = m.GetComponent<ManifestStatus>().conList;
         GameObject connector = null;
@@ -512,7 +513,8 @@ public class ConController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        connections = new Dictionary<GameObject, GameObject>();
+        //connections = new Dictionary<GameObject, GameObject>();
+        // add root object to parentlist
         manifest.GetComponent<ManifestStatus>().parentList.Add(manifest.transform.GetChild(0).gameObject);
     }
 

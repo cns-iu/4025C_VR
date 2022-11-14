@@ -1204,8 +1204,8 @@ struct List_1_t89B39292AD45371F7FDCB295AAE956D33588BC6E;
 struct List_1_tCEC1993B65ACD0529D8C0BB5006274E22D7D8A55;
 // System.Collections.Generic.List`1<UnityEngine.EventSystems.EventTrigger/Entry>
 struct List_1_tA70D786D375D198C77EBB594AE632A6DFC82A440;
-// System.Collections.Generic.List`1<JsonTests/cListEntry>
-struct List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F;
+// System.Collections.Generic.List`1<JsonTests/connectionEntry>
+struct List_1_t42411F3C2E2D21E05EE158519D89AF5BC90C0288;
 // System.Collections.Generic.List`1<ONSPPropagationMaterial/Point>
 struct List_1_t6080C587127B0DC5BE1CFB8E4EAC1A3374006965;
 // System.Collections.Generic.List`1<OVRLipSync/Frame>
@@ -22983,33 +22983,17 @@ struct ButtonInfo_t53A2502E0A81EA56542E786FD84C3A3CB2746412_marshaled_com
 	int32_t ___type_1;
 };
 
-// JsonTests/cListEntry
-struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 
+// JsonTests/connectionEntry
+struct connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A 
 {
-	// System.Int32 JsonTests/cListEntry::parentID
-	int32_t ___parentID_0;
-	// System.String JsonTests/cListEntry::conName
-	String_t* ___conName_1;
-	// System.Int32 JsonTests/cListEntry::conThat
-	int32_t ___conThat_2;
-	// System.Boolean JsonTests/cListEntry::conActive
-	bool ___conActive_3;
-};
-// Native definition for P/Invoke marshalling of JsonTests/cListEntry
-struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_marshaled_pinvoke
-{
-	int32_t ___parentID_0;
-	char* ___conName_1;
-	int32_t ___conThat_2;
-	int32_t ___conActive_3;
-};
-// Native definition for COM marshalling of JsonTests/cListEntry
-struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_marshaled_com
-{
-	int32_t ___parentID_0;
-	Il2CppChar* ___conName_1;
-	int32_t ___conThat_2;
-	int32_t ___conActive_3;
+	// System.Int32 JsonTests/connectionEntry::fromChild
+	int32_t ___fromChild_0;
+	// System.Int32 JsonTests/connectionEntry::fromParent
+	int32_t ___fromParent_1;
+	// System.Int32 JsonTests/connectionEntry::toChild
+	int32_t ___toChild_2;
+	// System.Int32 JsonTests/connectionEntry::toParent
+	int32_t ___toParent_3;
 };
 
 // UnityEngine.Rendering.LensFlareCommonSRP/<>c__DisplayClass32_0
@@ -46443,8 +46427,6 @@ struct ConController_t00569B1D7C946FC4346CEECB5F8984CB2EDAFA2D  : public MonoBeh
 	int32_t ___sysState_13;
 	// System.Boolean ConController::nodeMode
 	bool ___nodeMode_14;
-	// System.Collections.Generic.Dictionary`2<UnityEngine.GameObject,UnityEngine.GameObject> ConController::connections
-	Dictionary_2_t9987DACE70B120172EBEAF2BB5853128595A2CDF* ___connections_24;
 };
 
 // ConStatus
@@ -47444,8 +47426,8 @@ struct JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD  : public MonoBehavio
 {
 	// System.Collections.Generic.List`1<System.String> JsonTests::parents
 	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___parents_4;
-	// System.Collections.Generic.List`1<JsonTests/cListEntry> JsonTests::cList
-	List_1_tE97E856647A5F8AD0DFB25D739C04B7006732C5F* ___cList_5;
+	// System.Collections.Generic.List`1<JsonTests/connectionEntry> JsonTests::connectionsList
+	List_1_t42411F3C2E2D21E05EE158519D89AF5BC90C0288* ___connectionsList_5;
 };
 
 // UnityEngine.XR.OpenXR.Features.Interactions.KHRSimpleControllerProfile
@@ -49423,18 +49405,26 @@ struct SceneController_tB7F7B89C800597DE2A7040F3D2EFD8824C8043CB  : public MonoB
 	ManifestStatus_tC5C083CE95BE0A6A10B0A2362B9B83A344B8F3E9* ___manStatus_10;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> SceneController::manifestList
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___manifestList_11;
-	// UnityEngine.GameObject SceneController::loadNode
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___loadNode_12;
+	// UnityEngine.GameObject SceneController::loadManifest
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___loadManifest_12;
 	// UnityEngine.GameObject SceneController::saveManifest
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___saveManifest_13;
+	// UnityEngine.AudioSource SceneController::beamingSound
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___beamingSound_14;
+	// UnityEngine.AudioSource SceneController::enterAssembly
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___enterAssembly_15;
+	// UnityEngine.AudioSource SceneController::enterMain
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___enterMain_16;
+	// UnityEngine.AudioSource SceneController::enter51
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___enter51_17;
 	// System.Int32 SceneController::testInt
-	int32_t ___testInt_20;
+	int32_t ___testInt_18;
 	// VisibilityToggle SceneController::visibilityToggle
-	VisibilityToggle_t789DCA8529DA0B41A13DEC8D3E8BB446E81E14E7* ___visibilityToggle_21;
+	VisibilityToggle_t789DCA8529DA0B41A13DEC8D3E8BB446E81E14E7* ___visibilityToggle_19;
 	// DMMMover SceneController::dmmMover
-	DMMMover_tC9BB5644DE6900AAAE8C8D5ECB587B13BDF1587E* ___dmmMover_22;
+	DMMMover_tC9BB5644DE6900AAAE8C8D5ECB587B13BDF1587E* ___dmmMover_20;
 	// System.String SceneController::fileName
-	String_t* ___fileName_23;
+	String_t* ___fileName_21;
 };
 
 // SceneRenderPipeline
@@ -57213,7 +57203,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize6020 = { sizeof(FileManager_
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6021;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6021 = { sizeof(HUDConsole_t530FB15B00A54B0D6D5D17BFA29BC41B9196E70E), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6022;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6022 = { sizeof(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905)+ sizeof(RuntimeObject), sizeof(cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_marshaled_pinvoke), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6022 = { sizeof(connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A)+ sizeof(RuntimeObject), sizeof(connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6023;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6023 = { sizeof(JsonTests_tF125AE6D6A80F5BF7869C948746A84EFD26074CD), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6024;

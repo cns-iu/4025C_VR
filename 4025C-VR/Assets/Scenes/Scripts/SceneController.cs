@@ -1,17 +1,12 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using OculusSampleFramework;
-using OVRSimpleJSON;
-//using System.Numerics;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
 using static JsonTests;
 
-// 2022-11-7
-
+// 2022-11-13
 
 public class SceneController : MonoBehaviour
 {
@@ -27,15 +22,22 @@ public class SceneController : MonoBehaviour
     public List<GameObject> manifestList;        // all manifests
 
     //public GameObject testManifest;
-    public GameObject loadNode;             // loading objects deposited to this manifest
+    public GameObject loadManifest;             // loading objects deposited to this manifest
     GameObject saveManifest;
 
+    /*
     const int bDefault = 0;
     const int bShow = 1;
     const int bSelected = 2;
     const int bConnected = 4;
     const int bLibrary = 8;
     const int bInitIgnore = 16;
+    */
+
+    public AudioSource beamingSound;
+    public AudioSource enterAssembly;
+    public AudioSource enterMain;
+    public AudioSource enter51;
 
     // for preference saving tests
     public int testInt = 0;     // counts number of prefs save/load from last reset
@@ -43,7 +45,6 @@ public class SceneController : MonoBehaviour
     public DMMMover dmmMover;
     public string fileName = "SaveState01.txt";
 
-    //public JsonTests jsonTests;
 
     public void soundTrigger(GameObject c)
     {
@@ -57,8 +58,8 @@ public class SceneController : MonoBehaviour
         jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
         jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
-        jumpTargetAssembly.GetComponent<AudioSource>().Play();
-
+        beamingSound.Play();
+        enterAssembly.Play();
     }
 
     public void jumpToTest(GameObject c)
@@ -67,7 +68,8 @@ public class SceneController : MonoBehaviour
         jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
-        jumpTargetTest.GetComponent<AudioSource>().Play();
+        beamingSound.Play();
+        enter51.Play();
     }
 
     public void jumpToMain(GameObject c)
@@ -76,7 +78,8 @@ public class SceneController : MonoBehaviour
         jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
         jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
-        jumpTargetMain.GetComponent<AudioSource>().Play();
+        beamingSound.Play();
+        enterMain.Play();
 
 
         if (controllerScript.manifest.GetComponent<ManifestStatus>().conList.Count != 1)
@@ -181,9 +184,8 @@ public class SceneController : MonoBehaviour
     {
 
         LoadPrefs();    // only seems to work from Start()
-        //SaveData();
-        // build and packacke test assembly
-        //AssemblyPackage(testManifest);
+
+        // go to main area first
         jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
         jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
@@ -256,6 +258,7 @@ public class SceneController : MonoBehaviour
 
     }
 
+    // press "T" in Desktop mode
     void SomeTest()
     {
         Debug.Log("SystemInfo: " + SystemInfo.deviceType);
@@ -266,87 +269,115 @@ public class SceneController : MonoBehaviour
     public void SaveData()
     {
         saveManifest = controllerScript.manifest;
-        //controllerScript.connections;
-
 
         // switch manifest when running on desktop computer
         if (SystemInfo.deviceType == DeviceType.Desktop) saveManifest = controllerScript.testManifest;
-
+        
         // encode parent list
         foreach (GameObject g in saveManifest.GetComponent<ManifestStatus>().parentList)
         {
             GetComponent<JsonTests>().parents.Add(g.GetComponent<ParentData>().parentType);
-        }
+        }     
 
-        //foreach (GameObject g in controllerScript.connections.Keys)
-        foreach (KeyValuePair<GameObject, GameObject> entry in controllerScript.connections)
+        // encode connections dictionary
+        foreach (KeyValuePair<GameObject, GameObject> entry in saveManifest.GetComponent<ManifestStatus>().connections)
         {
-            Debug.Log("entry key: " + entry.Key.name);
-            Debug.Log("entry value: " + entry.Value.name);
-
+            // key = from, value = to
+            GetComponent<JsonTests>().connectionsList.Add(ConnectionEncode(entry.Key, entry.Value));
         }
-        /*
-        // encode conList
-        Debug.Log("conList count: " + saveManifest.GetComponent<ManifestStatus>().conList.Count);
-        foreach (GameObject g in saveManifest.GetComponent<ManifestStatus>().conList)
-        {
-            JsonTests.cListEntry listEntry = new cListEntry();
-            //listEntry.parentID = g.GetComponent<ConStatus>().???;
-            listEntry.parentID = 0;
-            listEntry.conName = g.name;
-            listEntry.conThat = -1;
-            listEntry.conActive = false;
-            GetComponent<JsonTests>().cList.Add(listEntry);
-        }*/
-  
 
         string wtf = GetComponent<JsonTests>().SaveToString();
         WriteToFile(fileName, wtf);
         Debug.Log("saving data to file: " + fileName + "->" + wtf);
     }
 
-   
+
+    // return from child, from parent, to child, to parent IDs
+    // parameter is a connector node
+    public JsonTests.connectionEntry ConnectionEncode(GameObject from, GameObject to)
+    {    
+        int fromChild = from.transform.GetSiblingIndex();
+        int fromParent = IndexInParentList(from.transform.parent.gameObject);
+        int toChild = to.transform.GetSiblingIndex();
+        int toParent = IndexInParentList(to.transform.parent.gameObject);
+
+        connectionEntry listEntry = new connectionEntry(fromChild, fromParent, toChild, toParent);
+  
+        return listEntry;
+    }
+
+
+    // return index of this gameobject in parent list
+    public int IndexInParentList(GameObject g)
+    {
+        int parentID = -1;
+
+        for (int i = 0; i < saveManifest.GetComponent<ManifestStatus>().parentList.Count; i++)
+        {
+            if (saveManifest.GetComponent<ManifestStatus>().parentList[i] == g)
+            {
+                parentID = i;
+                break;
+            }
+        }
+        return parentID;
+    }
+
+
+
 
     public void LoadData()
     {
-        
-
         LoadFromFile(fileName, out var wtf);
         Debug.Log("json loaded: " + wtf);
 
         GetComponent<JsonTests>().LoadFromJson(wtf);
-        //Debug.Log("starModel: " + GetComponent<JsonTests>().starModel);
 
         foreach (string s in GetComponent<JsonTests>().parents)
         {
-            GameObject g = FindInLibrary(s);
-            Debug.Log("found string: " + g.name);
-        }
-
-        /*
-        GameObject d = null;
-        foreach (Transform t in controllerScript.library.transform)
-        {
-        
-            if (t.gameObject.GetComponent<ParentData>().parentType == GetComponent<JsonTests>().starModel)
+           
+            if (s != "root")    // skip root - it's already in LoadManifest
             {
-                d = t.gameObject;
-                Debug.Log("found object in library");   //this is no matching?
+                GameObject op = FindInLibrary(s);    // find parent type in library
+                GameObject p = Instantiate(op);
+                p.transform.parent = loadManifest.transform;
+                loadManifest.GetComponent<ManifestStatus>().parentList.Add(p);
             }
-            
+            else
+            {
+                // add root to parentList
+                loadManifest.GetComponent<ManifestStatus>().parentList.Add(loadManifest.transform.GetChild(0).gameObject);
+            }
         }
-        */
 
         /*
-        if (d != null)
-        {
-            GameObject p = Instantiate(d);
-      
-            p.transform.parent = loadNode.transform;
-            p.transform.localPosition = new Vector3(0, 1.5f, 0);
-            Debug.Log("instantiated: " + p.name);
-        }
+        { "fromChild":0,"fromParent":1,"toChild":0,"toParent":0}
+        { "fromChild":0,"fromParent":2,"toChild":1,"toParent":1}
+        { "fromChild":0,"fromParent":3,"toChild":2,"toParent":1}
         */
+
+        foreach (connectionEntry listEntry in GetComponent<JsonTests>().connectionsList)
+        {
+            // build conList !!!!!
+
+            GameObject p = loadManifest.GetComponent<ManifestStatus>().parentList[listEntry.fromParent];    // fromParent (source parent)
+            GameObject fromC = p.transform.GetChild(listEntry.fromChild).gameObject;
+            GameObject d = loadManifest.GetComponent<ManifestStatus>().parentList[listEntry.toParent];
+            GameObject toC = d.transform.GetChild(listEntry.toChild).gameObject;
+
+            GameObject cTaxi = new GameObject();
+
+            Transform manifestT = p.transform.parent;          // save parent (manifest) parent to move
+            cTaxi.transform.position = fromC.transform.position;
+            cTaxi.transform.rotation = fromC.transform.rotation;
+            p.transform.parent = cTaxi.transform;    // move complete object into taxi
+            cTaxi.transform.position = toC.transform.position;
+            cTaxi.transform.rotation = toC.transform.rotation;
+            p.transform.parent = manifestT;     // put object back into manifest
+
+            Destroy(cTaxi);
+
+        }
     }
 
 
@@ -359,13 +390,13 @@ public class SceneController : MonoBehaviour
             if (t.gameObject.GetComponent<ParentData>().parentType == pType)
             {
                 p = t.gameObject;
-                Debug.Log("found object in library");   //this is no matching?
+                break;
             }
         }
         return p;
     }
 
-   
+
 
     public static bool WriteToFile(string a_FileName, string a_FileContents)
     {

@@ -936,7 +936,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Array_InternalArray__set_Item_TisXRView_t2E
 IL2CPP_EXTERN_C const RuntimeMethod* Array_InternalArray__set_Item_TisXmlTagAttribute_t2F0EE4823C3BB8B9ED6844183CA998A44EA1AB59_m6D247BDDA0E0CE03D844156707AB550CB63A9916_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_InternalArray__set_Item_TisZBin_t2B4F59EC396F7A7EC8EE6A15C15176B9888125A5_m74D570354583A28CD7BE401CE2EDD8C73312338B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_InternalArray__set_Item_Tisbucket_t3217998B0CD54EA2DEDD93DEF8556E72602C7D4E_mB11073541515101D41BBCAC2013CBE07A81B40EF_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Array_InternalArray__set_Item_TiscListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_m9290E109800686AE0798F2154B7FEAF97890184C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Array_InternalArray__set_Item_TisconnectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A_m62842EFD3517782743D94739E6827B760894242B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_InternalArray__set_Item_Tisfloat2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA_mCCFE1F523E3328279197A880DCC33F67F08D4C4B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_InternalArray__set_Item_Tisfloat3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_m079A9034C4D7DE9B7E16C709C6B4AC218B15B885_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_InternalArray__set_Item_Tisfloat4_t89D9A294E7A79BD81BFBDD18654508532958555E_mEEBA2B9D2A97A98B9E509EA94305FF6E189773A0_RuntimeMethod_var;
@@ -6735,33 +6735,17 @@ struct TreeViewItemWrapper_tFA593EC4B06E0C963C0EAA9C18DDC99EEDC05D1F_marshaled_c
 	RuntimeObject* ___item_1;
 };
 
-// JsonTests/cListEntry
-struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 
+// JsonTests/connectionEntry
+struct connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A 
 {
-	// System.Int32 JsonTests/cListEntry::parentID
-	int32_t ___parentID_0;
-	// System.String JsonTests/cListEntry::conName
-	String_t* ___conName_1;
-	// System.Int32 JsonTests/cListEntry::conThat
-	int32_t ___conThat_2;
-	// System.Boolean JsonTests/cListEntry::conActive
-	bool ___conActive_3;
-};
-// Native definition for P/Invoke marshalling of JsonTests/cListEntry
-struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_marshaled_pinvoke
-{
-	int32_t ___parentID_0;
-	char* ___conName_1;
-	int32_t ___conThat_2;
-	int32_t ___conActive_3;
-};
-// Native definition for COM marshalling of JsonTests/cListEntry
-struct cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_marshaled_com
-{
-	int32_t ___parentID_0;
-	Il2CppChar* ___conName_1;
-	int32_t ___conThat_2;
-	int32_t ___conActive_3;
+	// System.Int32 JsonTests/connectionEntry::fromChild
+	int32_t ___fromChild_0;
+	// System.Int32 JsonTests/connectionEntry::fromParent
+	int32_t ___fromParent_1;
+	// System.Int32 JsonTests/connectionEntry::toChild
+	int32_t ___toChild_2;
+	// System.Int32 JsonTests/connectionEntry::toParent
+	int32_t ___toParent_3;
 };
 
 // UnityEngine.Rendering.Universal.LayerBatch/<renderTargetIds>e__FixedBuffer
@@ -34203,8 +34187,8 @@ IL_0028:
 		return;
 	}
 }
-// System.Void System.Array::InternalArray__set_Item<JsonTests/cListEntry>(System.Int32,T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_InternalArray__set_Item_TiscListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_m9290E109800686AE0798F2154B7FEAF97890184C_gshared (RuntimeArray* __this, int32_t ___index0, cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 ___item1, const RuntimeMethod* method) 
+// System.Void System.Array::InternalArray__set_Item<JsonTests/connectionEntry>(System.Int32,T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_InternalArray__set_Item_TisconnectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A_m62842EFD3517782743D94739E6827B760894242B_gshared (RuntimeArray* __this, int32_t ___index0, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___item1, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -34226,7 +34210,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_InternalArray__set_Item_TiscListEn
 		ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F* L_2 = (ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F_il2cpp_TypeInfo_var)));
 		NullCheck(L_2);
 		ArgumentOutOfRangeException__ctor_mBC1D5DEEA1BA41DE77228CB27D6BAFEB6DCCBF4A(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1)), NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Array_InternalArray__set_Item_TiscListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_m9290E109800686AE0798F2154B7FEAF97890184C_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Array_InternalArray__set_Item_TisconnectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A_m62842EFD3517782743D94739E6827B760894242B_RuntimeMethod_var)));
 	}
 
 IL_0014:
@@ -34241,8 +34225,8 @@ IL_0014:
 	{
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = V_0;
 		int32_t L_5 = ___index0;
-		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_6 = ___item1;
-		cListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905 L_7 = L_6;
+		connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A L_6 = ___item1;
+		connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A L_7 = L_6;
 		RuntimeObject* L_8 = Box(il2cpp_rgctx_data(method->rgctx_data, 0), &L_7);
 		NullCheck(L_4);
 		ArrayElementTypeCheck (L_4, L_8);

@@ -2,21 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 2022-11-7
+// 2022-11-13
 
 public class JsonTests : MonoBehaviour
 {
     public List<string> parents;
 
-   [System.Serializable]
-    public struct cListEntry
+    [System.Serializable]
+    public struct connectionEntry
     {
-        public int parentID;
-        public string conName;
-        public int conThat;
-        public bool conActive;
+        public int fromChild;
+        public int fromParent;
+        public int toChild;
+        public int toParent;
+
+        public connectionEntry(int fromC, int fromP, int toC, int toP)
+        {
+            this.fromChild = fromC;
+            this.fromParent = fromP;
+            this.toChild = toC;
+            this.toParent = toP;
+        }
     }
-    public List<cListEntry> cList;
+    public List<connectionEntry> connectionsList;
+
 
     public string SaveToString()
     {

@@ -35071,8 +35071,8 @@ IL_0026:
 		return (bool)1;
 	}
 }
-// System.Boolean System.Runtime.CompilerServices.RuntimeHelpers::IsReferenceOrContainsReferences<JsonTests/cListEntry>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RuntimeHelpers_IsReferenceOrContainsReferences_TiscListEntry_tEA38CE395041C7F57C6546170C13638DB4B94905_mBDFB9C3A0E824A29D7EAB81AD62BEA6BC2CCC64E_gshared (const RuntimeMethod* method) 
+// System.Boolean System.Runtime.CompilerServices.RuntimeHelpers::IsReferenceOrContainsReferences<JsonTests/connectionEntry>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RuntimeHelpers_IsReferenceOrContainsReferences_TisconnectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A_mCF52EE95A2D78D4EB13CDE3580F6F728B495E0DC_gshared (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
