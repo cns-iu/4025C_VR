@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 2022-11-7
+// 2022-11-16
 
 public class ConStatus : MonoBehaviour
 {
     public GameObject thisConnector;
     public GameObject thatConnector;
     public ConController controllerScript;  //access to ConnectorController
+    // this will always run off of controllerScript.manifest!!
     public bool show;
     public bool selected;
     public bool connected;
@@ -18,25 +19,27 @@ public class ConStatus : MonoBehaviour
     public Material currentMaterial;
     public Material defaultMaterial;
 
-
-
-
     // this setup for each connector node - super important!!!
     private void Awake()
     {
         /*
             Debug.Log("conStatus.awake " + thisConnector.transform.parent.gameObject.name +
             " " +  thisConnector.name +
-            " selected = " +
-            selected);
+            " show=" + show +
+            " selected=" + selected +
+            " connected=" + connected +
+            " library=" + library +
+            " initignore=" + initIgnore);
         */
-        // ignore if initIgnore is checked
+       
+        // ignore if initIgnore is checked; overrides everything
         if (thisConnector.GetComponent<ConStatus>().initIgnore != true)
         {
-
+            // make sure this is part of a manifest/parent
             if (thisConnector.transform.parent.parent != null)
             {
-                // these are in manifests (library) grandparent != NULL
+                // these are in manifests (library); grandparent != NULL
+                // get conList of this manifest
                 GameObject pp = thisConnector.transform.parent.parent.transform.gameObject;
                 pp.GetComponent<ManifestStatus>().conList.Add(thisConnector);
 
@@ -57,8 +60,7 @@ public class ConStatus : MonoBehaviour
             }
             else
             {
-                // here parent is on top-level
-
+                // controllerScipt.manifest needs to contain THIS manifest
                 controllerScript.manifest.GetComponent<ManifestStatus>().conList.Add(thisConnector);
 
                 connected = false;

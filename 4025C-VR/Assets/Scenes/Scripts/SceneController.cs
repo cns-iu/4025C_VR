@@ -6,7 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
 using static JsonTests;
 
-// 2022-11-13
+// 2022-11-16
 
 public class SceneController : MonoBehaviour
 {
@@ -22,8 +22,9 @@ public class SceneController : MonoBehaviour
     public List<GameObject> manifestList;        // all manifests
 
     //public GameObject testManifest;
-    public GameObject loadManifest;             // loading objects deposited to this manifest
+    public GameObject loadManifest;     // loading objects deposited to this manifest
     GameObject saveManifest;
+    //GameObject tempManifest;            // to store manifest when loading
 
     /*
     const int bDefault = 0;
@@ -81,7 +82,8 @@ public class SceneController : MonoBehaviour
         beamingSound.Play();
         enterMain.Play();
 
-
+        if (controllerScript.manifest != null) AssemblyPackage(controllerScript.manifest);
+        /*
         if (controllerScript.manifest.GetComponent<ManifestStatus>().conList.Count != 1)
         {
             //GameObject manifestOriginal = controllerScript.manifest;
@@ -109,26 +111,52 @@ public class SceneController : MonoBehaviour
             // check if user made something
             if (manifestCopy != null) AssemblyPackage(manifestCopy);
         }
+        */
     }
 
 
     void AssemblyPackage(GameObject m)
     {
-        FitToChildren(m);
-        Rigidbody rb = m.AddComponent<Rigidbody>() as Rigidbody;
+        GameObject manifestCopy = new GameObject();
 
-        // de-activate all nodes; can this be reversible?
-        foreach (GameObject c in m.GetComponent<ManifestStatus>().conList)
+        if (m.GetComponent<ManifestStatus>().conList.Count != 1)
         {
-            c.SetActive(false);
+            controllerScript.ConListInitIgnoreStatusSet(m); // prevents instantiated nodes from being added to conList
+            manifestCopy = Instantiate(m);
+            manifestList.Add(manifestCopy);         // store in global manifest list
+
+            m.GetComponent<ManifestStatus>().conList.Clear();
+
+            foreach (Transform child in m.transform)
+            {
+                GameObject croot = child.GetChild(0).gameObject;
+                if (croot.name == "croot")
+                {
+                    m.GetComponent<ManifestStatus>().conList.Add(croot);    //add to conList
+                    controllerScript.ConStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
+                    croot.GetComponent<ConStatus>().initIgnore = false;
+                }
+                else
+                {
+                    controllerScript.PDestroy(child.gameObject);
+                }
+            }      
         }
 
-        m.AddComponent<XRGrabInteractable>();
+        FitToChildren(manifestCopy);
+        Rigidbody rb = manifestCopy.AddComponent<Rigidbody>() as Rigidbody;
 
-        m.transform.position = transportTarget.transform.position;
-        Vector3 objectScale = m.transform.localScale;
-        m.transform.localScale = new Vector3(objectScale.x / 10, objectScale.y / 10, objectScale.z / 10);
+        // de-activate all nodes; can this be reversible?
+        /*foreach (GameObject c in m.GetComponent<ManifestStatus>().conList)
+        {
+            c.SetActive(false);
+        }*/
 
+        manifestCopy.AddComponent<XRGrabInteractable>();
+
+        manifestCopy.transform.position = transportTarget.transform.position;
+        Vector3 objectScale = manifestCopy.transform.localScale;
+        manifestCopy.transform.localScale = new Vector3(objectScale.x / 10, objectScale.y / 10, objectScale.z / 10);
     }
 
 
@@ -178,19 +206,6 @@ public class SceneController : MonoBehaviour
         //Debug.Log("jumpHoverExited");
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-        LoadPrefs();    // only seems to work from Start()
-
-        // go to main area first
-        jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
-        jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
-        jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
-        GameObject.Find("ToAssembly").GetComponent<AudioSource>().Play();
-    }
 
 
     void OnApplicationFocus(bool focus)
@@ -242,34 +257,9 @@ public class SceneController : MonoBehaviour
 
 
 
-    public void OnKeyboard(InputValue v)
-    {
-        //float c = v.GetType
-        Debug.Log("keyboard button: " + v.Get<float>());
-    }
-
-    // what a friggin crutch!
-    private void Update()
-    {
-        var keyboard = Keyboard.current;
-        if (keyboard.sKey.wasPressedThisFrame) SaveData();
-        if (keyboard.lKey.wasPressedThisFrame) LoadData();
-        if (keyboard.tKey.wasPressedThisFrame) SomeTest();
-
-    }
-
-    // press "T" in Desktop mode
-    void SomeTest()
-    {
-        Debug.Log("SystemInfo: " + SystemInfo.deviceType);
-         
-    }
-
-
     public void SaveData()
     {
-        saveManifest = controllerScript.manifest;
-
+        saveManifest = controllerScript.manifest;   // for testing between VR and computer
         // switch manifest when running on desktop computer
         if (SystemInfo.deviceType == DeviceType.Desktop) saveManifest = controllerScript.testManifest;
         
@@ -292,6 +282,7 @@ public class SceneController : MonoBehaviour
     }
 
 
+
     // return from child, from parent, to child, to parent IDs
     // parameter is a connector node
     public JsonTests.connectionEntry ConnectionEncode(GameObject from, GameObject to)
@@ -305,6 +296,7 @@ public class SceneController : MonoBehaviour
   
         return listEntry;
     }
+
 
 
     // return index of this gameobject in parent list
@@ -325,7 +317,6 @@ public class SceneController : MonoBehaviour
 
 
 
-
     public void LoadData()
     {
         LoadFromFile(fileName, out var wtf);
@@ -333,13 +324,11 @@ public class SceneController : MonoBehaviour
 
         GetComponent<JsonTests>().LoadFromJson(wtf);
 
-        foreach (string s in GetComponent<JsonTests>().parents)
-        {
-           
-            if (s != "root")    // skip root - it's already in LoadManifest
-            {
-                GameObject op = FindInLibrary(s);    // find parent type in library
-                GameObject p = Instantiate(op);
+        foreach (string typeID in GetComponent<JsonTests>().parents)
+        {     
+            if (typeID != "root")    // skip root - it's already in LoadManifest
+            {      
+                GameObject p = LibraryItemCloner(typeID, loadManifest);     // clone item from library by typeID string
                 p.transform.parent = loadManifest.transform;
                 loadManifest.GetComponent<ManifestStatus>().parentList.Add(p);
             }
@@ -350,23 +339,14 @@ public class SceneController : MonoBehaviour
             }
         }
 
-        /*
-        { "fromChild":0,"fromParent":1,"toChild":0,"toParent":0}
-        { "fromChild":0,"fromParent":2,"toChild":1,"toParent":1}
-        { "fromChild":0,"fromParent":3,"toChild":2,"toParent":1}
-        */
-
         foreach (connectionEntry listEntry in GetComponent<JsonTests>().connectionsList)
-        {
-            // build conList !!!!!
-
+        {         
             GameObject p = loadManifest.GetComponent<ManifestStatus>().parentList[listEntry.fromParent];    // fromParent (source parent)
             GameObject fromC = p.transform.GetChild(listEntry.fromChild).gameObject;
             GameObject d = loadManifest.GetComponent<ManifestStatus>().parentList[listEntry.toParent];
             GameObject toC = d.transform.GetChild(listEntry.toChild).gameObject;
 
             GameObject cTaxi = new GameObject();
-
             Transform manifestT = p.transform.parent;          // save parent (manifest) parent to move
             cTaxi.transform.position = fromC.transform.position;
             cTaxi.transform.rotation = fromC.transform.rotation;
@@ -374,10 +354,52 @@ public class SceneController : MonoBehaviour
             cTaxi.transform.position = toC.transform.position;
             cTaxi.transform.rotation = toC.transform.rotation;
             p.transform.parent = manifestT;     // put object back into manifest
-
             Destroy(cTaxi);
-
+   
+            loadManifest.GetComponent<ManifestStatus>().connections.Add(fromC, toC);    // build connections dict.
         }
+
+        AssemblyPackage(loadManifest);
+
+        /*
+        if (loadManifest.GetComponent<ManifestStatus>().conList.Count != 1)
+        {
+            controllerScript.ConListInitIgnoreStatusSet(loadManifest); // prevents instantiated nodes from being added to conList
+            GameObject manifestCopy = Instantiate(loadManifest);
+            manifestList.Add(manifestCopy);         // store in global manifest list
+
+            loadManifest.GetComponent<ManifestStatus>().conList.Clear();
+
+            foreach (Transform child in loadManifest.transform)
+            {
+                GameObject croot = child.GetChild(0).gameObject;
+                if (croot.name == "croot")
+                {
+                    loadManifest.GetComponent<ManifestStatus>().conList.Add(croot);    //add to conList
+                    controllerScript.ConStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
+                    croot.GetComponent<ConStatus>().initIgnore = false;
+                }
+                else
+                {
+                    controllerScript.PDestroy(child.gameObject);
+                }
+            }   
+            if (manifestCopy != null) AssemblyPackage(manifestCopy);
+        }
+        */
+    }
+
+
+    GameObject LibraryItemCloner(string s, GameObject m)
+    {
+        GameObject op = FindInLibrary(s);
+
+        GameObject tempManifest = controllerScript.manifest;
+        controllerScript.manifest = loadManifest;
+        GameObject p = Instantiate(op);
+        //loadManifest = controllerScript.manifest;
+        controllerScript.manifest = tempManifest;
+        return p;
     }
 
 
@@ -415,6 +437,7 @@ public class SceneController : MonoBehaviour
         }
     }
 
+
     public static bool LoadFromFile(string a_FileName, out string result)
     {
         var fullPath = Path.Combine(Application.persistentDataPath, a_FileName);
@@ -431,4 +454,44 @@ public class SceneController : MonoBehaviour
             return false;
         }
     }
+
+
+    public void OnKeyboard(InputValue v)
+    {
+        //float c = v.GetType
+        Debug.Log("keyboard button: " + v.Get<float>());
+    }
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+        LoadPrefs();    // only seems to work from Start()
+
+        // go to main area first
+        jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
+        jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
+        jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
+        GameObject.Find("ToAssembly").GetComponent<AudioSource>().Play();
+    }
+
+
+    // what a friggin crutch!
+    private void Update()
+    {
+        var keyboard = Keyboard.current;
+        if (keyboard.sKey.wasPressedThisFrame) SaveData();
+        if (keyboard.lKey.wasPressedThisFrame) LoadData();
+        if (keyboard.tKey.wasPressedThisFrame) SomeTest();
+
+    }
+
+    // press "T" in Desktop mode
+    void SomeTest()
+    {
+        Debug.Log("SystemInfo: " + SystemInfo.deviceType);
+
+    }
+
 }
