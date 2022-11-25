@@ -3825,13 +3825,13 @@ struct AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE00
 	// UnityEngine.Rendering.ProfilingSampler UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_ProfilingSetupSampler
 	ProfilingSampler_t420D4672EDB44E0EF980B31ADFD9E5747200FECE* ___m_ProfilingSetupSampler_49;
 	// System.Boolean UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_IssuedMessageAboutShadowSlicesTooMany
-	bool ___m_IssuedMessageAboutShadowSlicesTooMany_56;
+	bool ___m_IssuedMessageAboutShadowSlicesTooMany_54;
 	// System.Boolean UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_IssuedMessageAboutShadowMapsRescale
-	bool ___m_IssuedMessageAboutShadowMapsRescale_57;
+	bool ___m_IssuedMessageAboutShadowMapsRescale_55;
 	// System.Boolean UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_IssuedMessageAboutShadowMapsTooBig
-	bool ___m_IssuedMessageAboutShadowMapsTooBig_58;
+	bool ___m_IssuedMessageAboutShadowMapsTooBig_56;
 	// System.Boolean UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_IssuedMessageAboutRemovedShadowSlices
-	bool ___m_IssuedMessageAboutRemovedShadowSlices_59;
+	bool ___m_IssuedMessageAboutRemovedShadowSlices_57;
 	// System.Collections.Generic.Dictionary`2<System.Int32,System.UInt64> UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_ShadowRequestsHashes
 	Dictionary_2_t50CD26719E8BE899BA7D94BA34FBEA7DB2EC2EFA* ___m_ShadowRequestsHashes_60;
 };
@@ -3849,9 +3849,9 @@ struct AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE00
 	// System.Int32 UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_AdditionalShadowParams_SSBO
 	int32_t ___m_AdditionalShadowParams_SSBO_29;
 	// System.Boolean UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall
-	bool ___m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall_54;
+	bool ___m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall_58;
 	// System.Boolean UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall
-	bool ___m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall_55;
+	bool ___m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall_59;
 };
 
 // System.ArgumentException

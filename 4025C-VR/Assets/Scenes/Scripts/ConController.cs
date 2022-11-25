@@ -5,7 +5,7 @@ using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
-// V3 2022-11-16
+// V3 2022-11-25
 
 public class ConController : MonoBehaviour
 {
@@ -122,6 +122,7 @@ public class ConController : MonoBehaviour
             case sysDefault + bShow + bConnected:   // 5 = click on red (connected) node, delete upstream assembly
                 //Debug.Log("--bConnected+sysDefault = " + (bConnected + sysDefault));
                 GameObject p1 = c.transform.parent.gameObject;
+                Debug.Log("1 connectorClicked-ParentList " + manifest.GetComponent<ManifestStatus>().parentList.Count);
 
                 UscTraceUp(p1,PDestroy);
 
@@ -134,7 +135,9 @@ public class ConController : MonoBehaviour
                 ConListReset(manifest);
                 ConListReset(library);
                 ConFilter(manifest);
-           
+
+                Debug.Log("2 connectorClicked-ParentList " + manifest.GetComponent<ManifestStatus>().parentList.Count);
+
                 break;
 
             default:
@@ -248,14 +251,26 @@ public class ConController : MonoBehaviour
 
     // destroys parent GameObject and all attached/contained nodes
     // removes connection from respective conList on manifest
+    // removes parent from manifest parentList
     public void PDestroy(GameObject p)
     {
        foreach (Transform child in p.transform)
         {
             p.transform.parent.gameObject.GetComponent<ManifestStatus>().conList.Remove(child.gameObject);
             if (ConStatusGet(child.gameObject) == bShow + bConnected) manifest.GetComponent<ManifestStatus>().connections.Remove(child.gameObject);   // remove from connections list if necessary     
-        }     
+        }
+        GameObject m = p.transform.parent.gameObject;   // get manifest of this parent
+        m.GetComponent<ManifestStatus>().parentList.Remove(p);  // remove from parentlist
+        //
+        //
+        // also remove from manifestStatus connections dictionary?????
         Destroy(p);             // kill parent objec
+    
+ 
+        Debug.Log("In PDestroy manifest=" + m.name);
+        Debug.Log("- parentList entries=" + m.GetComponent<ManifestStatus>().parentList.Count);
+        Debug.Log("- actual parent objects=" + m.transform.childCount);
+  
     }
 
 
@@ -513,8 +528,7 @@ public class ConController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //connections = new Dictionary<GameObject, GameObject>();
-        // add root object to parentlist
+        // add root parent to loadManifest once only
         manifest.GetComponent<ManifestStatus>().parentList.Add(manifest.transform.GetChild(0).gameObject);
     }
 

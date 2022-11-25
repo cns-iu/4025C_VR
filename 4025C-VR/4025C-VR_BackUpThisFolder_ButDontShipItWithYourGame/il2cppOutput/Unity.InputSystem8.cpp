@@ -2071,7 +2071,6 @@ struct Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_StaticFields
 };
 
 // UnityEngineInternal.Input.NativeInputEvent
-#pragma pack(push, tp, 1)
 struct NativeInputEvent_tDE7DE9A48ACA442A8D37E2920836D00C26408CB8 
 {
 	union
@@ -2158,7 +2157,6 @@ struct NativeInputEvent_tDE7DE9A48ACA442A8D37E2920836D00C26408CB8
 		uint8_t NativeInputEvent_tDE7DE9A48ACA442A8D37E2920836D00C26408CB8__padding[20];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.Utilities.PrimitiveValue
 struct PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 
@@ -3901,7 +3899,6 @@ struct GamepadButton_t092328B0362619B4160D3BA65D497B41D807EB16
 };
 
 // UnityEngine.InputSystem.LowLevel.GamepadState
-#pragma pack(push, tp, 1)
 struct GamepadState_t67129410D0628817FD6E93A77307E84CA41BA5B1 
 {
 	union
@@ -3978,7 +3975,6 @@ struct GamepadState_t67129410D0628817FD6E93A77307E84CA41BA5B1
 		uint8_t GamepadState_t67129410D0628817FD6E93A77307E84CA41BA5B1__padding[28];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.GravityState
 struct GravityState_tD607A716F9E0D00477CECC5C019929633E66ACFF 
@@ -3995,7 +3991,6 @@ struct GyroscopeState_t6C1BC700557D943111882E3634CA7411EE531B87
 };
 
 // UnityEngine.InputSystem.LowLevel.IMECompositionString
-#pragma pack(push, tp, 1)
 struct IMECompositionString_tE204556D15A112A43E86FBF18FE4A5B8AD96161E 
 {
 	union
@@ -4033,7 +4028,6 @@ struct IMECompositionString_tE204556D15A112A43E86FBF18FE4A5B8AD96161E
 		uint8_t IMECompositionString_tE204556D15A112A43E86FBF18FE4A5B8AD96161E__padding[132];
 	};
 };
-#pragma pack(pop, tp)
 // Native definition for P/Invoke marshalling of UnityEngine.InputSystem.LowLevel.IMECompositionString
 struct IMECompositionString_tE204556D15A112A43E86FBF18FE4A5B8AD96161E_marshaled_pinvoke
 {
@@ -4108,7 +4102,6 @@ struct IMECompositionString_tE204556D15A112A43E86FBF18FE4A5B8AD96161E_marshaled_
 };
 
 // UnityEngine.InputSystem.LowLevel.InputDeviceCommand
-#pragma pack(push, tp, 1)
 struct InputDeviceCommand_t219FD4502984D73D423496E4A2ED7FDB6CBE710E 
 {
 	union
@@ -4146,7 +4139,6 @@ struct InputDeviceCommand_t219FD4502984D73D423496E4A2ED7FDB6CBE710E
 		uint8_t InputDeviceCommand_t219FD4502984D73D423496E4A2ED7FDB6CBE710E__padding[8];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.Layouts.InputDeviceMatcher
 struct InputDeviceMatcher_tF9BA551C8BB4AE41672366A7EBEA951543E0C555 
@@ -4180,7 +4172,6 @@ struct InputDeviceMatcher_tF9BA551C8BB4AE41672366A7EBEA951543E0C555_marshaled_co
 };
 
 // UnityEngine.InputSystem.LowLevel.InputEvent
-#pragma pack(push, tp, 1)
 struct InputEvent_t10F727342D1A79DCFC06529C203BB61C194AEBC5 
 {
 	union
@@ -4207,7 +4198,6 @@ struct InputEvent_t10F727342D1A79DCFC06529C203BB61C194AEBC5
 		uint8_t InputEvent_t10F727342D1A79DCFC06529C203BB61C194AEBC5__padding[20];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.InputEventBuffer
 struct InputEventBuffer_t3123D90CE491FA9828E878B2BEF766A3DC6E74FE 
@@ -4412,7 +4402,6 @@ struct LinearAccelerationState_tD14025B444097A9A3CA0B3ADBA153C775A316F24
 };
 
 // UnityEngine.InputSystem.LowLevel.MouseState
-#pragma pack(push, tp, 1)
 struct MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1 
 {
 	union
@@ -4502,7 +4491,6 @@ struct MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1
 		uint8_t MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1__padding[30];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
@@ -4528,7 +4516,6 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
 };
 
 // UnityEngine.InputSystem.LowLevel.PenState
-#pragma pack(push, tp, 1)
 struct PenState_t3F58DE5AE5474B877BE31169449DFB4ED6331144 
 {
 	union
@@ -4631,7 +4618,6 @@ struct PenState_t3F58DE5AE5474B877BE31169449DFB4ED6331144
 		uint8_t PenState_t3F58DE5AE5474B877BE31169449DFB4ED6331144__padding[36];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.PointerState
 struct PointerState_t3BD79772D06D5CC227EBE757B27F8262EB46A919 
@@ -4651,7 +4637,6 @@ struct PointerState_t3BD79772D06D5CC227EBE757B27F8262EB46A919
 };
 
 // UnityEngine.InputSystem.LowLevel.TouchState
-#pragma pack(push, tp, 1)
 struct TouchState_tB05024FB4BCE85BAB82D2224AD4BF1E8B4589A97 
 {
 	union
@@ -4819,10 +4804,8 @@ struct TouchState_tB05024FB4BCE85BAB82D2224AD4BF1E8B4589A97
 		uint8_t TouchState_tB05024FB4BCE85BAB82D2224AD4BF1E8B4589A97__padding[56];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.TouchscreenState
-#pragma pack(push, tp, 1)
 struct TouchscreenState_t5833F6C5BEB32CE3754312A43E981897B97FF91F 
 {
 	union
@@ -4860,7 +4843,6 @@ struct TouchscreenState_t5833F6C5BEB32CE3754312A43E981897B97FF91F
 		uint8_t TouchscreenState_t5833F6C5BEB32CE3754312A43E981897B97FF91F__padding[560];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.HID.HID/HIDElementDescriptor
 struct HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED 
@@ -5344,7 +5326,6 @@ struct Nullable_1_t4EEC710224A7596AC94C3B6D292E4CB7D84B7F2C
 };
 
 // UnityEngine.InputSystem.LowLevel.ActionEvent
-#pragma pack(push, tp, 1)
 struct ActionEvent_tFC934B0EAC602EBEF4E6F4A34EC21B329DE11444 
 {
 	union
@@ -5460,7 +5441,6 @@ struct ActionEvent_tFC934B0EAC602EBEF4E6F4A34EC21B329DE11444
 		uint8_t ActionEvent_tFC934B0EAC602EBEF4E6F4A34EC21B329DE11444__padding[37];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.Component
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
@@ -5468,7 +5448,6 @@ struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12
 };
 
 // UnityEngine.InputSystem.LowLevel.DeltaStateEvent
-#pragma pack(push, tp, 1)
 struct DeltaStateEvent_tC11D9B5FD8A535C2D998D30F8624E6533044D859 
 {
 	union
@@ -5540,10 +5519,8 @@ struct DeltaStateEvent_tC11D9B5FD8A535C2D998D30F8624E6533044D859
 		uint8_t DeltaStateEvent_tC11D9B5FD8A535C2D998D30F8624E6533044D859__padding[29];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.DeviceConfigurationEvent
-#pragma pack(push, tp, 1)
 struct DeviceConfigurationEvent_tC73A3703BADB78DDA67BE9C3DE2E4C93B34A19CB 
 {
 	union
@@ -5568,10 +5545,8 @@ struct DeviceConfigurationEvent_tC73A3703BADB78DDA67BE9C3DE2E4C93B34A19CB
 		uint8_t DeviceConfigurationEvent_tC73A3703BADB78DDA67BE9C3DE2E4C93B34A19CB__padding[20];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.DeviceRemoveEvent
-#pragma pack(push, tp, 1)
 struct DeviceRemoveEvent_t51C00E4C657C4942268EA407FBA049E82AFCE3A9 
 {
 	union
@@ -5596,10 +5571,8 @@ struct DeviceRemoveEvent_t51C00E4C657C4942268EA407FBA049E82AFCE3A9
 		uint8_t DeviceRemoveEvent_t51C00E4C657C4942268EA407FBA049E82AFCE3A9__padding[20];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.DeviceResetEvent
-#pragma pack(push, tp, 1)
 struct DeviceResetEvent_t8F9430E7CE4EA685E6FD58888D32F61ABE6D34F4 
 {
 	union
@@ -5637,7 +5610,6 @@ struct DeviceResetEvent_t8F9430E7CE4EA685E6FD58888D32F61ABE6D34F4
 		uint8_t DeviceResetEvent_t8F9430E7CE4EA685E6FD58888D32F61ABE6D34F4__padding[20];
 	};
 };
-#pragma pack(pop, tp)
 // Native definition for P/Invoke marshalling of UnityEngine.InputSystem.LowLevel.DeviceResetEvent
 struct DeviceResetEvent_t8F9430E7CE4EA685E6FD58888D32F61ABE6D34F4_marshaled_pinvoke
 {
@@ -5712,7 +5684,6 @@ struct DeviceResetEvent_t8F9430E7CE4EA685E6FD58888D32F61ABE6D34F4_marshaled_com
 };
 
 // UnityEngine.InputSystem.LowLevel.DisableDeviceCommand
-#pragma pack(push, tp, 1)
 struct DisableDeviceCommand_t974D69BE0CA6623C190CC3FA2EB8371165042BAD 
 {
 	union
@@ -5737,10 +5708,8 @@ struct DisableDeviceCommand_t974D69BE0CA6623C190CC3FA2EB8371165042BAD
 		uint8_t DisableDeviceCommand_t974D69BE0CA6623C190CC3FA2EB8371165042BAD__padding[8];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.DualMotorRumbleCommand
-#pragma pack(push, tp, 1)
 struct DualMotorRumbleCommand_t75FFA626B609E72A4FA3A861A77A90416477ED3E 
 {
 	union
@@ -5791,10 +5760,8 @@ struct DualMotorRumbleCommand_t75FFA626B609E72A4FA3A861A77A90416477ED3E
 		uint8_t DualMotorRumbleCommand_t75FFA626B609E72A4FA3A861A77A90416477ED3E__padding[16];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.EnableDeviceCommand
-#pragma pack(push, tp, 1)
 struct EnableDeviceCommand_tD03828E5A5F935FBF0611920EEC17719DEC8CCC4 
 {
 	union
@@ -5819,10 +5786,8 @@ struct EnableDeviceCommand_tD03828E5A5F935FBF0611920EEC17719DEC8CCC4
 		uint8_t EnableDeviceCommand_tD03828E5A5F935FBF0611920EEC17719DEC8CCC4__padding[8];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.EnableIMECompositionCommand
-#pragma pack(push, tp, 1)
 struct EnableIMECompositionCommand_t334151D7E5F5213E80B473930388F6063795DA8C 
 {
 	union
@@ -5860,7 +5825,6 @@ struct EnableIMECompositionCommand_t334151D7E5F5213E80B473930388F6063795DA8C
 		uint8_t EnableIMECompositionCommand_t334151D7E5F5213E80B473930388F6063795DA8C__padding[9];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.GameObject
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
@@ -5868,7 +5832,6 @@ struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC1
 };
 
 // UnityEngine.InputSystem.LowLevel.IMECompositionEvent
-#pragma pack(push, tp, 1)
 struct IMECompositionEvent_tE5CF1FDFA13561963D200901D911D20E8EDB9C55 
 {
 	union
@@ -5906,7 +5869,6 @@ struct IMECompositionEvent_tE5CF1FDFA13561963D200901D911D20E8EDB9C55
 		uint8_t IMECompositionEvent_tE5CF1FDFA13561963D200901D911D20E8EDB9C55__padding[152];
 	};
 };
-#pragma pack(pop, tp)
 // Native definition for P/Invoke marshalling of UnityEngine.InputSystem.LowLevel.IMECompositionEvent
 struct IMECompositionEvent_tE5CF1FDFA13561963D200901D911D20E8EDB9C55_marshaled_pinvoke
 {
@@ -5981,7 +5943,6 @@ struct IMECompositionEvent_tE5CF1FDFA13561963D200901D911D20E8EDB9C55_marshaled_c
 };
 
 // UnityEngine.InputSystem.LowLevel.InitiateUserAccountPairingCommand
-#pragma pack(push, tp, 1)
 struct InitiateUserAccountPairingCommand_t2D75489C6B2746268CC6757AA10E86F8AE2733EF 
 {
 	union
@@ -6006,7 +5967,6 @@ struct InitiateUserAccountPairingCommand_t2D75489C6B2746268CC6757AA10E86F8AE2733
 		uint8_t InitiateUserAccountPairingCommand_t2D75489C6B2746268CC6757AA10E86F8AE2733EF__padding[8];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.InputControl
 struct InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E  : public RuntimeObject
@@ -6216,7 +6176,6 @@ struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 };
 
 // UnityEngine.InputSystem.LowLevel.QueryCanRunInBackground
-#pragma pack(push, tp, 1)
 struct QueryCanRunInBackground_tC4968BE4E8005935A3747507F3652882719FE341 
 {
 	union
@@ -6254,7 +6213,6 @@ struct QueryCanRunInBackground_tC4968BE4E8005935A3747507F3652882719FE341
 		uint8_t QueryCanRunInBackground_tC4968BE4E8005935A3747507F3652882719FE341__padding[9];
 	};
 };
-#pragma pack(pop, tp)
 // Native definition for P/Invoke marshalling of UnityEngine.InputSystem.LowLevel.QueryCanRunInBackground
 struct QueryCanRunInBackground_tC4968BE4E8005935A3747507F3652882719FE341_marshaled_pinvoke
 {
@@ -6329,7 +6287,6 @@ struct QueryCanRunInBackground_tC4968BE4E8005935A3747507F3652882719FE341_marshal
 };
 
 // UnityEngine.InputSystem.LowLevel.QueryDimensionsCommand
-#pragma pack(push, tp, 1)
 struct QueryDimensionsCommand_tDE86E5E5985319C1F7B99F504214FD3612F20B83 
 {
 	union
@@ -6367,10 +6324,8 @@ struct QueryDimensionsCommand_tDE86E5E5985319C1F7B99F504214FD3612F20B83
 		uint8_t QueryDimensionsCommand_tDE86E5E5985319C1F7B99F504214FD3612F20B83__padding[16];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.QueryEnabledStateCommand
-#pragma pack(push, tp, 1)
 struct QueryEnabledStateCommand_t32FB8F3C31DD9250FCE728E29FE6C8D580FEAED4 
 {
 	union
@@ -6408,7 +6363,6 @@ struct QueryEnabledStateCommand_t32FB8F3C31DD9250FCE728E29FE6C8D580FEAED4
 		uint8_t QueryEnabledStateCommand_t32FB8F3C31DD9250FCE728E29FE6C8D580FEAED4__padding[9];
 	};
 };
-#pragma pack(pop, tp)
 // Native definition for P/Invoke marshalling of UnityEngine.InputSystem.LowLevel.QueryEnabledStateCommand
 struct QueryEnabledStateCommand_t32FB8F3C31DD9250FCE728E29FE6C8D580FEAED4_marshaled_pinvoke
 {
@@ -6483,7 +6437,6 @@ struct QueryEnabledStateCommand_t32FB8F3C31DD9250FCE728E29FE6C8D580FEAED4_marsha
 };
 
 // UnityEngine.InputSystem.LowLevel.QueryKeyNameCommand
-#pragma pack(push, tp, 1)
 struct QueryKeyNameCommand_tCEEA57BE2D12A0FFDCD9FE3F8A5851CC31DBE247 
 {
 	union
@@ -6534,10 +6487,8 @@ struct QueryKeyNameCommand_tCEEA57BE2D12A0FFDCD9FE3F8A5851CC31DBE247
 		uint8_t QueryKeyNameCommand_tCEEA57BE2D12A0FFDCD9FE3F8A5851CC31DBE247__padding[268];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.QueryKeyboardLayoutCommand
-#pragma pack(push, tp, 1)
 struct QueryKeyboardLayoutCommand_tFC7F5A66A40C43E85CE0374D9845F342ECBD019F 
 {
 	union
@@ -6575,10 +6526,8 @@ struct QueryKeyboardLayoutCommand_tFC7F5A66A40C43E85CE0374D9845F342ECBD019F
 		uint8_t QueryKeyboardLayoutCommand_tFC7F5A66A40C43E85CE0374D9845F342ECBD019F__padding[264];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.QueryPairedUserAccountCommand
-#pragma pack(push, tp, 1)
 struct QueryPairedUserAccountCommand_t0E05ACE98295E34BA26542A994F2F66027E09582 
 {
 	union
@@ -6642,10 +6591,8 @@ struct QueryPairedUserAccountCommand_t0E05ACE98295E34BA26542A994F2F66027E09582
 		uint8_t QueryPairedUserAccountCommand_t0E05ACE98295E34BA26542A994F2F66027E09582__padding[1040];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.QuerySamplingFrequencyCommand
-#pragma pack(push, tp, 1)
 struct QuerySamplingFrequencyCommand_t4AC08C713EA92FEEDC2BCFBDBC4FB32C7E7E36CA 
 {
 	union
@@ -6683,10 +6630,8 @@ struct QuerySamplingFrequencyCommand_t4AC08C713EA92FEEDC2BCFBDBC4FB32C7E7E36CA
 		uint8_t QuerySamplingFrequencyCommand_t4AC08C713EA92FEEDC2BCFBDBC4FB32C7E7E36CA__padding[12];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.QueryUserIdCommand
-#pragma pack(push, tp, 1)
 struct QueryUserIdCommand_t163DCC35DCA11E44183A1A0234919417C005B5CD 
 {
 	union
@@ -6724,10 +6669,8 @@ struct QueryUserIdCommand_t163DCC35DCA11E44183A1A0234919417C005B5CD
 		uint8_t QueryUserIdCommand_t163DCC35DCA11E44183A1A0234919417C005B5CD__padding[520];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.RequestResetCommand
-#pragma pack(push, tp, 1)
 struct RequestResetCommand_tE0530BE3081FF0C347BA0BCAFF3D88F34DED4968 
 {
 	union
@@ -6752,10 +6695,8 @@ struct RequestResetCommand_tE0530BE3081FF0C347BA0BCAFF3D88F34DED4968
 		uint8_t RequestResetCommand_tE0530BE3081FF0C347BA0BCAFF3D88F34DED4968__padding[8];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.RequestSyncCommand
-#pragma pack(push, tp, 1)
 struct RequestSyncCommand_t3766C746434641EF91025D272D9A53B4DF5387B8 
 {
 	union
@@ -6780,7 +6721,6 @@ struct RequestSyncCommand_t3766C746434641EF91025D272D9A53B4DF5387B8
 		uint8_t RequestSyncCommand_t3766C746434641EF91025D272D9A53B4DF5387B8__padding[8];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.ScriptableObject
 struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
@@ -6796,7 +6736,6 @@ struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_com 
 };
 
 // UnityEngine.InputSystem.LowLevel.SetIMECursorPositionCommand
-#pragma pack(push, tp, 1)
 struct SetIMECursorPositionCommand_tDC69815817474DA1629D5883FA53F8D4BDF6BF46 
 {
 	union
@@ -6834,10 +6773,8 @@ struct SetIMECursorPositionCommand_tDC69815817474DA1629D5883FA53F8D4BDF6BF46
 		uint8_t SetIMECursorPositionCommand_tDC69815817474DA1629D5883FA53F8D4BDF6BF46__padding[16];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.SetSamplingFrequencyCommand
-#pragma pack(push, tp, 1)
 struct SetSamplingFrequencyCommand_t2629221ED175F235C8221C64640B3737AF751D88 
 {
 	union
@@ -6875,10 +6812,8 @@ struct SetSamplingFrequencyCommand_t2629221ED175F235C8221C64640B3737AF751D88
 		uint8_t SetSamplingFrequencyCommand_t2629221ED175F235C8221C64640B3737AF751D88__padding[12];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.StateEvent
-#pragma pack(push, tp, 1)
 struct StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F 
 {
 	union
@@ -6935,7 +6870,6 @@ struct StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F
 		uint8_t StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F__padding[25];
 	};
 };
-#pragma pack(pop, tp)
 
 // System.SystemException
 struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
@@ -6943,7 +6877,6 @@ struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Excep
 };
 
 // UnityEngine.InputSystem.LowLevel.UseWindowsGamingInputCommand
-#pragma pack(push, tp, 1)
 struct UseWindowsGamingInputCommand_tE6897727C198264D391C348B0C5F52119CE01D05 
 {
 	union
@@ -6981,10 +6914,8 @@ struct UseWindowsGamingInputCommand_tE6897727C198264D391C348B0C5F52119CE01D05
 		uint8_t UseWindowsGamingInputCommand_tE6897727C198264D391C348B0C5F52119CE01D05__padding[9];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.WarpMousePositionCommand
-#pragma pack(push, tp, 1)
 struct WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0 
 {
 	union
@@ -7022,7 +6953,6 @@ struct WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0
 		uint8_t WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0__padding[16];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.IMECompositionString/Enumerator
 struct Enumerator_t1A8AC222761BFB9580E0FC935D4B0445A448FC46 
@@ -7400,8 +7330,10 @@ struct InputSettings_tBA8835B505722A59702A08BCBA46ECF0B0274EEF  : public Scripta
 	float ___m_MultiTapDelayTime_19;
 	// System.Boolean UnityEngine.InputSystem.InputSettings::m_DisableRedundantEventsMerging
 	bool ___m_DisableRedundantEventsMerging_20;
+	// System.Boolean UnityEngine.InputSystem.InputSettings::m_ShortcutKeysConsumeInputs
+	bool ___m_ShortcutKeysConsumeInputs_21;
 	// System.Collections.Generic.HashSet`1<System.String> UnityEngine.InputSystem.InputSettings::m_FeatureFlags
-	HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* ___m_FeatureFlags_21;
+	HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* ___m_FeatureFlags_22;
 };
 
 // System.InvalidCastException
@@ -36850,7 +36782,7 @@ IL_00ce:
 		bool L_40 = V_8;
 		if (!L_40)
 		{
-			goto IL_02dd;
+			goto IL_02e9;
 		}
 	}
 	{
@@ -36893,7 +36825,7 @@ IL_00f1:
 
 IL_0103:
 	{
-		// buffer = (byte*)UnsafeUtility.Malloc((long)totalEventSizeInBytes, 4, Allocator.Persistent);
+		// buffer = (byte*)UnsafeUtility.Malloc((long)totalEventSizeInBytes, InputEvent.kAlignment, Allocator.Persistent);
 		uint64_t L_46 = V_2;
 		void* L_47;
 		L_47 = UnsafeUtility_Malloc_mD7BD28D5AE7E4901B225B7DFFE2B568EE7BDC0C9(L_46, 4, 4, NULL);
@@ -36920,7 +36852,7 @@ IL_0116:
 			V_13 = ((int64_t)0);
 			// for (var i = 0ul; i < eventCount; ++i)
 			V_16 = ((int64_t)0);
-			goto IL_01f1_1;
+			goto IL_01fd_1;
 		}
 
 IL_0130_1:
@@ -36956,7 +36888,7 @@ IL_0130_1:
 		}
 		{
 			// break;
-			goto IL_01ff_1;
+			goto IL_020b_1;
 		}
 
 IL_0161_1:
@@ -37055,67 +36987,71 @@ IL_01b6_2:
 
 IL_01c9_1:
 		{
-			// tailPtr += remainingSize;
+			// tailPtr += remainingSize.AlignToMultipleOf(InputEvent.kAlignment);
 			uint8_t* L_82 = V_11;
 			int32_t L_83 = V_20;
-			V_11 = ((uint8_t*)il2cpp_codegen_add((intptr_t)L_82, L_83));
-			// totalEventSize += eventSizeInBytes;
-			int64_t L_84 = V_13;
-			uint32_t L_85 = V_18;
-			V_13 = ((int64_t)il2cpp_codegen_add(L_84, ((int64_t)(uint64_t)L_85)));
+			int32_t L_84;
+			L_84 = NumberHelpers_AlignToMultipleOf_m1DD6F7938F5F4EA99168EFE5AAD4604972F2FB6D_inline(L_83, 4, NULL);
+			V_11 = ((uint8_t*)il2cpp_codegen_add((intptr_t)L_82, L_84));
+			// totalEventSize += eventSizeInBytes.AlignToMultipleOf(InputEvent.kAlignment);
+			int64_t L_85 = V_13;
+			uint32_t L_86 = V_18;
+			uint32_t L_87;
+			L_87 = NumberHelpers_AlignToMultipleOf_m44B66C972BC1F508B9022564F265D1AA6A001AAE_inline(L_86, 4, NULL);
+			V_13 = ((int64_t)il2cpp_codegen_add(L_85, ((int64_t)(uint64_t)L_87)));
 			// if (tailPtr >= endPtr)
-			uint8_t* L_86 = V_11;
-			uint8_t* L_87 = V_12;
-			V_25 = (bool)((((int32_t)((!(((uintptr_t)L_86) >= ((uintptr_t)L_87)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-			bool L_88 = V_25;
-			if (!L_88)
+			uint8_t* L_88 = V_11;
+			uint8_t* L_89 = V_12;
+			V_25 = (bool)((((int32_t)((!(((uintptr_t)L_88) >= ((uintptr_t)L_89)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+			bool L_90 = V_25;
+			if (!L_90)
 			{
-				goto IL_01e9_1;
+				goto IL_01f5_1;
 			}
 		}
 		{
 			// break;
-			goto IL_01ff_1;
+			goto IL_020b_1;
 		}
 
-IL_01e9_1:
+IL_01f5_1:
 		{
 			// for (var i = 0ul; i < eventCount; ++i)
-			uint64_t L_89 = V_16;
-			V_16 = ((int64_t)il2cpp_codegen_add((int64_t)L_89, ((int64_t)1)));
+			uint64_t L_91 = V_16;
+			V_16 = ((int64_t)il2cpp_codegen_add((int64_t)L_91, ((int64_t)1)));
 		}
 
-IL_01f1_1:
+IL_01fd_1:
 		{
 			// for (var i = 0ul; i < eventCount; ++i)
-			uint64_t L_90 = V_16;
-			uint64_t L_91 = V_1;
-			V_26 = (bool)((!(((uint64_t)L_90) >= ((uint64_t)L_91)))? 1 : 0);
-			bool L_92 = V_26;
-			if (L_92)
+			uint64_t L_92 = V_16;
+			uint64_t L_93 = V_1;
+			V_26 = (bool)((!(((uint64_t)L_92) >= ((uint64_t)L_93)))? 1 : 0);
+			bool L_94 = V_26;
+			if (L_94)
 			{
 				goto IL_0130_1;
 			}
 		}
 
-IL_01ff_1:
+IL_020b_1:
 		{
 			// var deviceCount = reader.ReadInt32();
-			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_93 = V_0;
-			NullCheck(L_93);
-			int32_t L_94;
-			L_94 = VirtualFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.BinaryReader::ReadInt32() */, L_93);
-			V_14 = L_94;
+			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_95 = V_0;
+			NullCheck(L_95);
+			int32_t L_96;
+			L_96 = VirtualFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.BinaryReader::ReadInt32() */, L_95);
+			V_14 = L_96;
 			// var deviceInfos = new DeviceInfo[deviceCount];
-			int32_t L_95 = V_14;
-			DeviceInfoU5BU5D_t83A513EC4EB7BD3AA21A9352117520BC63C34E1A* L_96 = (DeviceInfoU5BU5D_t83A513EC4EB7BD3AA21A9352117520BC63C34E1A*)(DeviceInfoU5BU5D_t83A513EC4EB7BD3AA21A9352117520BC63C34E1A*)SZArrayNew(DeviceInfoU5BU5D_t83A513EC4EB7BD3AA21A9352117520BC63C34E1A_il2cpp_TypeInfo_var, (uint32_t)L_95);
-			V_15 = L_96;
+			int32_t L_97 = V_14;
+			DeviceInfoU5BU5D_t83A513EC4EB7BD3AA21A9352117520BC63C34E1A* L_98 = (DeviceInfoU5BU5D_t83A513EC4EB7BD3AA21A9352117520BC63C34E1A*)(DeviceInfoU5BU5D_t83A513EC4EB7BD3AA21A9352117520BC63C34E1A*)SZArrayNew(DeviceInfoU5BU5D_t83A513EC4EB7BD3AA21A9352117520BC63C34E1A_il2cpp_TypeInfo_var, (uint32_t)L_97);
+			V_15 = L_98;
 			// for (var i = 0; i < deviceCount; ++i)
 			V_27 = 0;
-			goto IL_027a_1;
+			goto IL_0286_1;
 		}
 
-IL_0215_1:
+IL_0221_1:
 		{
 			// deviceInfos[i] = new DeviceInfo
 			// {
@@ -37125,79 +37061,79 @@ IL_0215_1:
 			//     stateSizeInBytes = reader.ReadInt32(),
 			//     m_FullLayoutJson = reader.ReadString()
 			// };
-			DeviceInfoU5BU5D_t83A513EC4EB7BD3AA21A9352117520BC63C34E1A* L_97 = V_15;
-			int32_t L_98 = V_27;
+			DeviceInfoU5BU5D_t83A513EC4EB7BD3AA21A9352117520BC63C34E1A* L_99 = V_15;
+			int32_t L_100 = V_27;
 			il2cpp_codegen_initobj((&V_28), sizeof(DeviceInfo_tAB83FF3BB4996BA68DFDF5D6255C1FEBB452AE52));
-			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_99 = V_0;
-			NullCheck(L_99);
-			int32_t L_100;
-			L_100 = VirtualFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.BinaryReader::ReadInt32() */, L_99);
-			DeviceInfo_set_deviceId_m76EE4AFBA1FA3FFACF2E017498621E66A819DEBD_inline((&V_28), L_100, NULL);
 			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_101 = V_0;
 			NullCheck(L_101);
-			String_t* L_102;
-			L_102 = VirtualFuncInvoker0< String_t* >::Invoke(22 /* System.String System.IO.BinaryReader::ReadString() */, L_101);
-			DeviceInfo_set_layout_mB0175279434FFE48B744FE2CA4800A1EF24B2D69_inline((&V_28), L_102, NULL);
+			int32_t L_102;
+			L_102 = VirtualFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.BinaryReader::ReadInt32() */, L_101);
+			DeviceInfo_set_deviceId_m76EE4AFBA1FA3FFACF2E017498621E66A819DEBD_inline((&V_28), L_102, NULL);
 			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_103 = V_0;
 			NullCheck(L_103);
-			int32_t L_104;
-			L_104 = VirtualFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.BinaryReader::ReadInt32() */, L_103);
-			FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED L_105;
-			L_105 = FourCC_op_Implicit_mFEE14A923AACEE90FAAC5234C718CD1B20690F61(L_104, NULL);
-			DeviceInfo_set_stateFormat_mFC8581D56C34FFCBF8264CFD61BA12CE56755478_inline((&V_28), L_105, NULL);
-			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_106 = V_0;
-			NullCheck(L_106);
-			int32_t L_107;
-			L_107 = VirtualFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.BinaryReader::ReadInt32() */, L_106);
-			DeviceInfo_set_stateSizeInBytes_m7D7507BD0D817A86E99E3E44E216B31855ED06B3_inline((&V_28), L_107, NULL);
+			String_t* L_104;
+			L_104 = VirtualFuncInvoker0< String_t* >::Invoke(22 /* System.String System.IO.BinaryReader::ReadString() */, L_103);
+			DeviceInfo_set_layout_mB0175279434FFE48B744FE2CA4800A1EF24B2D69_inline((&V_28), L_104, NULL);
+			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_105 = V_0;
+			NullCheck(L_105);
+			int32_t L_106;
+			L_106 = VirtualFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.BinaryReader::ReadInt32() */, L_105);
+			FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED L_107;
+			L_107 = FourCC_op_Implicit_mFEE14A923AACEE90FAAC5234C718CD1B20690F61(L_106, NULL);
+			DeviceInfo_set_stateFormat_mFC8581D56C34FFCBF8264CFD61BA12CE56755478_inline((&V_28), L_107, NULL);
 			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_108 = V_0;
 			NullCheck(L_108);
-			String_t* L_109;
-			L_109 = VirtualFuncInvoker0< String_t* >::Invoke(22 /* System.String System.IO.BinaryReader::ReadString() */, L_108);
-			(&V_28)->___m_FullLayoutJson_4 = L_109;
-			Il2CppCodeGenWriteBarrier((void**)(&(&V_28)->___m_FullLayoutJson_4), (void*)L_109);
-			DeviceInfo_tAB83FF3BB4996BA68DFDF5D6255C1FEBB452AE52 L_110 = V_28;
-			NullCheck(L_97);
-			(L_97)->SetAt(static_cast<il2cpp_array_size_t>(L_98), (DeviceInfo_tAB83FF3BB4996BA68DFDF5D6255C1FEBB452AE52)L_110);
+			int32_t L_109;
+			L_109 = VirtualFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.BinaryReader::ReadInt32() */, L_108);
+			DeviceInfo_set_stateSizeInBytes_m7D7507BD0D817A86E99E3E44E216B31855ED06B3_inline((&V_28), L_109, NULL);
+			BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_110 = V_0;
+			NullCheck(L_110);
+			String_t* L_111;
+			L_111 = VirtualFuncInvoker0< String_t* >::Invoke(22 /* System.String System.IO.BinaryReader::ReadString() */, L_110);
+			(&V_28)->___m_FullLayoutJson_4 = L_111;
+			Il2CppCodeGenWriteBarrier((void**)(&(&V_28)->___m_FullLayoutJson_4), (void*)L_111);
+			DeviceInfo_tAB83FF3BB4996BA68DFDF5D6255C1FEBB452AE52 L_112 = V_28;
+			NullCheck(L_99);
+			(L_99)->SetAt(static_cast<il2cpp_array_size_t>(L_100), (DeviceInfo_tAB83FF3BB4996BA68DFDF5D6255C1FEBB452AE52)L_112);
 			// for (var i = 0; i < deviceCount; ++i)
-			int32_t L_111 = V_27;
-			V_27 = ((int32_t)il2cpp_codegen_add(L_111, 1));
+			int32_t L_113 = V_27;
+			V_27 = ((int32_t)il2cpp_codegen_add(L_113, 1));
 		}
 
-IL_027a_1:
+IL_0286_1:
 		{
 			// for (var i = 0; i < deviceCount; ++i)
-			int32_t L_112 = V_27;
-			int32_t L_113 = V_14;
-			V_29 = (bool)((((int32_t)L_112) < ((int32_t)L_113))? 1 : 0);
-			bool L_114 = V_29;
-			if (L_114)
+			int32_t L_114 = V_27;
+			int32_t L_115 = V_14;
+			V_29 = (bool)((((int32_t)L_114) < ((int32_t)L_115))? 1 : 0);
+			bool L_116 = V_29;
+			if (L_116)
 			{
-				goto IL_0215_1;
+				goto IL_0221_1;
 			}
 		}
 		{
 			// m_EventBuffer = buffer;
-			uint8_t* L_115 = V_9;
-			InputEventTrace_set_m_EventBuffer_m9E277FFE218D8DB8738E10166B8685AAEBF20A56(__this, L_115, NULL);
+			uint8_t* L_117 = V_9;
+			InputEventTrace_set_m_EventBuffer_m9E277FFE218D8DB8738E10166B8685AAEBF20A56(__this, L_117, NULL);
 			// m_EventBufferHead = m_EventBuffer;
-			uint8_t* L_116;
-			L_116 = InputEventTrace_get_m_EventBuffer_mE0A429C0F9F57F7EF20002FB6DB132137739311B(__this, NULL);
-			InputEventTrace_set_m_EventBufferHead_m1D7E13093AAC343D59DC33FF9EE2656399156156(__this, L_116, NULL);
+			uint8_t* L_118;
+			L_118 = InputEventTrace_get_m_EventBuffer_mE0A429C0F9F57F7EF20002FB6DB132137739311B(__this, NULL);
+			InputEventTrace_set_m_EventBufferHead_m1D7E13093AAC343D59DC33FF9EE2656399156156(__this, L_118, NULL);
 			// m_EventBufferTail = endPtr;
-			uint8_t* L_117 = V_12;
-			InputEventTrace_set_m_EventBufferTail_mB66F5AF649362018180B0DC73A2B7B9DE24E4C7B(__this, L_117, NULL);
+			uint8_t* L_119 = V_12;
+			InputEventTrace_set_m_EventBufferTail_mB66F5AF649362018180B0DC73A2B7B9DE24E4C7B(__this, L_119, NULL);
 			// m_EventCount = (long)eventCount;
-			uint64_t L_118 = V_1;
-			__this->___m_EventCount_9 = L_118;
+			uint64_t L_120 = V_1;
+			__this->___m_EventCount_9 = L_120;
 			// m_EventSizeInBytes = totalEventSize;
-			int64_t L_119 = V_13;
-			__this->___m_EventSizeInBytes_10 = L_119;
+			int64_t L_121 = V_13;
+			__this->___m_EventSizeInBytes_10 = L_121;
 			// m_DeviceInfos = deviceInfos;
-			DeviceInfoU5BU5D_t83A513EC4EB7BD3AA21A9352117520BC63C34E1A* L_120 = V_15;
-			__this->___m_DeviceInfos_16 = L_120;
-			Il2CppCodeGenWriteBarrier((void**)(&__this->___m_DeviceInfos_16), (void*)L_120);
-			goto IL_02da;
+			DeviceInfoU5BU5D_t83A513EC4EB7BD3AA21A9352117520BC63C34E1A* L_122 = V_15;
+			__this->___m_DeviceInfos_16 = L_122;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___m_DeviceInfos_16), (void*)L_122);
+			goto IL_02e6;
 		}
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -37205,44 +37141,44 @@ IL_027a_1:
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&RuntimeObject_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_02bf;
+			goto CATCH_02cb;
 		}
 		throw e;
 	}
 
-CATCH_02bf:
+CATCH_02cb:
 	{// begin catch(System.Object)
 		{
 			// catch
 			// if (buffer != oldBuffer)
-			uint8_t* L_121 = V_9;
-			uint8_t* L_122 = V_3;
-			V_30 = (bool)((((int32_t)((((intptr_t)L_121) == ((intptr_t)L_122))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-			bool L_123 = V_30;
-			if (!L_123)
+			uint8_t* L_123 = V_9;
+			uint8_t* L_124 = V_3;
+			V_30 = (bool)((((int32_t)((((intptr_t)L_123) == ((intptr_t)L_124))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+			bool L_125 = V_30;
+			if (!L_125)
 			{
-				goto IL_02d8;
+				goto IL_02e4;
 			}
 		}
 		{
 			// UnsafeUtility.Free(buffer, Allocator.Persistent);
-			uint8_t* L_124 = V_9;
-			UnsafeUtility_Free_mFF99F4F02FE7F735AB30D8987D6953E55A2B23E1((void*)L_124, 4, NULL);
+			uint8_t* L_126 = V_9;
+			UnsafeUtility_Free_mFF99F4F02FE7F735AB30D8987D6953E55A2B23E1((void*)L_126, 4, NULL);
 		}
 
-IL_02d8:
+IL_02e4:
 		{
 			// throw;
 			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
 		}
 	}// end catch (depth: 1)
 
-IL_02da:
+IL_02e6:
 	{
-		goto IL_02fa;
+		goto IL_0306;
 	}
 
-IL_02dd:
+IL_02e9:
 	{
 		// m_EventBuffer = default;
 		InputEventTrace_set_m_EventBuffer_m9E277FFE218D8DB8738E10166B8685AAEBF20A56(__this, (uint8_t*)((uintptr_t)0), NULL);
@@ -37252,48 +37188,48 @@ IL_02dd:
 		InputEventTrace_set_m_EventBufferTail_mB66F5AF649362018180B0DC73A2B7B9DE24E4C7B(__this, (uint8_t*)((uintptr_t)0), NULL);
 	}
 
-IL_02fa:
+IL_0306:
 	{
 		// if (m_EventBuffer != oldBuffer && oldBuffer != null)
-		uint8_t* L_125;
-		L_125 = InputEventTrace_get_m_EventBuffer_mE0A429C0F9F57F7EF20002FB6DB132137739311B(__this, NULL);
-		uint8_t* L_126 = V_3;
-		if ((((intptr_t)L_125) == ((intptr_t)L_126)))
+		uint8_t* L_127;
+		L_127 = InputEventTrace_get_m_EventBuffer_mE0A429C0F9F57F7EF20002FB6DB132137739311B(__this, NULL);
+		uint8_t* L_128 = V_3;
+		if ((((intptr_t)L_127) == ((intptr_t)L_128)))
 		{
-			goto IL_030d;
+			goto IL_0319;
 		}
 	}
 	{
-		uint8_t* L_127 = V_3;
-		G_B45_0 = ((((int32_t)((((intptr_t)L_127) == ((intptr_t)((uintptr_t)0)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_030e;
+		uint8_t* L_129 = V_3;
+		G_B45_0 = ((((int32_t)((((intptr_t)L_129) == ((intptr_t)((uintptr_t)0)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_031a;
 	}
 
-IL_030d:
+IL_0319:
 	{
 		G_B45_0 = 0;
 	}
 
-IL_030e:
+IL_031a:
 	{
 		V_31 = (bool)G_B45_0;
-		bool L_128 = V_31;
-		if (!L_128)
+		bool L_130 = V_31;
+		if (!L_130)
 		{
-			goto IL_031c;
+			goto IL_0328;
 		}
 	}
 	{
 		// UnsafeUtility.Free(oldBuffer, Allocator.Persistent);
-		uint8_t* L_129 = V_3;
-		UnsafeUtility_Free_mFF99F4F02FE7F735AB30D8987D6953E55A2B23E1((void*)L_129, 4, NULL);
+		uint8_t* L_131 = V_3;
+		UnsafeUtility_Free_mFF99F4F02FE7F735AB30D8987D6953E55A2B23E1((void*)L_131, 4, NULL);
 	}
 
-IL_031c:
+IL_0328:
 	{
 		// ++m_ChangeCounter;
-		int32_t L_130 = __this->___m_ChangeCounter_1;
-		__this->___m_ChangeCounter_1 = ((int32_t)il2cpp_codegen_add(L_130, 1));
+		int32_t L_132 = __this->___m_ChangeCounter_1;
+		__this->___m_ChangeCounter_1 = ((int32_t)il2cpp_codegen_add(L_132, 1));
 		// }
 		return;
 	}
@@ -37574,7 +37510,7 @@ IL_0031:
 
 IL_003e:
 	{
-		// var newEventBuffer = (byte*)UnsafeUtility.Malloc(newBufferSize, 4, Allocator.Persistent);
+		// var newEventBuffer = (byte*)UnsafeUtility.Malloc(newBufferSize, InputEvent.kAlignment, Allocator.Persistent);
 		int64_t L_10 = ___newBufferSize0;
 		void* L_11;
 		L_11 = UnsafeUtility_Malloc_mD7BD28D5AE7E4901B225B7DFFE2B568EE7BDC0C9(L_10, 4, 4, NULL);
@@ -37660,7 +37596,7 @@ IL_00ac:
 		uint32_t L_23;
 		L_23 = InputEventPtr_get_sizeInBytes_mE060F5A7176AAF8ED749DB4A3DC7976249716597((&V_8), NULL);
 		V_14 = L_23;
-		// var alignedEventSizeInBytes = eventSizeInBytes.AlignToMultipleOf(4);
+		// var alignedEventSizeInBytes = eventSizeInBytes.AlignToMultipleOf(InputEvent.kAlignment);
 		uint32_t L_24 = V_14;
 		uint32_t L_25;
 		L_25 = NumberHelpers_AlignToMultipleOf_m44B66C972BC1F508B9022564F265D1AA6A001AAE_inline(L_24, 4, NULL);
@@ -38298,7 +38234,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputEventTrace_set_m_EventBufferTail_mB
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputEventTrace_Allocate_mDF187B47860B3630C655626FC6745DA0CC927E9D (InputEventTrace_t1D25547AACA8FD1C1AA974F31EF9BD9478205FBD* __this, const RuntimeMethod* method) 
 {
 	{
-		// m_EventBuffer = (byte*)UnsafeUtility.Malloc(m_EventBufferSize, 4, Allocator.Persistent);
+		// m_EventBuffer = (byte*)UnsafeUtility.Malloc(m_EventBufferSize, InputEvent.kAlignment, Allocator.Persistent);
 		int64_t L_0 = __this->___m_EventBufferSize_6;
 		void* L_1;
 		L_1 = UnsafeUtility_Malloc_mD7BD28D5AE7E4901B225B7DFFE2B568EE7BDC0C9(L_0, 4, 4, NULL);
@@ -38594,7 +38530,7 @@ IL_006f:
 
 IL_0084:
 	{
-		// var bytesNeeded = inputEvent.sizeInBytes.AlignToMultipleOf(4);
+		// var bytesNeeded = inputEvent.sizeInBytes.AlignToMultipleOf(InputEvent.kAlignment);
 		uint32_t L_17;
 		L_17 = InputEventPtr_get_sizeInBytes_mE060F5A7176AAF8ED749DB4A3DC7976249716597((&___inputEvent0), NULL);
 		uint32_t L_18;
@@ -38718,7 +38654,7 @@ IL_013d:
 		}
 	}
 	{
-		// var increment = Math.Max(m_GrowIncrementSize, bytesNeeded.AlignToMultipleOf(4));
+		// var increment = Math.Max(m_GrowIncrementSize, bytesNeeded.AlignToMultipleOf(InputEvent.kAlignment));
 		int64_t L_41 = __this->___m_GrowIncrementSize_8;
 		uint32_t L_42 = V_0;
 		uint32_t L_43;

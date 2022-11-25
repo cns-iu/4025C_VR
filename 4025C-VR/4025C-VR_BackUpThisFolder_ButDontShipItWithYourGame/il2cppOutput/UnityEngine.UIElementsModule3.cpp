@@ -1613,11 +1613,13 @@ IL2CPP_EXTERN_C const RuntimeMethod* PanelChangedEventBase_1_get_originPanel_mB7
 IL2CPP_EXTERN_C const RuntimeMethod* PointerCaptureEventBase_1_get_pointerId_m807E1CA35DCA449386CC6C80A29FEE3ECFA04D93_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PointerCaptureEventBase_1_get_pointerId_mD8C8401D1353E516A122F8C930FC6D23848FD447_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PointerEventBase_1_get_isPrimary_m6C7B28F0FBEADE098A6209EBEBB10AB53A356B9D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PointerEventBase_1_get_isPrimary_m727197FEB1A5B4D4FC3092C618E472C323A38834_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PointerEventBase_1_get_pointerId_m10A301E89D623BE4E099DC7CE768AE0D12ADF5B4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PointerEventBase_1_get_pointerId_m494A184CC32780C69FAE61D8361DE5F4A53FF2C6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PointerEventBase_1_get_pointerType_m1724EBAD6D0313ABE5739C89FC27EBFAF86D1926_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PointerEventBase_1_get_pointerType_mECF9D0A37869ED3DC164C72528E41CF21AF2BDF1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PointerEventBase_1_get_position_m62A6C6E4573AD8DEA94462498F258D10792B8E86_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RuntimePanel_Create_m1A4D4DB7E46E4B61EE8FD5858CA7DE8E08EF9C10_RuntimeMethod_var;
@@ -10656,6 +10658,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScrollView_InitTouchScrolling_m8EF3D83B7
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointerCaptureHelper_CapturePointer_m7A647567160ADA0E052A7277C5B531D7A01E5F7F (RuntimeObject* ___handler0, int32_t ___pointerId1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.UIElements.PointerCaptureHelper::PreventCompatibilityMouseEvents(UnityEngine.UIElements.IPanel,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointerCaptureHelper_PreventCompatibilityMouseEvents_m96F0763D51B20EE438DE8C927CBD1EB480F7A751 (RuntimeObject* ___panel0, int32_t ___pointerId1, const RuntimeMethod* method) ;
+// System.String UnityEngine.UIElements.PointerEventBase`1<UnityEngine.UIElements.PointerMoveEvent>::get_pointerType()
+inline String_t* PointerEventBase_1_get_pointerType_mECF9D0A37869ED3DC164C72528E41CF21AF2BDF1_inline (PointerEventBase_1_tED9D60928194E4D1F6C5F9C95D258E9102815B4B* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (PointerEventBase_1_tED9D60928194E4D1F6C5F9C95D258E9102815B4B*, const RuntimeMethod*))PointerEventBase_1_get_pointerType_m05EB5D56224F7A7A190AAFBBD622113A7A704F7C_gshared_inline)(__this, method);
+}
+// System.Boolean UnityEngine.UIElements.PointerEventBase`1<UnityEngine.UIElements.PointerMoveEvent>::get_isPrimary()
+inline bool PointerEventBase_1_get_isPrimary_m727197FEB1A5B4D4FC3092C618E472C323A38834_inline (PointerEventBase_1_tED9D60928194E4D1F6C5F9C95D258E9102815B4B* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (PointerEventBase_1_tED9D60928194E4D1F6C5F9C95D258E9102815B4B*, const RuntimeMethod*))PointerEventBase_1_get_isPrimary_m0F266CD0EEF96089B726E1E69A8A07029685E95B_gshared_inline)(__this, method);
+}
 // System.Int32 UnityEngine.UIElements.PointerEventBase`1<UnityEngine.UIElements.PointerMoveEvent>::get_pointerId()
 inline int32_t PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_inline (PointerEventBase_1_tED9D60928194E4D1F6C5F9C95D258E9102815B4B* __this, const RuntimeMethod* method)
 {
@@ -10694,8 +10706,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_Min_m2D222BC18ACD4F965981EC93451DDD1D7ADFDDA0_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___lhs0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rhs1, const RuntimeMethod* method) ;
 // System.Single UnityEngine.UIElements.ScrollView::ComputeElasticOffset(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ScrollView_ComputeElasticOffset_mBC5B42E964CB9B9253B0A7631C037E53C769D3DE (float ___deltaPointer0, float ___initialScrollOffset1, float ___lowLimit2, float ___hardLowLimit3, float ___highLimit4, float ___hardHighLimit5, const RuntimeMethod* method) ;
-// System.Void UnityEngine.UIElements.ScrollView::ApplyTouchScrolling(UnityEngine.Vector2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScrollView_ApplyTouchScrolling_m7EFC08C568455DE3E0E0DFE95B68C0FD75792EAE (ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___newScrollOffset0, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.UIElements.ScrollView::ApplyTouchScrolling(UnityEngine.Vector2)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ScrollView_ApplyTouchScrolling_m55E0459F4B789729603537AA491B443F81BC82EA (ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___newScrollOffset0, const RuntimeMethod* method) ;
 // UnityEngine.UIElements.ScrollView/NestedInteractionKind UnityEngine.UIElements.ScrollView::get_nestedInteractionKind()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ScrollView_get_nestedInteractionKind_mD6F5A19E8A7D15A56F41AF034869AF295C3D79D6_inline (ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Time::get_unscaledTime()
@@ -32716,10 +32728,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScrollView_OnPointerDown_mA97349AEF0B229
 	bool V_0 = false;
 	bool V_1 = false;
 	bool V_2 = false;
-	int32_t G_B4_0 = 0;
-	RuntimeObject* G_B7_0 = NULL;
-	RuntimeObject* G_B6_0 = NULL;
-	int32_t G_B11_0 = 0;
+	bool V_3 = false;
+	int32_t G_B3_0 = 0;
+	RuntimeObject* G_B9_0 = NULL;
+	RuntimeObject* G_B8_0 = NULL;
+	int32_t G_B13_0 = 0;
 	{
 		PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* L_0 = ___evt0;
 		NullCheck(L_0);
@@ -32728,10 +32741,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScrollView_OnPointerDown_mA97349AEF0B229
 		il2cpp_codegen_runtime_class_init_inline(PointerType_t6E813E47699AA9C948D9EFEF36F481B5EDD5BCD4_il2cpp_TypeInfo_var);
 		String_t* L_2 = ((PointerType_t6E813E47699AA9C948D9EFEF36F481B5EDD5BCD4_StaticFields*)il2cpp_codegen_static_fields_for(PointerType_t6E813E47699AA9C948D9EFEF36F481B5EDD5BCD4_il2cpp_TypeInfo_var))->___mouse_0;
 		bool L_3;
-		L_3 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_1, L_2, NULL);
-		if (!L_3)
+		L_3 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_1, L_2, NULL);
+		if (L_3)
 		{
-			goto IL_002a;
+			goto IL_001e;
 		}
 	}
 	{
@@ -32739,131 +32752,145 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScrollView_OnPointerDown_mA97349AEF0B229
 		NullCheck(L_4);
 		bool L_5;
 		L_5 = PointerEventBase_1_get_isPrimary_m6C7B28F0FBEADE098A6209EBEBB10AB53A356B9D_inline(L_4, PointerEventBase_1_get_isPrimary_m6C7B28F0FBEADE098A6209EBEBB10AB53A356B9D_RuntimeMethod_var);
-		if (!L_5)
+		G_B3_0 = ((((int32_t)L_5) == ((int32_t)0))? 1 : 0);
+		goto IL_001f;
+	}
+
+IL_001e:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_001f:
+	{
+		V_1 = (bool)G_B3_0;
+		bool L_6 = V_1;
+		if (!L_6)
 		{
-			goto IL_002a;
+			goto IL_0028;
 		}
 	}
 	{
-		int32_t L_6 = __this->___m_ScrollingPointerId_93;
+		goto IL_00f8;
+	}
+
+IL_0028:
+	{
+		int32_t L_7 = __this->___m_ScrollingPointerId_93;
 		il2cpp_codegen_runtime_class_init_inline(PointerId_tE48DCDC5C36DD1F5595C28EE48C0243BA8BEF35C_il2cpp_TypeInfo_var);
-		int32_t L_7 = ((PointerId_tE48DCDC5C36DD1F5595C28EE48C0243BA8BEF35C_StaticFields*)il2cpp_codegen_static_fields_for(PointerId_tE48DCDC5C36DD1F5595C28EE48C0243BA8BEF35C_il2cpp_TypeInfo_var))->___invalidPointerId_1;
-		G_B4_0 = ((((int32_t)L_6) == ((int32_t)L_7))? 1 : 0);
-		goto IL_002b;
-	}
-
-IL_002a:
-	{
-		G_B4_0 = 0;
-	}
-
-IL_002b:
-	{
-		V_0 = (bool)G_B4_0;
-		bool L_8 = V_0;
-		if (!L_8)
+		int32_t L_8 = ((PointerId_tE48DCDC5C36DD1F5595C28EE48C0243BA8BEF35C_StaticFields*)il2cpp_codegen_static_fields_for(PointerId_tE48DCDC5C36DD1F5595C28EE48C0243BA8BEF35C_il2cpp_TypeInfo_var))->___invalidPointerId_1;
+		V_2 = (bool)((((int32_t)((((int32_t)L_7) == ((int32_t)L_8))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_9 = V_2;
+		if (!L_9)
 		{
-			goto IL_00db;
+			goto IL_0051;
 		}
 	}
 	{
-		RuntimeObject* L_9 = __this->___m_PostPointerUpAnimation_106;
-		RuntimeObject* L_10 = L_9;
-		G_B6_0 = L_10;
-		if (L_10)
+		int32_t L_10 = __this->___m_ScrollingPointerId_93;
+		PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* L_11 = ___evt0;
+		NullCheck(L_11);
+		RuntimeObject* L_12;
+		L_12 = EventBase_get_target_m9E5CB6AC9A51E9F61D9540D279BFA53C04AD010E(L_11, NULL);
+		bool L_13;
+		L_13 = ScrollView_ReleaseScrolling_m61E863B1BCE3FF3A382A0EAC511631E5115CEF2D(__this, L_10, L_12, NULL);
+	}
+
+IL_0051:
+	{
+		RuntimeObject* L_14 = __this->___m_PostPointerUpAnimation_106;
+		RuntimeObject* L_15 = L_14;
+		G_B8_0 = L_15;
+		if (L_15)
 		{
-			G_B7_0 = L_10;
-			goto IL_003f;
+			G_B9_0 = L_15;
+			goto IL_005d;
 		}
 	}
 	{
-		goto IL_0045;
+		goto IL_0063;
 	}
 
-IL_003f:
+IL_005d:
 	{
-		NullCheck(G_B7_0);
-		InterfaceActionInvoker0::Invoke(1 /* System.Void UnityEngine.UIElements.IVisualElementScheduledItem::Pause() */, IVisualElementScheduledItem_t309F1A5445514122A9E3F64182D0D8A4DE34C48F_il2cpp_TypeInfo_var, G_B7_0);
+		NullCheck(G_B9_0);
+		InterfaceActionInvoker0::Invoke(1 /* System.Void UnityEngine.UIElements.IVisualElementScheduledItem::Pause() */, IVisualElementScheduledItem_t309F1A5445514122A9E3F64182D0D8A4DE34C48F_il2cpp_TypeInfo_var, G_B9_0);
 	}
 
-IL_0045:
+IL_0063:
 	{
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_11 = (&__this->___m_Velocity_96);
-		float L_12 = L_11->___x_0;
-		float L_13;
-		L_13 = fabsf(L_12);
-		if ((((float)L_13) > ((float)(10.0f))))
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_16 = (&__this->___m_Velocity_96);
+		float L_17 = L_16->___x_0;
+		float L_18;
+		L_18 = fabsf(L_17);
+		if ((((float)L_18) > ((float)(10.0f))))
 		{
-			goto IL_0075;
+			goto IL_0093;
 		}
 	}
 	{
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_14 = (&__this->___m_Velocity_96);
-		float L_15 = L_14->___y_1;
-		float L_16;
-		L_16 = fabsf(L_15);
-		G_B11_0 = ((((float)L_16) > ((float)(10.0f)))? 1 : 0);
-		goto IL_0076;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_19 = (&__this->___m_Velocity_96);
+		float L_20 = L_19->___y_1;
+		float L_21;
+		L_21 = fabsf(L_20);
+		G_B13_0 = ((((float)L_21) > ((float)(10.0f)))? 1 : 0);
+		goto IL_0094;
 	}
 
-IL_0075:
+IL_0093:
 	{
-		G_B11_0 = 1;
+		G_B13_0 = 1;
 	}
 
-IL_0076:
+IL_0094:
 	{
-		V_1 = (bool)G_B11_0;
-		PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* L_17 = ___evt0;
-		NullCheck(L_17);
-		int32_t L_18;
-		L_18 = PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_inline(L_17, PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_RuntimeMethod_var);
-		__this->___m_ScrollingPointerId_93 = L_18;
+		V_0 = (bool)G_B13_0;
+		PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* L_22 = ___evt0;
+		NullCheck(L_22);
+		int32_t L_23;
+		L_23 = PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_inline(L_22, PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_RuntimeMethod_var);
+		__this->___m_ScrollingPointerId_93 = L_23;
 		__this->___m_StartedMoving_101 = (bool)0;
-		PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* L_19 = ___evt0;
-		NullCheck(L_19);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
-		L_20 = PointerEventBase_1_get_position_m62A6C6E4573AD8DEA94462498F258D10792B8E86_inline(L_19, PointerEventBase_1_get_position_m62A6C6E4573AD8DEA94462498F258D10792B8E86_RuntimeMethod_var);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_21;
-		L_21 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_20, NULL);
-		ScrollView_InitTouchScrolling_m8EF3D83B750130DD1A5192B00EA57FA7D19BE83D(__this, L_21, NULL);
-		bool L_22 = V_1;
-		V_2 = L_22;
-		bool L_23 = V_2;
-		if (!L_23)
+		PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* L_24 = ___evt0;
+		NullCheck(L_24);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
+		L_25 = PointerEventBase_1_get_position_m62A6C6E4573AD8DEA94462498F258D10792B8E86_inline(L_24, PointerEventBase_1_get_position_m62A6C6E4573AD8DEA94462498F258D10792B8E86_RuntimeMethod_var);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_26;
+		L_26 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_25, NULL);
+		ScrollView_InitTouchScrolling_m8EF3D83B750130DD1A5192B00EA57FA7D19BE83D(__this, L_26, NULL);
+		bool L_27 = V_0;
+		V_3 = L_27;
+		bool L_28 = V_3;
+		if (!L_28)
 		{
-			goto IL_00da;
+			goto IL_00f8;
 		}
 	}
 	{
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_24;
-		L_24 = VirtualFuncInvoker0< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* >::Invoke(94 /* UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement::get_contentContainer() */, __this);
-		PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* L_25 = ___evt0;
-		NullCheck(L_25);
-		int32_t L_26;
-		L_26 = PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_inline(L_25, PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_RuntimeMethod_var);
-		PointerCaptureHelper_CapturePointer_m7A647567160ADA0E052A7277C5B531D7A01E5F7F(L_24, L_26, NULL);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_27;
-		L_27 = VirtualFuncInvoker0< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* >::Invoke(94 /* UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement::get_contentContainer() */, __this);
-		NullCheck(L_27);
-		RuntimeObject* L_28;
-		L_28 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_27, NULL);
-		PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* L_29 = ___evt0;
-		NullCheck(L_29);
-		int32_t L_30;
-		L_30 = PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_inline(L_29, PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_RuntimeMethod_var);
-		PointerCaptureHelper_PreventCompatibilityMouseEvents_m96F0763D51B20EE438DE8C927CBD1EB480F7A751(L_28, L_30, NULL);
-		PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* L_31 = ___evt0;
-		NullCheck(L_31);
-		EventBase_StopPropagation_mEFC7E5AB7164157065FF19064A6ADCBB0D8AF6FB(L_31, NULL);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_29;
+		L_29 = VirtualFuncInvoker0< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* >::Invoke(94 /* UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement::get_contentContainer() */, __this);
+		PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* L_30 = ___evt0;
+		NullCheck(L_30);
+		int32_t L_31;
+		L_31 = PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_inline(L_30, PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_RuntimeMethod_var);
+		PointerCaptureHelper_CapturePointer_m7A647567160ADA0E052A7277C5B531D7A01E5F7F(L_29, L_31, NULL);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_32;
+		L_32 = VirtualFuncInvoker0< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* >::Invoke(94 /* UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement::get_contentContainer() */, __this);
+		NullCheck(L_32);
+		RuntimeObject* L_33;
+		L_33 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_32, NULL);
+		PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* L_34 = ___evt0;
+		NullCheck(L_34);
+		int32_t L_35;
+		L_35 = PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_inline(L_34, PointerEventBase_1_get_pointerId_m2666488A68716BD85D3277905899BDE7CF3826C8_RuntimeMethod_var);
+		PointerCaptureHelper_PreventCompatibilityMouseEvents_m96F0763D51B20EE438DE8C927CBD1EB480F7A751(L_33, L_35, NULL);
+		PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* L_36 = ___evt0;
+		NullCheck(L_36);
+		EventBase_StopPropagation_mEFC7E5AB7164157065FF19064A6ADCBB0D8AF6FB(L_36, NULL);
 		__this->___m_TouchStoppedVelocity_102 = (bool)1;
 	}
 
-IL_00da:
-	{
-	}
-
-IL_00db:
+IL_00f8:
 	{
 		return;
 	}
@@ -32874,8 +32901,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScrollView_OnPointerMove_mB5B8F154C72F4E
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerEventBase_1_get_isPrimary_m727197FEB1A5B4D4FC3092C618E472C323A38834_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerEventBase_1_get_pointerType_mECF9D0A37869ED3DC164C72528E41CF21AF2BDF1_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerType_t6E813E47699AA9C948D9EFEF36F481B5EDD5BCD4_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -32890,198 +32920,234 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScrollView_OnPointerMove_mB5B8F154C72F4E
 	bool V_7 = false;
 	bool V_8 = false;
 	bool V_9 = false;
-	int32_t G_B12_0 = 0;
+	int32_t G_B4_0 = 0;
+	int32_t G_B16_0 = 0;
 	{
 		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_0 = ___evt0;
 		NullCheck(L_0);
-		int32_t L_1;
-		L_1 = PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_inline(L_0, PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_RuntimeMethod_var);
-		int32_t L_2 = __this->___m_ScrollingPointerId_93;
-		V_3 = (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)L_2))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		bool L_3 = V_3;
-		if (!L_3)
+		String_t* L_1;
+		L_1 = PointerEventBase_1_get_pointerType_mECF9D0A37869ED3DC164C72528E41CF21AF2BDF1_inline(L_0, PointerEventBase_1_get_pointerType_mECF9D0A37869ED3DC164C72528E41CF21AF2BDF1_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(PointerType_t6E813E47699AA9C948D9EFEF36F481B5EDD5BCD4_il2cpp_TypeInfo_var);
+		String_t* L_2 = ((PointerType_t6E813E47699AA9C948D9EFEF36F481B5EDD5BCD4_StaticFields*)il2cpp_codegen_static_fields_for(PointerType_t6E813E47699AA9C948D9EFEF36F481B5EDD5BCD4_il2cpp_TypeInfo_var))->___mouse_0;
+		bool L_3;
+		L_3 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_1, L_2, NULL);
+		if (L_3)
 		{
-			goto IL_001b;
+			goto IL_002e;
 		}
 	}
-	{
-		goto IL_012f;
-	}
-
-IL_001b:
 	{
 		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_4 = ___evt0;
 		NullCheck(L_4);
 		bool L_5;
-		L_5 = PointerMoveEvent_get_isHandledByDraggable_mCCA70E78328355F419734A13F7B4135F51E89D47_inline(L_4, NULL);
-		V_4 = L_5;
-		bool L_6 = V_4;
-		if (!L_6)
+		L_5 = PointerEventBase_1_get_isPrimary_m727197FEB1A5B4D4FC3092C618E472C323A38834_inline(L_4, PointerEventBase_1_get_isPrimary_m727197FEB1A5B4D4FC3092C618E472C323A38834_RuntimeMethod_var);
+		if (!L_5)
 		{
-			goto IL_004a;
+			goto IL_002e;
 		}
 	}
 	{
-		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_7 = ___evt0;
-		NullCheck(L_7);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
-		L_8 = PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_inline(L_7, PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_RuntimeMethod_var);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9;
-		L_9 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_8, NULL);
-		__this->___m_PointerStartPosition_95 = L_9;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_10;
-		L_10 = ScrollView_get_scrollOffset_m487978FA69DE7783183FA219CA9642AEB93EC511(__this, NULL);
-		__this->___m_StartPosition_94 = L_10;
-		goto IL_012f;
+		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_6 = ___evt0;
+		NullCheck(L_6);
+		int32_t L_7;
+		L_7 = PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_inline(L_6, PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_RuntimeMethod_var);
+		int32_t L_8 = __this->___m_ScrollingPointerId_93;
+		G_B4_0 = ((((int32_t)((((int32_t)L_7) == ((int32_t)L_8))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_002f;
 	}
 
-IL_004a:
+IL_002e:
 	{
-		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_11 = ___evt0;
-		NullCheck(L_11);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
-		L_12 = PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_inline(L_11, PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_RuntimeMethod_var);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13;
-		L_13 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_12, NULL);
-		V_0 = L_13;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_14 = V_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_15 = __this->___m_PointerStartPosition_95;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_16;
-		L_16 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_14, L_15, NULL);
-		V_1 = L_16;
-		int32_t L_17;
-		L_17 = ScrollView_get_mode_mFEFD4936895483C17E2EE7994EDE18425BF11302_inline(__this, NULL);
-		V_5 = (bool)((((int32_t)L_17) == ((int32_t)1))? 1 : 0);
-		bool L_18 = V_5;
-		if (!L_18)
+		G_B4_0 = 1;
+	}
+
+IL_002f:
+	{
+		V_3 = (bool)G_B4_0;
+		bool L_9 = V_3;
+		if (!L_9)
 		{
-			goto IL_0080;
+			goto IL_0038;
+		}
+	}
+	{
+		goto IL_014c;
+	}
+
+IL_0038:
+	{
+		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_10 = ___evt0;
+		NullCheck(L_10);
+		bool L_11;
+		L_11 = PointerMoveEvent_get_isHandledByDraggable_mCCA70E78328355F419734A13F7B4135F51E89D47_inline(L_10, NULL);
+		V_4 = L_11;
+		bool L_12 = V_4;
+		if (!L_12)
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_13 = ___evt0;
+		NullCheck(L_13);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_inline(L_13, PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_RuntimeMethod_var);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_15;
+		L_15 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_14, NULL);
+		__this->___m_PointerStartPosition_95 = L_15;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_16;
+		L_16 = ScrollView_get_scrollOffset_m487978FA69DE7783183FA219CA9642AEB93EC511(__this, NULL);
+		__this->___m_StartPosition_94 = L_16;
+		goto IL_014c;
+	}
+
+IL_0067:
+	{
+		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_17 = ___evt0;
+		NullCheck(L_17);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_inline(L_17, PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_RuntimeMethod_var);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_19;
+		L_19 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_18, NULL);
+		V_0 = L_19;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_20 = V_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_21 = __this->___m_PointerStartPosition_95;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_22;
+		L_22 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_20, L_21, NULL);
+		V_1 = L_22;
+		int32_t L_23;
+		L_23 = ScrollView_get_mode_mFEFD4936895483C17E2EE7994EDE18425BF11302_inline(__this, NULL);
+		V_5 = (bool)((((int32_t)L_23) == ((int32_t)1))? 1 : 0);
+		bool L_24 = V_5;
+		if (!L_24)
+		{
+			goto IL_009d;
 		}
 	}
 	{
 		(&V_1)->___y_1 = (0.0f);
-		goto IL_009b;
+		goto IL_00b8;
 	}
 
-IL_0080:
+IL_009d:
 	{
-		int32_t L_19;
-		L_19 = ScrollView_get_mode_mFEFD4936895483C17E2EE7994EDE18425BF11302_inline(__this, NULL);
-		V_6 = (bool)((((int32_t)L_19) == ((int32_t)0))? 1 : 0);
-		bool L_20 = V_6;
-		if (!L_20)
+		int32_t L_25;
+		L_25 = ScrollView_get_mode_mFEFD4936895483C17E2EE7994EDE18425BF11302_inline(__this, NULL);
+		V_6 = (bool)((((int32_t)L_25) == ((int32_t)0))? 1 : 0);
+		bool L_26 = V_6;
+		if (!L_26)
 		{
-			goto IL_009b;
+			goto IL_00b8;
 		}
 	}
 	{
 		(&V_1)->___x_0 = (0.0f);
 	}
 
-IL_009b:
+IL_00b8:
 	{
-		bool L_21 = __this->___m_TouchStoppedVelocity_102;
-		if (L_21)
+		bool L_27 = __this->___m_TouchStoppedVelocity_102;
+		if (L_27)
 		{
-			goto IL_00bb;
+			goto IL_00d8;
 		}
 	}
 	{
-		bool L_22 = __this->___m_StartedMoving_101;
-		if (L_22)
+		bool L_28 = __this->___m_StartedMoving_101;
+		if (L_28)
 		{
-			goto IL_00bb;
+			goto IL_00d8;
 		}
 	}
 	{
-		float L_23;
-		L_23 = Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline((&V_1), NULL);
-		G_B12_0 = ((((float)L_23) < ((float)(100.0f)))? 1 : 0);
-		goto IL_00bc;
+		float L_29;
+		L_29 = Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline((&V_1), NULL);
+		G_B16_0 = ((((float)L_29) < ((float)(100.0f)))? 1 : 0);
+		goto IL_00d9;
 	}
 
-IL_00bb:
+IL_00d8:
 	{
-		G_B12_0 = 0;
+		G_B16_0 = 0;
 	}
 
-IL_00bc:
+IL_00d9:
 	{
-		V_7 = (bool)G_B12_0;
-		bool L_24 = V_7;
-		if (!L_24)
-		{
-			goto IL_00c4;
-		}
-	}
-	{
-		goto IL_012f;
-	}
-
-IL_00c4:
-	{
-		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_25 = ___evt0;
-		NullCheck(L_25);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
-		L_26 = PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_inline(L_25, PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_RuntimeMethod_var);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_27;
-		L_27 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_26, NULL);
-		int32_t L_28;
-		L_28 = ScrollView_ComputeTouchScrolling_m89995F358359CEF1F3CC3A057ADE4DD15C58F9B3(__this, L_27, NULL);
-		V_2 = L_28;
-		int32_t L_29 = V_2;
-		V_8 = (bool)((((int32_t)((((int32_t)L_29) == ((int32_t)1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		bool L_30 = V_8;
+		V_7 = (bool)G_B16_0;
+		bool L_30 = V_7;
 		if (!L_30)
 		{
-			goto IL_0122;
+			goto IL_00e1;
 		}
 	}
+	{
+		goto IL_014c;
+	}
+
+IL_00e1:
 	{
 		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_31 = ___evt0;
 		NullCheck(L_31);
-		PointerMoveEvent_set_isHandledByDraggable_m24AE525901E56FE8A7936EDA8F2046862BB3660D_inline(L_31, (bool)1, NULL);
-		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_32 = ___evt0;
-		NullCheck(L_32);
-		EventBase_StopPropagation_mEFC7E5AB7164157065FF19064A6ADCBB0D8AF6FB(L_32, NULL);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_33;
-		L_33 = VirtualFuncInvoker0< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* >::Invoke(94 /* UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement::get_contentContainer() */, __this);
-		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_34 = ___evt0;
-		NullCheck(L_34);
-		int32_t L_35;
-		L_35 = PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_inline(L_34, PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_RuntimeMethod_var);
-		bool L_36;
-		L_36 = PointerCaptureHelper_HasPointerCapture_m8BEDFC90CB6DD9DE7931AB704454A43559A03C36(L_33, L_35, NULL);
-		V_9 = (bool)((((int32_t)L_36) == ((int32_t)0))? 1 : 0);
-		bool L_37 = V_9;
-		if (!L_37)
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
+		L_32 = PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_inline(L_31, PointerEventBase_1_get_position_m9DB69A881411E7B016A3C2AE10DD81D1FDDB7AD7_RuntimeMethod_var);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_33;
+		L_33 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_32, NULL);
+		int32_t L_34;
+		L_34 = ScrollView_ComputeTouchScrolling_m89995F358359CEF1F3CC3A057ADE4DD15C58F9B3(__this, L_33, NULL);
+		V_2 = L_34;
+		int32_t L_35 = V_2;
+		V_8 = (bool)((((int32_t)((((int32_t)L_35) == ((int32_t)1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_36 = V_8;
+		if (!L_36)
 		{
-			goto IL_011f;
+			goto IL_013f;
 		}
 	}
 	{
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_38;
-		L_38 = VirtualFuncInvoker0< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* >::Invoke(94 /* UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement::get_contentContainer() */, __this);
-		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_39 = ___evt0;
-		NullCheck(L_39);
-		int32_t L_40;
-		L_40 = PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_inline(L_39, PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_RuntimeMethod_var);
-		PointerCaptureHelper_CapturePointer_m7A647567160ADA0E052A7277C5B531D7A01E5F7F(L_38, L_40, NULL);
+		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_37 = ___evt0;
+		NullCheck(L_37);
+		PointerMoveEvent_set_isHandledByDraggable_m24AE525901E56FE8A7936EDA8F2046862BB3660D_inline(L_37, (bool)1, NULL);
+		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_38 = ___evt0;
+		NullCheck(L_38);
+		EventBase_StopPropagation_mEFC7E5AB7164157065FF19064A6ADCBB0D8AF6FB(L_38, NULL);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_39;
+		L_39 = VirtualFuncInvoker0< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* >::Invoke(94 /* UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement::get_contentContainer() */, __this);
+		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_40 = ___evt0;
+		NullCheck(L_40);
+		int32_t L_41;
+		L_41 = PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_inline(L_40, PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_RuntimeMethod_var);
+		bool L_42;
+		L_42 = PointerCaptureHelper_HasPointerCapture_m8BEDFC90CB6DD9DE7931AB704454A43559A03C36(L_39, L_41, NULL);
+		V_9 = (bool)((((int32_t)L_42) == ((int32_t)0))? 1 : 0);
+		bool L_43 = V_9;
+		if (!L_43)
+		{
+			goto IL_013c;
+		}
 	}
-
-IL_011f:
 	{
-		goto IL_012f;
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_44;
+		L_44 = VirtualFuncInvoker0< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* >::Invoke(94 /* UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement::get_contentContainer() */, __this);
+		PointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3* L_45 = ___evt0;
+		NullCheck(L_45);
+		int32_t L_46;
+		L_46 = PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_inline(L_45, PointerEventBase_1_get_pointerId_mD0FD52357DFDC016B39149C06C87B3FA2F786783_RuntimeMethod_var);
+		PointerCaptureHelper_CapturePointer_m7A647567160ADA0E052A7277C5B531D7A01E5F7F(L_44, L_46, NULL);
 	}
 
-IL_0122:
+IL_013c:
 	{
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_41;
-		L_41 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
-		__this->___m_Velocity_96 = L_41;
+		goto IL_014c;
 	}
 
-IL_012f:
+IL_013f:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_47;
+		L_47 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
+		__this->___m_Velocity_96 = L_47;
+	}
+
+IL_014c:
 	{
 		return;
 	}
@@ -33254,8 +33320,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ScrollView_ComputeTouchScrolling_m899
 	bool V_7 = false;
 	bool V_8 = false;
 	int32_t V_9 = 0;
-	bool V_10 = false;
-	int32_t G_B14_0 = 0;
+	int32_t G_B13_0 = 0;
+	int32_t G_B17_0 = 0;
+	int32_t G_B20_0 = 0;
 	{
 		int32_t L_0;
 		L_0 = ScrollView_get_touchScrollBehavior_mAC366117C8504A56A60CABA42EC6826E18BCF764(__this, NULL);
@@ -33431,84 +33498,107 @@ IL_01a1:
 		bool L_73 = V_8;
 		if (!L_73)
 		{
-			goto IL_01c3;
+			goto IL_01c7;
 		}
 	}
 	{
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_74 = V_0;
-		ScrollView_ApplyTouchScrolling_m7EFC08C568455DE3E0E0DFE95B68C0FD75792EAE(__this, L_74, NULL);
-		V_9 = 0;
-		goto IL_01ec;
+		bool L_75;
+		L_75 = ScrollView_ApplyTouchScrolling_m55E0459F4B789729603537AA491B443F81BC82EA(__this, L_74, NULL);
+		if (L_75)
+		{
+			goto IL_01c2;
+		}
+	}
+	{
+		G_B13_0 = 1;
+		goto IL_01c3;
+	}
+
+IL_01c2:
+	{
+		G_B13_0 = 0;
 	}
 
 IL_01c3:
 	{
-		bool L_75 = __this->___m_StartedMoving_101;
-		if (!L_75)
+		V_9 = G_B13_0;
+		goto IL_01ea;
+	}
+
+IL_01c7:
+	{
+		bool L_76 = __this->___m_StartedMoving_101;
+		if (!L_76)
 		{
-			goto IL_01d9;
+			goto IL_01dd;
 		}
 	}
 	{
-		int32_t L_76;
-		L_76 = ScrollView_get_nestedInteractionKind_mD6F5A19E8A7D15A56F41AF034869AF295C3D79D6_inline(__this, NULL);
-		G_B14_0 = ((((int32_t)((((int32_t)L_76) == ((int32_t)2))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_01da;
+		int32_t L_77;
+		L_77 = ScrollView_get_nestedInteractionKind_mD6F5A19E8A7D15A56F41AF034869AF295C3D79D6_inline(__this, NULL);
+		G_B17_0 = ((((int32_t)((((int32_t)L_77) == ((int32_t)2))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_01de;
 	}
 
-IL_01d9:
+IL_01dd:
 	{
-		G_B14_0 = 0;
+		G_B17_0 = 0;
 	}
 
-IL_01da:
+IL_01de:
 	{
-		V_2 = (bool)G_B14_0;
-		bool L_77 = V_2;
-		V_10 = L_77;
-		bool L_78 = V_10;
-		if (!L_78)
+		V_2 = (bool)G_B17_0;
+		bool L_78 = V_2;
+		if (L_78)
 		{
-			goto IL_01e7;
+			goto IL_01e5;
 		}
 	}
 	{
-		V_9 = 2;
-		goto IL_01ec;
+		G_B20_0 = 1;
+		goto IL_01e6;
 	}
 
-IL_01e7:
+IL_01e5:
 	{
-		V_9 = 1;
-		goto IL_01ec;
+		G_B20_0 = 2;
 	}
 
-IL_01ec:
+IL_01e6:
+	{
+		V_9 = G_B20_0;
+		goto IL_01ea;
+	}
+
+IL_01ea:
 	{
 		int32_t L_79 = V_9;
 		return L_79;
 	}
 }
-// System.Void UnityEngine.UIElements.ScrollView::ApplyTouchScrolling(UnityEngine.Vector2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScrollView_ApplyTouchScrolling_m7EFC08C568455DE3E0E0DFE95B68C0FD75792EAE (ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___newScrollOffset0, const RuntimeMethod* method) 
+// System.Boolean UnityEngine.UIElements.ScrollView::ApplyTouchScrolling(UnityEngine.Vector2)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ScrollView_ApplyTouchScrolling_m55E0459F4B789729603537AA491B443F81BC82EA (ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___newScrollOffset0, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
-	float V_1 = 0.0f;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_2;
-	memset((&V_2), 0, sizeof(V_2));
-	bool V_3 = false;
+	bool V_1 = false;
+	float V_2 = 0.0f;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_3;
+	memset((&V_3), 0, sizeof(V_3));
 	bool V_4 = false;
-	float V_5 = 0.0f;
+	bool V_5 = false;
+	bool V_6 = false;
+	float V_7 = 0.0f;
 	int32_t G_B4_0 = 0;
 	{
 		__this->___m_StartedMoving_101 = (bool)1;
 		bool L_0;
 		L_0 = ScrollView_get_hasInertia_m14ED28D36618EFAC6CF035DBE50B0E7098ACB46B(__this, NULL);
-		V_0 = L_0;
-		bool L_1 = V_0;
+		V_1 = L_0;
+		bool L_1 = V_1;
 		if (!L_1)
 		{
-			goto IL_00cf;
+			goto IL_00d4;
 		}
 	}
 	{
@@ -33537,11 +33627,11 @@ IL_0032:
 
 IL_0033:
 	{
-		V_3 = (bool)G_B4_0;
-		bool L_8 = V_3;
+		V_4 = (bool)G_B4_0;
+		bool L_8 = V_4;
 		if (!L_8)
 		{
-			goto IL_0050;
+			goto IL_0055;
 		}
 	}
 	{
@@ -33550,67 +33640,78 @@ IL_0033:
 		__this->___m_Velocity_96 = L_9;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_10 = ___newScrollOffset0;
 		ScrollView_set_scrollOffset_m220AFAC09FA2E3784CBB76EB53D6AD71C056A1D5(__this, L_10, NULL);
-		goto IL_00d7;
+		V_5 = (bool)0;
+		goto IL_00ee;
 	}
 
-IL_0050:
+IL_0055:
 	{
 		float L_11 = __this->___m_LastVelocityLerpTime_100;
-		V_4 = (bool)((((float)L_11) > ((float)(0.0f)))? 1 : 0);
-		bool L_12 = V_4;
+		V_6 = (bool)((((float)L_11) > ((float)(0.0f)))? 1 : 0);
+		bool L_12 = V_6;
 		if (!L_12)
 		{
-			goto IL_0091;
+			goto IL_0096;
 		}
 	}
 	{
 		float L_13;
 		L_13 = Time_get_unscaledTime_mAF4040B858903E1325D1C65B8BF1AC61460B2503(NULL);
 		float L_14 = __this->___m_LastVelocityLerpTime_100;
-		V_5 = ((float)il2cpp_codegen_subtract(L_13, L_14));
+		V_7 = ((float)il2cpp_codegen_subtract(L_13, L_14));
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_15 = __this->___m_Velocity_96;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_16;
 		L_16 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
-		float L_17 = V_5;
+		float L_17 = V_7;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_18;
 		L_18 = Vector2_Lerp_m1A36103F7967F653A929556E26E6D052C298C00C_inline(L_15, L_16, ((float)il2cpp_codegen_multiply(L_17, (10.0f))), NULL);
 		__this->___m_Velocity_96 = L_18;
 	}
 
-IL_0091:
+IL_0096:
 	{
 		float L_19;
 		L_19 = Time_get_unscaledTime_mAF4040B858903E1325D1C65B8BF1AC61460B2503(NULL);
 		__this->___m_LastVelocityLerpTime_100 = L_19;
 		float L_20;
 		L_20 = Time_get_unscaledDeltaTime_mF057EECA857E5C0F90A3F910D26D3EE59F27C4B5(NULL);
-		V_1 = L_20;
+		V_2 = L_20;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_21 = ___newScrollOffset0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_22;
 		L_22 = ScrollView_get_scrollOffset_m487978FA69DE7783183FA219CA9642AEB93EC511(__this, NULL);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_23;
 		L_23 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_21, L_22, NULL);
-		float L_24 = V_1;
+		float L_24 = V_2;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_25;
 		L_25 = Vector2_op_Division_m57A2DCD71E0CE7420851D705D1951F9238902AAB_inline(L_23, L_24, NULL);
-		V_2 = L_25;
+		V_3 = L_25;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_26 = __this->___m_Velocity_96;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_27 = V_2;
-		float L_28 = V_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_27 = V_3;
+		float L_28 = V_2;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_29;
 		L_29 = Vector2_Lerp_m1A36103F7967F653A929556E26E6D052C298C00C_inline(L_26, L_27, ((float)il2cpp_codegen_multiply(L_28, (10.0f))), NULL);
 		__this->___m_Velocity_96 = L_29;
 	}
 
-IL_00cf:
+IL_00d4:
 	{
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_30 = ___newScrollOffset0;
-		ScrollView_set_scrollOffset_m220AFAC09FA2E3784CBB76EB53D6AD71C056A1D5(__this, L_30, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_30;
+		L_30 = ScrollView_get_scrollOffset_m487978FA69DE7783183FA219CA9642AEB93EC511(__this, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_31 = ___newScrollOffset0;
+		bool L_32;
+		L_32 = Vector2_op_Inequality_mBEA93B5A0E954FEFB863DC61CB209119980EC713_inline(L_30, L_31, NULL);
+		V_0 = L_32;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_33 = ___newScrollOffset0;
+		ScrollView_set_scrollOffset_m220AFAC09FA2E3784CBB76EB53D6AD71C056A1D5(__this, L_33, NULL);
+		bool L_34 = V_0;
+		V_5 = L_34;
+		goto IL_00ee;
 	}
 
-IL_00d7:
+IL_00ee:
 	{
-		return;
+		bool L_35 = V_5;
+		return L_35;
 	}
 }
 // System.Boolean UnityEngine.UIElements.ScrollView::ReleaseScrolling(System.Int32,UnityEngine.UIElements.IEventHandler)

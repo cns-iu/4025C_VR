@@ -6,7 +6,7 @@ Library: lib_burst_generated
 --dump=Function
 --float-precision=Standard
 --disable-warnings=BC1370
---compilation-defines=UNITY_2021_3_12
+--compilation-defines=UNITY_2021_3_14
 --compilation-defines=UNITY_2021_3
 --compilation-defines=UNITY_2021
 --compilation-defines=UNITY_5_3_OR_NEWER
@@ -36,7 +36,6 @@ Library: lib_burst_generated
 --compilation-defines=USE_SEARCH_MODULE
 --compilation-defines=USE_PROPERTY_DATABASE
 --compilation-defines=USE_SEARCH_EXTENSION_API
---compilation-defines=SCENE_TEMPLATE_MODULE
 --compilation-defines=ENABLE_AR
 --compilation-defines=ENABLE_AUDIO
 --compilation-defines=ENABLE_CACHING
@@ -201,8 +200,8 @@ Library: lib_burst_generated
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.Services.Core.Networking.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.XR.OpenXR.Features.RuntimeDebugger.dll
---root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/UnityEngine.SpatialTracking.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.Services.Core.Configuration.dll
+--root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/UnityEngine.SpatialTracking.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.XR.OpenXR.Features.ConformanceAutomation.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.XR.OpenXR.Features.MockRuntime.dll
 --root-assembly=/Volumes/Cloudy/GitHub/4025C_VR/4025C-VR/Temp/StagingArea/Data/Managed/Unity.Subsystem.Registration.dll

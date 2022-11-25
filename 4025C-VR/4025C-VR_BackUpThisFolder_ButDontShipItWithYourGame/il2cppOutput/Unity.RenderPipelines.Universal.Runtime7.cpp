@@ -96,6 +96,8 @@ struct EntryU5BU5D_tE57C847A3146ED2E26F8DEEF9753056682B4B7F6;
 struct EntryU5BU5D_tFAF4D87C3987A02E157A61882ED59B7715DF7F48;
 // Unity.Collections.NativeArray`1<UnityEngine.Rendering.Universal.PreTile>[]
 struct NativeArray_1U5BU5D_t706B0D4A35032C9A9E45368A0B1D085DFFA910B0;
+// System.ValueTuple`2<UnityEngine.Rendering.VolumeParameter,UnityEngine.Rendering.VolumeParameter>[]
+struct ValueTuple_2U5BU5D_tE2E90A16702AA41094A74222F01C7F383CC57377;
 // UnityEngine.Experimental.Rendering.GraphicsFormat[][]
 struct GraphicsFormatU5BU5DU5BU5D_t1424BD937A890524D2A66FF39E61DEB0F10FE0A2;
 // System.Int32[][]
@@ -1251,6 +1253,10 @@ struct VolumeStack_t5DE94743BDB63D97EF5587DBDAE46468233F36E8  : public RuntimeOb
 {
 	// System.Collections.Generic.Dictionary`2<System.Type,UnityEngine.Rendering.VolumeComponent> UnityEngine.Rendering.VolumeStack::components
 	Dictionary_2_t5A7CE09F4D3EC74EEAE8DB41E209394AF6D9C99A* ___components_0;
+	// System.ValueTuple`2<UnityEngine.Rendering.VolumeParameter,UnityEngine.Rendering.VolumeParameter>[] UnityEngine.Rendering.VolumeStack::defaultParameters
+	ValueTuple_2U5BU5D_tE2E90A16702AA41094A74222F01C7F383CC57377* ___defaultParameters_1;
+	// System.Boolean UnityEngine.Rendering.VolumeStack::requiresReset
+	bool ___requiresReset_2;
 };
 
 // UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass/AdditionalShadowsConstantBuffer
@@ -4466,13 +4472,13 @@ struct AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE00
 	// UnityEngine.Rendering.ProfilingSampler UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_ProfilingSetupSampler
 	ProfilingSampler_t420D4672EDB44E0EF980B31ADFD9E5747200FECE* ___m_ProfilingSetupSampler_49;
 	// System.Boolean UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_IssuedMessageAboutShadowSlicesTooMany
-	bool ___m_IssuedMessageAboutShadowSlicesTooMany_56;
+	bool ___m_IssuedMessageAboutShadowSlicesTooMany_54;
 	// System.Boolean UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_IssuedMessageAboutShadowMapsRescale
-	bool ___m_IssuedMessageAboutShadowMapsRescale_57;
+	bool ___m_IssuedMessageAboutShadowMapsRescale_55;
 	// System.Boolean UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_IssuedMessageAboutShadowMapsTooBig
-	bool ___m_IssuedMessageAboutShadowMapsTooBig_58;
+	bool ___m_IssuedMessageAboutShadowMapsTooBig_56;
 	// System.Boolean UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_IssuedMessageAboutRemovedShadowSlices
-	bool ___m_IssuedMessageAboutRemovedShadowSlices_59;
+	bool ___m_IssuedMessageAboutRemovedShadowSlices_57;
 	// System.Collections.Generic.Dictionary`2<System.Int32,System.UInt64> UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_ShadowRequestsHashes
 	Dictionary_2_t50CD26719E8BE899BA7D94BA34FBEA7DB2EC2EFA* ___m_ShadowRequestsHashes_60;
 };
@@ -4490,9 +4496,9 @@ struct AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE00
 	// System.Int32 UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_AdditionalShadowParams_SSBO
 	int32_t ___m_AdditionalShadowParams_SSBO_29;
 	// System.Boolean UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall
-	bool ___m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall_54;
+	bool ___m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall_58;
 	// System.Boolean UnityEngine.Rendering.Universal.Internal.AdditionalLightsShadowCasterPass::m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall
-	bool ___m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall_55;
+	bool ___m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall_59;
 };
 
 // System.ArgumentException
@@ -11641,14 +11647,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdditionalLightsShadowCasterPass__ctor_m
 		ProfilingSampler__ctor_m26500989FCDB07FA33C9A3BB7F215CBD892F5BB7(L_4, _stringLiteralD3A94B4385FB4C72419952D792753E2133058E3E, NULL);
 		__this->___m_ProfilingSetupSampler_49 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ProfilingSetupSampler_49), (void*)L_4);
-		// bool m_IssuedMessageAboutShadowSlicesTooMany = false;
-		__this->___m_IssuedMessageAboutShadowSlicesTooMany_56 = (bool)0;
-		// bool m_IssuedMessageAboutShadowMapsRescale = false;
-		__this->___m_IssuedMessageAboutShadowMapsRescale_57 = (bool)0;
-		// bool m_IssuedMessageAboutShadowMapsTooBig = false;
-		__this->___m_IssuedMessageAboutShadowMapsTooBig_58 = (bool)0;
-		// bool m_IssuedMessageAboutRemovedShadowSlices = false;
-		__this->___m_IssuedMessageAboutRemovedShadowSlices_59 = (bool)0;
+		// private bool m_IssuedMessageAboutShadowSlicesTooMany = false;
+		__this->___m_IssuedMessageAboutShadowSlicesTooMany_54 = (bool)0;
+		// private bool m_IssuedMessageAboutShadowMapsRescale = false;
+		__this->___m_IssuedMessageAboutShadowMapsRescale_55 = (bool)0;
+		// private bool m_IssuedMessageAboutShadowMapsTooBig = false;
+		__this->___m_IssuedMessageAboutShadowMapsTooBig_56 = (bool)0;
+		// private bool m_IssuedMessageAboutRemovedShadowSlices = false;
+		__this->___m_IssuedMessageAboutRemovedShadowSlices_57 = (bool)0;
 		// Dictionary<int, ulong> m_ShadowRequestsHashes = new Dictionary<int, ulong>();  // used to keep track of changes in the shadow requests and shadow atlas configuration (per camera)
 		Dictionary_2_t50CD26719E8BE899BA7D94BA34FBEA7DB2EC2EFA* L_5 = (Dictionary_2_t50CD26719E8BE899BA7D94BA34FBEA7DB2EC2EFA*)il2cpp_codegen_object_new(Dictionary_2_t50CD26719E8BE899BA7D94BA34FBEA7DB2EC2EFA_il2cpp_TypeInfo_var);
 		NullCheck(L_5);
@@ -12027,7 +12033,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AdditionalLightsShadowCasterPass_GetPoi
 	{
 		// if (!m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall)
 		il2cpp_codegen_runtime_class_init_inline(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var);
-		bool L_2 = ((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall_54;
+		bool L_2 = ((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall_58;
 		V_2 = (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
 		bool L_3 = V_2;
 		if (!L_3)
@@ -12041,7 +12047,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AdditionalLightsShadowCasterPass_GetPoi
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral9039A9F4686F4C0ACB2DB04A80B5E6F0CAF9A5EA, NULL);
 		// m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall = true; // Only output this once per shadow requests configuration
 		il2cpp_codegen_runtime_class_init_inline(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var);
-		((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall_54 = (bool)1;
+		((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall_58 = (bool)1;
 	}
 
 IL_0032:
@@ -12191,7 +12197,7 @@ IL_00dd:
 	{
 		// if (!m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall)
 		il2cpp_codegen_runtime_class_init_inline(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var);
-		bool L_22 = ((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall_55;
+		bool L_22 = ((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall_59;
 		V_12 = (bool)((((int32_t)L_22) == ((int32_t)0))? 1 : 0);
 		bool L_23 = V_12;
 		if (!L_23)
@@ -12205,7 +12211,7 @@ IL_00dd:
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral878DC7312AD5AF0FFD07DCF96F64003D4E88EE6D, NULL);
 		// m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall = true; // Only output this once per shadow requests configuration
 		il2cpp_codegen_runtime_class_init_inline(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var);
-		((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall_55 = (bool)1;
+		((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall_59 = (bool)1;
 	}
 
 IL_0118:
@@ -13284,7 +13290,7 @@ IL_01fc:
 	}
 	{
 		// if (!m_IssuedMessageAboutShadowMapsTooBig && tooManyShadows)
-		bool L_88 = __this->___m_IssuedMessageAboutShadowMapsTooBig_58;
+		bool L_88 = __this->___m_IssuedMessageAboutShadowMapsTooBig_56;
 		bool L_89 = V_1;
 		V_28 = (bool)((int32_t)(((((int32_t)L_88) == ((int32_t)0))? 1 : 0)&(int32_t)L_89));
 		bool L_90 = V_28;
@@ -13306,13 +13312,13 @@ IL_01fc:
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_97, NULL);
 		// m_IssuedMessageAboutShadowMapsTooBig = true; // Only output this once per shadow requests configuration
-		__this->___m_IssuedMessageAboutShadowMapsTooBig_58 = (bool)1;
+		__this->___m_IssuedMessageAboutShadowMapsTooBig_56 = (bool)1;
 	}
 
 IL_023b:
 	{
 		// if (!m_IssuedMessageAboutShadowMapsRescale && shadowSlicesScaleFactor > 1)
-		bool L_98 = __this->___m_IssuedMessageAboutShadowMapsRescale_57;
+		bool L_98 = __this->___m_IssuedMessageAboutShadowMapsRescale_55;
 		if (L_98)
 		{
 			goto IL_0249;
@@ -13374,7 +13380,7 @@ IL_024a:
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_118, NULL);
 		// m_IssuedMessageAboutShadowMapsRescale = true; // Only output this once per shadow requests configuration
-		__this->___m_IssuedMessageAboutShadowMapsRescale_57 = (bool)1;
+		__this->___m_IssuedMessageAboutShadowMapsRescale_55 = (bool)1;
 	}
 
 IL_0293:
@@ -14111,17 +14117,17 @@ FINALLY_0c2b:
 				Dictionary_2_set_Item_mC1D80FE405C30CDC2F0C6F868426FCCB9CF77FA8(L_32, L_36, L_37, Dictionary_2_set_Item_mC1D80FE405C30CDC2F0C6F868426FCCB9CF77FA8_RuntimeMethod_var);
 				// m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall = false;
 				il2cpp_codegen_runtime_class_init_inline(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var);
-				((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall_54 = (bool)0;
+				((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall_58 = (bool)0;
 				// m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall = false;
-				((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall_55 = (bool)0;
+				((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall_59 = (bool)0;
 				// m_IssuedMessageAboutShadowMapsRescale = false;
-				__this->___m_IssuedMessageAboutShadowMapsRescale_57 = (bool)0;
+				__this->___m_IssuedMessageAboutShadowMapsRescale_55 = (bool)0;
 				// m_IssuedMessageAboutShadowMapsTooBig = false;
-				__this->___m_IssuedMessageAboutShadowMapsTooBig_58 = (bool)0;
+				__this->___m_IssuedMessageAboutShadowMapsTooBig_56 = (bool)0;
 				// m_IssuedMessageAboutShadowSlicesTooMany = false;
-				__this->___m_IssuedMessageAboutShadowSlicesTooMany_56 = (bool)0;
+				__this->___m_IssuedMessageAboutShadowSlicesTooMany_54 = (bool)0;
 				// m_IssuedMessageAboutRemovedShadowSlices = false;
-				__this->___m_IssuedMessageAboutRemovedShadowSlices_59 = (bool)0;
+				__this->___m_IssuedMessageAboutRemovedShadowSlices_57 = (bool)0;
 			}
 
 IL_0107_1:
@@ -14689,7 +14695,7 @@ IL_0458_1:
 			}
 			{
 				// if (!m_IssuedMessageAboutRemovedShadowSlices)
-				bool L_173 = __this->___m_IssuedMessageAboutRemovedShadowSlices_59;
+				bool L_173 = __this->___m_IssuedMessageAboutRemovedShadowSlices_57;
 				V_44 = (bool)((((int32_t)L_173) == ((int32_t)0))? 1 : 0);
 				bool L_174 = V_44;
 				if (!L_174)
@@ -14708,7 +14714,7 @@ IL_0458_1:
 				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 				Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_179, NULL);
 				// m_IssuedMessageAboutRemovedShadowSlices = true;  // Only output this once per shadow requests configuration
-				__this->___m_IssuedMessageAboutRemovedShadowSlices_59 = (bool)1;
+				__this->___m_IssuedMessageAboutRemovedShadowSlices_57 = (bool)1;
 			}
 
 IL_04a0_1:
@@ -15056,7 +15062,7 @@ IL_0665_1:
 			}
 			{
 				// if (!m_IssuedMessageAboutShadowSlicesTooMany)
-				bool L_256 = __this->___m_IssuedMessageAboutShadowSlicesTooMany_56;
+				bool L_256 = __this->___m_IssuedMessageAboutShadowSlicesTooMany_54;
 				V_65 = (bool)((((int32_t)L_256) == ((int32_t)0))? 1 : 0);
 				bool L_257 = V_65;
 				if (!L_257)
@@ -15069,7 +15075,7 @@ IL_0665_1:
 				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral26DF446AE379A3FAC31944044C332768ADB8AB62, NULL);
 				// m_IssuedMessageAboutShadowSlicesTooMany = true; // Only output this once
-				__this->___m_IssuedMessageAboutShadowSlicesTooMany_56 = (bool)1;
+				__this->___m_IssuedMessageAboutShadowSlicesTooMany_54 = (bool)1;
 			}
 
 IL_068f_1:
@@ -17000,10 +17006,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdditionalLightsShadowCasterPass__cctor_
 		memset((&L_0), 0, sizeof(L_0));
 		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_0), (0.0f), (0.0f), (0.0f), (-1.0f), /*hidden argument*/NULL);
 		((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___c_DefaultShadowParams_27 = L_0;
-		// static bool m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall = false;
-		((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall_54 = (bool)0;
-		// static bool m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall = false;
-		((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall_55 = (bool)0;
+		// private static bool m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall = false;
+		((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightHardShadowResolutionTooSmall_58 = (bool)0;
+		// private static bool m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall = false;
+		((AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_StaticFields*)il2cpp_codegen_static_fields_for(AdditionalLightsShadowCasterPass_t5E00A3C851AB73A44B7577458AD868AF8F4FE004_il2cpp_TypeInfo_var))->___m_IssuedMessageAboutPointLightSoftShadowResolutionTooSmall_59 = (bool)0;
 		return;
 	}
 }
@@ -22802,7 +22808,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CopyDepthPass_OnCameraSetup_m3E875202448
 		// descriptor.colorFormat = RenderTextureFormat.Depth;
 		RenderTextureDescriptor_set_colorFormat_m61B0FA4FCDE8A0F8A843DD6BF74097C21021C4FE((&V_0), 1, NULL);
 		// descriptor.depthBufferBits = UniversalRenderer.k_DepthStencilBufferBits;
-		RenderTextureDescriptor_set_depthBufferBits_mA3710C0D6E485BA6465B328CD8B1954F0E4C5819((&V_0), ((int32_t)32), NULL);
+		RenderTextureDescriptor_set_depthBufferBits_mA3710C0D6E485BA6465B328CD8B1954F0E4C5819((&V_0), ((int32_t)24), NULL);
 		// descriptor.msaaSamples = 1;
 		RenderTextureDescriptor_set_msaaSamples_m6910E09489372746391B14FBAF59A7237539D6C4_inline((&V_0), 1, NULL);
 		// if (this.AllocateRT)
@@ -23926,7 +23932,7 @@ IL_0026:
 		// baseDescriptor.colorFormat = RenderTextureFormat.Depth;
 		RenderTextureDescriptor_set_colorFormat_m61B0FA4FCDE8A0F8A843DD6BF74097C21021C4FE((&___baseDescriptor0), 1, NULL);
 		// baseDescriptor.depthBufferBits = UniversalRenderer.k_DepthStencilBufferBits;
-		RenderTextureDescriptor_set_depthBufferBits_mA3710C0D6E485BA6465B328CD8B1954F0E4C5819((&___baseDescriptor0), ((int32_t)32), NULL);
+		RenderTextureDescriptor_set_depthBufferBits_mA3710C0D6E485BA6465B328CD8B1954F0E4C5819((&___baseDescriptor0), ((int32_t)24), NULL);
 		// baseDescriptor.msaaSamples = 1;// Depth-Only pass don't use MSAA
 		RenderTextureDescriptor_set_msaaSamples_m6910E09489372746391B14FBAF59A7237539D6C4_inline((&___baseDescriptor0), 1, NULL);
 		// depthDescriptor = baseDescriptor;
@@ -24566,7 +24572,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DepthOnlyPass_Setup_m5EA87D3794375FF0E09
 		// baseDescriptor.colorFormat = RenderTextureFormat.Depth;
 		RenderTextureDescriptor_set_colorFormat_m61B0FA4FCDE8A0F8A843DD6BF74097C21021C4FE((&___baseDescriptor0), 1, NULL);
 		// baseDescriptor.depthBufferBits = UniversalRenderer.k_DepthStencilBufferBits;
-		RenderTextureDescriptor_set_depthBufferBits_mA3710C0D6E485BA6465B328CD8B1954F0E4C5819((&___baseDescriptor0), ((int32_t)32), NULL);
+		RenderTextureDescriptor_set_depthBufferBits_mA3710C0D6E485BA6465B328CD8B1954F0E4C5819((&___baseDescriptor0), ((int32_t)24), NULL);
 		// baseDescriptor.msaaSamples = 1;
 		RenderTextureDescriptor_set_msaaSamples_m6910E09489372746391B14FBAF59A7237539D6C4_inline((&___baseDescriptor0), 1, NULL);
 		// descriptor = baseDescriptor;

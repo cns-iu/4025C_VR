@@ -1927,7 +1927,6 @@ struct PreserveAttribute_t3B4D9311A3DF0B9342570C8E43A61973258D5751  : public Att
 };
 
 // Unity.Profiling.ProfilerCategory
-#pragma pack(push, tp, 1)
 struct ProfilerCategory_tA55212CD512C618AF6D2147791F20319896592AC 
 {
 	union
@@ -1952,7 +1951,6 @@ struct ProfilerCategory_tA55212CD512C618AF6D2147791F20319896592AC
 		uint8_t ProfilerCategory_tA55212CD512C618AF6D2147791F20319896592AC__padding[2];
 	};
 };
-#pragma pack(pop, tp)
 
 // Unity.Profiling.ProfilerRecorder
 struct ProfilerRecorder_t363D18B531351FF6D7A09072564EB5D8FC60E613 
@@ -1962,7 +1960,6 @@ struct ProfilerRecorder_t363D18B531351FF6D7A09072564EB5D8FC60E613
 };
 
 // Unity.Profiling.LowLevel.Unsafe.ProfilerRecorderHandle
-#pragma pack(push, tp, 1)
 struct ProfilerRecorderHandle_t1215F88C92BAED83BFC3665C0D1BBFD347A33FD4 
 {
 	union
@@ -1987,7 +1984,6 @@ struct ProfilerRecorderHandle_t1215F88C92BAED83BFC3665C0D1BBFD347A33FD4
 		uint8_t ProfilerRecorderHandle_t1215F88C92BAED83BFC3665C0D1BBFD347A33FD4__padding[8];
 	};
 };
-#pragma pack(pop, tp)
 
 // Unity.Profiling.ProfilerRecorderSample
 struct ProfilerRecorderSample_t1F59CC43F81B774053308543605585CA87C94C5F 
@@ -2954,7 +2950,6 @@ struct Plane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C
 };
 
 // Unity.Profiling.LowLevel.Unsafe.ProfilerRecorderDescription
-#pragma pack(push, tp, 1)
 struct ProfilerRecorderDescription_t297485A3B4ACDA282AD652B53135D20AD70F4575 
 {
 	union
@@ -3057,7 +3052,6 @@ struct ProfilerRecorderDescription_t297485A3B4ACDA282AD652B53135D20AD70F4575
 		uint8_t ProfilerRecorderDescription_t297485A3B4ACDA282AD652B53135D20AD70F4575__padding[24];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.Profiling.Recorder
 struct Recorder_t0A14385FB0F5829CAAC1E16F88B095769D648C90  : public RuntimeObject

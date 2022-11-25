@@ -5,8 +5,9 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
 using static JsonTests;
+//using UnityEditor;
 
-// 2022-11-16
+// 2022-11-24
 
 public class SceneController : MonoBehaviour
 {
@@ -115,30 +116,33 @@ public class SceneController : MonoBehaviour
     }
 
 
-    void AssemblyPackage(GameObject m)
+ 
+    GameObject AssemblyPackage(GameObject m)
     {
-        GameObject manifestCopy = new GameObject();
+        GameObject manifestCopy = null; // = new GameObject();
 
-        if (m.GetComponent<ManifestStatus>().conList.Count != 1)
-        {
+        //if (m.GetComponent<ManifestStatus>().conList.Count != 1)
+        if (m.GetComponent<ManifestStatus>().conList.Count > 1) {   
             controllerScript.ConListInitIgnoreStatusSet(m); // prevents instantiated nodes from being added to conList
             manifestCopy = Instantiate(m);
+            manifestCopy.name = "manifest_" + manifestList.Count;
             manifestList.Add(manifestCopy);         // store in global manifest list
 
+            // clear calling manifest (reset)
             m.GetComponent<ManifestStatus>().conList.Clear();
 
-            foreach (Transform child in m.transform)
-            {
+            foreach (Transform child in m.transform) {
                 GameObject croot = child.GetChild(0).gameObject;
-                if (croot.name == "croot")
-                {
+                if (croot.name == "croot") {
                     m.GetComponent<ManifestStatus>().conList.Add(croot);    //add to conList
                     controllerScript.ConStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
                     croot.GetComponent<ConStatus>().initIgnore = false;
                 }
-                else
-                {
-                    controllerScript.PDestroy(child.gameObject);
+                else {
+
+                    // also must clear parentList!!!! except for root
+                    controllerScript.PDestroy(child.gameObject);    // destroys this parent and all children-should this do remove from parentsList?
+                    //m.GetComponent<ManifestStatus>().parentList.Remove(child.gameObject);   //!!!!!!????
                 }
             }      
         }
@@ -157,6 +161,7 @@ public class SceneController : MonoBehaviour
         manifestCopy.transform.position = transportTarget.transform.position;
         Vector3 objectScale = manifestCopy.transform.localScale;
         manifestCopy.transform.localScale = new Vector3(objectScale.x / 10, objectScale.y / 10, objectScale.z / 10);
+        return manifestCopy;
     }
 
 
@@ -277,6 +282,7 @@ public class SceneController : MonoBehaviour
         }
 
         string wtf = GetComponent<JsonTests>().SaveToString();
+        //fileName = saveManifest.name + ".json";
         WriteToFile(fileName, wtf);
         Debug.Log("saving data to file: " + fileName + "->" + wtf);
     }
@@ -334,10 +340,11 @@ public class SceneController : MonoBehaviour
             }
             else
             {
-                // add root to parentList
-                loadManifest.GetComponent<ManifestStatus>().parentList.Add(loadManifest.transform.GetChild(0).gameObject);
+                // no action for the root
+                //loadManifest.GetComponent<ManifestStatus>().parentList.Add(loadManifest.transform.GetChild(0).gameObject);
             }
         }
+        //Debug.Log("p = ");
 
         foreach (connectionEntry listEntry in GetComponent<JsonTests>().connectionsList)
         {         
@@ -358,7 +365,7 @@ public class SceneController : MonoBehaviour
    
             loadManifest.GetComponent<ManifestStatus>().connections.Add(fromC, toC);    // build connections dict.
         }
-
+        Debug.Log("Going to Assembly Package");
         AssemblyPackage(loadManifest);
 
         /*
@@ -474,6 +481,9 @@ public class SceneController : MonoBehaviour
         jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
         jumpTargetTest.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
         GameObject.Find("ToAssembly").GetComponent<AudioSource>().Play();
+
+        // add root parent to loadManifest once only
+        loadManifest.GetComponent<ManifestStatus>().parentList.Add(loadManifest.transform.GetChild(0).gameObject);
     }
 
 
@@ -484,14 +494,25 @@ public class SceneController : MonoBehaviour
         if (keyboard.sKey.wasPressedThisFrame) SaveData();
         if (keyboard.lKey.wasPressedThisFrame) LoadData();
         if (keyboard.tKey.wasPressedThisFrame) SomeTest();
+        if (keyboard.xKey.wasPressedThisFrame) FileSelection();
 
     }
 
     // press "T" in Desktop mode
     void SomeTest()
     {
-        Debug.Log("SystemInfo: " + SystemInfo.deviceType);
-
+        Debug.Log("some test");
     }
+
+
+    //[MenuItem("Example/Overwrite Texture")]
+    static void FileSelection()
+    {
+        Debug.Log("xkey");
+
+      
+    }
+
+
 
 }
