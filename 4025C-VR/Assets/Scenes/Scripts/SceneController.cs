@@ -4,10 +4,11 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
-using static JsonTests;
+using static JsonEntries;
+using static JsonManifests;
 //using UnityEditor;
 
-// 2022-11-24
+// 2022-11-28
 
 public class SceneController : MonoBehaviour
 {
@@ -22,10 +23,7 @@ public class SceneController : MonoBehaviour
 
     public List<GameObject> manifestList;        // all manifests
 
-    //public GameObject testManifest;
     public GameObject loadManifest;     // loading objects deposited to this manifest
-    GameObject saveManifest;
-    //GameObject tempManifest;            // to store manifest when loading
 
     /*
     const int bDefault = 0;
@@ -83,85 +81,39 @@ public class SceneController : MonoBehaviour
         beamingSound.Play();
         enterMain.Play();
 
+
+        // here make a copy of pristine LoadManifest
+        controllerScript.ConListInitIgnoreStatusSet(controllerScript.manifest);
+        GameObject manifestCopy = Instantiate(controllerScript.manifest);
+        controllerScript.ConListInitIgnoreStatusClear(controllerScript.manifest);
+        controllerScript.ConListInitIgnoreStatusClear(manifestCopy);
+        manifestCopy.GetComponent<ManifestStatus>().connections = new Dictionary<GameObject, GameObject>();
+
         if (controllerScript.manifest != null) AssemblyPackage(controllerScript.manifest);
-        /*
-        if (controllerScript.manifest.GetComponent<ManifestStatus>().conList.Count != 1)
-        {
-            //GameObject manifestOriginal = controllerScript.manifest;
-            controllerScript.ConListInitIgnoreStatusSet(controllerScript.manifest); // prevents instantiated nodes from being added to conList
-            GameObject manifestCopy = Instantiate(controllerScript.manifest);
-            manifestList.Add(manifestCopy);         // store in global manifest list
 
-            // clear original manifest and add default node
-            controllerScript.manifest.GetComponent<ManifestStatus>().conList.Clear();
-
-            foreach (Transform child in controllerScript.manifest.transform)
-            {
-                GameObject croot = child.GetChild(0).gameObject;
-                if (croot.name == "croot")
-                {
-                    controllerScript.manifest.GetComponent<ManifestStatus>().conList.Add(croot);    //add to conList
-                    controllerScript.ConStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
-                    croot.GetComponent<ConStatus>().initIgnore = false;
-                }
-                else
-                {
-                    controllerScript.PDestroy(child.gameObject);
-                }
-            }
-            // check if user made something
-            if (manifestCopy != null) AssemblyPackage(manifestCopy);
-        }
-        */
+        manifestCopy.name = "Manifest";
+        controllerScript.manifest = manifestCopy;
     }
 
+  
 
- 
     GameObject AssemblyPackage(GameObject m)
     {
-        GameObject manifestCopy = null; // = new GameObject();
+        if (m.GetComponent<ManifestStatus>().conList.Count > 1) {
 
-        //if (m.GetComponent<ManifestStatus>().conList.Count != 1)
-        if (m.GetComponent<ManifestStatus>().conList.Count > 1) {   
-            controllerScript.ConListInitIgnoreStatusSet(m); // prevents instantiated nodes from being added to conList
-            manifestCopy = Instantiate(m);
-            manifestCopy.name = "manifest_" + manifestList.Count;
-            manifestList.Add(manifestCopy);         // store in global manifest list
+            m.name = "manifest_" + manifestList.Count;
+            manifestList.Add(m);         // store in global manifest list
 
-            // clear calling manifest (reset)
-            m.GetComponent<ManifestStatus>().conList.Clear();
+            FitToChildren(m);
+            Rigidbody rb = m.AddComponent<Rigidbody>() as Rigidbody;
 
-            foreach (Transform child in m.transform) {
-                GameObject croot = child.GetChild(0).gameObject;
-                if (croot.name == "croot") {
-                    m.GetComponent<ManifestStatus>().conList.Add(croot);    //add to conList
-                    controllerScript.ConStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
-                    croot.GetComponent<ConStatus>().initIgnore = false;
-                }
-                else {
+            m.AddComponent<XRGrabInteractable>();
 
-                    // also must clear parentList!!!! except for root
-                    controllerScript.PDestroy(child.gameObject);    // destroys this parent and all children-should this do remove from parentsList?
-                    //m.GetComponent<ManifestStatus>().parentList.Remove(child.gameObject);   //!!!!!!????
-                }
-            }      
-        }
-
-        FitToChildren(manifestCopy);
-        Rigidbody rb = manifestCopy.AddComponent<Rigidbody>() as Rigidbody;
-
-        // de-activate all nodes; can this be reversible?
-        /*foreach (GameObject c in m.GetComponent<ManifestStatus>().conList)
-        {
-            c.SetActive(false);
-        }*/
-
-        manifestCopy.AddComponent<XRGrabInteractable>();
-
-        manifestCopy.transform.position = transportTarget.transform.position;
-        Vector3 objectScale = manifestCopy.transform.localScale;
-        manifestCopy.transform.localScale = new Vector3(objectScale.x / 10, objectScale.y / 10, objectScale.z / 10);
-        return manifestCopy;
+            m.transform.position = transportTarget.transform.position;
+            Vector3 objectScale = m.transform.localScale;
+            m.transform.localScale = new Vector3(objectScale.x / 10, objectScale.y / 10, objectScale.z / 10);
+        }       
+        return m;
     }
 
 
@@ -171,12 +123,11 @@ public class SceneController : MonoBehaviour
         BoxCollider bc = m.AddComponent<BoxCollider>() as BoxCollider;
         if (m.GetComponent<Collider>() is BoxCollider)
         {
-
             bool hasBounds = false;
             Bounds bounds = new Bounds(Vector3.zero, Vector3.zero);
 
             for (int i = 0; i < m.transform.childCount; ++i)
-            {
+            {            
                 Renderer childRenderer = m.transform.GetChild(i).GetComponent<Renderer>();
                 if (childRenderer != null)
                 {
@@ -260,39 +211,81 @@ public class SceneController : MonoBehaviour
             dmmMover.distance);
     }
 
-
-
+    
     public void SaveData()
     {
-        saveManifest = controllerScript.manifest;   // for testing between VR and computer
-        // switch manifest when running on desktop computer
-        if (SystemInfo.deviceType == DeviceType.Desktop) saveManifest = controllerScript.testManifest;
-        
-        // encode parent list
-        foreach (GameObject g in saveManifest.GetComponent<ManifestStatus>().parentList)
+        if (manifestList.Count > 0)
         {
-            GetComponent<JsonTests>().parents.Add(g.GetComponent<ParentData>().parentType);
-        }     
-
-        // encode connections dictionary
-        foreach (KeyValuePair<GameObject, GameObject> entry in saveManifest.GetComponent<ManifestStatus>().connections)
-        {
-            // key = from, value = to
-            GetComponent<JsonTests>().connectionsList.Add(ConnectionEncode(entry.Key, entry.Value));
+            foreach (GameObject m in manifestList)
+            {
+                SaveManifest(m);
+            }
+            SaveManifestList(manifestList);
         }
+        else
+        {
+            Debug.Log("Empty manifestList; nothing to save");
+        }
+    }
 
-        string wtf = GetComponent<JsonTests>().SaveToString();
-        //fileName = saveManifest.name + ".json";
-        WriteToFile(fileName, wtf);
-        Debug.Log("saving data to file: " + fileName + "->" + wtf);
+
+    // press "T" on Desktop computer keyboard
+    public void SaveDataDesktop()
+    {
+        if (manifestList.Count > 0)
+        {
+            foreach (GameObject m in manifestList)
+            {
+                SaveManifest(m);                
+            }
+            SaveManifestList(manifestList);
+        }
+        else
+        {
+            Debug.Log("Empty manifestList; nothing to save");
+        }
+    }
+
+
+    // saves current manifestList
+    void SaveManifestList(List<GameObject> mList)
+    {
+        // build manifestList for saving
+        GetComponent<JsonManifests>().manifests.Clear();
+        foreach (GameObject g in mList)
+        {
+            GetComponent<JsonManifests>().manifests.Add(g.name);
+        }
+        // saves manifestList
+        WriteToFile("manifests.txt", GetComponent<JsonManifests>().SaveToString());
     }
 
 
 
+    void SaveManifest(GameObject m)
+    {
+        GetComponent<JsonEntries>().parents.Clear();
+        foreach (GameObject g in m.GetComponent<ManifestStatus>().parentList)
+        {
+            GetComponent<JsonEntries>().parents.Add(g.GetComponent<ParentData>().parentType);
+        }
+        // encode connections dictionary
+        GetComponent<JsonEntries>().connectionsList.Clear();
+        foreach (KeyValuePair<GameObject, GameObject> entry in m.GetComponent<ManifestStatus>().connections)
+        {
+            // key = from, value = to
+            GetComponent<JsonEntries>().connectionsList.Add(ConnectionEncode(entry.Key, entry.Value));
+        }
+        string wtf = GetComponent<JsonEntries>().SaveToString();
+        WriteToFile(m.name + ".txt", wtf);
+        Debug.Log("saving manifest to file: " + m.name + "->" + wtf);
+    }
+
+
     // return from child, from parent, to child, to parent IDs
     // parameter is a connector node
-    public JsonTests.connectionEntry ConnectionEncode(GameObject from, GameObject to)
-    {    
+    public JsonEntries.connectionEntry ConnectionEncode(GameObject from, GameObject to)
+    {
         int fromChild = from.transform.GetSiblingIndex();
         int fromParent = IndexInParentList(from.transform.parent.gameObject);
         int toChild = to.transform.GetSiblingIndex();
@@ -309,10 +302,11 @@ public class SceneController : MonoBehaviour
     public int IndexInParentList(GameObject g)
     {
         int parentID = -1;
+        GameObject p = g.transform.parent.gameObject;
 
-        for (int i = 0; i < saveManifest.GetComponent<ManifestStatus>().parentList.Count; i++)
+        for (int i = 0; i < p.GetComponent<ManifestStatus>().parentList.Count; i++)
         {
-            if (saveManifest.GetComponent<ManifestStatus>().parentList[i] == g)
+            if (p.GetComponent<ManifestStatus>().parentList[i] == g)
             {
                 parentID = i;
                 break;
@@ -325,75 +319,62 @@ public class SceneController : MonoBehaviour
 
     public void LoadData()
     {
-        LoadFromFile(fileName, out var wtf);
-        Debug.Log("json loaded: " + wtf);
+        // load and init manifestList temp (system manifestList if built during recreation)
+        LoadFromFile("manifests.txt", out var wtg);
+        GetComponent<JsonManifests>().LoadFromJson(wtg);
 
-        GetComponent<JsonTests>().LoadFromJson(wtf);
-
-        foreach (string typeID in GetComponent<JsonTests>().parents)
-        {     
-            if (typeID != "root")    // skip root - it's already in LoadManifest
-            {      
-                GameObject p = LibraryItemCloner(typeID, loadManifest);     // clone item from library by typeID string
-                p.transform.parent = loadManifest.transform;
-                loadManifest.GetComponent<ManifestStatus>().parentList.Add(p);
-            }
-            else
-            {
-                // no action for the root
-                //loadManifest.GetComponent<ManifestStatus>().parentList.Add(loadManifest.transform.GetChild(0).gameObject);
-            }
-        }
-        //Debug.Log("p = ");
-
-        foreach (connectionEntry listEntry in GetComponent<JsonTests>().connectionsList)
-        {         
-            GameObject p = loadManifest.GetComponent<ManifestStatus>().parentList[listEntry.fromParent];    // fromParent (source parent)
-            GameObject fromC = p.transform.GetChild(listEntry.fromChild).gameObject;
-            GameObject d = loadManifest.GetComponent<ManifestStatus>().parentList[listEntry.toParent];
-            GameObject toC = d.transform.GetChild(listEntry.toChild).gameObject;
-
-            GameObject cTaxi = new GameObject();
-            Transform manifestT = p.transform.parent;          // save parent (manifest) parent to move
-            cTaxi.transform.position = fromC.transform.position;
-            cTaxi.transform.rotation = fromC.transform.rotation;
-            p.transform.parent = cTaxi.transform;    // move complete object into taxi
-            cTaxi.transform.position = toC.transform.position;
-            cTaxi.transform.rotation = toC.transform.rotation;
-            p.transform.parent = manifestT;     // put object back into manifest
-            Destroy(cTaxi);
-   
-            loadManifest.GetComponent<ManifestStatus>().connections.Add(fromC, toC);    // build connections dict.
-        }
-        Debug.Log("Going to Assembly Package");
-        AssemblyPackage(loadManifest);
-
-        /*
-        if (loadManifest.GetComponent<ManifestStatus>().conList.Count != 1)
+        foreach (string f in GetComponent<JsonManifests>().manifests)
         {
-            controllerScript.ConListInitIgnoreStatusSet(loadManifest); // prevents instantiated nodes from being added to conList
+            LoadFromFile(f + ".txt", out var wtf);
+            Debug.Log("json loaded: " + wtf);
+
+            GetComponent<JsonEntries>().LoadFromJson(wtf);
+
+            // here make a copy of pristine LoadManifest
+            controllerScript.ConListInitIgnoreStatusSet(loadManifest);
             GameObject manifestCopy = Instantiate(loadManifest);
-            manifestList.Add(manifestCopy);         // store in global manifest list
+            controllerScript.ConListInitIgnoreStatusClear(loadManifest);
+            controllerScript.ConListInitIgnoreStatusClear(manifestCopy);
+            manifestCopy.GetComponent<ManifestStatus>().connections = new Dictionary<GameObject, GameObject>();
 
-            loadManifest.GetComponent<ManifestStatus>().conList.Clear();
-
-            foreach (Transform child in loadManifest.transform)
+            foreach (string typeID in GetComponent<JsonEntries>().parents)
             {
-                GameObject croot = child.GetChild(0).gameObject;
-                if (croot.name == "croot")
+                if (typeID != "root")    // skip root - it's already in LoadManifest
                 {
-                    loadManifest.GetComponent<ManifestStatus>().conList.Add(croot);    //add to conList
-                    controllerScript.ConStatusSet(croot, 0, controllerScript.matDefault);   // reset new croot
-                    croot.GetComponent<ConStatus>().initIgnore = false;
+                    GameObject p = LibraryItemCloner(typeID, loadManifest);     // clone item from library by typeID string
+                    p.transform.parent = loadManifest.transform;
+                    loadManifest.GetComponent<ManifestStatus>().parentList.Add(p);
                 }
                 else
                 {
-                    controllerScript.PDestroy(child.gameObject);
+                    // no action for the root
+                    //loadManifest.GetComponent<ManifestStatus>().parentList.Add(loadManifest.transform.GetChild(0).gameObject);
                 }
-            }   
-            if (manifestCopy != null) AssemblyPackage(manifestCopy);
+            }
+
+            foreach (connectionEntry listEntry in GetComponent<JsonEntries>().connectionsList)
+            {
+                GameObject p = loadManifest.GetComponent<ManifestStatus>().parentList[listEntry.fromParent];    // fromParent (source parent)
+                GameObject fromC = p.transform.GetChild(listEntry.fromChild).gameObject;
+                GameObject d = loadManifest.GetComponent<ManifestStatus>().parentList[listEntry.toParent];
+                GameObject toC = d.transform.GetChild(listEntry.toChild).gameObject;
+
+                GameObject cTaxi = new GameObject();
+                Transform manifestT = p.transform.parent;          // save parent (manifest) parent to move
+                cTaxi.transform.position = fromC.transform.position;
+                cTaxi.transform.rotation = fromC.transform.rotation;
+                p.transform.parent = cTaxi.transform;    // move complete object into taxi
+                cTaxi.transform.position = toC.transform.position;
+                cTaxi.transform.rotation = toC.transform.rotation;
+                p.transform.parent = manifestT;     // put object back into manifest
+                Destroy(cTaxi);
+
+                loadManifest.GetComponent<ManifestStatus>().connections.Add(fromC, toC);    // build connections dict.
+            }
+            AssemblyPackage(loadManifest);
+            manifestCopy.name = "LoadManifest";
+            loadManifest = manifestCopy;
         }
-        */
     }
 
 
@@ -484,6 +465,8 @@ public class SceneController : MonoBehaviour
 
         // add root parent to loadManifest once only
         loadManifest.GetComponent<ManifestStatus>().parentList.Add(loadManifest.transform.GetChild(0).gameObject);
+
+       
     }
 
 
@@ -493,24 +476,19 @@ public class SceneController : MonoBehaviour
         var keyboard = Keyboard.current;
         if (keyboard.sKey.wasPressedThisFrame) SaveData();
         if (keyboard.lKey.wasPressedThisFrame) LoadData();
-        if (keyboard.tKey.wasPressedThisFrame) SomeTest();
+        if (keyboard.tKey.wasPressedThisFrame) SaveDataDesktop();
         if (keyboard.xKey.wasPressedThisFrame) FileSelection();
 
     }
 
-    // press "T" in Desktop mode
-    void SomeTest()
-    {
-        Debug.Log("some test");
-    }
-
 
     //[MenuItem("Example/Overwrite Texture")]
-    static void FileSelection()
+    public void FileSelection()
     {
         Debug.Log("xkey");
+        //Debug.Log("parents.count=" + GetComponent<JsonEntries>().parents.Count);
 
-      
+
     }
 
 

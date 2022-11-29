@@ -23598,6 +23598,7 @@ GameObject:
   - component: {fileID: 1816387190}
   - component: {fileID: 1816387193}
   - component: {fileID: 1816387194}
+  - component: {fileID: 1816387195}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -23763,6 +23764,19 @@ MonoBehaviour:
   m_DefaultActionMap: Desktop
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1816387195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816387184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e2fe07cc1ae4450390c79c8db50b907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manifests: []
 --- !u!1 &1829734203
 GameObject:
   m_ObjectHideFlags: 0

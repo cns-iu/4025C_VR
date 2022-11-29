@@ -121,8 +121,7 @@ public class ConController : MonoBehaviour
 
             case sysDefault + bShow + bConnected:   // 5 = click on red (connected) node, delete upstream assembly
                 //Debug.Log("--bConnected+sysDefault = " + (bConnected + sysDefault));
-                GameObject p1 = c.transform.parent.gameObject;
-                Debug.Log("1 connectorClicked-ParentList " + manifest.GetComponent<ManifestStatus>().parentList.Count);
+                GameObject p1 = c.transform.parent.gameObject;       
 
                 UscTraceUp(p1,PDestroy);
 
@@ -135,8 +134,6 @@ public class ConController : MonoBehaviour
                 ConListReset(manifest);
                 ConListReset(library);
                 ConFilter(manifest);
-
-                Debug.Log("2 connectorClicked-ParentList " + manifest.GetComponent<ManifestStatus>().parentList.Count);
 
                 break;
 
@@ -261,15 +258,13 @@ public class ConController : MonoBehaviour
         }
         GameObject m = p.transform.parent.gameObject;   // get manifest of this parent
         m.GetComponent<ManifestStatus>().parentList.Remove(p);  // remove from parentlist
-        //
-        //
+
         // also remove from manifestStatus connections dictionary?????
         Destroy(p);             // kill parent objec
     
- 
-        Debug.Log("In PDestroy manifest=" + m.name);
-        Debug.Log("- parentList entries=" + m.GetComponent<ManifestStatus>().parentList.Count);
-        Debug.Log("- actual parent objects=" + m.transform.childCount);
+        //Debug.Log("In PDestroy manifest=" + m.name);
+        //Debug.Log("- parentList entries=" + m.GetComponent<ManifestStatus>().parentList.Count);
+        //Debug.Log("- actual parent objects=" + m.transform.childCount);
   
     }
 
@@ -384,7 +379,7 @@ public class ConController : MonoBehaviour
     }
 
 
-    // set all objects in list to requested status
+    // set gitIgnore flag on all objects in list
     public void ConListInitIgnoreStatusSet(GameObject m)
     {
         List<GameObject> conList = m.GetComponent<ManifestStatus>().conList;
@@ -392,6 +387,18 @@ public class ConController : MonoBehaviour
         foreach (GameObject c in conList)
         {
             c.GetComponent<ConStatus>().initIgnore = true;
+        }
+    }
+
+
+    // clear gitIgnore flag on all objects in list
+    public void ConListInitIgnoreStatusClear(GameObject m)
+    {
+        List<GameObject> conList = m.GetComponent<ManifestStatus>().conList;
+
+        foreach (GameObject c in conList)
+        {
+            c.GetComponent<ConStatus>().initIgnore = false;
         }
     }
 

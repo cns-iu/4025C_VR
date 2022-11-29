@@ -706,10 +706,10 @@ struct Action_1_t949B075BD154084CD176B99EE92564EB5B403889;
 struct Action_1_t382B605C2C5668A25F075BE1F415718CF3C38FF7;
 // System.Action`1<UnityEngine.UIElements.InternalTreeView/TreeViewItemWrapper>
 struct Action_1_tCA07E7CAE14E2DB6F47853EE259BC57E86EDE6FE;
+// System.Action`1<JsonEntries/connectionEntry>
+struct Action_1_tF8359E9CEA9D2B467AF0B194FFB9209A00D9285B;
 // System.Action`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct Action_1_tCCB66B182EF6A3D43A5463760EBBB99D536A2C70;
-// System.Action`1<JsonTests/connectionEntry>
-struct Action_1_t6A9558FF52DB6398375D041FF87001FBFA52E6A3;
 // System.Action`1<ONSPPropagationGeometry/MeshMaterial>
 struct Action_1_tD8BB9EFE2B7DDD26EEB17E5E57EAB694425AC7AC;
 // System.Action`1<ONSPPropagationGeometry/TerrainMaterial>
@@ -5134,16 +5134,16 @@ struct TreeViewItemWrapper_tFA593EC4B06E0C963C0EAA9C18DDC99EEDC05D1F_marshaled_c
 	RuntimeObject* ___item_1;
 };
 
-// JsonTests/connectionEntry
-struct connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A 
+// JsonEntries/connectionEntry
+struct connectionEntry_t67F28588704C6673525A65010836F04A81920074 
 {
-	// System.Int32 JsonTests/connectionEntry::fromChild
+	// System.Int32 JsonEntries/connectionEntry::fromChild
 	int32_t ___fromChild_0;
-	// System.Int32 JsonTests/connectionEntry::fromParent
+	// System.Int32 JsonEntries/connectionEntry::fromParent
 	int32_t ___fromParent_1;
-	// System.Int32 JsonTests/connectionEntry::toChild
+	// System.Int32 JsonEntries/connectionEntry::toChild
 	int32_t ___toChild_2;
-	// System.Int32 JsonTests/connectionEntry::toParent
+	// System.Int32 JsonEntries/connectionEntry::toParent
 	int32_t ___toParent_3;
 };
 
@@ -10192,13 +10192,13 @@ struct Action_1_tCA07E7CAE14E2DB6F47853EE259BC57E86EDE6FE  : public MulticastDel
 {
 };
 
-// System.Action`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
-struct Action_1_tCCB66B182EF6A3D43A5463760EBBB99D536A2C70  : public MulticastDelegate_t
+// System.Action`1<JsonEntries/connectionEntry>
+struct Action_1_tF8359E9CEA9D2B467AF0B194FFB9209A00D9285B  : public MulticastDelegate_t
 {
 };
 
-// System.Action`1<JsonTests/connectionEntry>
-struct Action_1_t6A9558FF52DB6398375D041FF87001FBFA52E6A3  : public MulticastDelegate_t
+// System.Action`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
+struct Action_1_tCCB66B182EF6A3D43A5463760EBBB99D536A2C70  : public MulticastDelegate_t
 {
 };
 
@@ -28571,6 +28571,84 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mFECFDBC38C6443F95E7B02A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+void Action_1_Invoke_m9DA4CC7508DDAF861C6D97D58B0594A2E19BA61F_Multicast(Action_1_tF8359E9CEA9D2B467AF0B194FFB9209A00D9285B* __this, connectionEntry_t67F28588704C6673525A65010836F04A81920074 ___obj0, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Action_1_tF8359E9CEA9D2B467AF0B194FFB9209A00D9285B* currentDelegate = reinterpret_cast<Action_1_tF8359E9CEA9D2B467AF0B194FFB9209A00D9285B*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, connectionEntry_t67F28588704C6673525A65010836F04A81920074, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void Action_1_Invoke_m9DA4CC7508DDAF861C6D97D58B0594A2E19BA61F_OpenInst(Action_1_tF8359E9CEA9D2B467AF0B194FFB9209A00D9285B* __this, connectionEntry_t67F28588704C6673525A65010836F04A81920074 ___obj0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (connectionEntry_t67F28588704C6673525A65010836F04A81920074, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
+}
+void Action_1_Invoke_m9DA4CC7508DDAF861C6D97D58B0594A2E19BA61F_OpenStatic(Action_1_tF8359E9CEA9D2B467AF0B194FFB9209A00D9285B* __this, connectionEntry_t67F28588704C6673525A65010836F04A81920074 ___obj0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (connectionEntry_t67F28588704C6673525A65010836F04A81920074, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
+}
+void Action_1_Invoke_m9DA4CC7508DDAF861C6D97D58B0594A2E19BA61F_OpenStaticInvoker(Action_1_tF8359E9CEA9D2B467AF0B194FFB9209A00D9285B* __this, connectionEntry_t67F28588704C6673525A65010836F04A81920074 ___obj0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker1< connectionEntry_t67F28588704C6673525A65010836F04A81920074 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
+}
+void Action_1_Invoke_m9DA4CC7508DDAF861C6D97D58B0594A2E19BA61F_ClosedStaticInvoker(Action_1_tF8359E9CEA9D2B467AF0B194FFB9209A00D9285B* __this, connectionEntry_t67F28588704C6673525A65010836F04A81920074 ___obj0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< RuntimeObject*, connectionEntry_t67F28588704C6673525A65010836F04A81920074 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
+}
+// System.Void System.Action`1<JsonEntries/connectionEntry>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m8CE100D2E0068602BF46E8FAE49E4F3D13944230_gshared (Action_1_tF8359E9CEA9D2B467AF0B194FFB9209A00D9285B* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 1;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m9DA4CC7508DDAF861C6D97D58B0594A2E19BA61F_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m9DA4CC7508DDAF861C6D97D58B0594A2E19BA61F_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m9DA4CC7508DDAF861C6D97D58B0594A2E19BA61F_OpenStatic;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		if (___object0 == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+	}
+	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m9DA4CC7508DDAF861C6D97D58B0594A2E19BA61F_Multicast;
+}
+// System.Void System.Action`1<JsonEntries/connectionEntry>::Invoke(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m9DA4CC7508DDAF861C6D97D58B0594A2E19BA61F_gshared (Action_1_tF8359E9CEA9D2B467AF0B194FFB9209A00D9285B* __this, connectionEntry_t67F28588704C6673525A65010836F04A81920074 ___obj0, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, connectionEntry_t67F28588704C6673525A65010836F04A81920074, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 void Action_1_Invoke_m081F2EDB868BCFE04BB77EE3AFFE17D82026A5E6_Multicast(Action_1_tCCB66B182EF6A3D43A5463760EBBB99D536A2C70* __this, JsonValue_t01DB320267C848E729A400EF2345979978F851D2 ___obj0, const RuntimeMethod* method)
 {
 	il2cpp_array_size_t length = __this->___delegates_13->max_length;
@@ -28639,84 +28717,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m3B947ADA2E6DCC95CB99EB23
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m081F2EDB868BCFE04BB77EE3AFFE17D82026A5E6_gshared (Action_1_tCCB66B182EF6A3D43A5463760EBBB99D536A2C70* __this, JsonValue_t01DB320267C848E729A400EF2345979978F851D2 ___obj0, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, JsonValue_t01DB320267C848E729A400EF2345979978F851D2, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mDAFA915C1047670B8B883C214D7CB254BCA2003A_Multicast(Action_1_t6A9558FF52DB6398375D041FF87001FBFA52E6A3* __this, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t6A9558FF52DB6398375D041FF87001FBFA52E6A3* currentDelegate = reinterpret_cast<Action_1_t6A9558FF52DB6398375D041FF87001FBFA52E6A3*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mDAFA915C1047670B8B883C214D7CB254BCA2003A_OpenInst(Action_1_t6A9558FF52DB6398375D041FF87001FBFA52E6A3* __this, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mDAFA915C1047670B8B883C214D7CB254BCA2003A_OpenStatic(Action_1_t6A9558FF52DB6398375D041FF87001FBFA52E6A3* __this, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mDAFA915C1047670B8B883C214D7CB254BCA2003A_OpenStaticInvoker(Action_1_t6A9558FF52DB6398375D041FF87001FBFA52E6A3* __this, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mDAFA915C1047670B8B883C214D7CB254BCA2003A_ClosedStaticInvoker(Action_1_t6A9558FF52DB6398375D041FF87001FBFA52E6A3* __this, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<JsonTests/connectionEntry>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mC846117A83229BBE68880A50214D2C89A7380DE8_gshared (Action_1_t6A9558FF52DB6398375D041FF87001FBFA52E6A3* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mDAFA915C1047670B8B883C214D7CB254BCA2003A_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mDAFA915C1047670B8B883C214D7CB254BCA2003A_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mDAFA915C1047670B8B883C214D7CB254BCA2003A_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mDAFA915C1047670B8B883C214D7CB254BCA2003A_Multicast;
-}
-// System.Void System.Action`1<JsonTests/connectionEntry>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mDAFA915C1047670B8B883C214D7CB254BCA2003A_gshared (Action_1_t6A9558FF52DB6398375D041FF87001FBFA52E6A3* __this, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, connectionEntry_t9483A25A335A9234D2716D09D737B17A20579E2A, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 #ifdef __clang__

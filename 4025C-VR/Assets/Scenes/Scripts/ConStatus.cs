@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 2022-11-16
+// 2022-11-28
 
 public class ConStatus : MonoBehaviour
 {
@@ -21,17 +21,7 @@ public class ConStatus : MonoBehaviour
 
     // this setup for each connector node - super important!!!
     private void Awake()
-    {
-        /*
-            Debug.Log("conStatus.awake " + thisConnector.transform.parent.gameObject.name +
-            " " +  thisConnector.name +
-            " show=" + show +
-            " selected=" + selected +
-            " connected=" + connected +
-            " library=" + library +
-            " initignore=" + initIgnore);
-        */
-       
+    {     
         // ignore if initIgnore is checked; overrides everything
         if (thisConnector.GetComponent<ConStatus>().initIgnore != true)
         {
