@@ -89,6 +89,8 @@ public class SceneController : MonoBehaviour
         controllerScript.ConListInitIgnoreStatusClear(manifestCopy);
         manifestCopy.GetComponent<ManifestStatus>().connections = new Dictionary<GameObject, GameObject>();
 
+        // the package will appear here (target object)
+        controllerScript.manifest.transform.position = transportTarget.transform.position;
         if (controllerScript.manifest != null) AssemblyPackage(controllerScript.manifest);
 
         manifestCopy.name = "Manifest";
@@ -109,7 +111,7 @@ public class SceneController : MonoBehaviour
 
             m.AddComponent<XRGrabInteractable>();
 
-            m.transform.position = transportTarget.transform.position;
+            //m.transform.position = transportTarget.transform.position;
             Vector3 objectScale = m.transform.localScale;
             m.transform.localScale = new Vector3(objectScale.x / 10, objectScale.y / 10, objectScale.z / 10);
         }       
@@ -264,6 +266,15 @@ public class SceneController : MonoBehaviour
 
     void SaveManifest(GameObject m)
     {
+        // save position and rotation
+        GetComponent<JsonEntries>().posX = m.transform.position.x;
+        GetComponent<JsonEntries>().posY = m.transform.position.y;
+        GetComponent<JsonEntries>().posZ = m.transform.position.z;
+        GetComponent<JsonEntries>().rotX = m.transform.rotation.x;
+        GetComponent<JsonEntries>().rotY = m.transform.rotation.y;
+        GetComponent<JsonEntries>().rotZ = m.transform.rotation.z;
+
+
         GetComponent<JsonEntries>().parents.Clear();
         foreach (GameObject g in m.GetComponent<ManifestStatus>().parentList)
         {
@@ -329,6 +340,10 @@ public class SceneController : MonoBehaviour
             Debug.Log("json loaded: " + wtf);
 
             GetComponent<JsonEntries>().LoadFromJson(wtf);
+
+            // the manifest will go to this pos/rot
+            loadManifest.transform.position = new Vector3(GetComponent<JsonEntries>().posX, GetComponent<JsonEntries>().posY, GetComponent<JsonEntries>().posZ);
+            loadManifest.transform.rotation = Quaternion.Euler(GetComponent<JsonEntries>().rotX, GetComponent<JsonEntries>().rotY, GetComponent<JsonEntries>().rotZ);
 
             // here make a copy of pristine LoadManifest
             controllerScript.ConListInitIgnoreStatusSet(loadManifest);

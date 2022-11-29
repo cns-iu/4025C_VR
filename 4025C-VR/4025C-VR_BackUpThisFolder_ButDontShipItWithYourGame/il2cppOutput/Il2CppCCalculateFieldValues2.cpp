@@ -35956,6 +35956,18 @@ struct JsonEntries_t8433EE8732E447E8CCEF2E7BA2DA3D7C4976D92E  : public MonoBehav
 	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___parents_4;
 	// System.Collections.Generic.List`1<JsonEntries/connectionEntry> JsonEntries::connectionsList
 	List_1_t6B9DB256BFBFD1DBB6E125161326E6E38DDE217C* ___connectionsList_5;
+	// System.Single JsonEntries::posX
+	float ___posX_6;
+	// System.Single JsonEntries::posY
+	float ___posY_7;
+	// System.Single JsonEntries::posZ
+	float ___posZ_8;
+	// System.Single JsonEntries::rotX
+	float ___rotX_9;
+	// System.Single JsonEntries::rotY
+	float ___rotY_10;
+	// System.Single JsonEntries::rotZ
+	float ___rotZ_11;
 };
 
 // JsonManifests
@@ -43140,9 +43152,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6023[6] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6024[4] = 
 {
 	static_cast<int32_t>(offsetof(connectionEntry_t67F28588704C6673525A65010836F04A81920074, ___fromChild_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(connectionEntry_t67F28588704C6673525A65010836F04A81920074, ___fromParent_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(connectionEntry_t67F28588704C6673525A65010836F04A81920074, ___toChild_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(connectionEntry_t67F28588704C6673525A65010836F04A81920074, ___toParent_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6025[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6025[8] = 
 {
-	static_cast<int32_t>(offsetof(JsonEntries_t8433EE8732E447E8CCEF2E7BA2DA3D7C4976D92E, ___parents_4)),static_cast<int32_t>(offsetof(JsonEntries_t8433EE8732E447E8CCEF2E7BA2DA3D7C4976D92E, ___connectionsList_5)),};
+	static_cast<int32_t>(offsetof(JsonEntries_t8433EE8732E447E8CCEF2E7BA2DA3D7C4976D92E, ___parents_4)),static_cast<int32_t>(offsetof(JsonEntries_t8433EE8732E447E8CCEF2E7BA2DA3D7C4976D92E, ___connectionsList_5)),static_cast<int32_t>(offsetof(JsonEntries_t8433EE8732E447E8CCEF2E7BA2DA3D7C4976D92E, ___posX_6)),static_cast<int32_t>(offsetof(JsonEntries_t8433EE8732E447E8CCEF2E7BA2DA3D7C4976D92E, ___posY_7)),static_cast<int32_t>(offsetof(JsonEntries_t8433EE8732E447E8CCEF2E7BA2DA3D7C4976D92E, ___posZ_8)),static_cast<int32_t>(offsetof(JsonEntries_t8433EE8732E447E8CCEF2E7BA2DA3D7C4976D92E, ___rotX_9)),static_cast<int32_t>(offsetof(JsonEntries_t8433EE8732E447E8CCEF2E7BA2DA3D7C4976D92E, ___rotY_10)),static_cast<int32_t>(offsetof(JsonEntries_t8433EE8732E447E8CCEF2E7BA2DA3D7C4976D92E, ___rotZ_11)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6026[1] = 
 {
 	static_cast<int32_t>(offsetof(JsonManifests_t401659D30DCB6D82B07134A54D3D395F5BD3FE8F, ___manifests_4)),};

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 2022-11-27
+// 2022-11-28
 // saves a list of manifest names
 
 public class JsonManifests : MonoBehaviour

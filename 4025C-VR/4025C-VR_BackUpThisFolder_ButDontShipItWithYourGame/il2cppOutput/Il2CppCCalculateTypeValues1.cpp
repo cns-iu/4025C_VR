@@ -47402,6 +47402,18 @@ struct JsonEntries_t8433EE8732E447E8CCEF2E7BA2DA3D7C4976D92E  : public MonoBehav
 	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___parents_4;
 	// System.Collections.Generic.List`1<JsonEntries/connectionEntry> JsonEntries::connectionsList
 	List_1_t6B9DB256BFBFD1DBB6E125161326E6E38DDE217C* ___connectionsList_5;
+	// System.Single JsonEntries::posX
+	float ___posX_6;
+	// System.Single JsonEntries::posY
+	float ___posY_7;
+	// System.Single JsonEntries::posZ
+	float ___posZ_8;
+	// System.Single JsonEntries::rotX
+	float ___rotX_9;
+	// System.Single JsonEntries::rotY
+	float ___rotY_10;
+	// System.Single JsonEntries::rotZ
+	float ___rotZ_11;
 };
 
 // JsonManifests
