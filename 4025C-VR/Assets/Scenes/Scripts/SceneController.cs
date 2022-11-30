@@ -8,7 +8,7 @@ using static JsonEntries;
 using static JsonManifests;
 //using UnityEditor;
 
-// 2022-11-28
+// 2022-11-29
 
 public class SceneController : MonoBehaviour
 {
@@ -53,7 +53,7 @@ public class SceneController : MonoBehaviour
     }
 
     public void jumpToAssembly(GameObject c)
-    {     
+    {
         xrPosition.transform.position = jumpTargetAssembly.transform.position;
         jumpTargetAssembly.GetComponent<TransportSwitch>().thisTarget.SetActive(false);
         jumpTargetMain.GetComponent<TransportSwitch>().thisTarget.SetActive(true);
@@ -97,11 +97,12 @@ public class SceneController : MonoBehaviour
         controllerScript.manifest = manifestCopy;
     }
 
-  
+
 
     GameObject AssemblyPackage(GameObject m)
     {
-        if (m.GetComponent<ManifestStatus>().conList.Count > 1) {
+        if (m.GetComponent<ManifestStatus>().conList.Count > 1)
+        {
 
             m.name = "manifest_" + manifestList.Count;
             manifestList.Add(m);         // store in global manifest list
@@ -114,7 +115,7 @@ public class SceneController : MonoBehaviour
             //m.transform.position = transportTarget.transform.position;
             Vector3 objectScale = m.transform.localScale;
             m.transform.localScale = new Vector3(objectScale.x / 10, objectScale.y / 10, objectScale.z / 10);
-        }       
+        }
         return m;
     }
 
@@ -129,7 +130,7 @@ public class SceneController : MonoBehaviour
             Bounds bounds = new Bounds(Vector3.zero, Vector3.zero);
 
             for (int i = 0; i < m.transform.childCount; ++i)
-            {            
+            {
                 Renderer childRenderer = m.transform.GetChild(i).GetComponent<Renderer>();
                 if (childRenderer != null)
                 {
@@ -166,26 +167,9 @@ public class SceneController : MonoBehaviour
 
 
 
-    void OnApplicationFocus(bool focus)
-    {
-        if (!focus)
-        {
-            SavePrefs();
-        }
-    }
-
-    /*
-    not working on Oculus
-    private void OnApplicationQuit()
-    {
-        SavePrefs();
-    }
-    */
-
-
     public void SavePrefs()
     {
-        testInt ++;
+        testInt++;
 
         Debug.Log("saving prefs:" + testInt + " console: " +
             visibilityToggle.consoleVisibility + " DMM: " +
@@ -200,7 +184,7 @@ public class SceneController : MonoBehaviour
 
     public void LoadPrefs()
     {
-        
+
         testInt = PlayerPrefs.GetInt("TestInt", 0);
         visibilityToggle.consoleVisibility = PlayerPrefs.GetInt("consoleVisibility", 0);
         dmmMover.distance = PlayerPrefs.GetFloat("distance", 1f);
@@ -213,7 +197,7 @@ public class SceneController : MonoBehaviour
             dmmMover.distance);
     }
 
-    
+
     public void SaveData()
     {
         if (manifestList.Count > 0)
@@ -230,7 +214,7 @@ public class SceneController : MonoBehaviour
         }
     }
 
-
+    /*
     // press "T" on Desktop computer keyboard
     public void SaveDataDesktop()
     {
@@ -238,7 +222,7 @@ public class SceneController : MonoBehaviour
         {
             foreach (GameObject m in manifestList)
             {
-                SaveManifest(m);                
+                SaveManifest(m);
             }
             SaveManifestList(manifestList);
         }
@@ -247,85 +231,7 @@ public class SceneController : MonoBehaviour
             Debug.Log("Empty manifestList; nothing to save");
         }
     }
-
-
-    // saves current manifestList
-    void SaveManifestList(List<GameObject> mList)
-    {
-        // build manifestList for saving
-        GetComponent<JsonManifests>().manifests.Clear();
-        foreach (GameObject g in mList)
-        {
-            GetComponent<JsonManifests>().manifests.Add(g.name);
-        }
-        // saves manifestList
-        WriteToFile("manifests.txt", GetComponent<JsonManifests>().SaveToString());
-    }
-
-
-
-    void SaveManifest(GameObject m)
-    {
-        // save position and rotation
-        GetComponent<JsonEntries>().posX = m.transform.position.x;
-        GetComponent<JsonEntries>().posY = m.transform.position.y;
-        GetComponent<JsonEntries>().posZ = m.transform.position.z;
-        GetComponent<JsonEntries>().rotX = m.transform.rotation.x;
-        GetComponent<JsonEntries>().rotY = m.transform.rotation.y;
-        GetComponent<JsonEntries>().rotZ = m.transform.rotation.z;
-
-
-        GetComponent<JsonEntries>().parents.Clear();
-        foreach (GameObject g in m.GetComponent<ManifestStatus>().parentList)
-        {
-            GetComponent<JsonEntries>().parents.Add(g.GetComponent<ParentData>().parentType);
-        }
-        // encode connections dictionary
-        GetComponent<JsonEntries>().connectionsList.Clear();
-        foreach (KeyValuePair<GameObject, GameObject> entry in m.GetComponent<ManifestStatus>().connections)
-        {
-            // key = from, value = to
-            GetComponent<JsonEntries>().connectionsList.Add(ConnectionEncode(entry.Key, entry.Value));
-        }
-        string wtf = GetComponent<JsonEntries>().SaveToString();
-        WriteToFile(m.name + ".txt", wtf);
-        Debug.Log("saving manifest to file: " + m.name + "->" + wtf);
-    }
-
-
-    // return from child, from parent, to child, to parent IDs
-    // parameter is a connector node
-    public JsonEntries.connectionEntry ConnectionEncode(GameObject from, GameObject to)
-    {
-        int fromChild = from.transform.GetSiblingIndex();
-        int fromParent = IndexInParentList(from.transform.parent.gameObject);
-        int toChild = to.transform.GetSiblingIndex();
-        int toParent = IndexInParentList(to.transform.parent.gameObject);
-
-        connectionEntry listEntry = new connectionEntry(fromChild, fromParent, toChild, toParent);
-  
-        return listEntry;
-    }
-
-
-
-    // return index of this gameobject in parent list
-    public int IndexInParentList(GameObject g)
-    {
-        int parentID = -1;
-        GameObject p = g.transform.parent.gameObject;
-
-        for (int i = 0; i < p.GetComponent<ManifestStatus>().parentList.Count; i++)
-        {
-            if (p.GetComponent<ManifestStatus>().parentList[i] == g)
-            {
-                parentID = i;
-                break;
-            }
-        }
-        return parentID;
-    }
-
+    */
 
 
     public void LoadData()
@@ -390,6 +296,85 @@ public class SceneController : MonoBehaviour
             manifestCopy.name = "LoadManifest";
             loadManifest = manifestCopy;
         }
+    }
+
+
+
+    // saves current manifestList
+    void SaveManifestList(List<GameObject> mList)
+    {
+        // build manifestList for saving
+        GetComponent<JsonManifests>().manifests.Clear();
+        foreach (GameObject g in mList)
+        {
+            GetComponent<JsonManifests>().manifests.Add(g.name);
+        }
+        // saves manifestList
+        WriteToFile("manifests.txt", GetComponent<JsonManifests>().SaveToString());
+    }
+
+
+
+    void SaveManifest(GameObject m)
+    {
+        // save position and rotation
+        GetComponent<JsonEntries>().posX = m.transform.position.x;
+        GetComponent<JsonEntries>().posY = m.transform.position.y;
+        GetComponent<JsonEntries>().posZ = m.transform.position.z;
+        GetComponent<JsonEntries>().rotX = m.transform.rotation.x;
+        GetComponent<JsonEntries>().rotY = m.transform.rotation.y;
+        GetComponent<JsonEntries>().rotZ = m.transform.rotation.z;
+
+
+        GetComponent<JsonEntries>().parents.Clear();
+        foreach (GameObject g in m.GetComponent<ManifestStatus>().parentList)
+        {
+            GetComponent<JsonEntries>().parents.Add(g.GetComponent<ParentData>().parentType);
+        }
+        // encode connections dictionary
+        GetComponent<JsonEntries>().connectionsList.Clear();
+        foreach (KeyValuePair<GameObject, GameObject> entry in m.GetComponent<ManifestStatus>().connections)
+        {
+            // key = from, value = to
+            GetComponent<JsonEntries>().connectionsList.Add(ConnectionEncode(entry.Key, entry.Value));
+        }
+        string wtf = GetComponent<JsonEntries>().SaveToString();
+        WriteToFile(m.name + ".txt", wtf);
+        Debug.Log("saving manifest to file: " + m.name + "->" + wtf);
+    }
+
+
+    // return from child, from parent, to child, to parent IDs
+    // parameter is a connector node
+    public JsonEntries.connectionEntry ConnectionEncode(GameObject from, GameObject to)
+    {
+        int fromChild = from.transform.GetSiblingIndex();
+        int fromParent = IndexInParentList(from.transform.parent.gameObject);
+        int toChild = to.transform.GetSiblingIndex();
+        int toParent = IndexInParentList(to.transform.parent.gameObject);
+
+        connectionEntry listEntry = new connectionEntry(fromChild, fromParent, toChild, toParent);
+
+        return listEntry;
+    }
+
+
+
+    // return index of this gameobject in parent list
+    public int IndexInParentList(GameObject g)
+    {
+        int parentID = -1;
+        GameObject p = g.transform.parent.gameObject;
+
+        for (int i = 0; i < p.GetComponent<ManifestStatus>().parentList.Count; i++)
+        {
+            if (p.GetComponent<ManifestStatus>().parentList[i] == g)
+            {
+                parentID = i;
+                break;
+            }
+        }
+        return parentID;
     }
 
 
@@ -466,10 +451,28 @@ public class SceneController : MonoBehaviour
     }
 
 
+
+    void OnApplicationFocus(bool focus)
+    {
+        if (!focus)
+        {
+            SavePrefs();
+            SaveData();
+        }
+    }
+
+    /*
+    not working on Oculus
+    private void OnApplicationQuit()
+    {
+        SavePrefs();
+    }
+    */
+
+
     // Start is called before the first frame update
     void Start()
     {
-
         LoadPrefs();    // only seems to work from Start()
 
         // go to main area first
@@ -481,7 +484,7 @@ public class SceneController : MonoBehaviour
         // add root parent to loadManifest once only
         loadManifest.GetComponent<ManifestStatus>().parentList.Add(loadManifest.transform.GetChild(0).gameObject);
 
-       
+        LoadData();
     }
 
 
@@ -491,7 +494,7 @@ public class SceneController : MonoBehaviour
         var keyboard = Keyboard.current;
         if (keyboard.sKey.wasPressedThisFrame) SaveData();
         if (keyboard.lKey.wasPressedThisFrame) LoadData();
-        if (keyboard.tKey.wasPressedThisFrame) SaveDataDesktop();
+        //if (keyboard.tKey.wasPressedThisFrame) SaveDataDesktop();
         if (keyboard.xKey.wasPressedThisFrame) FileSelection();
 
     }

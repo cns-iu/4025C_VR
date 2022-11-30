@@ -2135,16 +2135,16 @@ extern void SceneController_FitToChildren_m6537F5AD6F42BECA2E7D1E4965130CE981EA3
 extern void SceneController_jumpHover_mC26BD1B204D3A516ACBEF4EEEB09C566504CC7A7 (void);
 // 0x0000042E System.Void SceneController::jumpHoverExited(UnityEngine.GameObject)
 extern void SceneController_jumpHoverExited_m3097C2033E9C6CD38E60965B77852B59498E5088 (void);
-// 0x0000042F System.Void SceneController::OnApplicationFocus(System.Boolean)
-extern void SceneController_OnApplicationFocus_m82B5A1A7FA39E8B6EC3CA80A8AE0E6CFD59D0AF9 (void);
-// 0x00000430 System.Void SceneController::SavePrefs()
+// 0x0000042F System.Void SceneController::SavePrefs()
 extern void SceneController_SavePrefs_m46189044AFD5F133D795E31C28201029BF4C42B8 (void);
-// 0x00000431 System.Void SceneController::LoadPrefs()
+// 0x00000430 System.Void SceneController::LoadPrefs()
 extern void SceneController_LoadPrefs_mF69624B1B54D546197674BA6512F539120EA8E2B (void);
-// 0x00000432 System.Void SceneController::SaveData()
+// 0x00000431 System.Void SceneController::SaveData()
 extern void SceneController_SaveData_m6B1B4BFF6724909582E79452224017033C20E7C9 (void);
-// 0x00000433 System.Void SceneController::SaveDataDesktop()
+// 0x00000432 System.Void SceneController::SaveDataDesktop()
 extern void SceneController_SaveDataDesktop_m86E5EAA6F3618736E0B3FD5154664A54A8B9ACA6 (void);
+// 0x00000433 System.Void SceneController::LoadData()
+extern void SceneController_LoadData_m038EB77E57628D102486EFFD4B946D7492EAD677 (void);
 // 0x00000434 System.Void SceneController::SaveManifestList(System.Collections.Generic.List`1<UnityEngine.GameObject>)
 extern void SceneController_SaveManifestList_m1C0103A2100CA3DE96D27F0BF5A5FDEC6B363AC9 (void);
 // 0x00000435 System.Void SceneController::SaveManifest(UnityEngine.GameObject)
@@ -2153,18 +2153,18 @@ extern void SceneController_SaveManifest_mA8BF3CA94FD0EFF2BE122D9D46AD95D93BD180
 extern void SceneController_ConnectionEncode_m9A38E2A346B93E70F5455E3935052DEC1C817AB1 (void);
 // 0x00000437 System.Int32 SceneController::IndexInParentList(UnityEngine.GameObject)
 extern void SceneController_IndexInParentList_m06B73AC4236B9AACCEA75A2D93143ABE419AF620 (void);
-// 0x00000438 System.Void SceneController::LoadData()
-extern void SceneController_LoadData_m038EB77E57628D102486EFFD4B946D7492EAD677 (void);
-// 0x00000439 UnityEngine.GameObject SceneController::LibraryItemCloner(System.String,UnityEngine.GameObject)
+// 0x00000438 UnityEngine.GameObject SceneController::LibraryItemCloner(System.String,UnityEngine.GameObject)
 extern void SceneController_LibraryItemCloner_mD98F897234776C6DFBAB03CDF200D2B4C2EBF56F (void);
-// 0x0000043A UnityEngine.GameObject SceneController::FindInLibrary(System.String)
+// 0x00000439 UnityEngine.GameObject SceneController::FindInLibrary(System.String)
 extern void SceneController_FindInLibrary_mA1DDA2C94FEBB2D44FE068EEAAAB41D6D294FD2B (void);
-// 0x0000043B System.Boolean SceneController::WriteToFile(System.String,System.String)
+// 0x0000043A System.Boolean SceneController::WriteToFile(System.String,System.String)
 extern void SceneController_WriteToFile_mEBBDF21107F2A5C0BFE51DD326B446A82BCCC9E1 (void);
-// 0x0000043C System.Boolean SceneController::LoadFromFile(System.String,System.String&)
+// 0x0000043B System.Boolean SceneController::LoadFromFile(System.String,System.String&)
 extern void SceneController_LoadFromFile_mE9D16D3F66F7BDA354FF1D9E4F35ED3A4916F77D (void);
-// 0x0000043D System.Void SceneController::OnKeyboard(UnityEngine.InputSystem.InputValue)
+// 0x0000043C System.Void SceneController::OnKeyboard(UnityEngine.InputSystem.InputValue)
 extern void SceneController_OnKeyboard_m7E317F994964ED3DA804DF823EDC5C5F36648304 (void);
+// 0x0000043D System.Void SceneController::OnApplicationFocus(System.Boolean)
+extern void SceneController_OnApplicationFocus_m82B5A1A7FA39E8B6EC3CA80A8AE0E6CFD59D0AF9 (void);
 // 0x0000043E System.Void SceneController::Start()
 extern void SceneController_Start_mE331697A1235EC3AAF23970DEA2A9F40BC4CA2E2 (void);
 // 0x0000043F System.Void SceneController::Update()
@@ -4776,21 +4776,21 @@ static Il2CppMethodPointer s_methodPointers[1884] =
 	SceneController_FitToChildren_m6537F5AD6F42BECA2E7D1E4965130CE981EA340E,
 	SceneController_jumpHover_mC26BD1B204D3A516ACBEF4EEEB09C566504CC7A7,
 	SceneController_jumpHoverExited_m3097C2033E9C6CD38E60965B77852B59498E5088,
-	SceneController_OnApplicationFocus_m82B5A1A7FA39E8B6EC3CA80A8AE0E6CFD59D0AF9,
 	SceneController_SavePrefs_m46189044AFD5F133D795E31C28201029BF4C42B8,
 	SceneController_LoadPrefs_mF69624B1B54D546197674BA6512F539120EA8E2B,
 	SceneController_SaveData_m6B1B4BFF6724909582E79452224017033C20E7C9,
 	SceneController_SaveDataDesktop_m86E5EAA6F3618736E0B3FD5154664A54A8B9ACA6,
+	SceneController_LoadData_m038EB77E57628D102486EFFD4B946D7492EAD677,
 	SceneController_SaveManifestList_m1C0103A2100CA3DE96D27F0BF5A5FDEC6B363AC9,
 	SceneController_SaveManifest_mA8BF3CA94FD0EFF2BE122D9D46AD95D93BD1808F,
 	SceneController_ConnectionEncode_m9A38E2A346B93E70F5455E3935052DEC1C817AB1,
 	SceneController_IndexInParentList_m06B73AC4236B9AACCEA75A2D93143ABE419AF620,
-	SceneController_LoadData_m038EB77E57628D102486EFFD4B946D7492EAD677,
 	SceneController_LibraryItemCloner_mD98F897234776C6DFBAB03CDF200D2B4C2EBF56F,
 	SceneController_FindInLibrary_mA1DDA2C94FEBB2D44FE068EEAAAB41D6D294FD2B,
 	SceneController_WriteToFile_mEBBDF21107F2A5C0BFE51DD326B446A82BCCC9E1,
 	SceneController_LoadFromFile_mE9D16D3F66F7BDA354FF1D9E4F35ED3A4916F77D,
 	SceneController_OnKeyboard_m7E317F994964ED3DA804DF823EDC5C5F36648304,
+	SceneController_OnApplicationFocus_m82B5A1A7FA39E8B6EC3CA80A8AE0E6CFD59D0AF9,
 	SceneController_Start_mE331697A1235EC3AAF23970DEA2A9F40BC4CA2E2,
 	SceneController_Update_mA689EB8BDB101DF66742F635D44DCAA482A5948E,
 	SceneController_FileSelection_mA6DC8DDC7B28EA049A2EE5B2FF110743057C3DA7,
@@ -6814,7 +6814,7 @@ static const int32_t s_InvokerIndices[1884] =
 	7105,
 	7105,
 	7105,
-	6987,
+	9001,
 	9001,
 	9001,
 	9001,
@@ -6823,12 +6823,12 @@ static const int32_t s_InvokerIndices[1884] =
 	7105,
 	4208,
 	5933,
-	9001,
 	3092,
 	6326,
 	12241,
 	12232,
 	7105,
+	6987,
 	9001,
 	9001,
 	9001,
