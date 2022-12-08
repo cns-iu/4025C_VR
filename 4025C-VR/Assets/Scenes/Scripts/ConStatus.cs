@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 2022-11-28
+// 2022-12-7
 
 public class ConStatus : MonoBehaviour
 {
@@ -33,7 +33,8 @@ public class ConStatus : MonoBehaviour
                 GameObject pp = thisConnector.transform.parent.parent.transform.gameObject;
                 pp.GetComponent<ManifestStatus>().conList.Add(thisConnector);
 
-                if (pp.name == "Library")
+                //if (pp.name == "Library")
+                if (pp.GetComponent<ManifestStatus>().isLibrary == true)
                 {
                     // library
                     selected = false;

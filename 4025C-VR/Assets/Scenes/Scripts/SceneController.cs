@@ -8,7 +8,7 @@ using static JsonEntries;
 using static JsonManifests;
 //using UnityEditor;
 
-// 2022-11-29
+// 2022-12-7
 
 public class SceneController : MonoBehaviour
 {
@@ -98,11 +98,24 @@ public class SceneController : MonoBehaviour
     }
 
 
-
+    // take assembly to main area
+    // shrink and add collider
+    // ------also need to disable any colliders on children!
     GameObject AssemblyPackage(GameObject m)
     {
+        // disable colliders on nodes
         if (m.GetComponent<ManifestStatus>().conList.Count > 1)
         {
+            foreach (Transform p in m.transform)
+            {  
+                foreach (Transform c in p)
+                {
+                    if (c.GetComponent<Collider>().enabled == true)
+                    {
+                        c.GetComponent<Collider>().enabled = false;
+                    }
+                }
+            }
 
             m.name = "manifest_" + manifestList.Count;
             manifestList.Add(m);         // store in global manifest list
@@ -111,10 +124,13 @@ public class SceneController : MonoBehaviour
             Rigidbody rb = m.AddComponent<Rigidbody>() as Rigidbody;
 
             m.AddComponent<XRGrabInteractable>();
+            // somehow this must get Trigger=true while being held!- when interacting through grabable
+            //m.GetComponent<Collider>().isTrigger = true;
 
             //m.transform.position = transportTarget.transform.position;
             Vector3 objectScale = m.transform.localScale;
-            m.transform.localScale = new Vector3(objectScale.x / 10, objectScale.y / 10, objectScale.z / 10);
+            int shrinkage = m.GetComponent<ManifestStatus>().shrinkage;
+            m.transform.localScale = new Vector3(objectScale.x / shrinkage, objectScale.y / shrinkage, objectScale.z / shrinkage);
         }
         return m;
     }
