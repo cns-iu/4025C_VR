@@ -8,7 +8,7 @@ using static JsonEntries;
 using static JsonManifests;
 //using UnityEditor;
 
-// 2022-12-7
+// 2022-12-9
 
 public class SceneController : MonoBehaviour
 {
@@ -222,12 +222,13 @@ public class SceneController : MonoBehaviour
             {
                 SaveManifest(m);
             }
-            SaveManifestList(manifestList);
+            //SaveManifestList(manifestList);
         }
         else
         {
             Debug.Log("Empty manifestList; nothing to save");
         }
+        SaveManifestList(manifestList);
     }
 
     /*
