@@ -1,5 +1,5 @@
 # 4025C_VR
-(current version 0.1.11)
+(current version 0.1.12, 2022-12-11)
 
 <p align="center">
   <img src="images/v019-5.jpg" width="400">
@@ -7,12 +7,16 @@
 
 
 ## Operating and Interaction Instructions
+---
 
 ### Right controller functions
 
-Right controller actions interact with the VR room and the objects inside it. The thick blue ray from the right controller is used to teleport - instantly jumping to the position the ray is pointed at - or interact with the small, colored control nodes on some objects. If the blue ray is pointed at a "solid" object, it will change its color to red.
+Right controller actions interact with the VR room and the objects inside it. The thick blue ray from the right controller is used to teleport:
+- Instantly jump to the position on the ground the ray is pointed at
+- Instantly jump to work areas by aiming the ray at transport spheres hovering above your head
+- Interact with the small, colored control nodes on some objects. If the blue ray is pointed at a "solid" object, it will change its color to red.
 
-**Grab Button** (teleport)  - if the ray is pointed at the floor, a teleportation is initiated, the ray stays blue, user is moved to requested position.
+**Grab Button** (teleport)  - if the ray is pointed at the floor or a transport sphere, a teleportation is initiated, the ray stays blue, user is moved to requested position.
 
 **Grab Button** (select) - select the spherical node object the ray is pointed at; the actual results depend on previous actions (see below).
 
@@ -33,12 +37,15 @@ Right controller actions interact with the VR room and the objects inside it. Th
 
 **Thumbstick** - left/right rotates the viewer in 45 degree increments to the left/right.
 
+---
+
+
 ### Left controller functions
 
 Left controller actions interact with the console window, as does the left ray. At the moment this is used for debugging.
 
 <p align="center">
-  <img src="images/v019-6.jpg" width="400"><img src="images/v019-7.jpg" width="400">
+  <img src="images/saving3.jpg" width="500"
 </p>
 
 **Menu Button** - show/hide console.
@@ -46,6 +53,8 @@ Left controller actions interact with the console window, as does the left ray. 
 **Trigger Button** - "press" the virtual buttons in the Console (Clear, System/Nodes).
 
 **Thumbstick** - forward/backward; adjust console window distance from viewer.
+
+--- 
 
 
 ## Work Planes
