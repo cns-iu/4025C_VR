@@ -18,11 +18,81 @@
 
 After launching the app you are placed in the Main Area facing three work tables.
 
+<p align="center">
+  <img src="images/docs-1.png" height="300">
+</p>
+<p align = "center">
+  <sub>Fig.1 Entering the VR</sub>
+</p>
+
+All interactions with items in the workspace are controlled by the grip button on the right handcontroller.
+
+<p align="center">
+  <img src="images/docs-13.png" height="300">
+</p>
+<p align = "center">
+  <sub>Fig.2 Right controller grip button</sub>
+</p>
+
+You point the red ray at things. When a solid object is encountered, the ray turns blue.
+
+<p align="center">
+  <span>
+    <img src="images/docs-14.png" height="200">
+    <img src="images/docs-15.png" height="200">
+  </span>
+</p>
+<p align = "center">
+  <sub>Fig.3 Right controller grip button</sub>
+</p>
+
+Push the grip button to perform an "action". What kind of action is performed depends on the object:
+
+## Floor
+
+You are instantly transported to the location on the floor the ray was pointed at.
+
+## Transport Nodes
+
+There are three work areas you can teleport to. Look up, slightly to your left, to see two transport spheres. Clicking on either of them will teleport you to one of the other areas.
+
 IMAGE
 
-All interactions with items in the workspace are controlled by the grip button on the right handset. You point the blue ray at things. When a solid object is encountered, the ray turns red. Push the grip button to perform an "action". What action is performed depends on the object:
-- floor
-- objects
+There are three areas in this VR:
+### Main Area
+The space with the three tables, where you start.
+
+IMAGE
+
+### Assembly Area
+Where you can build all sorts of assemblies using prepared components.
+
+IMAGE
+
+### Area 51
+You can teleport to there, but it is empty at the moment.
+
+IMAGE 
+
+
+
+## Objects
+The objects on the two white tables can be picked up, looked at closely, dropped, stacked on top of eachother. They try to behave as objects in reality would.
+
+IMAGE
+
+Objects in the Assembly Area are building components. They have various numbers of small colored spheres attached. The spheres are connecttion nodes which are used to link components together. 
+
+IMAGE
+
+Click any of the green spheres on a component. It turns yellow to let you know it is now selected and is waiting for you to click a second node to be connected to.
+
+IMAGE
+
+The first object of a new assembly starts on the larger blue node, hovering above the white circle on the floor. Click this, and a copy of the object appears on the blue node. That node now turns red, to show the connection was successful. You click on a red node to disconnect and delete the connected object.
+
+IMAGE
+
 
 
 
