@@ -5,6 +5,30 @@
   <img src="images/v019-5.jpg" width="400">
 </p>
 
+# Table of Contents
+- Quick Start
+- Overview and Purpose
+- Work Areas
+  - Main Area
+  - Assembly Area
+  - Area 51
+- Details??
+---
+# Quick Start
+
+After launching the app you are placed in the Main Area facing three work tables.
+
+IMAGE
+
+All interactions with items in the workspace are controlled by the grip button on the right handset. You point the blue ray at things. When a solid object is encountered, the ray turns red. Push the grip button to perform an "action". What action is performed depends on the object:
+- floor
+- objects
+
+
+
+
+
+
 ## Overview and Purpose
 ---
 
@@ -18,7 +42,7 @@ IMAGE
 Here the user can interact with objects and object assemblies at a realistic size, i.e. objects such as tables, paper basket, model assemblies, etc. appear to the user as they would in reality. Objects can be picked up, dropped, stacked unto each other, thrown in the trash. Assemblies created in the application are automatically saved when the app is quit and re-loaded and placed at their last locations in the scene. After launching the app, the user is put into the Main Area by the three tables.
 
 ## Assembly Area
-IMAGES
+IMAGES 
 
 The Assembly Area can be reached by clicking on the respective transport sphere (look up to see them). The user is then teleported to the center of the Assembly Area next to a so-called library, or component collection. The current collection contains ~30 components plus a toy christmas tree for the Christmas edition. One significant feature of the Assembly Area is that the componments are literally "larger-than-life". The Christmas edition uses components of 3x their natural size. This makes it easier to interact with the objects.
 
