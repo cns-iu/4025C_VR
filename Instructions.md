@@ -5,6 +5,41 @@
   <img src="images/v019-5.jpg" width="400">
 </p>
 
+## Overview and Purpose
+---
+
+4025C_VR is a VR application for the Oculus Quest 2 headset. It was conceived to allow experimenting with a growing number of IoT components and elements in a virtual environment. 
+
+The current version lets the user interact in three different work areas.
+
+## Main Area
+IMAGE
+
+Here the user can interact with objects and object assemblies at a realistic size, i.e. objects such as tables, paper basket, model assemblies, etc. appear to the user as they would in reality. Objects can be picked up, dropped, stacked unto each other, thrown in the trash. Assemblies created in the application are automatically saved when the app is quit and re-loaded and placed at their last locations in the scene. After launching the app, the user is put into the Main Area by the three tables.
+
+## Assembly Area
+IMAGES
+
+The Assembly Area can be reached by clicking on the respective transport sphere (look up to see them). The user is then teleported to the center of the Assembly Area next to a so-called library, or component collection. The current collection contains ~30 components plus a toy christmas tree for the Christmas edition. One significant feature of the Assembly Area is that the componments are literally "larger-than-life". The Christmas edition uses components of 3x their natural size. This makes it easier to interact with the objects.
+
+A white circle on the floor marks the actual build position. After the user pops into this area, every component will show a single green sphere. This is a connector node. Anyone of these nodes can be clicked, which will turn that node yellow and show a larger blue node over the build position. The yellow node tells the user that it is now selected and is waiting to be connected to another node. Only eligible connection targets are visible. A click on the large blue node makes a copy of the component and connects (i.e. moves) it to the blue build node. At this point we have a successful connection, which is shown by a red node between the connected parts. Now another component can be picked, again by clicking its single node followed by an open node on the assembly.
+
+A red connection node can be clicked to remove (delete) any components from that node on to the end of that chain.
+
+To find the green nodes on the christmas tree you may have to walk around the tree (or do short on-site teleports). It is possible to teleport while in connection mode (yellow node).
+
+The user can return to the Main Area at any point by clicking the respective transport sphere. If there is an assembly on the build node it will travel with the user to the Main Area and appear on the black table on the left; it will materialize in it's natural size, can be picked up, dropped, thrown. At this point it is not editable. 
+
+Repeated trips to the Assembly Area with successful assemblies will eventually fill the black table. Fresh assemblies will materialize in the center of the black table and potentially bump objects already there off the table.
+
+## Area 51
+IMAGE
+
+This area can be visited, but at the moment there is nothing there. I use it as an experimental area.
+
+
+
+
 
 ## Operating and Interaction Instructions
 ---
