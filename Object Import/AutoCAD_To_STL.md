@@ -20,7 +20,7 @@ AutoCAD can also be utilized to produce complex and precise 3D drawings for arch
   <sub>Fig.2 Partial assembly visualization (left), physical assembly (right)</sub>
 </p>
 
-In this case the 2D line drawing of a specific object in AutoCAD has to be transformed into a 3D object. This sounds like a relatively straight forward procedure; in a dedicated 3D application, such as Blender, one would use an *extrude* function to add "thickness" to a surface. Of course AutoCAD also has an *extrude* command and applied to a <strong>properly</strong> constructed 2D object it will yield useable results.
+In this case the 2D line drawing of a specific object in AutoCAD has to be transformed into a 3D object. This sounds like a relatively simple procedure; in a dedicated 3D application, such as Blender, one would use an *extrude* function to add "thickness" to a surface. Of course AutoCAD also has an *extrude* command and applied to a <strong>properly</strong> constructed 2D object it will yield useable results.
 
 <p align="center">
   <img src="images/star_star_extruded.png" width="600">
@@ -29,7 +29,7 @@ In this case the 2D line drawing of a specific object in AutoCAD has to be trans
   <sub>Fig.3 2D object (left), successfully extruded into 3D (right)</sub>
 </p>
 
-The process sounds logical and straight-forward, but I found shapes often do not extrude properly or not at all. This has been a problem with AutoCAD files I received from another source. Upon "exploding" (unjoining) shapes they are often composed of subsections of many different types (*polylines*, *splines*, *arcs*, etc). Sometimes I have been able to find the single offending primitive and replace it with a *polyline*, enabling successful extrusion. Often it is quicker to draw a new *polyline* using the existing shape as a template - this is a relatively quick process with a AutoCAD's snap settings.
+The process sounds logical and straight-forward, but I found shapes often do not extrude properly or not at all. This has been a problem with AutoCAD files I received from another source. Upon "exploding" (unjoining) shapes they are often composed of subsections of many different types (*polylines*, *splines*, *arcs*, etc). Sometimes I have been able to find the single offending primitive and replace it with a *polyline*, enabling successful extrusion. Often it is quicker to draw a new *polyline* using the existing shape as a template - this is a relatively quick process with AutoCAD's snap settings.
 
 ## Rebuilding a shape using *polyline* (*pline*)
 
@@ -120,7 +120,7 @@ Assign the circle at the center back to the active layer. Both polyline shapes (
   <sub>Fig.11 Then extrude the star shape. We used a thickness of 30.</sub>
 </p>
 
-In the physical world these star shapes are cut from 3mm thick acrylic. In our case the shape had to be scaled up by x10 to extrude successfully. To keep the right proportions thickness is also multiplied x10.
+In the physical world these star shapes are cut from 3mm thick acrylic. In our case the shape had to be scaled up by x10 to extrude successfully. To keep the right proportions, thickness is also multiplied x10.
 
 <p align="center">
   <img src="images/AC-STL9.png" width="400">
